@@ -168,9 +168,6 @@ MonoBehaviour:
       guid: dd85ce99288c2f8488447fa511b1c0d6
   - Id: Scripts
     Resources:
-    - name: TempScript1
-      pathPrefix: Scripts
-      guid: 531c767e0fac56d4faa1bd454471930a
     - name: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
       pathPrefix: Scripts
       guid: 7ee813acb6955fe47af87122d8cbeb47
@@ -201,3 +198,13 @@ MonoBehaviour:
     - name: Hondae
       pathPrefix: Backgrounds/MainBackground
       guid: 65faaa12532320e43a3ed8040e059ef0
+  - Id: Characters/9ba60146-9d3a-4747-bcd2-c9aacd2e03c1
+    Resources:
+    - name: HaJi
+      pathPrefix: Characters/Haji
+      guid: cf2709c0f4f21ee4ba6a427d363390c4
+  - Id: Characters/5d2a4e08-f199-45f0-b488-0e8de0e8fe08
+    Resources:
+    - name: Jicheol
+      pathPrefix: Characters/Jicheol
+      guid: 49490983de7e19a42a8b4d595a025e1d

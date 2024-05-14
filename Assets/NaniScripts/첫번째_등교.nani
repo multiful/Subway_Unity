@@ -1,7 +1,10 @@
-@char Wow pos:20,50
+@char Haji pos:20,-66
 첫번째 스토리입니다.
-Wow: 안녕하세요
-Wow: 짱 귀여운 와우입니다.
+Haji: 안녕하세요
+Haji: 짱 귀여운 하지입니다.
+@char Jicheol pos:70,-66
+Jicheol: 안녕하세요
+Jicheol: 짱 멋진 지철입니다.
 @back Hondae transition:CircleReveal time:2
 Wow: 학교 가야겠지?
 
