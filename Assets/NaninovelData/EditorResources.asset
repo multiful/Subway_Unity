@@ -183,16 +183,6 @@ MonoBehaviour:
     - name: "\uC5D4\uB529"
       pathPrefix: Scripts
       guid: 735e908017d9c8e41ae52b41d8c6701d
-  - Id: Characters/89b83e95-e001-4aaa-8208-ca4f35843d4f
-    Resources:
-    - name: Default
-      pathPrefix: Characters/Wow
-      guid: 6c86db723925bce4eb9cb77402e3d0fa
-  - Id: Characters/4170401d-a6f9-4da2-b090-b0059e485319
-    Resources:
-    - name: Default
-      pathPrefix: Characters/Pica
-      guid: f4ce09419057bbf4ca39db19eaf34630
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Hondae

@@ -65,95 +65,9 @@ MonoBehaviour:
     Poses: []
   Metadata:
     ids:
-    - Wow
-    - Pica
     - Haji
     - Jicheol
     metas:
-    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Loader:
-        PathPrefix: Characters
-        ProviderTypes:
-        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      guid: 89b83e95-e001-4aaa-8208-ca4f35843d4f
-      customData:
-        rid: -2
-      Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
-      EnableDepthPass: 1
-      DepthAlphaCutoff: 0.5
-      CustomTextureShader: {fileID: 0}
-      CustomSpriteShader: {fileID: 0}
-      RenderTexture: {fileID: 0}
-      RenderRectangle:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1
-        height: 1
-      BakedLookDirection: 1
-      DisplayName: "\uC640\uC6B0"
-      UseCharacterColor: 1
-      NameColor: {r: 0.4008989, g: 0.6050507, b: 0.9339623, a: 1}
-      MessageColor: {r: 0.6762638, g: 0.7434, b: 0.8584906, a: 1}
-      HighlightWhenSpeaking: 0
-      HighlightCharacterCount: 0
-      SpeakingPose: 
-      NotSpeakingPose: 
-      PlaceOnTop: 1
-      HighlightDuration: 0.35
-      HighlightEasing: 1
-      MessageSound: 
-      MessageSoundPlayback: 0
-      VoiceSource: {fileID: 0}
-      LinkedPrinter: 
-      Poses: []
-    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Loader:
-        PathPrefix: Characters
-        ProviderTypes:
-        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      guid: 4170401d-a6f9-4da2-b090-b0059e485319
-      customData:
-        rid: -2
-      Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
-      EnableDepthPass: 1
-      DepthAlphaCutoff: 0.5
-      CustomTextureShader: {fileID: 0}
-      CustomSpriteShader: {fileID: 0}
-      RenderTexture: {fileID: 0}
-      RenderRectangle:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1
-        height: 1
-      BakedLookDirection: 1
-      DisplayName: "\uD53C\uCE74\uC18C"
-      UseCharacterColor: 1
-      NameColor: {r: 0.972549, g: 0.62526363, b: 0.25098044, a: 1}
-      MessageColor: {r: 0.9716981, g: 0.8388574, b: 0.2520915, a: 1}
-      HighlightWhenSpeaking: 0
-      HighlightCharacterCount: 0
-      SpeakingPose: 
-      NotSpeakingPose: 
-      PlaceOnTop: 1
-      HighlightDuration: 0.35
-      HighlightEasing: 1
-      MessageSound: 
-      MessageSoundPlayback: 0
-      VoiceSource: {fileID: 0}
-      LinkedPrinter: 
-      Poses: []
     - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Loader:
@@ -180,9 +94,9 @@ MonoBehaviour:
         width: 1
         height: 1
       BakedLookDirection: 1
-      DisplayName: 
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      DisplayName: "\uD558\uC9C0"
+      UseCharacterColor: 1
+      NameColor: {r: 0.8117648, g: 0.48627454, b: 0.35686275, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
@@ -222,9 +136,9 @@ MonoBehaviour:
         width: 1
         height: 1
       BakedLookDirection: 1
-      DisplayName: 
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      DisplayName: "\uC9C0\uCCA0"
+      UseCharacterColor: 1
+      NameColor: {r: 0.2784314, g: 0.3647059, b: 0.7803922, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
