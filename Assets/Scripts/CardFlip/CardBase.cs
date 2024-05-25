@@ -19,6 +19,5 @@ public class CardBase : MonoBehaviour
     void Start()
     {
         //default
-        _cardCode = 0;
     }
 }
