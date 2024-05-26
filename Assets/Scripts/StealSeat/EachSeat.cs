@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,20 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     }
     private State _currentState = State.Sit;
 
+    [SerializeField] private int seatNum;
+    private int spriteNum;
+
     public TMP_Text TMP_State;
+    public TMP_Text TMP_spriteNum;
+
+    void Start()
+    {
+        MainControl.StopGame += DeActivate; //델리게이트에 비활성 함수 추가
+        StartCoroutine(Activate());
+
+        spriteNum = MainControl.Inst.occupiedList[seatNum]; //스프라이트 번호 받기
+        TMP_spriteNum.text = spriteNum.ToString(); //디버그용 출력
+    }
 
     private IEnumerator Activate()
     {
@@ -52,40 +66,38 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     private IEnumerator Stand()
     {
         TMP_State.text = "Stand";
+        TMP_spriteNum.text = ""; //빈 자리, 스프라이트 없음
         _currentState = State.Stand;
         yield return new WaitForSeconds(1f);
+
+        spriteNum = MainControl.Inst.GetSeat(spriteNum); //1초 후 새로운 사람 착석
+        TMP_spriteNum.text = spriteNum.ToString(); //디버그용 출력
         Sit(); //0.5(임시 1초) 대기 후 다시 착석
     }
 
-    public void ButtonClick(int seat) //1~8번 버튼마다 버튼 번호 전달받음
+    public void ButtonClick() //0~6번 버튼마다 버튼 번호 전달받음
     {
-        if (_currentState == State.Stand)
-        {
-            DeActivate(); //버튼 고정
-            if (MainControl.Inst.womanSeat == -1) //아직 여자가 안 앉았다면
-            {
-                MainControl.Inst.womanSeat = seat; //여자 좌석번호 전달
-                TMP_State.text = "Woman";
-                _currentState = State.Woman;
-                DeActivate();
-            }
-            else //여자가 이미 앉은 상태(게임 성공)
-            {
-                TMP_State.text = "Man";
-                _currentState = State.Man;
-                MainControl.Inst.Clear(seat); //남자 좌석번호 전달
-            }
-        }
-        else //일어선 상태가 아니면
+        if (_currentState != State.Stand) //일어선 상태가 아니면
         {
             MainControl.Inst.Penalty(10f); //10초 페널티
+            return;
         }
+
+        DeActivate(); //버튼 고정
+        if (MainControl.Inst.womanSeat == -1) //아직 여자가 안 앉았다면
+        {
+            MainControl.Inst.womanSeat = seatNum; //여자 좌석번호 전달
+            TMP_State.text = "Woman";
+            _currentState = State.Woman;
+        }
+        else //여자가 이미 앉은 상태(게임 성공)
+        {
+            TMP_State.text = "Man";
+            _currentState = State.Man;
+            MainControl.Inst.Clear(seatNum); //남자 좌석번호 전달
+        }
+
     }
 
-    void Start()
-    {
-        MainControl.StopGame += DeActivate; //델리게이트에 비활성 함수 추가
-        StartCoroutine(Activate());
-    }
 
 }

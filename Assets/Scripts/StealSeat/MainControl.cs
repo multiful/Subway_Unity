@@ -1,13 +1,16 @@
 using JetBrains.Annotations;
 using Naninovel;
-using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
+using System.Runtime.CompilerServices;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.XR;
 
-public class MainControl: MonoBehaviour //전체 두더지게임 관리
+public class MainControl : MonoBehaviour //전체 두더지게임 관리
 {
     private float _currentTime = 59.9f;
 
@@ -17,7 +20,33 @@ public class MainControl: MonoBehaviour //전체 두더지게임 관리
     public delegate void stopGame();
     public static event stopGame StopGame;
 
+    public List<int> occupiedList = new List<int>(); //0~9 사이 앉은 자리 7개
+    public List<int> unoccupiedList = new List<int>(); //그 외 남는 자리 3개
+
     public GameObject GoodClearCanvas, BadClearCanvas, FailCanvas; //temp
+
+    void Awake()
+    {
+        if (Inst == null) Inst = this;
+        else Destroy(this); //temporary singleton
+
+        InitArray();
+        StartCoroutine(StartTimer());
+    }
+
+    private void InitArray() //스프라이트 번호 나열
+    {
+        for (int i = 0; i <= 9; i++)
+        {
+            unoccupiedList.Add(i); //0~9
+        }
+        for (int i = 0; i <= 6; i++) //7자리 채우기
+        {
+            int rand = Random.Range(0, unoccupiedList.Count);
+            occupiedList.Add(unoccupiedList[rand]);
+            unoccupiedList.RemoveAt(rand);
+        }
+    }
 
     private IEnumerator StartTimer()
     {
@@ -37,7 +66,7 @@ public class MainControl: MonoBehaviour //전체 두더지게임 관리
         return false;
     }
 
-    
+
     private IEnumerator GoodClear()
     {
         yield return new WaitForSeconds(2f);
@@ -65,19 +94,21 @@ public class MainControl: MonoBehaviour //전체 두더지게임 관리
         else StartCoroutine(BadClear());
     }
 
-
     public void Penalty(float time)
     {
         _currentTime -= time;
     }
 
-
-    void Start()
+    public int GetSeat(int prevNum)
     {
-        if (Inst == null) Inst = this;
-        else Destroy(this); //temporary singleton
+        int rand = Random.Range(0, unoccupiedList.Count);
+        int num = unoccupiedList[rand];
+        occupiedList.Add(num); //새로운 사람
+        unoccupiedList.RemoveAt(rand);
 
-        StartCoroutine(StartTimer());
+        occupiedList.Remove(prevNum); //이전 사람 재착석 방지
+        unoccupiedList.Add(prevNum);
+        return num; //새로운 사람 스프라이트 번호 전달
     }
 
 }
