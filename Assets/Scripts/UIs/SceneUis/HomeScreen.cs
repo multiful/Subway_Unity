@@ -6,6 +6,8 @@ using Naninovel;
 
 public class HomeScreen : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _BackGroundObject;
     public static HomeScreen Inst;
     public TMP_Text TMP_NowStory;
 
@@ -35,7 +37,7 @@ public class HomeScreen : MonoBehaviour
 
         // 4. Enable Naninovel input.
         GameManager.Nani.InputManager.ProcessInput = true;
-
+        _BackGroundObject.SetActive(false);
         gameObject.SetActive(false);
     }
 
