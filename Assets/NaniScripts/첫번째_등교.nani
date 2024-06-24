@@ -5,6 +5,8 @@ Haji: 짱 귀여운 하지입니다.
 @char Jicheol pos:70,-66
 Jicheol: 안녕하세요
 Jicheol: 짱 멋진 지철입니다.
+호감도 {Likeability}
+@saveData
 @back Hondae transition:CircleReveal time:2
 Wow: 학교 가야겠지?
 

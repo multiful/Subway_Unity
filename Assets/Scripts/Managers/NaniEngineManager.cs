@@ -35,6 +35,7 @@ public class NaniEngineManager
         InputManager = Engine.GetService<IInputManager>();
         StateManager = Engine.GetService<IStateManager>();
         ScriptPlayer = Engine.GetService<IScriptPlayer>();
+        VarManager = Engine.GetService<ICustomVariableManager>();
         //
     }
 }

@@ -17,7 +17,7 @@ public class HomeScreen : MonoBehaviour
 
         //Trasfer 실행할때 배경 사라지게 함
         //다른 UI들 어디서 꺼지는지 몰라서 일단 여기 박아뒀는데 다른 UI들이랑 묶어서 수정해야함
-        _BackGroundObject = GameObject.Find("BackGroundParent");
+        _BackGroundObject = GameObject.Find("MainBackGround");
     }
    
     

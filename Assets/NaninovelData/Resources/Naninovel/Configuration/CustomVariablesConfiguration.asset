@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: CustomVariablesConfiguration
   m_EditorClassIdentifier: 
   PredefinedVariables:
-  - name: G_likeability
-    value: 0
-  - name: G_Money
-    value: 5000
-  - name: G_Ticket
-    value: 0
-  - name: G_Max_Ticket
-    value: 5
+  - name: Likeability
+    value: 50

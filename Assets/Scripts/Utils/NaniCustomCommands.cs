@@ -41,9 +41,9 @@ public class NaniCustomCommands
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             var varManager = Engine.GetService<ICustomVariableManager>();
-            var likeability = varManager.GetVariableValue("G_Likeability");
+            var likeability = varManager.GetVariableValue("Likeability");
             likeability += 5;
-            varManager.SetVariableValue("G_Likeability", likeability);
+            varManager.SetVariableValue("Likeability", likeability);
         }
     }
 }
