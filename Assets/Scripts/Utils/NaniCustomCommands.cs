@@ -34,4 +34,16 @@ public class NaniCustomCommands
             GameManager.Data.NowStory++;
         }
     }
+
+    [CommandAlias("increaseLikeability")]
+    public class IncreaseLikeability : Command
+    {
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            var varManager = Engine.GetService<ICustomVariableManager>();
+            var likeability = varManager.GetVariableValue("G_Likeability");
+            likeability += 5;
+            varManager.SetVariableValue("G_Likeability", likeability);
+        }
+    }
 }

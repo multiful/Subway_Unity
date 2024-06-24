@@ -6,7 +6,6 @@ using Naninovel;
 
 public class HomeScreen : MonoBehaviour
 {
-    [SerializeField]
     private GameObject _BackGroundObject;
     public static HomeScreen Inst;
     public TMP_Text TMP_NowStory;
@@ -15,6 +14,10 @@ public class HomeScreen : MonoBehaviour
     {
         if (Inst == null) Inst = this;
         else Destroy(this);
+
+        //Trasfer 실행할때 배경 사라지게 함
+        //다른 UI들 어디서 꺼지는지 몰라서 일단 여기 박아뒀는데 다른 UI들이랑 묶어서 수정해야함
+        _BackGroundObject = GameObject.Find("BackGroundParent");
     }
    
     
@@ -37,7 +40,10 @@ public class HomeScreen : MonoBehaviour
 
         // 4. Enable Naninovel input.
         GameManager.Nani.InputManager.ProcessInput = true;
+
+        //이거 어디로 옮겨야함? 스크립트 시작하면 다른 UI들 어디서 비활성화 되는지 모르겠음
         _BackGroundObject.SetActive(false);
+
         gameObject.SetActive(false);
     }
 

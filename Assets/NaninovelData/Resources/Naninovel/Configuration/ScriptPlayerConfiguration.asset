@@ -9,15 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050d909da8f293c4cac3351071715b4d, type: 3}
-  m_Name: CustomVariablesConfiguration
+  m_Script: {fileID: 11500000, guid: 1240d35bec799e24e938d235ef4eb56d, type: 3}
+  m_Name: ScriptPlayerConfiguration
   m_EditorClassIdentifier: 
-  PredefinedVariables:
-  - name: G_likeability
-    value: 0
-  - name: G_Money
-    value: 5000
-  - name: G_Ticket
-    value: 0
-  - name: G_Max_Ticket
-    value: 5
+  DefaultSkipMode: 0
+  SkipTimeScale: 10
+  MinAutoPlayDelay: 3
+  CompleteOnContinue: 1
+  ShowDebugOnInit: 0
+  WaitByDefault: 1

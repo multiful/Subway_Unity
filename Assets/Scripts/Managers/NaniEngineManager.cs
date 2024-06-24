@@ -9,6 +9,7 @@ public class NaniEngineManager
     public IInputManager InputManager;
     public IStateManager StateManager;
     public IScriptPlayer ScriptPlayer;
+    public ICustomVariableManager VarManager;
 
     public void Init()
     {

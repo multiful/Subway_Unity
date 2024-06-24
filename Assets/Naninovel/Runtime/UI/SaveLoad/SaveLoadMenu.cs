@@ -18,9 +18,9 @@ namespace Naninovel.UI
         public SaveLoadUIPresentationMode PresentationMode { get => presentationMode; set => SetPresentationMode(value); }
 
         [ManagedText("DefaultUI")]
-        protected static string OverwriteSaveSlotMessage = "Are you sure you want to overwrite save slot?";
+        protected static string OverwriteSaveSlotMessage = "저장 데이터를 덮어쓰시겠습니까?";
         [ManagedText("DefaultUI")]
-        protected static string DeleteSaveSlotMessage = "Are you sure you want to delete save slot?";
+        protected static string DeleteSaveSlotMessage = "저장 데이터를 삭제하시겠습니까?";
 
         protected virtual bool LastSaveWasQuick
         {

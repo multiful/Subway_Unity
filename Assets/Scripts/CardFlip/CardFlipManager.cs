@@ -153,7 +153,6 @@ public class CardFlipManager : MonoBehaviour
     {
         
         _cor1 = StartCoroutine(BackToFront(cardObject));
-        // 삼항 연산자로 대체 가능한지 피드백 필요
         if (_selectedCard1 == null)
         {
             //1번 선택카드가 NULL인 경우 1번에 할당
@@ -206,7 +205,6 @@ public class CardFlipManager : MonoBehaviour
         Debug.Log("클리어!");
         //카드 다 찾으면 게임클리어
     }
-    //일단 public으로 설정하고 나중에 private로 바꿀거임  => 버튼에 넣기 위해서
     public void GameStart()
     {
         StartCoroutine(CardMove());

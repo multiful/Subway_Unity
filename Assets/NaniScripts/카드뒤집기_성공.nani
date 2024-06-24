@@ -1,0 +1,23 @@
+@char Haji pos:20,-66
+@char Jicheol pos:60,-66
+Haji: 성공했네요
+Jicheol: 그러게요
+
+
+호감도 {G_Likeability}
+# firstChoice
+@choice 1번 goto:.first
+
+@choice 2번 goto:.second
+@stop
+# first
+@increaseLikeability
+첫번째 선택지
+@goto .next
+# second
+두번째 선택지를 고르셨습니다
+@goto .next
+# next
+
+호감도 {G_Likeability}
+끝!
