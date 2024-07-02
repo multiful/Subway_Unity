@@ -384,10 +384,7 @@
     &lt;/Resources&gt;
     &lt;Constants /&gt;
     &lt;Variables&gt;
-      &lt;string&gt;G_likeability&lt;/string&gt;
-      &lt;string&gt;G_Money&lt;/string&gt;
-      &lt;string&gt;G_Ticket&lt;/string&gt;
-      &lt;string&gt;G_Max_Ticket&lt;/string&gt;
+      &lt;string&gt;Likeability&lt;/string&gt;
     &lt;/Variables&gt;
     &lt;Functions /&gt;
   &lt;/Metadata&gt;

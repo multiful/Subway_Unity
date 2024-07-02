@@ -85,7 +85,6 @@ public class CardFlipManager : MonoBehaviour
                 prefab.transform.GetChild(1).GetComponent<SpriteRenderer>().sprite = _cardFrontSprite4;
                 break;
             default:
-                Debug.Log("이상한 숫자 입력"); 
                 break;
         }
 
@@ -108,6 +107,17 @@ public class CardFlipManager : MonoBehaviour
             CardPrefabInstantiate(list[random]);    //랜덤 정수번째 있는 코드가 해당하는 카드 프리팹 생성
             list.RemoveAt(random);  // 사용한 랜덤 정수번째 원소 삭제
         }
+    }
+    // 카드 선택하는 함수
+    private void BackToFront1(GameObject card)
+    {
+        _canFlipCard = false;
+
+        card.transform.DORotate(new Vector3(0, 180, 0), 1.0f, RotateMode.FastBeyond360).SetEase(Ease.Linear).onComplete();
+    }
+    private void JudegeCard()
+    {
+
     }
     IEnumerator BackToFront(GameObject cardObject)
     {
@@ -149,6 +159,8 @@ public class CardFlipManager : MonoBehaviour
         StartCoroutine(StartTimer());
         _canFlipCard = true;
     }
+
+
     private void CardSelect(GameObject cardObject)
     {
         

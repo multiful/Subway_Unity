@@ -6,12 +6,12 @@ public class UIManager : MonoBehaviour
 {
     int _order = 0;
 
-    //Stack<UI_Popup> _popupStack = new Stack<UI_Popup>();
+    Stack<UI_Popup> _popupStack = new Stack<UI_Popup>();
     //UI_Scene _scene = null;
 
     //public GameObject Root
     //{
-    //    get
+    //    geta
     //    {
     //        GameObject root = GameObject.Find("@UI_Root");
     //        if (root == null)

@@ -4,23 +4,22 @@ using UnityEngine;
 using System;
 
 [Serializable]
-class UserData
+public class UserData
 {
     public string _userName { get; set; }
     public NowStoryName _lastEpisod { get; set; }
     public int _lastLine { get; set; }
     public int _ticket { get; set; }
     public int _money { get; set; }
-
-    public List<int> _ending;
-
-    // 일기장, 안약 등 더 추가할 데이터
+    public int _eyeDrops { get; set; }
+    public List<Diary> _diaryList { get; set; }
+    public List<int> _ending { get; set; }
 
     public Dictionary<int, ScriptData> dataList = new Dictionary<int, ScriptData>();
 
 }
 [Serializable]
-class ScriptData
+public class ScriptData
 {
     public NowStoryName _episod { get; set; }
     public int _line { get; set; }
@@ -41,7 +40,14 @@ public class SaveLoadManager : MonoBehaviour
         }
     }
     //현재 매니저에 장착된 유저데이터
-    private static UserData _userData;
+    private UserData _userData;
+    public UserData userData
+    {
+        get
+        {
+            return _userData;
+        }
+    }
 
     string DataToJson(object data)
     {
@@ -55,6 +61,7 @@ public class SaveLoadManager : MonoBehaviour
     {
         Debug.Log("유저 데이터 저장");
         PlayerPrefs.SetString("GameData", DataToJson(_userData));
+        PlayerPrefs.Save();
     }
     //겜 시작할때 불러줘야 함
     public void LoadUserData()
@@ -68,7 +75,7 @@ public class SaveLoadManager : MonoBehaviour
          {
             Debug.Log("게임 데이터 존재");
             _userData = JsonToData<UserData>(PlayerPrefs.GetString("GameData"));
-            Debug.Log(_userData.dataList.Count);
+            Debug.Log(_userData.dataList.Count + "개 스토리 저장되어 있음");
          }
     }
     public void SaveScriptData(int index)

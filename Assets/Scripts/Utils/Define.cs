@@ -10,3 +10,9 @@ public enum NowStoryName
     엔딩,
     MaxCount
 }
+public enum Diary
+{
+    하지,
+    설아,
+    지철
+}
