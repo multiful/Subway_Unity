@@ -22,6 +22,12 @@
         &lt;Description&gt;지철&lt;/Description&gt;
       &lt;/Actor&gt;
       &lt;Actor&gt;
+        &lt;Id&gt;1stMerchant&lt;/Id&gt;
+        &lt;Type&gt;Characters&lt;/Type&gt;
+        &lt;Appearances /&gt;
+        &lt;Description /&gt;
+      &lt;/Actor&gt;
+      &lt;Actor&gt;
         &lt;Id&gt;MainBackground&lt;/Id&gt;
         &lt;Type&gt;Backgrounds&lt;/Type&gt;
         &lt;Appearances&gt;
@@ -367,6 +373,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;카드뒤집기_성공&lt;/Path&gt;
+        &lt;Type&gt;Scripts&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;카드뒤집기_실패&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;

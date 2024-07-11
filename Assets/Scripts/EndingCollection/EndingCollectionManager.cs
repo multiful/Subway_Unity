@@ -28,6 +28,8 @@ public class EndingCollectionManager : MonoBehaviour
     [SerializeField]
     private GameObject _ending4;
 
+
+    public Button test;
     private void Init()
     {
         _endingObject = GameObject.Find("EndingCollection");
@@ -98,7 +100,11 @@ public class EndingCollectionManager : MonoBehaviour
             yield return null;
         }
     }
-
+    public void testFunc()
+    {
+        Debug.Log("asdf");
+        UI_Popup go = GameManager.UI.ShowPopupUI<UI_Popup>("Image");
+    }
     private void Awake()
     {
         Init();
@@ -106,7 +112,7 @@ public class EndingCollectionManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        test.onClick.AddListener(testFunc);
         //나중에 세이브데이터에서 받아오면 됨
         //_ending = SaveLoadManager.Inst.userData._ending;
         //_likeability = SaveLoadManager.Inst.userData

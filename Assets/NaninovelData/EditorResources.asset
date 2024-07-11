@@ -186,6 +186,9 @@ MonoBehaviour:
     - name: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC131\uACF5"
       pathPrefix: Scripts
       guid: c508d448ca7a0854ab29edad919ccfec
+    - name: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC2E4\uD328"
+      pathPrefix: Scripts
+      guid: 6cb78877a39feff4fb54b6451f504cd4
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Hondae

@@ -13,17 +13,52 @@ MonoBehaviour:
   m_Name: ScriptGraphState
   m_EditorClassIdentifier: 
   NodesState:
-  - scriptName: TempScript1
-    position:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 118
-      height: 77
   - scriptName: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
     position:
       serializedVersion: 2
       x: 0
       y: 77
       width: 112
+      height: 77
+  - scriptName: "\uB450\uBC88\uC9F8_\uB4DC\uC751\uAD50"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 124
+      height: 77
+  - scriptName: "\uC138\uBC88\uC9F8_\uB4F1\uAD50\uC624"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 124
+      height: 77
+  - scriptName: "\uBD80\uB044\uB7EC\uC6CC\uC694"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 107
+      height: 77
+  - scriptName: "\uC5D4\uB529"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 71
+      height: 77
+  - scriptName: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC131\uACF5"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 136
+      height: 77
+  - scriptName: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC2E4\uD328"
+    position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 136
       height: 77

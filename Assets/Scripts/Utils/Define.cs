@@ -10,6 +10,11 @@ public enum NowStoryName
     엔딩,
     MaxCount
 }
+public enum CardFlipEnding
+{
+    카드뒤집기_성공,
+    카드뒤집기_실패
+}
 public enum Diary
 {
     하지,

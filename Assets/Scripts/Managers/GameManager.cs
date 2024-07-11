@@ -9,16 +9,16 @@ public class GameManager : MonoBehaviour
     public static GameManager Inst { get { Init(); return s_instance; } }
 
     NaniEngineManager _nani = new NaniEngineManager();
-    //ResourceManager _resource = new ResourceManager();
-    //UI_Manager _ui_manager = new UI_Manager();
-    //SoundManager _sound = new SoundManager();
+    ResourceManager _resource = new ResourceManager();
+    UIManager _ui_manager = new UIManager();
+    SoundManager _sound = new SoundManager();
     DataManager _data = new DataManager();
     //NicknameManager _nickname = new NicknameManager();
     //SceneMManager _scene = new SceneMManager();
 
     public static NaniEngineManager Nani { get { return Inst._nani; } }
-    //public static ResourceManager Resource { get { return instance._resource; } }
-    //public static UI_Manager UI { get { return instance._ui_manager; } }
+    public static ResourceManager Resource { get { return Inst._resource; } }
+    public static UIManager UI { get { return Inst._ui_manager; } }
     //public static SoundManager Sound { get { return instance._sound; } }
     public static DataManager Data { get { return Inst._data; } }
     //public static NicknameManager NickName { get { return instance._nickname; } }
