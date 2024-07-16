@@ -8,18 +8,31 @@ public class MeshFade : MonoBehaviour
     private float t = 0f; //Lerp time variable
 
     [SerializeField]
-    private float time = 2f;
+    private float time = 25f;
 
     private void Start()
     {
         _render = GetComponent<MeshRenderer>();
+        StartCoroutine(BackgroundFade());
+    }
+
+    private IEnumerator BackgroundFade()
+    {
+        while (true)
+        {
+            DayNightButton(true);
+            yield return new WaitForSeconds(time);
+
+            DayNightButton(false);
+            yield return new WaitForSeconds(time);
+        }
     }
 
     private IEnumerator DayNight(bool isDaytoNight)
     {
-        while (t < 1f)
+        while (t < time)
         {
-            _render.material.color = new(1, 1, 1, Mathf.Lerp((isDaytoNight ? 1 : 0), (isDaytoNight ? 0 : 1), t));
+            _render.material.color = new(1, 1, 1, Mathf.Lerp((isDaytoNight ? 1 : 0), (isDaytoNight ? 0 : 1), t / time));
             t += Time.deltaTime;
             yield return null;
         }
