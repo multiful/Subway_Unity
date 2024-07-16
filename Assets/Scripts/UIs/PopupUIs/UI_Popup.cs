@@ -8,10 +8,6 @@ public class UI_Popup : UI_Base
     {
         GameManager.UI.SetCanavas(gameObject, true);
     }
-    public void Open()
-    {
-
-    }
     public void Close()
     {
         GameManager.UI.ClosePopupUI(this);

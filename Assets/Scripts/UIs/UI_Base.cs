@@ -37,7 +37,7 @@ public abstract class UI_Base : MonoBehaviour
 
 		return objects[idx] as T;
 	}
-
+	protected GameObject GetGameObject(int idx) { return Get<GameObject>(idx); }
 	protected Text GetText(int idx) { return Get<Text>(idx); }
 	protected Button GetButton(int idx) { return Get<Button>(idx); }
 	protected Image GetImage(int idx) { return Get<Image>(idx); }
@@ -49,11 +49,11 @@ public abstract class UI_Base : MonoBehaviour
 		switch (type)
 		{
 			case UIEvent.Click:
-				evt.OnClickHandler -= action; // »§Ω√≥™ ¿ÃπÃ ¿÷¿ª±Ó∫¡ ª©¡‹
+				evt.OnClickHandler -= action;
 				evt.OnClickHandler += action;
 				break;
 			case UIEvent.Drag:
-				evt.OnDragHandler -= action; // »§Ω√≥™ ¿ÃπÃ ¿÷¿ª±Ó∫¡ ª©¡‹
+				evt.OnDragHandler -= action;
 				evt.OnDragHandler += action;
 				break;
 		}

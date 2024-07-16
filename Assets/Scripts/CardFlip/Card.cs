@@ -39,20 +39,25 @@ public class Card : MonoBehaviour
     }
     public void FlipCard()
     {
-        _isFlipped = true;
-        transform.DORotate(new Vector3(0, 90, 0), 0.5f).OnComplete(() =>
+        if (_cardManager._isGameRunning)
         {
-            _img.sprite = _frontSprite;
-            transform.DORotate(new Vector3(0, 180, 0), 0.5f);
-        });
+            _isFlipped = true;
+            transform.DORotate(new Vector3(0, 90, 0), 0.25f).OnComplete(() =>
+            {
+                _img.sprite = _frontSprite;
+                _img.rectTransform.localScale = new Vector3(-1, 1, 0);
+                transform.DORotate(new Vector3(0, 180, 0), 0.25f);
+            });
+        }
+
     }
     public void UnflipCard()
     {
         _isFlipped = false;
-        transform.DORotate(new Vector3(0, 90, 0), 0.5f).OnComplete(() =>
+        transform.DORotate(new Vector3(0, 90, 0), 0.25f).OnComplete(() =>
         {
             _img.sprite = _backSprite;
-            transform.DORotate(new Vector3(0, 0, 0), 0.5f);
+            transform.DORotate(new Vector3(0, 0, 0), 0.25f);
         });
     }
 }

@@ -24,10 +24,11 @@ public class CardFlipManager : MonoBehaviour
     private Card _firstCard;
     private Card _secondCard;
     public bool _isCardChecking { get; private set; }
+    public bool _isGameRunning = false;
 
     private int _matchedCard = 0;
     private float _gameTime = 60f;
-    private bool _isGameRunning = false;
+    
 
     private CardFlipEnding _cardEnding;
     public void CreateCards()
@@ -64,6 +65,7 @@ public class CardFlipManager : MonoBehaviour
         _matchedCard = 0;
         _gameTime = 60f;
         buttonText.text = "게임 진행중";
+        startButton.interactable = false;
         StartCoroutine(MoveCards());
     }
     
@@ -110,7 +112,7 @@ public class CardFlipManager : MonoBehaviour
     IEnumerator JudgeCard()
     {
         _isCardChecking = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.75f);
         if (_firstCard._frontSprite == _secondCard._frontSprite)
         {
             _firstCard = null;

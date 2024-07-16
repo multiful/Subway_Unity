@@ -31,7 +31,6 @@ public class UIManager
 
         go.transform.SetParent(Root.transform);
 
-
         return popup;
     }
 
