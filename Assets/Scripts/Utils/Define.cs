@@ -21,3 +21,14 @@ public enum Diary
     ¼³¾Æ,
     ÁöÃ¶
 }
+public enum UIEvent
+{
+    Click,
+    Drag,
+}
+
+public enum MouseEvent
+{
+    Press,
+    Click,
+}
