@@ -12,7 +12,6 @@ using UnityEngine.XR;
 
 public class MainControl : MonoBehaviour //전체 두더지게임 관리
 {
-    private float _currentTime = 59.9f;
 
     public static MainControl Inst; //temporary singleton
     public TMP_Text TMP_Time;
@@ -25,20 +24,29 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     public GameObject GoodClearCanvas, BadClearCanvas, FailCanvas; //temp
 
+    public int gameLevel = 0;
+    private int[] timeLimit = { 60, 60, 50, 50 };
+    private float _currentTime;
+    private int reward;
+
+    public TMP_Text rewardText1, rewardText2; //temp
+
     void Awake()
     {
         if (Inst == null) Inst = this;
         else Destroy(this); //temporary singleton
 
         InitArray();
+
+        _currentTime = timeLimit[gameLevel];
         StartCoroutine(StartTimer());
     }
 
     private void InitArray() //스프라이트 번호 나열
     {
-        for (int i = 0; i <= 9; i++)
+        for (int i = 0; i <= 20; i++)
         {
-            unoccupiedList.Add(i); //0~9
+            unoccupiedList.Add(i); //0~20
         }
         for (int i = 0; i <= 6; i++) //7자리 채우기
         {
@@ -50,7 +58,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     private IEnumerator StartTimer()
     {
-        while (_currentTime > 0f) //제한시간 60초
+        while (_currentTime > 0f) //제한시간 timeLevel[gameLevel]초
         {
             TMP_Time.text = ((int)_currentTime + 1).ToString(); //경과 시간 표시
 
@@ -70,12 +78,14 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     private IEnumerator GoodClear()
     {
         yield return new WaitForSeconds(2f);
+        rewardText1.text = "보상 : " + reward.ToString() + "원, 호감도 +5";
         GoodClearCanvas.SetActive(true);
     }
 
     private IEnumerator BadClear()
     {
         yield return new WaitForSeconds(2f);
+        rewardText2.text = "보상 : " + reward.ToString() + "원";
         BadClearCanvas.SetActive(true);
     }
 
@@ -90,6 +100,8 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     {
         StopAllCoroutines(); //타이머 종료
         StopGame(); //이벤트 델리게이트로 모든 버튼 비활성화
+        reward = 500 * ((int)_currentTime + 1);
+
         if (IsNextSeat(womanSeat, manSeat)) StartCoroutine(GoodClear());
         else StartCoroutine(BadClear());
     }

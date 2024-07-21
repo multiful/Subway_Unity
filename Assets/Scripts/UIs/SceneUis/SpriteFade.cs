@@ -8,7 +8,7 @@ public class SpriteFade : MonoBehaviour
     private float t = 0f; //Lerp time variable
 
     [SerializeField]
-    private float time = 50f;
+    private float time;
 
     private void Start()
     {
@@ -20,17 +20,16 @@ public class SpriteFade : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(time / 8);
             DayNightButton(true);
-            yield return new WaitForSeconds(time / 2);
+            yield return new WaitForSeconds(time * 0.5f);
             DayNightButton(false);
-            yield return new WaitForSeconds(time / 8 + time / 4);
+            yield return new WaitForSeconds(time * 0.5f);
         }
     }
 
     private IEnumerator DayNight(bool isDaytoNight)
     {
-        float end = time / 8;
+        float end = time / 4;
         while (t < end)
         {
             _sprite.material.color = new(1, 1, 1, Mathf.Lerp((isDaytoNight ? 1 : 0), (isDaytoNight ? 0 : 1), t / end));

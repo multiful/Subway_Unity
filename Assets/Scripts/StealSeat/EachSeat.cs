@@ -17,8 +17,9 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     [SerializeField] private int seatNum;
     private int spriteNum;
 
-    public TMP_Text TMP_State;
-    public TMP_Text TMP_spriteNum;
+    private float[] changeInterval = { 1.5f, 1f, 1f, 0.7f };
+    private float currentInterval;
+
 
     void Start()
     {
@@ -26,7 +27,8 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
         StartCoroutine(Activate());
 
         spriteNum = MainControl.Inst.occupiedList[seatNum]; //스프라이트 번호 받기
-        TMP_spriteNum.text = spriteNum.ToString(); //디버그용 출력
+        gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".1");
+        currentInterval = changeInterval[MainControl.Inst.gameLevel];
     }
 
     private IEnumerator Activate()
@@ -51,27 +53,25 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
 
     private void Sit()
     {
-        TMP_State.text = "Sit";
+        gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".1");
         _currentState = State.Sit;
     }
 
     private IEnumerator Fake()
     {
-        TMP_State.text = "Fake";
+        gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".2");
         _currentState = State.Fake;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(currentInterval);
         Sit(); //1초 대기 후 다시 착석
     }
 
     private IEnumerator Stand()
     {
-        TMP_State.text = "Stand";
-        TMP_spriteNum.text = ""; //빈 자리, 스프라이트 없음
+        gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".3");
         _currentState = State.Stand;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(currentInterval);
 
         spriteNum = MainControl.Inst.GetSeat(spriteNum); //1초 후 새로운 사람 착석
-        TMP_spriteNum.text = spriteNum.ToString(); //디버그용 출력
         Sit(); //0.5(임시 1초) 대기 후 다시 착석
     }
 
@@ -86,15 +86,15 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
         DeActivate(); //버튼 고정
         if (MainControl.Inst.womanSeat == -1) //아직 여자가 안 앉았다면
         {
+            gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/woman");
             MainControl.Inst.womanSeat = seatNum; //여자 좌석번호 전달
-            TMP_State.text = "Woman";
             _currentState = State.Woman;
         }
         else //여자가 이미 앉은 상태(게임 성공)
         {
-            TMP_State.text = "Man";
-            _currentState = State.Man;
+            gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/man");
             MainControl.Inst.Clear(seatNum); //남자 좌석번호 전달
+            _currentState = State.Man;
         }
 
     }
