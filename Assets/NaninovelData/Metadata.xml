@@ -395,6 +395,7 @@
     &lt;Constants /&gt;
     &lt;Variables&gt;
       &lt;string&gt;Likeability&lt;/string&gt;
+      &lt;string&gt;Name&lt;/string&gt;
     &lt;/Variables&gt;
     &lt;Functions /&gt;
   &lt;/Metadata&gt;

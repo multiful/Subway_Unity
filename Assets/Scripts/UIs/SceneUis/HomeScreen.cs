@@ -19,8 +19,7 @@ public class HomeScreen : MonoBehaviour
         //다른 UI들 어디서 꺼지는지 몰라서 일단 여기 박아뒀는데 다른 UI들이랑 묶어서 수정해야함
         _BackGroundObject = GameObject.Find("MainBackGround");
     }
-   
-    
+
     [ContextMenu("업데이트 갱신")]
     public void UpdateUIs()
     {
@@ -50,5 +49,14 @@ public class HomeScreen : MonoBehaviour
     private void OnEnable()
     {
         UpdateUIs();
+    }
+
+    public void ShowSettingUI()
+    {
+        GameManager.UI.ShowPopupUI<UI_Setting>();
+    }
+    private void Start()
+    {
+        GameManager.Sound.Play("MainTheme", Sound.Bgm);
     }
 }

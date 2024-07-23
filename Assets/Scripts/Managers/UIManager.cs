@@ -97,14 +97,14 @@ public class UIManager
         return Util.GetOrAddComponent<T>(go);
     }
 
-    //public void CloseAllPopupUI()
-    //{
-    //    while (_popupStack.Count > 0)
-    //        ClosePopupUI();
-    //}
+    public void CloseAllPopupUI()
+    {
+        while (_popupStack.Count > 0)
+            ClosePopupUI();
+    }
 
-    //public void Clear()
-    //{
-    //    CloseAllPopupUI();
-    //}
+    public void Clear()
+    {
+        CloseAllPopupUI();
+    }
 }

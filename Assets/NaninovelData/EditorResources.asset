@@ -199,6 +199,9 @@ MonoBehaviour:
     - name: HaJi
       pathPrefix: Characters/Haji
       guid: cf2709c0f4f21ee4ba6a427d363390c4
+    - name: 
+      pathPrefix: Characters/Haji
+      guid: 
   - Id: Characters/5d2a4e08-f199-45f0-b488-0e8de0e8fe08
     Resources:
     - name: Jicheol
