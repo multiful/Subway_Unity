@@ -1,17 +1,290 @@
-@char Haji pos:20,-66
-첫번째 스토리입니다.
-Haji: 안녕하세요
-Haji: 짱 귀여운 하지입니다.
-@char Jicheol pos:70,-66
-Jicheol: 안녕하세요
-Jicheol: 짱 멋진 지철입니다.
-호감도 {Likeability}
-@saveData
-@back Hondae transition:CircleReveal time:2
-Wow: 학교 가야겠지?
+@back Black
+@back Hospital.RadialBlur time:3
+@back Black
+@back Hospital.RadialBlur time:2
+@char Jicheol.1_2_001 pos:50,-66
+Jicheol: 으…윽
+@char Jicheol.1_2_002 pos:50,-66
+낯선 천장이다.
+@char Jicheol.1_2_003 pos:50,-66
+알코올 냄새가 코 끝을 찌른다.
+@char Jicheol.1_2_004 pos:50,-66
+몸이 무겁고 머리가 울린다.
+@char Jicheol.1_2_005 pos:50,-66
+몸을 일으키다가 무언가 끄적이고 있는 의사와 눈이 마주쳤다.
+@char Jicheol.1_2_006 pos:50,-66
+응? 의사? 분명 출근하고 있었…
+Doctor: 아, 깨어나셨군요. 정신이 드시나요?
+Jicheol: 네…?
+@char Jicheol.1_2_009 pos:50,-66
+Jicheol: 저기… 여기는 어딘가요?
+Doctor: 안녕하세요. 저는 환자 분 담당 주치의입니다.
+Doctor: 환자분은 오늘 아침 의식불명인 상태로 병원에 실려오셨습니다.
+@char Jicheol.1_2_012 pos:50,-66
+Jicheol: 네? 제가 쓰러졌다고요? 잠깐 지금 몇 시…
+Doctor: 진정하세요. 지금은 오후 6시구요.
+Doctor: 환자분은 오전 8시 경에 응급차에 실려 병원으로 오셨습니다.
+Doctor: 회사에는 저희 측에서 연락을 드렸으니 걱정하지 마세요.
+@char Jicheol.1_2_016 pos:50,-66
+Jicheol: 감사합니다…
+Doctor: 지금 몸 상태는 어떠신가요?
+@char Jicheol.1_2_018 pos:50,-66
+Jicheol: 몸이 무겁고 머리가 조금 아픕니다.
+Doctor: 지하철에서 갑자기 실신하셨습니다.
+Doctor: 보통 이런 때 2차 사고로 이어져 크게 부상을 입을 수도 있는데요.
+Doctor: 다행히 근처에 계시던 분이 초기 대응을 잘 해주셨습니다.
+@char Jicheol.1_2_022 pos:50,-66
+아니, 내가 쓰러졌다고? 평소에 딱히 아프거나 하지는 않았는데?
+어딘가 피곤해 보이는 의사는 진료 차트를 뒤적거리면서 말했다.
+Doctor: 아. 그러고 보니 몇 가지 확인해야 하는 게 있습니다.
+@char Jicheol.1_2_025 pos:50,-66
+Jicheol: 어떤 것이죠?
+Doctor: 혹시 최근에 굉장히 스트레스 받는 일이 있으셨나요?
+@char Jicheol.1_2_027 pos:50,-66
+Jicheol: 잘 기억나지 않습니다.
+Doctor: 아니면 요즘 들어 무언가를 기억하는 게 힘들지는 않나요?
+@char Jicheol.1_2_029 pos:50,-66
+Jicheol: 아니요. 딱히 그런 일은 없습니다.
+Doctor: 그런가요. 조금 난감하네요.
+@char Jicheol.1_2_031 pos:50,-66
+Jicheol: 뭔가 문제가 있었나요?
+Doctor: 일단 MRI 결과 심각한 증상들은 보이지 않았습니다.
+Doctor: 다만 이상하게도 해마 부근이 많이 손상되어 있었습니다.
+Doctor: 보통 이 정도면 주목할만한 이상이 나타나야 하는데
+Doctor: 환자분은 결과에 비해 굉장히 멀쩡하시네요.
+Doctor: 솔직히 저희도 이런 경우는 처음입니다.
+Doctor: 뭐 아무튼 그것 말고 큰 이상은 없습니다.
+Doctor: 피곤해서 그런 것일 수도 있으니까요. 기왕 이렇게 된 거 좀 쉬다가 가세요.
+@char Doctor.Doctor pos:70,-60
+
+@char Jicheol.1_2_039 pos:50,-66
+Jicheol: 감사합니다 선생님.
+주치의는 한동안 이상하다는 표정으로 진료 차트를 살펴보다 사라졌다.
+@char Jicheol.1_2_041 pos:50,-66
+아직도 어안이 벙벙하다.
+@char Jicheol.1_2_042 pos:50,-66
+쓰러질 정도로 무리한 것 같지는 않았는데…
+@char Jicheol.1_2_043 pos:50,-66
+그러고 보니 나를 도와줬다는 사람은 누구지?
+@hide Jicheol
+멍하니 낯선 현실에 적응하고 있을 때 익숙한 사람이 나타났다.
+@char Seola.1_2_045 pos:50,-66
+Extra: 오빠 괜찮아?
+@char Seola.1_2_046 pos:50,-66
+최설아
+대학교 때부터 지금까지 친하게 지내는 동생이다.
+같은 대학교, 같은 회사, 같은 부서, 심지어 옆 자리
+어느샌가 보면 설아는 늘 내 곁에 있었다.
+이렇게 붙어 있기도 힘든데, 참 신기하다면 신기한 인연이다.
+@char Seola.1_2_046 pos:34,-66
+@char Jicheol.1_2_051 pos:66,-66
+Jicheol: 병문안까지 와주다니 살짝 감동인 걸?
+@char Seola.1_2_052 pos:34,-66
+Seola: 맞아. 내가 아니면 누가 오빠를 챙겨주겠어?
+@char Seola.1_2_053 pos:34,-66
+Seola: 갑자기 기절했다면서? 어떻게 된 일이야?
+@char Jicheol.1_2_054 pos:66,-66
+설아에게 자초지종을 설명했다.
+@char Seola.1_2_055 pos:34,-66
+Seola: 지금 몸 상태는 어때?
+Jicheol: 살짝 어지러운 감이 없지 않아 있는데…
+@char Jicheol.1_2_057 pos:66,-66
+Jicheol: 내일이면 출근할 수 있을 것 같아.
+@char Seola.1_2_058 pos:34,-66
+Seola: 오빠 쓰러졌다고 하니까 부서에서도 지금 난리야.
+@char Seola.1_2_059 pos:34,-66
+Seola: 어떻게 할래? 부장님한테 뭐라고 말씀드릴까?
+@char Jicheol.1_2_060 pos:66,-66
+Jicheol: 내일 아침에 마저 검사 받고 출근한다고 전해줘.
+@char Seola.1_2_061 pos:34,-66
+Seola: 하여간 대체 어쩌다가 쓰러진 거야?
+@char Seola.1_2_062 pos:34,-66
+Seola: 또 밤늦게까지 책 읽다가 못 잤어?
+@char Jicheol.1_2_063 pos:66,-66
+Jicheol: 좀 뜬금 없을 수도 있는데…
+Jicheol: 지하철에서 왠지 모르게 계속 눈길이 가는 여자가 있었어.
+@char Jicheol.1_2_065 pos:66,-66
+Jicheol: 그 여자가 넘어질 것 같아서 내가 붙잡아주었거든?
+@char Jicheol.1_2_066 pos:66,-66
+Jicheol: 그러더니 갑자기 머리가 엄청 아파오다가 쓰러졌어.
+@char Seola.1_2_067 pos:34,-66
+Seola: 뭐? 정말 그게 다야?
+@char Jicheol.1_2_068 pos:66,-66
+Jicheol: 응! 정말 그게 다야.
+@char Seola.1_2_069 pos:34,-66
+Seola: 헛소리하는 걸 보니 이제 퇴원해도 되겠다. 
+@char Seola.1_2_070 pos:34,-66
+Seola: 또 이번에는 어떤 이상한 책을 읽고 있는 거야?
+Jicheol: 진짜라니까? 
+@char Seola.1_2_072 pos:34,-66
+Seola: 그래. 알겠으니까 어서 짐 챙기고 나와. 
+@char Seola.1_2_073 pos:34,-66
+Seola: 밥이나 먹으러 가자.
+@hide Seola
+설아는 먼저 자리를 떠났다.
+@char Jicheol.1_2_075 pos:50,-66
+스스로 생각해봐도 쓰러진 이유가 참 웃긴다.
+어떤 여자를 만졌다고 코피를 흘리고 쓰러지다니.
+이상하게 낯이 익은 붉은 머리의 그 여자.
+……
+@char Jicheol.1_2_079 pos:50,-66
+언젠가 또 만날 수 있겠지?
 
 
-@char Wow pos:80,50 time:3
 
+
+
+@back Black pos:50,50
+Extra: 지철
+@char Haji.1_1_002 pos:50,-66
+Extra: 빨리… 
+@char Haji.1_1_003 pos:50,-66
+Extra: 빨리 도망가!
+@char Haji.1_1_003 pos:70,-66
+@char Jicheol.1_1_006 pos:30,-66
+뭐라 말을 하고 싶지만 몸이 말을 듣지 않는다.
+비릿한 피 맛만이 입 안을 맴돈다.
+Jicheol: …!
+@char Jicheol.1_1_008 pos:30,-50 time:3
+정체 모를 힘에 의해 몸이 붕 떠오른다.
+@hide Jicheol
+자꾸만 그녀와의 거리가 멀어져만 간다.
+@char Haji.1_1_009 pos:50,-66
+Extra: Jicheol
+Extra: 내 걱정은 하지 마.
+@char Haji.1_1_011 pos:50,-66
+Extra: 지금은 이해할 수 없더라도 기억해.
+@char Haji.1_1_012 pos:50,-66
+Extra: 네가 어떤 곳으로 가게 된다고 하더라도
+@char Haji.1_1_013 pos:50,-66
+Extra: 나는 한결같이 너를 사랑하게 될 거야.
+@char Haji.1_1_014 pos:50,-66
+Extra: 그러니 그 곳에는 부디…
+@hide Haji
+!
+아… 또 그 꿈이다.
+@back Station.DropFade time:3
+슬슬 여름이 찾아오는 시기지만 아직 새벽 공기는 싸늘하기만 하다.
+Announce: 지금 광운대, 광운대행 열차가 들어오고 있습니다. 
+Announce: 승객 여러분께서는 한 걸음 물러서 주시기 바랍니다.
+비슷한 시간, 늘 마주치는 사람들, 평범하기 그지없는 출근길 
+특이한 점이라고는 찾아볼 수 없는 회사원의 일상이다.
+Announce: 스크린 도어가 열립니다.
+@back Black pos:50,50
+@back Subway1 pos:50,50
+누군가는 이런 무미건조한 삶이 재미없다고 말하겠지만,
+나는 이런 평화로움이 퍽 마음에 든다.
+걱정 거리가 아예 없는 것은 아니다.
+단지 남들도 으레 하는 것들이라 딱히 신경 쓰진 않을 뿐.
+그나마 한 가지 신경 쓰이는 일이라면……
+요즘 들어 계속 같은 꿈을 꾼다는 것?
+@back Black pos:50,50 time:2
+……
+언제부터였을까? 
+그 꿈에서 나는 어떤 여자의 손에 이끌려 정신 없이 달린다.
+내 몸은 온통 피 범벅이었지만 그런 건 전혀 아랑곳하지 않았다.
+그저 우리를 쫓아오는 사람들로부터 도망치기 위해 발을 멈추지 않았다.
+숨이 턱 끝까지 몰아칠 때까지 그렇게 한참을 달리다 보면,
+갑자기 정체 모를 빛이 내 몸을 휘감는다.
+@back White pos:50,50 time:1
+@char Haji.1_1_036 pos:50,-66 time:0.5
+Extra: 나는 신경 쓰지 말고 빨리 도망가!!!
+억누를 수 없어 터져 나오는 애틋함, 한 치 거짓도 없다는 듯한 목소리.
+그녀의 불안하게 흔들리는 미소를 보니 숨 쉬는 것조차 버겁게 느껴졌다.
+@hide Haji time:1
+그녀를 붙잡아 도와주고 싶지만 그럴 수 없다는 듯 내 몸은 어디론가 끌려가다
+@back Black
+잠에서 깬다.
+…….
+@back Subway1 pos:50,50
+누굴까, 그 여자?
+계속 생각해보았지만 기억이 나지 않는다.
+아직 만나지 못한 것일까?
+응? 내가 잠깐 지금 무슨 생각을…
+Announce: 이번 역은 안양, 안양 역입니다.
+Jicheol: 아...! 
+이게 벌써 몇 번째지?
+또 정신 팔다가 환승역을 지나쳤다.
+귀찮은데……
+에휴 뭐 별 수 있나? 신도림까지 가야지…
+@back Black
+@back Subway2 pos:50,50
+신도림
+아니 헬도림
+원래도 사람이 많이 다니는 지하철 역이지만,
+이 시간대는 특히 환승하려는 회사원들로 미어터진다.
+@char Jicheol.1_1_056 pos:50,-66
+Jicheol: 하, 벌써부터 지치네.
+@char Jicheol.1_1_057 pos:50,-66
+오늘도 인파에 떠 밀려 겨우겨우 환승 할 수 있었다.
+@char Jicheol.1_1_058 pos:50,-66
+우연이 반복되면 필연이라는 말이 있다.
+정신 팔다가 역 놓치는 게 뭐 어디 대수로운 일이겠냐마는,
+잘은 모르겠지만 이렇게 해야 하는 이유가 있다고 느껴진다.
+마치 이곳으로 와야 한다는 듯 말이다.
+@char Jicheol.1_1_062 pos:50,-66
+하, 내가 잠이 덜 깼나?
+아침부터 말도 안 되는 상상이나 하고 있다니…
+Announce: 출입문이 열립니다.
+오늘도 사람들은 서로 들어오겠다고 무리하게 몸을 밀어 넣는다.
+@char Jicheol.1_1_066 pos:50,-66
+거세게 밀려오는 인파 속에서 나는 어떤 사람에게 시선을 빼앗겼다.
+@char Jicheol.1_1_066 pos:75,-70
+@char Haji.1_1_067 pos:25,-70
+Extra: ……
+허리까지 이어진 긴 적갈색 곱슬머리, 160 중반은 되어 보이는 외형
+마치 작은 고양이 같다는 느낌을 주는 사람이다.
+@char Haji.1_1_067 pos:40,-66
+우연인 듯 그녀는 사람들에게 휩쓸려 내 앞까지 밀려왔다.
+@char Jicheol.1_1_071 pos:75,-66
+이상하다.
+왜… 낯이 익을까?
+무언가 떠오를 것도 같을 때 열차가 잠깐 덜컹거렸다.
+@char Haji.1_1_070 pos:40,-72
+Extra: 아…
+@char Jicheol.1_1_075 pos:60,-72
+본능적으로 중심을 잃고 넘어질 뻔한 그녀를 붙잡았다.
+Extra: 감..감사합니다.
+Jicheol: 괜찮으……
+그녀를 붙잡자 갑자기 코에서 피가 주르륵 흘러 내렸다.
+@char Jicheol.1_1_079 pos:60,-66
+온 몸에 식은 땀이 흐르고, 심장은 마구 쿵쾅거린다.
+@hide Haji
+@char Jicheol.1_1_080 pos:50,-75
+깨질 듯한 두통은 점점 심해져 더 이상 감당하기 어려울 지경이 되어간다.
+@char Jicheol.1_1_081 pos:50,-66
+Jicheol: 으…윽
+@char Jicheol.1_1_082 pos:50,-66
+Jicheol: 으으으으아아아아아아!!!
+무언가가 사정 없이 머리 속을 짓이기는 것만 같다.
+@back Black
+@back White
+@back Black
+@back White
+@back Black
+@back End3
+@back Black
+@back White
+@back Black
+@back White
+정신이… 아득해져만 간다.
+어떻게든 버텨보려는 내 노력이 무색하게 이내 곧 시야가 새하얗게 변했다.
+@hide Jicheol
+Jicheol: 어…?
+몸 안에서 무언가가 끊어 지는 것 같은 느낌이 들었다.
+@back Subway2
+@char Haji.1_1_088 pos:50,-66
+Extra: 저기요?
+@char Haji.1_1_089 pos:50,-66
+Extra: 저기요? 괜찮으세요?
+@char Haji.1_1_090 pos:50,-66
+Extra: 저기요!!!
+@char Haji.1_1_091 pos:50,-66
+Extra: 여기 사람이 쓰러졌어요!!
+@char Haji.1_1_092 pos:50,-66
+Extra: 구급차 좀 불러 주시겠어요?
+@hide Haji
+@back Black pos:50,50
+의식이 희미해져 간다.
 @increaseStoryIndex
 @finishStory

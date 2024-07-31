@@ -5,11 +5,10 @@ using UnityEngine;
 public class SpriteFade : MonoBehaviour
 {
     private SpriteRenderer _sprite;
-    private float t = 0f; //Lerp cycleTime variable
+    private float t = 0f; //Lerp time variable
 
     [SerializeField]
-    private float cycleTime, fadeRatio;
-    [SerializeField] private float time1, time2, time3;
+    private float time;
 
     private void Start()
     {
@@ -21,17 +20,16 @@ public class SpriteFade : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(cycleTime * time1);
             DayNightButton(true);
-            yield return new WaitForSeconds(cycleTime * time2);
+            yield return new WaitForSeconds(time * 0.5f);
             DayNightButton(false);
-            yield return new WaitForSeconds(cycleTime * time3);
+            yield return new WaitForSeconds(time * 0.5f);
         }
     }
 
     private IEnumerator DayNight(bool isDaytoNight)
     {
-        float end = cycleTime / fadeRatio;
+        float end = time / 4;
         while (t < end)
         {
             _sprite.material.color = new(1, 1, 1, Mathf.Lerp((isDaytoNight ? 1 : 0), (isDaytoNight ? 0 : 1), t / end));

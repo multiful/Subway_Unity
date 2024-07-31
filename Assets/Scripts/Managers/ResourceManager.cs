@@ -17,6 +17,7 @@ public class ResourceManager
             Debug.Log($"Failed to load prefab : {path}");
             return null;
         }
+        Debug.Log("³ª¿Í¶ó ¾å");
         return Object.Instantiate(prefab, parent);
     }
     public void Destroy(GameObject go)

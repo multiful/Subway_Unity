@@ -1,6 +1,4 @@
 using Naninovel;
-using Naninovel.Commands;
-using UnityEngine;
 
 public class NaniCustomCommands
 {
@@ -40,23 +38,12 @@ public class NaniCustomCommands
     [CommandAlias("increaseLikeability")]
     public class IncreaseLikeability : Command
     {
-        public IntegerParameter likeability;
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             var varManager = Engine.GetService<ICustomVariableManager>();
-            var curlikeability = varManager.GetVariableValue("Likeability");
-            curlikeability += likeability;
-            varManager.SetVariableValue("Likeability", curlikeability);
-        }
-    }
-
-    [CommandAlias("goMiniGame")]
-    public class MiniGame : Command
-    {
-        public IntegerParameter likeability;
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
-        {
-            
+            var likeability = varManager.GetVariableValue("Likeability");
+            likeability += 5;
+            varManager.SetVariableValue("Likeability", likeability);
         }
     }
 }
