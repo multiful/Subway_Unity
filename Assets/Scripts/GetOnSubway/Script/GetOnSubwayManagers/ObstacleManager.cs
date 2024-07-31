@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
-    public GameObject obstaclePrefab; // 장애물 프리팹
+    public GameObject[] obstaclePrefabs; // 장애물 프리팹 배열
     public GameObject player;
     public GameManager1 gameManager; // GameManager1 스크립트 참조
     public float obstacleGap = 3.0f; // 장애물 간의 간격
     private List<GameObject> obstacles = new List<GameObject>(); // 생성된 장애물들을 저장할 리스트
-    private List<int[]> grid = new List<int[]>(); // 장애물 위치를 저장할 그리드 (리스트 사용)
+    private List<ObstacleData[]> grid = new List<ObstacleData[]>(); // 장애물 위치와 이미지를 저장할 그리드
     private int gridCols = 3; // 그리드의 열 수
     private int count = 0; // 행 생성을 위한 카운트 변수
 
     void Start()
     {
-        obstaclePrefab.SetActive(true);
+        // Set all obstacle prefabs to active
+        foreach (var prefab in obstaclePrefabs)
+        {
+            prefab.SetActive(true);
+        }
         GenerateInitialObstacles();
     }
-
-    
 
     public void GenerateInitialObstacles()
     {
@@ -45,10 +47,10 @@ public class ObstacleManager : MonoBehaviour
         int emptySpace = GetNextEmptySpace(row); // 빈 공간 위치 결정
         int obstacleCount = Random.Range(1, 3); // 1 또는 2개의 장애물 생성
 
-        int[] newRow = new int[gridCols];
+        ObstacleData[] newRow = new ObstacleData[gridCols];
         for (int i = 0; i < gridCols; i++)
         {
-            newRow[i] = 0; // 먼저 모든 칸을 빈 공간으로 초기화
+            newRow[i] = new ObstacleData { hasObstacle = false, prefabIndex = -1 }; // 먼저 모든 칸을 빈 공간으로 초기화
         }
 
         // 장애물 생성
@@ -63,7 +65,8 @@ public class ObstacleManager : MonoBehaviour
                 // 빈 공간이 아닌 곳에만 장애물 배치
                 if (i != emptySpace)
                 {
-                    newRow[i] = 1;
+                    newRow[i].hasObstacle = true;
+                    newRow[i].prefabIndex = Random.Range(0, obstaclePrefabs.Length);
                     generatedObstacles++;
                 }
             }
@@ -103,10 +106,10 @@ public class ObstacleManager : MonoBehaviour
         {
             for (int j = 0; j < gridCols; j++)
             {
-                if (grid[i][j] == 1)
+                if (grid[i][j].hasObstacle)
                 {
                     Vector3 position = new Vector3((j - 1) * obstacleGap, startY - i * obstacleGap, 0);
-                    GameObject obstacle = Instantiate(obstaclePrefab, position, Quaternion.identity);
+                    GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, Quaternion.identity);
                     obstacles.Add(obstacle);
                 }
             }
@@ -116,7 +119,7 @@ public class ObstacleManager : MonoBehaviour
     public bool IsLaneClear(int targetLane)
     {
         // 이동하려는 위치의 레인이 빈 공간인지 확인
-        return grid[2][targetLane] == 0;
+        return !grid[2][targetLane].hasObstacle;
     }
 
     private void ClearExistingObstacles()
@@ -143,9 +146,14 @@ public class ObstacleManager : MonoBehaviour
         while (grid.Count > 6)
         {
             // 가장 오래된 행 2개 제거 짝수로 제거해야 안 꼬임.
-            grid.RemoveAt(grid.Count - 1); 
+            grid.RemoveAt(grid.Count - 1);
             grid.RemoveAt(grid.Count - 2);
         }
     }
 
+    private class ObstacleData
+    {
+        public bool hasObstacle;
+        public int prefabIndex;
+    }
 }
