@@ -33,7 +33,10 @@ public class UIManager
 
         return popup;
     }
-
+    public void ShowSettingUI()
+    {
+        ShowPopupUI<UI_Setting>();
+    }
     public void ClosePopupUI(UI_Popup popup)
     {
         if (_popupStack.Count == 0)

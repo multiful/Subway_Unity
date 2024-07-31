@@ -15,5 +15,5 @@ MonoBehaviour:
   PredefinedVariables:
   - name: Likeability
     value: 50
-  - name: Name
-    value: "\uC9C0\uCCA0"
+  - name: Eyedrops
+    value: 0

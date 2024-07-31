@@ -207,3 +207,10 @@ MonoBehaviour:
     - name: Jicheol
       pathPrefix: Characters/Jicheol
       guid: 49490983de7e19a42a8b4d595a025e1d
+  - Id: Characters/677956ea-e164-4bc6-8520-ef0604412de3
+    Resources:
+    - name: 1stMerchant
+      pathPrefix: Characters/1stMerchant
+      guid: 3eff4abfece663141ab3fe52395b1e70
+  - Id: Movies
+    Resources: []

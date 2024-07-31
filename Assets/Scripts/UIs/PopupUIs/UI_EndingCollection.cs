@@ -46,6 +46,11 @@ public class UI_EndingCollection : UI_Popup
         Bind<Image>(typeof(Images));
         Bind<GameObject>(typeof(GameObjects));
         Bind<TextMeshProUGUI>(typeof(Texts));
+
+        Button CloseBtn = Get<Button>((int)Buttons.CloseButton);
+        Debug.Log(CloseBtn.gameObject.name);
+        CloseBtn.onClick.AddListener(Close);
+        CloseBtn.onClick.AddListener(() => Debug.Log("adf"));
     }
     public void EndingSetup()
     {

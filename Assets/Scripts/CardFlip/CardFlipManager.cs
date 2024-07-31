@@ -28,9 +28,11 @@ public class CardFlipManager : MonoBehaviour
 
     private int _matchedCard = 0;
     private float _gameTime = 60f;
-    
 
     private CardFlipEnding _cardEnding;
+
+    public Camera mainCam;
+
     public void CreateCards()
     {
         List<Sprite> cardImageList = new List<Sprite>(cardSpriteList);
@@ -154,12 +156,21 @@ public class CardFlipManager : MonoBehaviour
         {
             _cardEnding = CardFlipEnding.카드뒤집기_실패;
         }
+        mainCam.depth = -1;
         CardScriptStart();
+    }
+
+    public void ShowSettingUI()
+    {
+        GameManager.UI.ShowSettingUI();
     }
     private void Start()
     {
         startButton.onClick.AddListener(StartGame);
         CreateCards();
+
+        mainCam.depth = 1;
+
     }
     private void Update()
     {
