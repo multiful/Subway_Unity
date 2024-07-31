@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     public static NaniEngineManager Nani { get { return Inst._nani; } }
     public static ResourceManager Resource { get { return Inst._resource; } }
     public static UIManager UI { get { return Inst._ui_manager; } }
-    //public static SoundManager Sound { get { return instance._sound; } }
+    public static SoundManager Sound { get { return Inst._sound; } }
     public static DataManager Data { get { return Inst._data; } }
     //public static NicknameManager NickName { get { return instance._nickname; } }
     //public static SceneMManager Scene { get { return instance._scene; } }
@@ -45,8 +45,15 @@ public class GameManager : MonoBehaviour
             s_instance = go.GetComponent<GameManager>();
 
             s_instance._nani.Init();
+            s_instance._sound.Init();
             //s_instance._data.Init();
             //s_instance._scene.Init();
         }
+    }
+
+    public static void Clear()
+    {
+        Sound.Clear();
+        UI.Clear();
     }
 }

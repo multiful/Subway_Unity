@@ -32,4 +32,13 @@ public class TestBtn : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    public void MainCanvasBtn()
+    {
+        Debug.Log("Main");
+    }
+    public void SubCanvasBtn()
+    {
+        Debug.Log("Sub");
+    }
 }

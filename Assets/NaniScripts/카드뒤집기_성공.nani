@@ -1,5 +1,5 @@
 
 
-@char 1stMerchant
+@char 1stMerchant pos:50,-66
 1stMerchant: 운명을 엿본 소감이 어떤가.....? 후후...
 @stop

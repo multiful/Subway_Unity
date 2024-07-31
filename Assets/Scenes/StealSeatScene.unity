@@ -427,7 +427,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1584590701}
-  - {fileID: 1494284925}
   - {fileID: 414589496}
   - {fileID: 387319828}
   - {fileID: 1543886458}
@@ -3144,11 +3143,11 @@ Transform:
   m_GameObject: {fileID: 1494284924}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -399.47, y: -224.4, z: 0}
-  m_LocalScale: {x: 6.6333337, y: 1.2, z: 0}
+  m_LocalPosition: {x: 2.145874, y: 1.5043945, z: 0}
+  m_LocalScale: {x: 25.258667, y: 4.5633335, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 72169602}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1494284927
 MonoBehaviour:
@@ -3205,7 +3204,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 360325a9a54b1e24b83c822170942d8a, type: 2}
+  - {fileID: 2100000, guid: 816ebe4e1dc252b45af4cc6445fbd80b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3605,7 +3604,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 931b3cdefdeaf824c824c22e054e3e7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 522ff2d1b98e5aa429f90232b52fb28a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4748,6 +4747,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 531006603}
+  - {fileID: 1494284925}
   - {fileID: 72169602}
   - {fileID: 1428268089}
   - {fileID: 464833395}
