@@ -103,8 +103,8 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
 
     void UpdateUI()
     {
-        timerText.text = "Time: " + Mathf.CeilToInt(currentTime).ToString();
-        targetText.text = "Targets: " + remainingTargets.ToString();
+        timerText.text = "" + Mathf.CeilToInt(currentTime).ToString();
+        targetText.text = "" + remainingTargets.ToString();
     }
 
     void EndGame()
@@ -187,7 +187,7 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
     void CalculateReward()
     {
         int reward = Mathf.CeilToInt(currentTime) * 500 * difficultyLevel;
-        rewardText.text = $"º¸»ó: {reward}¿ø";
+        rewardText.text = $" +  {reward}";
         rewardText.gameObject.SetActive(true);
         userData.money += reward;
         SaveData(userData);
