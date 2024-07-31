@@ -49,4 +49,14 @@ public class NaniCustomCommands
             varManager.SetVariableValue("Likeability", curlikeability);
         }
     }
+
+    [CommandAlias("goMiniGame")]
+    public class MiniGame : Command
+    {
+        public IntegerParameter likeability;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            
+        }
+    }
 }

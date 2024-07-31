@@ -3638,6 +3638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0e644273de2f04dad9c71481a052f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _BackGroundObject: {fileID: 168424166}
   TMP_NowStory: {fileID: 1674363068}
 --- !u!1 &2066908048
 GameObject:
