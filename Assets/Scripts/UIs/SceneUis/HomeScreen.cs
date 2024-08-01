@@ -46,6 +46,7 @@ public class HomeScreen : MonoBehaviour
 
     private void OnEnable()
     {
+        _BackGroundObject.SetActive(true);
         UpdateUIs();
     }
 
