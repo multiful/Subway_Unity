@@ -50,7 +50,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
         }
         for (int i = 0; i <= 6; i++) //7자리 채우기
         {
-            int rand = Random.Range(0, unoccupiedList.Count);
+            int rand = Random.Range(0, unoccupiedList.Count - 1);
             occupiedList.Add(unoccupiedList[rand]);
             unoccupiedList.RemoveAt(rand);
         }
@@ -79,7 +79,25 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     {
         yield return new WaitForSeconds(2f);
         rewardText1.text = "보상 : " + reward.ToString() + "원, 호감도 +5";
-        GoodClearCanvas.SetActive(true);
+        //GoodClearCanvas.SetActive(true);
+        Transfer();
+
+    }
+
+    public async void Transfer()
+    {
+        string ScriptName = "엔딩";
+
+        // 2. Switch cameras.
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        // 3. Load and play specified script (if assigned).
+        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(ScriptName);
+
+        // 4. Enable Naninovel input.
+        GameManager.Nani.InputManager.ProcessInput = true;
+
     }
 
     private IEnumerator BadClear()
@@ -113,7 +131,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     public int GetSeat(int prevNum)
     {
-        int rand = Random.Range(0, unoccupiedList.Count);
+        int rand = Random.Range(0, unoccupiedList.Count - 1);
         int num = unoccupiedList[rand];
         occupiedList.Add(num); //새로운 사람
         unoccupiedList.RemoveAt(rand);
