@@ -1,39 +1,100 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
-    private int money = 20000; //temp
     private int[] price = { 3000, 5000, 10000 };
-    public TMP_Text TMP_money;
+    public TMP_Text TMP_money, TMP_ticket, TMP_eyedrop;
     public GameObject noMoney, thankYou; //temp name
     public GameObject[] itemZoom = new GameObject[3];
     public GameObject items, cardFlip;
 
+    private UserData userData = new UserData();
+
+    DateTime now;
+    int timeLeft;
+
+    public void TicketMinus()
+    {
+        userData.ticket--;
+        TMP_ticket.text = userData.ticket.ToString();
+
+        if (userData.ticket <= 0)
+        {
+            userData.lastTicketUsed = DateTime.Now;
+            StartCoroutine(TicketTimer());
+        }
+    }
+
+    public IEnumerator TicketTimer()
+    {
+        DateTime last = userData.lastTicketUsed;
+        now = DateTime.Now;
+        timeLeft = 20 - (int)(now - last).TotalSeconds;
+
+        while (timeLeft > 0)
+        {
+            timeLeft--;
+
+            string timeLeftText = (timeLeft / 60).ToString() + " : " + (timeLeft % 60).ToString();
+            TMP_ticket.text = timeLeftText;
+
+            yield return new WaitForSeconds(1);
+        }
+
+        userData.ticket++;
+        TMP_ticket.text = userData.ticket.ToString();
+    }
+
     private void Awake()
     {
-        TMP_money.text = money.ToString();
+        userData.money = 20000;
+        userData.ticket = 5;
+
+        TMP_money.text = userData.money.ToString();
+        TMP_ticket.text = userData.ticket.ToString();
+        TMP_eyedrop.text = userData.eyedrop.ToString();
     }
 
     public void ItemBuy(int itemNum)
     {
-        if (money >= price[itemNum]) //enough money
+        if (userData.money >= price[itemNum]) //enough money
         {
-            money -= price[itemNum];
-            TMP_money.text = money.ToString();
+            userData.money -= price[itemNum];
+            TMP_money.text = userData.money.ToString();
+            SuccessUI(itemNum);
 
-            itemZoom[itemNum].SetActive(false);
-            noMoney.SetActive(false);
-            thankYou.SetActive(true);
-            items.SetActive(true);
-            cardFlip.SetActive(true);
+            switch(itemNum) {
+                case 0: /*diary*/ break; 
+                case 1:
+                    userData.ticket++;
+                    StopAllCoroutines();
+                    TMP_ticket.text = userData.ticket.ToString(); break;
+                case 2:
+                    userData.eyedrop++;
+                    TMP_eyedrop.text = userData.eyedrop.ToString(); break;
+            }
         }
-        else //no money
-        {
-            thankYou.SetActive(false);
-            noMoney.SetActive(true);
-        }
+        else NoMoneyUI();
     }
+
+    private void SuccessUI(int itemNum)
+    {
+        itemZoom[itemNum].SetActive(false);
+        noMoney.SetActive(false);
+        thankYou.SetActive(true);
+        items.SetActive(true);
+        cardFlip.SetActive(true);
+    }
+
+    private void NoMoneyUI()
+    {
+        thankYou.SetActive(false);
+        noMoney.SetActive(true);
+    }
+
 }

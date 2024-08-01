@@ -2104,8 +2104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cycleTime: 20
   fadeRatio: 4
-  time1: 0.2
-  time2: 0.4
+  time1: 0.1
+  time2: 0.5
   time3: 0.4
 --- !u!1 &1364781120
 GameObject:
