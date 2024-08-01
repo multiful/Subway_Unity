@@ -1,17 +1,155 @@
-@char Haji pos:20,-66
-첫번째 스토리입니다.
-Haji: 안녕하세요
-Haji: 짱 귀여운 하지입니다.
-@char Jicheol pos:70,-66
-Jicheol: 안녕하세요
-Jicheol: 짱 멋진 지철입니다.
-호감도 {Likeability}
-@saveData
-@back Hondae transition:CircleReveal time:2
-Wow: 학교 가야겠지?
-
-
-@char Wow pos:80,50 time:3
-
+@back Black
+Extra: 지철
+@char Haji.1_1_1_002 pos:50,-36
+Extra: 빨리… 
+@char Haji.1_1_1_003 pos:50,-36
+Extra: 빨리 도망가!
+@char Haji.1_1_1_003 pos:70,-36
+@char Jicheol.2_1_1_006 pos:30,-36
+뭐라 말을 하고 싶지만 몸이 말을 듣지 않는다.
+비릿한 피 맛만이 입 안을 맴돈다.
+Jicheol: …!
+@char Jicheol.2_1_1_008 pos:-30,-36 time:3
+정체 모를 힘에 의해 몸이 어디론가 끌려 간다.
+@hide Jicheol
+자꾸만 그녀와의 거리가 멀어져만 간다.
+@char Haji.1_1_1_009 pos:50,-36
+Extra: 지철아
+Extra: 내 걱정은 하지 마.
+@char Haji.1_1_1_011 pos:50,-36
+Extra: 지금은 이해할 수 없더라도 기억해.
+@char Haji.1_1_1_012 pos:50,-36
+Extra: 네가 어떤 곳으로 가게 된다고 하더라도
+@char Haji.1_1_1_013 pos:50,-36
+Extra: 나는 한결같이 너를 사랑하게 될 거야.
+@char Haji.1_1_1_014 pos:50,-36
+Extra: 그러니 그 곳에는 부디…
+@hide Haji
+!
+아… 또 그 꿈이다.
+@back Station time:3
+슬슬 여름이 찾아오는 시기지만 아직 새벽 공기는 싸늘하기만 하다.
+Announce: 지금 광운대, 광운대행 열차가 들어오고 있습니다. 
+Announce: 승객 여러분께서는 한 걸음 물러서 주시기 바랍니다.
+비슷한 시간, 늘 마주치는 사람들, 평범하기 그지없는 출근길 
+특이한 점이라고는 찾아볼 수 없는 회사원의 일상이다.
+Announce: 스크린 도어가 열립니다.
+@back Black pos:50,50
+@back Subway1 pos:50,50
+누군가는 이런 무미건조한 삶이 재미없다고 말하겠지만,
+나는 이런 평화로움이 퍽 마음에 든다.
+걱정 거리가 아예 없는 것은 아니다.
+단지 남들도 으레 하는 것들이라 딱히 신경 쓰진 않을 뿐.
+그나마 한 가지 신경 쓰이는 일이라면……
+요즘 들어 계속 같은 꿈을 꾼다는 것?
+@back Black pos:50,50 time:2
+……
+언제부터였을까? 
+그 꿈에서 나는 어떤 여자의 손에 이끌려 정신 없이 달린다.
+내 몸은 온통 피 범벅이었지만 그런 건 전혀 아랑곳하지 않고,
+그저 우리를 쫓아오는 사람들로부터 도망치기 위해 발을 멈추지 않았다.
+숨이 턱 끝까지 몰아칠 때까지... 그렇게 한참을 달리다 보면,
+갑자기 정체 모를 빛이 내 몸을 휘감는다.
+@back White pos:50,50 time:1
+@char Haji.1_1_1_036 pos:50,-36 time:0.5
+Extra: 나는 신경 쓰지 말고 빨리 도망가!!!
+@char Haji.1_1_1_037 pos:50,-36 time:0.5
+억누를 수 없어 터져 나오는 애틋함, 한 치 거짓도 없다는 듯한 목소리.
+그녀의 불안하게 흔들리는 미소를 보니 숨 쉬는 것조차 버겁게 느껴졌다.
+@hide Haji time:1
+그녀를 붙잡아 도와주고 싶지만 그럴 수 없다는 듯 내 몸은 어디론가 끌려가다
+@back Black
+잠에서 깬다.
+…….
+@back Subway1 pos:50,50
+누굴까, 그 여자?
+계속 생각해보았지만 기억이 나지 않는다.
+아직 만나지 못한 것일까?
+응? 내가 잠깐 지금 무슨 생각을…
+Announce: 이번 역은 안양, 안양 역입니다.
+Jicheol: 아...! 
+이게 벌써 몇 번째지?
+또 정신 팔다가 환승역을 지나쳤다.
+귀찮은데……
+에휴 뭐 별 수 있나? 신도림까지 가야지…
+@back Black
+@back Subway2 pos:50,50
+신도림
+아니 헬도림
+원래도 사람이 많이 다니는 지하철 역이지만,
+이 시간대는 특히 환승하려는 회사원들로 미어터진다.
+@char Jicheol.2_1_1_056 pos:50,-36
+Jicheol: 하, 벌써부터 지치네.
+@char Jicheol.2_1_1_057 pos:50,-36
+오늘도 인파에 떠 밀려 겨우겨우 환승 할 수 있었다.
+@char Jicheol.2_1_1_058 pos:50,-36
+우연이 반복되면 필연이라는 말이 있다.
+정신 팔다가 역 놓치는 게 뭐 어디 대수로운 일이겠냐마는,
+잘은 모르겠지만 이렇게 해야 하는 이유가 있다고 느껴진다.
+마치 이곳으로 와야 한다는 듯 말이다.
+@char Jicheol.2_1_1_062 pos:50,-36
+하, 내가 잠이 덜 깼나?
+아침부터 말도 안 되는 상상이나 하고 있다니…
+Announce: 출입문이 열립니다.
+오늘도 사람들은 서로 들어오겠다고 무리하게 몸을 밀어 넣는다.
+@char Jicheol.2_1_1_066 pos:50,-36
+거세게 밀려오는 인파 속에서 나는 어떤 사람에게 시선을 빼앗겼다.
+@char Jicheol.2_1_1_066 pos:70,-36
+@char Haji.1_1_1_067 pos:30,-36
+Extra: ……
+허리까지 이어진 긴 적갈색 곱슬머리, 160 중반은 되어 보이는 외형
+마치 작은 고양이 같다는 느낌을 주는 사람이다.
+@char Haji.1_1_1_067 pos:40,-36
+@char Jicheol.2_1_1_071 pos:60,-36
+우연인 듯 그녀는 사람들에게 휩쓸려 내 앞까지 밀려왔다.
+이상하다.
+왜… 낯이 익을까?
+무언가 떠오를 것도 같을 때 열차가 잠깐 덜컹거렸다.
+@char Haji.1_1_1_070 pos:45,-36
+Extra: 아…
+@char Jicheol.2_1_1_075 pos:55,-36
+본능적으로 중심을 잃고 넘어질 뻔한 그녀를 붙잡았다.
+Extra: 감..감사합니다.
+Jicheol: 괜찮으……
+그녀를 붙잡자 갑자기 코에서 피가 주르륵 흘러 내렸다.
+@char Jicheol.2_1_1_079 pos:55,-36
+온 몸에 식은 땀이 흐르고, 심장은 마구 쿵쾅거린다.
+@hide Haji
+@char Jicheol.2_1_1_080 pos:50,-36
+깨질 듯한 두통은 점점 심해져 더 이상 감당하기 어려울 지경이 되어간다.
+@char Jicheol.2_1_1_081 pos:50,-36
+Jicheol: 으…윽
+@char Jicheol.2_1_1_082 pos:50,-36
+Jicheol: 으으으으아아아아아아!!!
+무언가가 사정 없이 머리 속을 짓이기는 것만 같다.
+@back Black
+@back White
+@back Black
+@back White
+@back Black
+@back End3
+@back Black
+@back White
+@back Black
+@back White
+정신이… 아득해져만 간다.
+어떻게든 버텨보려는 내 노력이 무색하게 이내 곧 시야가 새하얗게 변했다.
+@hide Jicheol
+Jicheol: 어…?
+몸 안에서 무언가가 끊어 지는 것 같은 느낌이 들었다.
+@back Subway2
+@char Haji.1_1_1_088 pos:50,-36
+Extra: 저기요?
+@char Haji.1_1_1_089 pos:50,-36
+Extra: 저기요? 괜찮으세요?
+@char Haji.1_1_1_090 pos:50,-36
+Extra: 저기요!!!
+@char Haji.1_1_1_091 pos:50,-36
+Extra: 여기 사람이 쓰러졌어요!!
+@char Haji.1_1_1_092 pos:50,-36
+Extra: 구급차 좀 불러 주시겠어요?
+@hide Haji
+@back Black pos:50,50
+의식이 희미해져 간다.
 @increaseStoryIndex
 @finishStory
