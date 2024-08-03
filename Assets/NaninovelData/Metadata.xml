@@ -18,6 +18,7 @@
           &lt;string&gt;1_1_1_013&lt;/string&gt;
           &lt;string&gt;1_1_1_014&lt;/string&gt;
           &lt;string&gt;1_1_1_036&lt;/string&gt;
+          &lt;string&gt;1_1_1_037&lt;/string&gt;
           &lt;string&gt;1_1_1_067&lt;/string&gt;
           &lt;string&gt;1_1_1_070&lt;/string&gt;
           &lt;string&gt;1_1_1_074&lt;/string&gt;
@@ -602,6 +603,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;1_1_1_036&lt;/Path&gt;
+        &lt;Type&gt;Characters/Haji&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;1_1_1_037&lt;/Path&gt;
         &lt;Type&gt;Characters/Haji&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
