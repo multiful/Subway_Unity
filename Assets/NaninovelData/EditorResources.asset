@@ -189,6 +189,15 @@ MonoBehaviour:
     - name: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC2E4\uD328"
       pathPrefix: Scripts
       guid: 6cb78877a39feff4fb54b6451f504cd4
+    - name: "\uC790\uB9AC\uBE8F\uAE30_\uB300\uC131\uACF5"
+      pathPrefix: Scripts
+      guid: 611526f0529cf854b845158e99f423d1
+    - name: "\uC790\uB9AC\uBE8F\uAE30_\uC131\uACF5"
+      pathPrefix: Scripts
+      guid: b19244d90add988448d52b4d3191b070
+    - name: "\uC790\uB9AC\uBE8F\uAE30_\uC2E4\uD328"
+      pathPrefix: Scripts
+      guid: f56fe424eac006842a5a6f51b96a1a3a
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Hondae

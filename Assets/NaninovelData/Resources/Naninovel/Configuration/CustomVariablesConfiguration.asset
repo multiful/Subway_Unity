@@ -17,3 +17,5 @@ MonoBehaviour:
     value: 50
   - name: Eyedrops
     value: 0
+  - name: Reward
+    value: 0

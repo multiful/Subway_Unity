@@ -1,0 +1,5 @@
+@char Haji pos:40,-36
+@char Jicheol pos:60,-36
+Haji: 같이 앉아가니까 좋네요...
+보상 : {Reward}원, 호감도 +5
+@stop

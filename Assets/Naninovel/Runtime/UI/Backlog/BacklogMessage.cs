@@ -57,7 +57,8 @@ namespace Naninovel
         /// <param name="author">Actor ID of the message author.</param>
         /// <param name="voiceClipNames">Voice replay clip names associated with the message. Provide null to disable voice replay.</param>
         /// <param name="rollbackSpot">Rollback spot associated with the message. Provide <see cref="PlaybackSpot.Invalid"/> to disable rollback.</param>
-        public virtual void Initialize (string message, string author, IReadOnlyCollection<string> voiceClipNames, PlaybackSpot rollbackSpot)
+        public virtual void Initialize (string message, string author, IReadOnlyCollection<string> voiceClipNames,
+            PlaybackSpot rollbackSpot)
         {
             SetMessage(message);
             SetAuthor(author); 
@@ -149,6 +150,9 @@ namespace Naninovel
             switch (value)
             {
                 case "Same": //같은 사람, 무시
+                    break;
+                case "Same지철":
+                    MessageText.alignment = TextAnchor.UpperRight;
                     break;
                 case "지철":
                     RightProfile.sprite = Resources.Load<Sprite>("UI/Log/Jicheol");
