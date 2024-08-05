@@ -79,11 +79,16 @@ public class CardFlipManager : MonoBehaviour
 
         RectTransform cardRect = cardPrefab.GetComponent<RectTransform>();
         RectTransform cardParentRect = cardParent.GetComponent<RectTransform>();
+
         Vector3 startPos = cardParent.position - new Vector3(cardParentRect.rect.width / 2, cardParentRect.rect.height / 2, 0);
         Vector3 cardSize = new Vector3(cardRect.rect.width, cardRect.rect.height, 0);
         Vector3 spacing = new Vector3(20, 20, 0);
 
-        return startPos + new Vector3(col * (cardSize.x + spacing.x), - row * (cardSize.y + spacing.y), 0);
+        Vector3 targetPos = startPos + new Vector3(col * (cardSize.x + spacing.x), -row * (cardSize.y + spacing.y), 0);
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(targetPos);
+        worldPos.z = 0;
+
+        return worldPos;
     }
     IEnumerator MoveCards()
     {

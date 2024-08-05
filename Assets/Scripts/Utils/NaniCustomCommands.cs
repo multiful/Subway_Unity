@@ -1,7 +1,7 @@
 using Naninovel;
 using Naninovel.Commands;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class NaniCustomCommands
 {
     [CommandAlias("finishStory")]
@@ -50,13 +50,25 @@ public class NaniCustomCommands
         }
     }
 
-    [CommandAlias("goMiniGame")]
-    public class MiniGame : Command
+    [CommandAlias("minigame")]
+    public class GoMiniGame : Command
     {
-        public IntegerParameter likeability;
+        public IntegerParameter game;
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            
+            int _gameNum = game;
+            switch (_gameNum)
+            {
+                case 1:
+                    SceneManager.LoadScene(MiniGame.GetOnSubway.ToString());
+                    break;
+                case 2:
+                    SceneManager.LoadScene(MiniGame.StealSeat.ToString());
+                    break;
+                default:
+                    Debug.Log("No Game");
+                    break;
+            }
         }
     }
 }

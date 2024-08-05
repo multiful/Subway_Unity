@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Naninovel;
+using UnityEngine.SceneManagement;
 
 public class HomeScreen : MonoBehaviour
 {
@@ -14,8 +15,6 @@ public class HomeScreen : MonoBehaviour
     {
         if (Inst == null) Inst = this;
         else Destroy(this);
-
-        //Trasfer 실행할때 배경 사라지게 함
     }
 
     [ContextMenu("업데이트 갱신")]
@@ -54,8 +53,15 @@ public class HomeScreen : MonoBehaviour
     {
         GameManager.UI.ShowPopupUI<UI_Setting>();
     }
+    public void GoShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
     private void Start()
     {
-        GameManager.Sound.Play("MainTheme", Sound.Bgm);
+        if (!GameManager.Sound.isBGMPlaying())
+        {
+            GameManager.Sound.Play("MainTheme", Sound.Bgm);
+        }
     }
 }

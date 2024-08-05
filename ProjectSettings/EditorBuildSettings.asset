@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/GetOnSubway.unity
+    guid: c139c10349f058740b174fcec0c9ab0f
+  - enabled: 1
+    path: Assets/Scenes/CardFlip.unity
+    guid: dd0c952b15329cb46a0537e007d85d0d
+  - enabled: 1
+    path: Assets/Scenes/StealSeat.unity
+    guid: fe6e5795ba1f0424f95f5b08dc13232f
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 0d408317d8aea4c4598fe79da53f4e82
   m_configObjects: {}

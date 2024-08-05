@@ -39,3 +39,10 @@ public enum Sound
     Effect,
     MaxCount
 }
+
+public enum MiniGame
+{
+    GetOnSubway,
+    StealSeat,
+    CardFlip
+}

@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class Shop : MonoBehaviour
     public GameObject noMoney, thankYou; //temp name
     public GameObject[] itemZoom = new GameObject[3];
     public GameObject items, cardFlip;
+    public Button setting;
 
     private UserData userData = new UserData();
 
@@ -58,6 +61,8 @@ public class Shop : MonoBehaviour
         TMP_money.text = userData.money.ToString();
         TMP_ticket.text = userData.ticket.ToString();
         TMP_eyedrop.text = userData.eyedrop.ToString();
+
+        setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
     }
 
     public void ItemBuy(int itemNum)
@@ -97,4 +102,12 @@ public class Shop : MonoBehaviour
         noMoney.SetActive(true);
     }
 
+    public void GoCardFlip()
+    {
+        SceneManager.LoadScene(MiniGame.CardFlip.ToString());
+    }
+    public void GoMain()
+    {
+        SceneManager.LoadScene("Main");
+    }
 }
