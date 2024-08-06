@@ -1,5 +1,7 @@
 using Naninovel;
-
+using Naninovel.Commands;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 public class NaniCustomCommands
 {
     [CommandAlias("finishStory")]
@@ -38,12 +40,35 @@ public class NaniCustomCommands
     [CommandAlias("increaseLikeability")]
     public class IncreaseLikeability : Command
     {
+        public IntegerParameter likeability;
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             var varManager = Engine.GetService<ICustomVariableManager>();
-            var likeability = varManager.GetVariableValue("Likeability");
-            likeability += 5;
-            varManager.SetVariableValue("Likeability", likeability);
+            var curlikeability = varManager.GetVariableValue("Likeability");
+            curlikeability += likeability;
+            varManager.SetVariableValue("Likeability", curlikeability);
+        }
+    }
+
+    [CommandAlias("minigame")]
+    public class GoMiniGame : Command
+    {
+        public IntegerParameter game;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            int _gameNum = game;
+            switch (_gameNum)
+            {
+                case 1:
+                    SceneManager.LoadScene(MiniGame.GetOnSubway.ToString());
+                    break;
+                case 2:
+                    SceneManager.LoadScene(MiniGame.StealSeat.ToString());
+                    break;
+                default:
+                    Debug.Log("No Game");
+                    break;
+            }
         }
     }
 }

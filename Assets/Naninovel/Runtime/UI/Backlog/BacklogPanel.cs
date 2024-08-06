@@ -38,7 +38,7 @@ namespace Naninovel.UI
         [Tooltip("Whether to clear the backlog when changing game localization (language).")]
         [SerializeField] private bool clearOnLocaleChange = true;
         [Tooltip("How many messages should the backlog keep.")]
-        [SerializeField] private int capacity = 100;
+        [SerializeField] private int capacity = 1000;
         [Tooltip("How many messages should the backlog keep when saving the game.")]
         [SerializeField] private int saveCapacity = 30;
         [Tooltip("Whether to strip formatting content (content inside `<` `>` and the angle brackets themselves) from the added messages.")]
@@ -80,13 +80,23 @@ namespace Naninovel.UI
                 messagesPool.Push(message);
             }
             messages.Clear();
+            lastActor = null; //초기화
         }
+
+        private string lastActor = null;
 
         public virtual void AddMessage (string messageText, string actorId = null, string voiceClipName = null, PlaybackSpot? rollbackSpot = null)
         {
             if (StripTags) messageText = StripFormatting(messageText);
 
             var actorNameText = charManager.GetDisplayName(actorId) ?? actorId;
+
+            //앞의 사람이 이어서 말할 때 프로필 한 번만 출력하기 위해 Same 전달
+            if (lastActor == "지철" && lastActor == actorNameText) actorNameText = "Same지철";
+            else if (actorNameText != null && lastActor == actorNameText) actorNameText = "Same";
+            else lastActor = actorNameText;
+            
+
             SpawnMessage(messageText, actorNameText, ProcessVoiceClipName(voiceClipName), ProcessRollbackSpot(rollbackSpot));
         }
 
@@ -204,7 +214,6 @@ namespace Naninovel.UI
 
                 messages.AddLast(message);
             }
-
             message.Initialize(messageText, actorNameText, voiceClipNames, rollbackSpot);
         }
 

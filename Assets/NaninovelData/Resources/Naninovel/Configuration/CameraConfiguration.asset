@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 120cb83f9878ee7458dede7127be65dc, type: 3}
   m_Name: CameraConfiguration
   m_EditorClassIdentifier: 
-  ReferenceResolution: {x: 1920, y: 1080}
+  ReferenceResolution: {x: 2960, y: 1440}
   ReferencePPU: 100
   MatchScreenWidth: 0
   InitialPosition: {x: 0, y: 0, z: -10}
-  CustomCameraPrefab: {fileID: 0}
+  CustomCameraPrefab: {fileID: 298332040056984261, guid: 486c0c1b48547584a9a5375b73b1e392, type: 3}
   UseUICamera: 1
   CustomUICameraPrefab: {fileID: 0}
   DefaultDuration: 0.35

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 using Naninovel;
+using UnityEngine.SceneManagement;
 
 public class CardFlipManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class CardFlipManager : MonoBehaviour
 
     public TextMeshProUGUI buttonText;
     public Button startButton;
+    public Button closeButton;
 
     public TextMeshProUGUI timerText;
 
@@ -28,9 +30,11 @@ public class CardFlipManager : MonoBehaviour
 
     private int _matchedCard = 0;
     private float _gameTime = 60f;
-    
 
     private CardFlipEnding _cardEnding;
+
+    public Camera mainCam;
+
     public void CreateCards()
     {
         List<Sprite> cardImageList = new List<Sprite>(cardSpriteList);
@@ -77,11 +81,16 @@ public class CardFlipManager : MonoBehaviour
 
         RectTransform cardRect = cardPrefab.GetComponent<RectTransform>();
         RectTransform cardParentRect = cardParent.GetComponent<RectTransform>();
+
         Vector3 startPos = cardParent.position - new Vector3(cardParentRect.rect.width / 2, cardParentRect.rect.height / 2, 0);
         Vector3 cardSize = new Vector3(cardRect.rect.width, cardRect.rect.height, 0);
         Vector3 spacing = new Vector3(20, 20, 0);
 
-        return startPos + new Vector3(col * (cardSize.x + spacing.x), - row * (cardSize.y + spacing.y), 0);
+        Vector3 targetPos = startPos + new Vector3(col * (cardSize.x + spacing.x), -row * (cardSize.y + spacing.y), 0);
+        Vector3 worldPos = Camera.main.ScreenToWorldPoint(targetPos);
+        worldPos.z = 0;
+
+        return worldPos;
     }
     IEnumerator MoveCards()
     {
@@ -154,12 +163,27 @@ public class CardFlipManager : MonoBehaviour
         {
             _cardEnding = CardFlipEnding.카드뒤집기_실패;
         }
+        mainCam.depth = -1;
         CardScriptStart();
     }
+
+    public void ShowSettingUI()
+    {
+        GameManager.UI.ShowSettingUI();
+    }
+
+    public void BackToShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
     private void Start()
     {
         startButton.onClick.AddListener(StartGame);
         CreateCards();
+
+        mainCam.depth = 1;
+
     }
     private void Update()
     {

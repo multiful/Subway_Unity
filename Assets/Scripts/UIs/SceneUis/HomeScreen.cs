@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Naninovel;
+using UnityEngine.SceneManagement;
 
 public class HomeScreen : MonoBehaviour
 {
-    private GameObject _BackGroundObject;
+    public GameObject _BackGroundObject;
     public static HomeScreen Inst;
     public TMP_Text TMP_NowStory;
 
@@ -14,10 +15,6 @@ public class HomeScreen : MonoBehaviour
     {
         if (Inst == null) Inst = this;
         else Destroy(this);
-
-        //Trasfer 실행할때 배경 사라지게 함
-        //다른 UI들 어디서 꺼지는지 몰라서 일단 여기 박아뒀는데 다른 UI들이랑 묶어서 수정해야함
-        _BackGroundObject = GameObject.Find("MainBackGround");
     }
 
     [ContextMenu("업데이트 갱신")]
@@ -48,6 +45,7 @@ public class HomeScreen : MonoBehaviour
 
     private void OnEnable()
     {
+        _BackGroundObject.SetActive(true);
         UpdateUIs();
     }
 
@@ -55,8 +53,15 @@ public class HomeScreen : MonoBehaviour
     {
         GameManager.UI.ShowPopupUI<UI_Setting>();
     }
+    public void GoShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
     private void Start()
     {
-        GameManager.Sound.Play("MainTheme", Sound.Bgm);
+        if (!GameManager.Sound.isBGMPlaying())
+        {
+            GameManager.Sound.Play("MainTheme", Sound.Bgm);
+        }
     }
 }

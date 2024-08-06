@@ -10,6 +10,7 @@ public class NaniEngineManager
     public IStateManager StateManager;
     public IScriptPlayer ScriptPlayer;
     public ICustomVariableManager VarManager;
+    public IUIManager UIManager;
 
     public void Init()
     {
@@ -36,6 +37,7 @@ public class NaniEngineManager
         StateManager = Engine.GetService<IStateManager>();
         ScriptPlayer = Engine.GetService<IScriptPlayer>();
         VarManager = Engine.GetService<ICustomVariableManager>();
+        UIManager = Engine.GetService<IUIManager>();
         //
     }
 }

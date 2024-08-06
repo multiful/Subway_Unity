@@ -105,4 +105,8 @@ public class SoundManager
 
         return audioClip;
     }
+    public bool isBGMPlaying()
+    {
+        return _audioSources[(int)Sound.Bgm].isPlaying;
+    }
 }

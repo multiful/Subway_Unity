@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using TMPro;
+using Unity.Collections.LowLevel.Unsafe;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 using UnityEngine.XR;
 
 public class MainControl : MonoBehaviour //전체 두더지게임 관리
@@ -22,14 +24,10 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     public List<int> occupiedList = new List<int>(); //0~9 사이 앉은 자리 7개
     public List<int> unoccupiedList = new List<int>(); //그 외 남는 자리 3개
 
-    public GameObject GoodClearCanvas, BadClearCanvas, FailCanvas; //temp
-
     public int gameLevel = 0;
     private int[] timeLimit = { 60, 60, 50, 50 };
     private float _currentTime;
     private int reward;
-
-    public TMP_Text rewardText1, rewardText2; //temp
 
     void Awake()
     {
@@ -78,22 +76,35 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     private IEnumerator GoodClear()
     {
         yield return new WaitForSeconds(2f);
-        rewardText1.text = "보상 : " + reward.ToString() + "원, 호감도 +5";
-        GoodClearCanvas.SetActive(true);
+        NaniScript("자리뺏기_대성공");
+    }
+
+    public async void NaniScript(string ScriptName)
+    {
+
+        // 2. Switch cameras.
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        // 3. Load and play specified script (if assigned).
+        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(ScriptName);
+
+        // 4. Enable Naninovel input.
+        GameManager.Nani.InputManager.ProcessInput = true;
+
     }
 
     private IEnumerator BadClear()
     {
         yield return new WaitForSeconds(2f);
-        rewardText2.text = "보상 : " + reward.ToString() + "원";
-        BadClearCanvas.SetActive(true);
+        NaniScript("자리뺏기_성공");
     }
 
     private void Fail()
     {
         StopGame();
         TMP_Time.text = "0";
-        FailCanvas.SetActive(true);
+        NaniScript("자리뺏기_실패");
     }
 
     public void Clear(int manSeat)
@@ -101,6 +112,9 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
         StopAllCoroutines(); //타이머 종료
         StopGame(); //이벤트 델리게이트로 모든 버튼 비활성화
         reward = 500 * ((int)_currentTime + 1);
+
+        var varManager = Engine.GetService<ICustomVariableManager>();
+        varManager.TrySetVariableValue("Reward", reward);
 
         if (IsNextSeat(womanSeat, manSeat)) StartCoroutine(GoodClear());
         else StartCoroutine(BadClear());
