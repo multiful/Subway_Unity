@@ -96,10 +96,15 @@ public class ObstacleManager : MonoBehaviour
 
     private void UpdateObstaclePositions()
     {
-        float startY = player.transform.position.y + 9.0f; // 3번이 플레이어의 머리 바로 위에 생성하도록 조정
+        float startY = player.transform.position.y + 12.0f; // 3번이 플레이어의 머리 바로 위에 생성하도록 조정
 
         // 기존 장애물 제거 , 장애물이 나오면 안 되는 곳에 있는 장애물 제거.
         ClearExistingObstacles();
+
+        Quaternion fixedRotation = Quaternion.Euler(-28.529f, 0, 0);
+
+        // 고정된 크기 설정(예: (1, 1, 1))
+        Vector3 fixedScale = new Vector3(0.6420706f, 0.3741464f, 2.0f);
 
         // 장애물 생성 및 위치 업데이트
         for (int i = 0; i < grid.Count; i++)
@@ -109,7 +114,8 @@ public class ObstacleManager : MonoBehaviour
                 if (grid[i][j].hasObstacle)
                 {
                     Vector3 position = new Vector3((j - 1) * obstacleGap, startY - i * obstacleGap, 0);
-                    GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, Quaternion.identity);
+                    GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, fixedRotation);
+                    obstacle.transform.localScale = fixedScale;
                     obstacles.Add(obstacle);
                 }
             }
