@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 using Naninovel;
+using UnityEngine.SceneManagement;
 
 public class CardFlipManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class CardFlipManager : MonoBehaviour
 
     public TextMeshProUGUI buttonText;
     public Button startButton;
+    public Button closeButton;
 
     public TextMeshProUGUI timerText;
 
@@ -169,6 +171,12 @@ public class CardFlipManager : MonoBehaviour
     {
         GameManager.UI.ShowSettingUI();
     }
+
+    public void BackToShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
     private void Start()
     {
         startButton.onClick.AddListener(StartGame);
