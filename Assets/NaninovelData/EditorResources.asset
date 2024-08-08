@@ -289,18 +289,18 @@ MonoBehaviour:
     - name: 1_1_1_092
       pathPrefix: Characters/Haji
       guid: 804e3a697bea28b4bbcf9577152c8d6d
-    - name: 
+    - name: 1_1_3_031
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 1533381a7e1909f4daf1065d685e2ae8
+    - name: 1_1_3_067
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 238f8b2b58d408d42a961261da2f949f
+    - name: 1_1_3_068
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 5a83fb64f9254514fb6243358aea8289
+    - name: 1_1_3_071
       pathPrefix: Characters/Haji
-      guid: 
+      guid: e0f96a2ee6f824a4880bed6a96587e67
     - name: 
       pathPrefix: Characters/Haji
       guid: 
@@ -438,6 +438,102 @@ MonoBehaviour:
     - name: 2_1_2_079
       pathPrefix: Characters/Jicheol
       guid: d635c876d9a503a4b95b4fd068a8860e
+    - name: 2_1_3_002
+      pathPrefix: Characters/Jicheol
+      guid: e2b3682cb474788489ba83a3831c2a33
+    - name: 2_1_3_004
+      pathPrefix: Characters/Jicheol
+      guid: 209ea463075b6d24792dbe9deb315eb4
+    - name: 2_1_3_006
+      pathPrefix: Characters/Jicheol
+      guid: 4db785c503bf1e24a87dd6674ae2181c
+    - name: 2_1_3_007
+      pathPrefix: Characters/Jicheol
+      guid: ca9704600b575bd4b9ee7884f735f122
+    - name: 2_1_3_009
+      pathPrefix: Characters/Jicheol
+      guid: 1b0f5c317457c4e488ffe6a1ab6bc424
+    - name: 2_1_3_014
+      pathPrefix: Characters/Jicheol
+      guid: 3e78dd2921e76ed43a160aba6665b1e4
+    - name: 2_1_3_015
+      pathPrefix: Characters/Jicheol
+      guid: d087e9f611d172a489ec031f7712aaf8
+    - name: 2_1_3_020
+      pathPrefix: Characters/Jicheol
+      guid: 781cc0af24bca844cae7a6fed9d8b0a3
+    - name: 2_1_3_022
+      pathPrefix: Characters/Jicheol
+      guid: 3a0c9dd3187f7a140858f148011e4b34
+    - name: 2_1_3_023
+      pathPrefix: Characters/Jicheol
+      guid: 239b41fdb3d31684fb0a2df248f3a1cd
+    - name: 2_1_3_025
+      pathPrefix: Characters/Jicheol
+      guid: 0eb0f34f899568549808e6970dc2eb2c
+    - name: 2_1_3_027
+      pathPrefix: Characters/Jicheol
+      guid: c47ca04a039e7ff4982b50dd25a62bbc
+    - name: 2_1_3_029
+      pathPrefix: Characters/Jicheol
+      guid: a75e5e87a65c5564c9afad72bde5f053
+    - name: 2_1_3_031
+      pathPrefix: Characters/Jicheol
+      guid: 68e6d713a2f4fb14a97207b2ea2c7575
+    - name: 2_1_3_033
+      pathPrefix: Characters/Jicheol
+      guid: 327ddd79d7fdb4844a3ce76bd31a2785
+    - name: 2_1_3_035
+      pathPrefix: Characters/Jicheol
+      guid: 503613ee2a8fc524684584144c70d8f2
+    - name: 2_1_3_037
+      pathPrefix: Characters/Jicheol
+      guid: bfdd7df19eb802148a8f6c55e203edff
+    - name: 2_1_3_040
+      pathPrefix: Characters/Jicheol
+      guid: 3797c7f93bda5be4bbc4217d4328dea2
+    - name: 2_1_3_042
+      pathPrefix: Characters/Jicheol
+      guid: 66666ab37b795874898fc10b1231b6db
+    - name: 2_1_3_044
+      pathPrefix: Characters/Jicheol
+      guid: 3db91e70efeee0a4c8580e2349a56333
+    - name: 2_1_3_048
+      pathPrefix: Characters/Jicheol
+      guid: 08914231fc85eb841800d41f35bf11ed
+    - name: 2_1_3_049
+      pathPrefix: Characters/Jicheol
+      guid: 415f53617729e2847a9c1cf30e82e10b
+    - name: 2_1_3_050
+      pathPrefix: Characters/Jicheol
+      guid: 90fed7ed6defca041b1271af9b4bcb9f
+    - name: 2_1_3_052
+      pathPrefix: Characters/Jicheol
+      guid: 15702afdb1e43b648a1d76ccc7485432
+    - name: 2_1_3_056
+      pathPrefix: Characters/Jicheol
+      guid: 57d5960e26597354586b3f1e2b6e682c
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
   - Id: Characters/677956ea-e164-4bc6-8520-ef0604412de3
     Resources:
     - name: 1stMerchant
