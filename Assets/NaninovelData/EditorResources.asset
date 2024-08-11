@@ -230,6 +230,9 @@ MonoBehaviour:
     - name: White
       pathPrefix: Backgrounds/MainBackground
       guid: e189212cc7e29d745a9bf027e207b3a9
+    - name: Appeared
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4c1db237d57eebc4ea82bb959af922c3
   - Id: Characters/9ba60146-9d3a-4747-bcd2-c9aacd2e03c1
     Resources:
     - name: Haji
@@ -510,9 +513,36 @@ MonoBehaviour:
     - name: 2_1_3_052
       pathPrefix: Characters/Jicheol
       guid: 15702afdb1e43b648a1d76ccc7485432
-    - name: 2_1_3_056
+    - name: 
       pathPrefix: Characters/Jicheol
       guid: 57d5960e26597354586b3f1e2b6e682c
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
+    - name: 
+      pathPrefix: Characters/Jicheol
+      guid: 
     - name: 
       pathPrefix: Characters/Jicheol
       guid: 
@@ -588,10 +618,69 @@ MonoBehaviour:
     - name: 3_1_2_073
       pathPrefix: Characters/Seola
       guid: 8abe9bf79df69644d890550d760f7ad6
+    - name: 3_1_3_008
+      pathPrefix: Characters/Seola
+      guid: 9b3698fbf18a10d4f8e20b6c69db98f7
+    - name: 3_1_3_010
+      pathPrefix: Characters/Seola
+      guid: 6acc5e026deb06d43be565798fd52d80
+    - name: 3_1_3_011
+      pathPrefix: Characters/Seola
+      guid: ea1e0f1b93a234a46b8b100388332e68
+    - name: 3_1_3_012
+      pathPrefix: Characters/Seola
+      guid: 06325a2668afcae43b2b4f2c53f9b844
+    - name: 3_1_3_013
+      pathPrefix: Characters/Seola
+      guid: d840cd15dec438440bc306355c44fe27
+    - name: 3_1_3_019
+      pathPrefix: Characters/Seola
+      guid: 1ae46e8b4611a6b41ab8a4f938aef7ee
+    - name: 3_1_3_021
+      pathPrefix: Characters/Seola
+      guid: 51573055e3a3b044d8012963df9729dc
+    - name: 3_1_3_024
+      pathPrefix: Characters/Seola
+      guid: 89c7ae7939d46b64b97be8f989353088
+    - name: 3_1_3_026
+      pathPrefix: Characters/Seola
+      guid: 3efad4246e198c4458fe23fd644a74cb
+    - name: 3_1_3_028
+      pathPrefix: Characters/Seola
+      guid: f04f7fc0c28563847b5d8f4f62b34af0
+    - name: 3_1_3_030
+      pathPrefix: Characters/Seola
+      guid: 670d03f61cb23f748bfb963e543f5894
+    - name: 3_1_3_034
+      pathPrefix: Characters/Seola
+      guid: 3862797f3f613534f9dc125a20bf373e
+    - name: 3_1_3_036
+      pathPrefix: Characters/Seola
+      guid: 5e5d8ebb84ac110418d72c535c686365
+    - name: 3_1_3_038
+      pathPrefix: Characters/Seola
+      guid: 19763dcd31725b84fb75272f833964bc
+    - name: 3_1_3_039
+      pathPrefix: Characters/Seola
+      guid: ddbdb9a4d80bb874cb318cf42a0db038
+    - name: 3_1_3_041
+      pathPrefix: Characters/Seola
+      guid: 242835127710c624383276ec143f1685
+    - name: 3_1_3_043
+      pathPrefix: Characters/Seola
+      guid: 87416bad1e23eb24ba3676f793e584bd
+    - name: 3_1_3_045
+      pathPrefix: Characters/Seola
+      guid: 7c64b2dec4f18b146b3e2b8fe7c9f723
+    - name: 3_1_3_046
+      pathPrefix: Characters/Seola
+      guid: 2ccb75205a5449a4c87b14f1cefef596
     - name: 
       pathPrefix: Characters/Seola
       guid: 
-  - Id: Characters/af21dead-99fc-4b53-bc94-729502f0a43b
-    Resources: []
   - Id: Characters/e4dfa0a6-7be1-4b46-a38b-23bcd6dc6168
+    Resources: []
+  - Id: Characters/0238e76b-0a92-4a7f-a775-2d99c5fff551
+    Resources: []
+  - Id: Characters/57f53d6a-716a-46eb-a9a3-0634cbf3b12b
     Resources: []
