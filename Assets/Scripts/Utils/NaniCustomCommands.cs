@@ -43,10 +43,22 @@ public class NaniCustomCommands
         public IntegerParameter likeability;
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            var varManager = Engine.GetService<ICustomVariableManager>();
-            var curlikeability = varManager.GetVariableValue("Likeability");
-            curlikeability += likeability;
-            varManager.SetVariableValue("Likeability", curlikeability);
+            //var varManager = Engine.GetService<ICustomVariableManager>();
+            //var curlikeability = varManager.GetVariableValue("Likeability");
+            //curlikeability += likeability;
+            //varManager.SetVariableValue("Likeability", curlikeability);
+
+            // 세이브 데이터 호감도 올리기
+        }
+    }
+
+    [CommandAlias("increaseMoney")]
+    public class IncreaseMoney : Command
+    {
+        public IntegerParameter likeability;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            //세이브 데이터 돈 올리기
         }
     }
 
@@ -54,21 +66,36 @@ public class NaniCustomCommands
     public class GoMiniGame : Command
     {
         public IntegerParameter game;
+
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
+            // 1. Disable Naninovel input.
+            var inputManager = Engine.GetService<IInputManager>();
+            inputManager.ProcessInput = false;
+
+            // 2. Stop script player.
+            var scriptPlayer = Engine.GetService<IScriptPlayer>();
+            scriptPlayer.Stop();
+
+            // 3. Reset state.
+            await GameManager.Nani.StateManager.ResetStateAsync();
+
+            // 4. Switch cameras.
+            var naniCamera = Engine.GetService<ICameraManager>().Camera;
+            naniCamera.enabled = false;
+
             int _gameNum = game;
-            switch (_gameNum)
+            if (_gameNum <= 4)
             {
-                case 1:
-                    SceneManager.LoadScene(MiniGame.GetOnSubway.ToString());
-                    break;
-                case 2:
-                    SceneManager.LoadScene(MiniGame.StealSeat.ToString());
-                    break;
-                default:
-                    Debug.Log("No Game");
-                    break;
+                // 나중에 난이도 별로 실행
+                SceneManager.LoadScene(MiniGame.GetOnSubway.ToString());
             }
+            else if (_gameNum <= 8)
+            {
+                SceneManager.LoadScene(MiniGame.StealSeat.ToString());
+            }
+            else
+                return;
         }
     }
 }
