@@ -94,7 +94,7 @@ public class EndingCollectionManager : MonoBehaviour
     //}
     //public IEnumerator FillImage(Image img)
     //{
-    //    while(img.fillAmount < _progress/100)
+    //    while (img.fillAmount < _progress / 100)
     //    {
     //        img.fillAmount += Time.smoothDeltaTime * 1.5f;
     //        yield return null;
@@ -115,5 +115,6 @@ public class EndingCollectionManager : MonoBehaviour
     public void ShowEndingCollection()
     {
         GameManager.UI.ShowPopupUI<UI_EndingCollection>();
+        //GameManager.UI.ShowPopupUI<UI_Test>();
     }
 }

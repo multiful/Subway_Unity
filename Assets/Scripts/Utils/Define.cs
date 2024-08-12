@@ -46,3 +46,17 @@ public enum MiniGame
     StealSeat,
     CardFlip
 }
+
+public enum Ending
+{
+    첫번째엔딩,
+    두번째엔딩,
+    세번째엔딩,
+    네번째엔딩
+}
+public enum EndingType
+{
+    배드엔딩,
+    노멀엔딩,
+    트루엔딩
+}

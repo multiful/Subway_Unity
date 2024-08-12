@@ -57,6 +57,10 @@ public class HomeScreen : MonoBehaviour
     {
         SceneManager.LoadScene("Shop");
     }
+    public void ShowEndingCollection()
+    {
+        GameManager.UI.ShowPopupUI<UI_EndingCollection>();
+    }
     private void Start()
     {
         if (!GameManager.Sound.isBGMPlaying())

@@ -37,6 +37,17 @@ public class UIManager
     {
         ShowPopupUI<UI_Setting>();
     }
+    public UI_EndingPlay ShowEndingPlayUI(int index)
+    {
+        GameObject go = GameManager.Resource.Instantiate("UI/Popup/UI_EndingPlay");
+        UI_EndingPlay popup = Util.GetOrAddComponent<UI_EndingPlay>(go);
+        popup.SetEndingTexts(index);
+
+        _popupStack.Push(popup);
+        go.transform.SetParent(Root.transform);
+
+        return popup;
+    }
     public void ClosePopupUI(UI_Popup popup)
     {
         if (_popupStack.Count == 0)
