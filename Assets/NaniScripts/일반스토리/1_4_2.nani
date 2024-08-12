@@ -1,7 +1,5 @@
 @back Black
 @back Station
-@back Black
-@back Station
 @char Jicheol.2_1_4_065 pos:50,-44
 퇴근 시간 1호선. 확실한 건 아니지만 지금이라면 마주칠 확률이 높다.
 @char Jicheol.2_1_4_066 pos:50,-44
@@ -10,8 +8,8 @@
 @hide Jicheol
 @back black
 @back subway_past
-@char Haji.1_1_4_068 pos:40,-44,-1
-@char 1stMerchant.4_1_4_069 pos:65,-44,0
+@char Haji.1_1_4_068 pos:40,-44
+@char 1stMerchant.4_1_4_069 pos:65,-44
 ???: …
 1stMerchant: 에이 아가씨 그러지 말고 하나만 사줘
 @hide Haji,1stMerchant
@@ -44,10 +42,37 @@
 1stMerchant: 이러지 말고 두 개만 사줘!
 ……
 @hide Haji,1stMerchant
-
 이게 지금 뭐 하는 상황이지?
 1. 그 사람을 도와준다. (+10)
 2. 일단 가만히 지켜본다. (0)
+
+@char Jicheol.2_1_4_089 pos:50,-44
+머리 속에서 피가 거꾸로 솟는 것만 같다.
+@hide Jicheol
+@char Haji.1_1_4_077 pos:45,-44
+@char 1stMerchant.4_1_4_083 pos:70,-44
+@char Jicheol.2_1_4_089 pos:0,-44
+@char Jicheol.2_1_4_089 pos:44,-44
+@char Haji.1_1_4_077 pos:32,-44
+나는 당장 달려가 노인의 팔을 뿌리쳤다.
+@hide Haji
+@char Jicheol.2_1_4_091 pos:36,-44
+Jicheol: 어르신 지하철에서 이러시면 안 됩니다.
+@char 1stMerchant.4_1_4_092 pos:70,-44
+1stMerchant: 아니 총각 나 이렇게 보여도 굉장히 불쌍한 사람이야.
+@char 1stMerchant.4_1_4_093 pos:70,-44
+1stMerchant: 이거 봐 내가 좋은 가격으로…
+@char Jicheol.2_1_4_094 pos:36,-44
+Jicheol: 안녕하세요. 거기 경찰이죠. 여기 지하철에서 불법 판매하는…
+@char 1stMerchant.4_1_4_095 pos:70,-44
+1stMerchant: 아니, 총각 지금 뭐 하는 거야? 이런 버르장머리 없는 놈...
+@char 1stMerchant.4_1_4_096 pos:70,-44
+1stMerchant: 알았어. 알았어. 내가 진짜 치사해서 간다.
+@char 1stMerchant.4_1_4_096 pos:150,-44
+@hide 1stMerchant
+노인은 언제 그랬냐는 듯 짐을 챙기고 다른 칸으로 사라졌다.
+한동안 이쪽을 쳐다보는 사람들이 있었지만 곧 자기 할 일들을 했다. 
+@hide Jicheol
 
 2 선택
 @char Jicheol.2_1_4_100 pos:60,-44
