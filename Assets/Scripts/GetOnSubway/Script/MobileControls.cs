@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,7 @@ public class MobileControls : MonoBehaviour
     void OnLeftButtonClicked()
     {
         playerController.MoveLeft();
+        
     }
 
     void OnRightButtonClicked()

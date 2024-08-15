@@ -13,9 +13,17 @@ public class UI_Setting : UI_Popup
     }
     enum Buttons
     {
-        CloseBtn
+        CloseBtn,
+        SoundButton,
+        TextButton,
+        MiscButton
     }
 
+    public GameObject soundSettingsPanel;
+    public GameObject textSettingsPanel;
+    public GameObject miscSettingsPanel;
+
+    public Slider bgmSlider;
     public Slider sfxSlider;
 
     public void BGMControl(float volume)

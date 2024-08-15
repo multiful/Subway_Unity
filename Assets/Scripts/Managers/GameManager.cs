@@ -1,3 +1,4 @@
+using Naninovel;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,6 +50,22 @@ public class GameManager : MonoBehaviour
             //s_instance._data.Init();
             //s_instance._scene.Init();
         }
+    }
+
+    public static void SaveGame(string slotName)
+    {
+        // 예시: 나니노벨 상태 저장
+        var stateManager = Engine.GetService<IStateManager>();
+        stateManager.SaveGameAsync(slotName);
+        Debug.Log($"Game saved in slot: {slotName}");
+    }
+
+    public static void LoadGame(string slotName)
+    {
+        // 예시: 나니노벨 상태 불러오기
+        var stateManager = Engine.GetService<IStateManager>();
+        stateManager.LoadGameAsync(slotName);
+        Debug.Log($"Game loaded from slot: {slotName}");
     }
 
     public static void Clear()

@@ -7,7 +7,7 @@ public class ObstacleManager : MonoBehaviour
     public GameObject[] obstaclePrefabs; // 장애물 프리팹 배열
     public GameObject player;
     public GameManager1 gameManager; // GameManager1 스크립트 참조
-    public float obstacleGap = 3.0f; // 장애물 간의 간격
+    public float obstacleGap = 5.0f; // 장애물 간의 간격
     private List<GameObject> obstacles = new List<GameObject>(); // 생성된 장애물들을 저장할 리스트
     private List<ObstacleData[]> grid = new List<ObstacleData[]>(); // 장애물 위치와 이미지를 저장할 그리드
     private int gridCols = 3; // 그리드의 열 수
@@ -96,15 +96,17 @@ public class ObstacleManager : MonoBehaviour
 
     private void UpdateObstaclePositions()
     {
-        float startY = player.transform.position.y + 12.0f; // 3번이 플레이어의 머리 바로 위에 생성하도록 조정
+       
+        float startY = player.transform.position.y + 14.4f;
+        
 
-        // 기존 장애물 제거 , 장애물이 나오면 안 되는 곳에 있는 장애물 제거.
+        // 기존 장애물 제거
         ClearExistingObstacles();
 
-        Quaternion fixedRotation = Quaternion.Euler(-28.529f, 0, 0);
+        Quaternion fixedRotation = Quaternion.Euler(0, 0, 0);
 
-        // 고정된 크기 설정(예: (1, 1, 1))
-        Vector3 fixedScale = new Vector3(0.6420706f, 0.3741464f, 2.0f);
+        // 고정된 크기 설정
+        Vector3 fixedScale = new Vector3(0.6420706f, 0.37f,0);
 
         // 장애물 생성 및 위치 업데이트
         for (int i = 0; i < grid.Count; i++)
@@ -114,7 +116,11 @@ public class ObstacleManager : MonoBehaviour
                 if (grid[i][j].hasObstacle)
                 {
                     Vector3 position = new Vector3((j - 1) * obstacleGap, startY - i * obstacleGap, 0);
-                    GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, fixedRotation);
+
+                    // i 값에 따라 z 축 위치를 변경하여 레이어 우선순위 설정
+                    Vector3 adjustedPosition = new Vector3(position.x, position.y, -i * 0.1f);
+
+                    GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], adjustedPosition, fixedRotation);
                     obstacle.transform.localScale = fixedScale;
                     obstacles.Add(obstacle);
                 }
@@ -151,7 +157,6 @@ public class ObstacleManager : MonoBehaviour
         // 오래된 행이 존재하고 그리드의 길이가 6을 초과할 경우 오래된 행 제거
         while (grid.Count > 6)
         {
-            // 가장 오래된 행 2개 제거 짝수로 제거해야 안 꼬임.
             grid.RemoveAt(grid.Count - 1);
             grid.RemoveAt(grid.Count - 2);
         }
