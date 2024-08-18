@@ -275,42 +275,51 @@ MonoBehaviour:
       guid: 472a7be848b8b374e8a3eb736d094daa
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
-    - name: Hondae
-      pathPrefix: Backgrounds/MainBackground
-      guid: 65faaa12532320e43a3ed8040e059ef0
-    - name: Station
-      pathPrefix: Backgrounds/MainBackground
-      guid: 2caabb1c2e3c70c4082d4fa4a9064026
-    - name: Subway1
-      pathPrefix: Backgrounds/MainBackground
-      guid: 314c585e8308be044b3ae2d7de411c1f
-    - name: Subway2
-      pathPrefix: Backgrounds/MainBackground
-      guid: 314c585e8308be044b3ae2d7de411c1f
-    - name: Hospital
-      pathPrefix: Backgrounds/MainBackground
-      guid: ac09ceb340fd92b47b5ee1b736b29e99
-    - name: Office
-      pathPrefix: Backgrounds/MainBackground
-      guid: fe3016f7c862d32458adf5dd0846eec3
-    - name: Bar
-      pathPrefix: Backgrounds/MainBackground
-      guid: 63ca4059d0b65264f997a60b78787751
-    - name: End3
-      pathPrefix: Backgrounds/MainBackground
-      guid: 1f7ece21c4bcece4eb5327fa6e2bcd79
-    - name: Black
-      pathPrefix: Backgrounds/MainBackground
-      guid: ede9c3644a6fd5042a4816aaac289bbc
-    - name: White
-      pathPrefix: Backgrounds/MainBackground
-      guid: e189212cc7e29d745a9bf027e207b3a9
     - name: Appeared
       pathPrefix: Backgrounds/MainBackground
       guid: 4c1db237d57eebc4ea82bb959af922c3
+    - name: Bar
+      pathPrefix: Backgrounds/MainBackground
+      guid: 1a9a813853dbc2b45a4f85108cb297f1
     - name: Cafe
       pathPrefix: Backgrounds/MainBackground
-      guid: fdb2e9d80e547c14186074575214c3dd
+      guid: 90179d2f3f7a1b54dafaa6917521b1c5
+    - name: White
+      pathPrefix: Backgrounds/MainBackground
+      guid: e189212cc7e29d745a9bf027e207b3a9
+    - name: Black
+      pathPrefix: Backgrounds/MainBackground
+      guid: ede9c3644a6fd5042a4816aaac289bbc
+    - name: Gate
+      pathPrefix: Backgrounds/MainBackground
+      guid: 262e0af9ef9731649887952fdeb09076
+    - name: Hall_way
+      pathPrefix: Backgrounds/MainBackground
+      guid: 4e687096d6a89414490c29b3207c8fc8
+    - name: Hospital
+      pathPrefix: Backgrounds/MainBackground
+      guid: efa9217724d27d348b3c66f0da2015ca
+    - name: Office
+      pathPrefix: Backgrounds/MainBackground
+      guid: 339f888d07487a14d965ef63be322301
+    - name: Station
+      pathPrefix: Backgrounds/MainBackground
+      guid: 654c6148e65ab7f4b95c32bc5db785cb
+    - name: Subway_line1
+      pathPrefix: Backgrounds/MainBackground
+      guid: ee60bf8badf47294c8c679ceb81f8a3e
+    - name: End1
+      pathPrefix: Backgrounds/MainBackground
+      guid: b85bfcef227bffa45be97e2b12a0e140
+    - name: End2
+      pathPrefix: Backgrounds/MainBackground
+      guid: f4d16c21c66354c4a91d79caf857416e
+    - name: End3
+      pathPrefix: Backgrounds/MainBackground
+      guid: d7cc92c149b48dc45861c7e3aecfb28e
+    - name: End4_1
+      pathPrefix: Backgrounds/MainBackground
+      guid: f9a447c17445f50408839b199940f04a
   - Id: Characters/9ba60146-9d3a-4747-bcd2-c9aacd2e03c1
     Resources:
     - name: Haji
