@@ -8,7 +8,7 @@ public class PlayerController1 : MonoBehaviour
     public ObstacleManager obstacleManager; // ObstacleManager 스크립트 참조
 
     private int currentLane = 1; // 주인공의 현재 위치 (0: 왼쪽, 1: 중앙, 2: 오른쪽)
-    public float laneWidth = 3.0f; // 장애물 간의 간격
+    public float laneWidth = 3f; // 장애물 간의 간격
 
     private void Update()
     {

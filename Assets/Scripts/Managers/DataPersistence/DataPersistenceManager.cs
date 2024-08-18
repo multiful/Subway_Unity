@@ -181,6 +181,8 @@ public class DataPersistenceManager : MonoBehaviour
         // save that data to a file using the data handler
         // 데이터 핸들러를 사용해서 파일에 저장
         dataHandler.Save(userData, selectedProfileId);
+
+        Debug.Log($"DataPersistenceManager 저장완료");
     }
 
     private void OnApplicationQuit()

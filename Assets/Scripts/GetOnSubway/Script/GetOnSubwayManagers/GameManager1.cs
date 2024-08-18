@@ -16,6 +16,7 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
     public GameObject gameClearText;
     public GameObject player;
     public ObstacleManager obstacleManager;
+    public SaveLoadManager saveLoadManager; // r
     [SerializeField] private Button deleteButton;
 
     private float currentTime;
@@ -23,8 +24,10 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
     private int difficultyLevel = 1; // 난이도 초기값
     private bool isGameOver = false;
     private int gameID = 1; // 현재 게임의 ID
-    
+
+    [SerializeField]
     private UserData userData;
+    
 
     void Start()
     {
@@ -34,18 +37,19 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         rewardText.gameObject.SetActive(false); // 보상 텍스트 숨김
         currentTime = timeLimit;
 
+
         if (deleteButton != null)
         {
             deleteButton.onClick.AddListener(OnNewGameButtonClicked);
         }
 
-        // 데이터를 로드하고 userData 초기화
+        /*// 데이터를 로드하고 userData 초기화 // 필요없음
         DataPersistenceManager.instance.LoadGame();
         if (userData == null)
         {
             Debug.LogError("UserData is null after loading. Creating new UserData instance.");
             userData = new UserData();
-        }
+        }*/
         SetDifficultyLevel();
         UpdateUI();
         obstacleManager.GenerateInitialObstacles();
@@ -101,6 +105,21 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         }
     }
 
+    public async void Transfer()
+    {
+        
+        // 2. Switch cameras.
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        // 3. Load and play specified script (if assigned).
+        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync("빠르게환승", label: "실패1");
+
+        // 4. Enable Naninovel input.
+        GameManager.Nani.InputManager.ProcessInput = true;
+
+        gameObject.SetActive(false);
+    }
     void UpdateUI()
     {
         timerText.text = "" + Mathf.CeilToInt(currentTime).ToString();
@@ -115,9 +134,7 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
 
-        // Naninovel 대화 스크립트 호출
-        /*var runner = Engine.GetService<IScriptPlayer>();
-        runner.PreloadAndPlayAsync("reward-dialogue");*/
+        Transfer();
 
         foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
         {
@@ -143,6 +160,17 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         // 클리어 처리
         CalculateReward();
         SaveGameProgress();
+
+        // 2. Switch cameras.
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        // Naninovel 대화 스크립트 호출 (성공 시 성공1 라벨로 이동)
+        var runner = Engine.GetService<IScriptPlayer>();
+        runner.PreloadAndPlayAsync("빠르게환승", label: "성공1").Forget();
+
+        // 4. Enable Naninovel input.
+        GameManager.Nani.InputManager.ProcessInput = true;
     }
 
     void SetDifficultyLevel()
@@ -190,12 +218,14 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         rewardText.text = $" +  {reward}";
         rewardText.gameObject.SetActive(true);
         userData.money += reward;
+
         SaveData(userData);
     }
 
     void SaveGameProgress()
     {
         userData.gameAndDifficultyCleared[gameID][difficultyLevel] = true;
+        // userData.money += userData.money;
         DataPersistenceManager.instance.SaveGame();
 
 
@@ -204,7 +234,8 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
     public void LoadData(UserData data)
     {
         // userData.money = data.money;
-        userData = data;
+        userData.money = data.money;
+        Debug.Log($"데이터가 로드 되었습니다.");
     }
 
     public void SaveData(UserData data)

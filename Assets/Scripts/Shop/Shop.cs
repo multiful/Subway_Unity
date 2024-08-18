@@ -10,11 +10,13 @@ using UnityEngine.UI;
 public class Shop : MonoBehaviour
 {
     private int[] price = { 3000, 5000, 10000 };
+    private int diaryUnlock = 0;
     public TMP_Text TMP_money, TMP_ticket, TMP_eyedrop;
-    public GameObject noMoney, thankYou; //temp name
     public GameObject[] itemZoom = new GameObject[3];
+    public GameObject[] BehindDiary = new GameObject[3];
     public GameObject items, cardFlip;
     public Button setting;
+    public TMP_Text speech;
 
     private UserData userData = new UserData();
 
@@ -63,6 +65,8 @@ public class Shop : MonoBehaviour
         TMP_eyedrop.text = userData.eyedrop.ToString();
 
         setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
+
+        speech.text = "ㅎㅇ";
     }
 
     public void ItemBuy(int itemNum)
@@ -74,7 +78,9 @@ public class Shop : MonoBehaviour
             SuccessUI(itemNum);
 
             switch(itemNum) {
-                case 0: /*diary*/ break; 
+                case 0:
+                    BehindDiary[diaryUnlock++].GetComponent<Image>().color = Color.white;
+                    break; 
                 case 1:
                     userData.ticket++;
                     StopAllCoroutines();
@@ -90,16 +96,25 @@ public class Shop : MonoBehaviour
     private void SuccessUI(int itemNum)
     {
         itemZoom[itemNum].SetActive(false);
-        noMoney.SetActive(false);
-        thankYou.SetActive(true);
+        speech.text = "ㄳ";
         items.SetActive(true);
         cardFlip.SetActive(true);
     }
 
     private void NoMoneyUI()
     {
-        thankYou.SetActive(false);
-        noMoney.SetActive(true);
+        speech.text = "돈이 없다고? 물건은 팔 수 없겠어. 난 셈이 철저한 편이라.";
+    }
+
+    public void Diary(int diaryNum)
+    {
+        if (diaryUnlock <= diaryNum)
+        {
+            speech.text = "비밀에는 대가가 필요한 법...";
+            return;
+        }
+        speech.text = "굿";
+        //OnDiaryClick
     }
 
     public void GoCardFlip()
