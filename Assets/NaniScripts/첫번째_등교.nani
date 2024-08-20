@@ -1,7 +1,5 @@
 @back Black
 @back Station
-@back Black
-@back Station
 @char Jicheol.2_1_4_065 pos:50,-44
 퇴근 시간 1호선. 확실한 건 아니지만 지금이라면 마주칠 확률이 높다.
 @char Jicheol.2_1_4_066 pos:50,-44
@@ -9,7 +7,7 @@
 오늘은 마주치면 무조건 말 걸어봐야지.
 @hide Jicheol
 @back black
-@back subway_past
+@back Subway_line1_past
 @char Haji.1_1_4_068 pos:40,-44,-1
 @char 1stMerchant.4_1_4_069 pos:65,-44,0
 ???: …
@@ -25,7 +23,7 @@
 @hide Jicheol
 나는 황급히 지하철 안으로 들어갔다.
 @back Black
-@back Subway1
+@back Subway_line1
 지하철에 들어선 순간 이해하기 힘든 상황이 펼쳐지고 있었다.
 @char Haji.1_1_4_075 pos:40,-44
 ???: …
@@ -114,7 +112,7 @@ Haji: 어, 저 이제 가 봐야 해서요. 오늘은 먼저 가볼게요.
 Jicheol: 네, 하지씨 조심해서 가세요.
 @char Haji.1_1_4_132 pos:40,-44
 Haji: 다음에 봬요, 지철씨.
-@char Haji.1_1_4_132 pos:75,-44
+@char Haji.1_1_4_132 pos:70,-44
 @hide Haji
 @char Jicheol.2_1_4_133 pos:50,-44
 ……
