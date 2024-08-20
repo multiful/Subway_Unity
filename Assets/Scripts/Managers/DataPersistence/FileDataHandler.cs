@@ -12,7 +12,7 @@ public class FileDataHandler
     // 데이터 파일의 이름
     private string dataFileName = "";
 
-    //주소 : "C:\Users\rlaeh\AppData\LocalLow\DefaultCompany\Subway_way\GetOnSubway"
+    
     // 백업 파일 확장자
     private readonly string backupExtension = ".bak";
 
@@ -28,14 +28,16 @@ public class FileDataHandler
 
     public UserData Load(string profileId, bool allowRestoreFromBackup = true)
     {
+
         // profileId가 null이면 null을 반환
         if (profileId == null)
         {
             return null;
         }
-
+        
         // dataDirPath, profileId, dataFileName을 결합하여 데이터 파일 경로를 만든다.
         string fullPath = Path.Combine(dataDirPath, profileId, dataFileName);
+        Debug.Log($" 파일 경로 : {fullPath}");
         UserData loadedData = null;
         // ScriptData loadedscriptData = null;
         if (File.Exists(fullPath))
@@ -57,6 +59,7 @@ public class FileDataHandler
 
                 // 역직렬화
                 loadedData = JsonUtility.FromJson<UserData>(dataToLoad);
+                Debug.Log(" 파일 데이터 -> UserData 로드되었습니다.");
             }
             catch (Exception e)
             {
@@ -69,6 +72,7 @@ public class FileDataHandler
                     {
                         loadedData = Load(profileId, false);
                     }
+                    Debug.Log("예외 발생 후 파일 데이터 백업되었습니다.");
                 }
                 // if we hit this else block, one possibility is that the backup file is also corrupt
                 else
@@ -113,7 +117,7 @@ public class FileDataHandler
 
             // 저장된 파일을 검증하고 백업 파일을 생성한다.
             UserData verifiedGameData = Load(profileId);
-            
+
             if (verifiedGameData != null)
             {
                 File.Copy(fullPath, backupFilePath, true);
@@ -123,7 +127,7 @@ public class FileDataHandler
             {
                 throw new Exception("Save file could not be verified and backup could not be created.");
             }
-
+            Debug.Log($" UserData -> 파일 데이터 세이브 되었습니다.");
         }
         catch (Exception e)
         {

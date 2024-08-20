@@ -3483,7 +3483,6 @@ MonoBehaviour:
   gameClearText: {fileID: 1666045027}
   player: {fileID: 8370141124849775130}
   obstacleManager: {fileID: 1013453933}
-  saveLoadManager: {fileID: 0}
   deleteButton: {fileID: 1471573859}
   userData:
     lastUpdated: 0
@@ -4247,7 +4246,7 @@ MonoBehaviour:
   initializeDataIfNull: 1
   overrideSelectedProfileId: 1
   testSelectedProfileId: test
-  fileName: data.game1
+  fileName: data.game4
   autoSaveTimeSeconds: 60
 --- !u!1 &1279513579
 GameObject:

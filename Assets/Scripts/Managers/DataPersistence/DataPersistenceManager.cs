@@ -68,7 +68,7 @@ public class DataPersistenceManager : MonoBehaviour
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)  
     {
         this.userDataPersistenceObjects = FindAllDataPersistenceObjects();
-        this.scriptDataPersistenceObjects = FindAllScriptDataPersistenceObjects();
+        // this.scriptDataPersistenceObjects = FindAllScriptDataPersistenceObjects();
         LoadGame();
 
         // start up the auto saving coroutine
@@ -143,10 +143,10 @@ public class DataPersistenceManager : MonoBehaviour
         {
             userDataPersistenceObj.LoadData(userData);
         }
-        foreach (IScriptDataPersistence scriptDataPersistenceObj in scriptDataPersistenceObjects)
+        /*foreach (IScriptDataPersistence scriptDataPersistenceObj in scriptDataPersistenceObjects)
         {
             scriptDataPersistenceObj.LoadData(scriptData);
-        }
+        }*/
     }
 
     public void SaveGame()
@@ -164,16 +164,15 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
 
+        Debug.Log($"Saving money: {userData.money}");
+
         // pass the data to other scripts so they can update it
         // 데이터를 다른 스크립트에 전달하여 업데이트 하도록 한다.
         foreach (IUserDataPersistence userDataPersistenceObj in userDataPersistenceObjects)
         {
             userDataPersistenceObj.SaveData(userData);
         }
-        foreach (IScriptDataPersistence scriptPersistenceObj in scriptDataPersistenceObjects)
-        {
-            scriptPersistenceObj.SaveData(scriptData);
-        }
+        
 
         // timestamp the data so we know when it was last saved
         userData.lastUpdated = System.DateTime.Now.ToBinary();
@@ -182,7 +181,7 @@ public class DataPersistenceManager : MonoBehaviour
         // 데이터 핸들러를 사용해서 파일에 저장
         dataHandler.Save(userData, selectedProfileId);
 
-        Debug.Log($"DataPersistenceManager 저장완료");
+        Debug.Log($"DataPersistenceManager 저장완료 : {userData.money}");
     }
 
     private void OnApplicationQuit()

@@ -16,7 +16,6 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
     public GameObject gameClearText;
     public GameObject player;
     public ObstacleManager obstacleManager;
-    public SaveLoadManager saveLoadManager; // r
     [SerializeField] private Button deleteButton;
 
     private float currentTime;
@@ -38,13 +37,15 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         currentTime = timeLimit;
 
 
+        // DataPersistenceManager.instance.DeleteProfileData(); // 데이터 삭제.
+
         if (deleteButton != null)
         {
             deleteButton.onClick.AddListener(OnNewGameButtonClicked);
         }
 
-        /*// 데이터를 로드하고 userData 초기화 // 필요없음
-        DataPersistenceManager.instance.LoadGame();
+        // 데이터를 로드하고 userData 초기화 // 필요없음
+        /*DataPersistenceManager.instance.LoadGame();
         if (userData == null)
         {
             Debug.LogError("UserData is null after loading. Creating new UserData instance.");
@@ -220,29 +221,37 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         userData.money += reward;
 
         SaveData(userData);
+        Debug.Log($"UserData + reward = {userData.money} ");
     }
 
     void SaveGameProgress()
     {
+        // 현재 난이도를 완료한 것으로 설정
+        if (!userData.gameAndDifficultyCleared.ContainsKey(gameID))
+        {
+            userData.gameAndDifficultyCleared[gameID] = new SerializableDictionary<int, bool>();
+        }
+
         userData.gameAndDifficultyCleared[gameID][difficultyLevel] = true;
-        // userData.money += userData.money;
+        
+
+        // DataPersistenceManager를 사용해 게임 데이터를 저장
         DataPersistenceManager.instance.SaveGame();
-
-
     }
 
     public void LoadData(UserData data)
     {
-        // userData.money = data.money;
+        
+        userData.gameAndDifficultyCleared = data.gameAndDifficultyCleared; 
         userData.money = data.money;
-        Debug.Log($"데이터가 로드 되었습니다.");
+        Debug.Log($"데이터가 로드 되었습니다. money = {data.money}");
     }
 
     public void SaveData(UserData data)
     {
         data.gameAndDifficultyCleared = userData.gameAndDifficultyCleared;
         data.money = userData.money;
-        Debug.Log($"현재 유저의 돈: {userData.money}");
+        Debug.Log($"현재 유저의 돈: {userData.money}, difficulty = {difficultyLevel}");
 
     }
 
@@ -284,4 +293,5 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
             Debug.LogError("DataPersistentManager instance not found!");
         }
     }
+    
 }
