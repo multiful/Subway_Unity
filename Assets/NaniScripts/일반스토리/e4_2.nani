@@ -1,15 +1,15 @@
 @back Black
 @back Station
-@char Jicheol.2_1_4_065 pos:50,-44
+@char Jicheol.2_1_4_065 pos:50,-44,-2
 퇴근 시간 1호선. 확실한 건 아니지만 지금이라면 마주칠 확률이 높다.
 @char Jicheol.2_1_4_066 pos:50,-44
 마주칠 지 안 마주칠 지 모르지만 이제는 결심했다.
 오늘은 마주치면 무조건 말 걸어봐야지.
 @hide Jicheol
 @back black
-@back subway_past
-@char Haji.1_1_4_068 pos:40,-44
-@char 1stMerchant.4_1_4_069 pos:65,-44
+@back Subway1_past
+@char Haji.1_1_4_068 pos:36,-44,-1
+@char 1stMerchant.4_1_4_069 pos:65,-44,-3
 ???: …
 1stMerchant: 에이 아가씨 그러지 말고 하나만 사줘
 @hide Haji,1stMerchant
@@ -25,13 +25,14 @@
 @back Black
 @back Subway1
 지하철에 들어선 순간 이해하기 힘든 상황이 펼쳐지고 있었다.
-@char Haji.1_1_4_075 pos:40,-44
+@char Haji.1_1_4_075 pos:36,-44
 ???: …
-@char 1stMerchant.4_1_4_076 pos:65,-44
+@char 1stMerchant.4_1_4_076 pos:70,-44
 1stMerchant: 에이 아가씨 그러지 말고 하나만 사줘
-@char Haji.1_1_4_077 pos:40,-44
+@char Haji.1_1_4_077 pos:36,-44
 ???: 괜찮습니다.
-잡상인으로 보이는 어떤 노인이 그녀의 팔을 붙잡으며 말한다. 
+잡산인으로 보이는 노인은 그녀의 거절에도 아랑곳하지 않는다.
+@char 1stMerchant.4_1_4_076 pos:65,-44
 1stMerchant: 내가 날이면 날마다 오는 게 아니야.
 1stMerchant: 나 이렇게 보여도 손해 보면서 장사하는 거라니까?
 @char 1stMerchant.4_1_4_081 pos:65,-44
@@ -52,7 +53,7 @@
 @char Haji.1_1_4_077 pos:45,-44
 @char 1stMerchant.4_1_4_083 pos:70,-44
 @char Jicheol.2_1_4_089 pos:0,-44
-@char Jicheol.2_1_4_089 pos:44,-44
+@char Jicheol.2_1_4_089 pos:44,-44,-2
 @char Haji.1_1_4_077 pos:32,-44
 나는 당장 달려가 노인의 팔을 뿌리쳤다.
 @hide Haji
@@ -78,7 +79,7 @@ Jicheol: 안녕하세요. 거기 경찰이죠. 여기 지하철에서 불법 판
 @char Jicheol.2_1_4_100 pos:60,-44
 사정을 모르고 함부로 판단할 수는 없지. 일단 상황을 더 지켜보자.
 @char Haji.1_1_4_101 pos:20,-44
-@char Haji.1_1_4_101 pos:40,-44
+@char Haji.1_1_4_101 pos:36,-44
 ???: 자기야 왔어?
 @char Jicheol.2_1_4_102 pos:60,-44
 음? 이게 무슨 상황이지?
@@ -95,6 +96,9 @@ Jicheol: 그, 내, 내가 오는 길에 고양이를 봤는데
 Jicheol: 우리 부장님 가발 안으로 사라지더라니까…?
 @char Haji.1_1_4_109 pos:45,-44
 그 노인은 대화하는 우리 둘을 한심하게 보더니 언제 그랬냐는 듯 말없이 사라졌다.
+@hide Jicheol,Haji
+
+@char Jicheol.2_1_4_113 pos:60,-44
 @char Haji.1_1_4_110 pos:40,-44
 그녀는 노인이 사라졌음을 확인하고 안도의 한숨을 내쉬었다.
 @char Haji.1_1_4_111 pos:40,-44
@@ -133,16 +137,28 @@ Haji: 그럼요.
 Jicheol: 저는 유지철이라고 합니다.
 @char Haji.1_1_4_129 pos:40,-44
 안내 방송: 내리실 문은 왼쪽입니다.
-@char Haji.1_1_4_130 pos:40,-44
-Haji: 어, 저 이제 가 봐야 해서요. 오늘은 먼저 가볼게요.
-@char Jicheol.2_1_4_131 pos:60,-44
-Jicheol: 네, 하지씨 조심해서 가세요.
-@char Haji.1_1_4_132 pos:40,-44
+@char Haji.1_1_4_130 pos:40,-44,-4
+Haji: 어, 저 이제 가 봐야 해서요. 오늘은 먼저 가볼...
+@char Haji.1_1_4_130 pos:48,-44,-4
+@char Jicheol.2_1_4_131 pos:58,-44
+Jicheol: 저기...!
+@char Haji.1_1_3_071 pos:45,-44
+Haji: 네...? 무슨 일이라도
+@char Jicheol.2_1_4_999 pos:58,-44
+Jicheol: 저희... 다음에 또 만날 수 있겠죠?
+@char Haji.1_1_4_124 pos:45,-44
+Haji: 그러겠죠? 지금까지 여러 번 스치 듯 만났으니까.
+@char Jicheol.2_1_4_998 pos:58,-44
+Jicheol: 다음에 만날 때는 서로 인사하면 안 될까요...?
+@char Haji.1_2_2_029 pos:45,-44
+Haji: 좋아요. 그러면 다음에 저 만날 때 모른 척하면 안돼요~
+@char Haji.1_1_4_132 pos:45,-44
 Haji: 다음에 봬요, 지철씨.
 @char Haji.1_1_4_132 pos:75,-44
 @hide Haji
-@char Jicheol.2_1_4_133 pos:50,-44
+@char Jicheol.2_1_4_131 pos:50,-44
 ……
+@char Jicheol.2_1_4_133 pos:50,-44
 시야에서 사라질 때까지 그녀를 쳐다봤다.
 @char Jicheol.2_1_4_135 pos:50,-44
 나 방금 제대로 말 한 거 맞나?

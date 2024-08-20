@@ -1,0 +1,9 @@
+@back Black
+@back Station
+@char Jicheol.2_2_1_001 pos:50,-44
+겨우 먼지나 날리지 않을 정도로 작게 비가 내린다.
+기분 나빠져도 이상하지 않을 찝찝한 날씨다.
+@char Jicheol.2_2_1_006 pos:50,-44
+아… 오늘은 그냥 버스 탈 걸 그랬나?
+@hide Jicheol
+@minigame_03

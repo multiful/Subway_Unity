@@ -1,14 +1,17 @@
-@char Jicheol.2_2_1_007 pos:90,-44
-@char Jicheol.2_2_1_007 pos:60,-44
-안내 방송: 출입문이 열립니다.
-@char Haji.1_2_1_008 pos:40,-44
-어김 없이 밀려 들어오는 사람들 속에서 강렬한 붉은 머리가 눈에 띈다.
-@char Jicheol.2_2_1_009 pos:60,-44
-하지씨다!!
-@char Jicheol.2_2_1_009 pos:50,-44
-@hide Jicheol,Haji
 @back Black
-@back Station
+@back Subway1
+@char Jicheol.2_2_1_007 pos:80,-44
+@char Jicheol.2_2_1_007 pos:50,-44
+비가 와서 그런지 오늘따라 지하철에 사람이 많다.
+옷을 적시는 우산, 사람들의 체온과 지하철을 가득 메우는 습기까지
+@char Jicheol.2_2_1_003 pos:50,-44
+비오는 날 출근 시간 지하철은 아무리 참아보려고 해도 불쾌하지 않을 수 없다.
+안내 방송: 출입문이 열립니다.
+어김 없이 밀려 들어오는 사람들 속에서 강렬한 붉은 머리가 눈에 띈다.
+@char Jicheol.2_2_1_009 pos:50,-44
+하지씨다!!
+@char Jicheol.2_2_1_009 pos:40,-44
+@hide Jicheol
 @char Jicheol.2_2_1_009 pos:60,-44
 @char Haji.1_2_1_008 pos:40,-44
 나는 문쪽으로 걸음을 옮겼다.
@@ -51,15 +54,16 @@ Haji: 조금 냄새가 날 까봐요… 하하
 - 1 선택
 @char Jicheol.2_2_1_031 pos:60,-44
 Jicheol: 킁킁..킁킁…
-@char Jicheol.2_2_1_032 pos:60,-44    
+@char Jicheol.2_2_1_032 pos:60,-44
 Jicheol: 향긋한 냄새만 나요.
 @char Haji.1_2_1_033 pos:40,-44
 Haji: ………………
+@hide Jicheol,Haji
 
 - 2 선택
 @char Jicheol.2_2_1_035 pos:60,-44
 Jicheol: 괜찮아요. 아무 냄새 안 나요.
-@char Jicheol.2_2_1_036 pos:60,-44    
+@char Jicheol.2_2_1_036 pos:60,-44
 Jicheol: 신경 쓰이시면 향수 빌려드릴까요?
 Jicheol: 괜찮으시다면 이거 쓰실래요?
 가방에서 작은 향수 병을 꺼냈다.
@@ -69,117 +73,117 @@ Jicheol: 이제 여름이다보니 저도 신경 쓰여서 가지고 다니는 �
 Haji: 감사합니다.
 @char Haji.1_2_1_041 pos:40,-44
 Haji: 음~ 향이 엄청 좋네요.
-    
+@hide Jicheol,Haji
+
 사람들: 내릴게요!!!
 @char Haji.1_2_1_043 pos:40,-44
 Haji: 꺄악!?
-
 갑작스러운 인파에 그녀의 몸이 휘청거린다.
-
+@hide Haji
+@back Black
 순간 그녀를 보호해야 한다는 생각에 자연스레 몸이 움직였다.
-
 양팔을 뻗어 보호하듯 전철의 벽을 짚고, 하지씨의 앞을 막아섰다.
 
+@back Subway_door
 Jicheol: 하지씨 괜찮아요?
-@char Haji.1_2_1_048 pos:40,-44
+@char Haji.1_2_1_048 pose:Wall
 Haji: ……
-@char Haji.1_2_1_049 pos:40,-44
+@char Haji.1_2_1_049
 Haji: …감사합니다.
-
 둘 사이 어색한 침묵만이 맴돈다.
-
 우리는 지하철 문을 기대고 서로 밀착하며 섰다.
-
+@char Haji.1_2_1_052
 가까이 서서 그런지 하지씨의 얼굴이 한 눈에 들어온다.
-
+@char Haji.1_2_1_053
 하지씨는 얼굴을 붉히며 내 눈을 피한다.
-
+@char Haji.1_2_1_055
 길게 내려 앉은 속눈썹만이 간간이 희미하게 떨린다.
-
-[sfx: 두근!]
-
+@char Haji.1_2_1_058
 달콤한 냄새가 코 끝을 간질인다.
-
+@char Haji.1_2_1_054
 가까이에서 그녀의 얼굴을 바라보고 있으니 심장이 마구 뛴다.
-
 어떻게 속눈썹마저 이렇게 길고 곧지?
-
 사람이 이렇게 예쁠 수 있나?
-
 안내 방송: 이번 역은 서초역입니다. 내리실 문은 오른쪽입니다. 
-
+@char Haji.1_2_1_060
 Haji: 저…저기 여기서 내려야 해서요…
-
+@char Haji.1_2_1_061
 Haji: 저는 먼저 내려볼게요. 
-
+@char Haji.1_2_1_062
 Haji: 오늘도 도와줘서 고마워요.
-
 Haji: 다음에 또 봐요.
-
-[sfx 뛰어가는 구두소리]
-
-지하철 문이 열리자마자 그녀는 부리나케 달려간다. 
-
-[사무실]
-
+@hide Haji
+@back Black
+지하철 문이 열리자마자 그녀는 부리나케 달려나갔다. 
+두근두근 효과음
+Jicheol: 이거 심장에 안 좋은데...?
+@back Black
+@back Office
+@char Jicheol.2_2_1_065 pos:50,-44
+회사에 도착한 지도 벌써 몇시간이나 지났지만
+나는 아직 하지씨와의 여운에 빠져있었다.
+@char Jicheol.2_2_1_065 pos:60,-44
+@char Seola.3_2_1_065 pos:40,-44
 Seola: 표정이 왜 그래? 기분 나빠.
-
+@char Jicheol.2_2_1_066 pos:60,-44
 Jicheol: 오늘은 기분이 좋으니 뭐라 말해도 넘어가 줄게.
-
+@char Seola.3_2_1_067 pos:40,-44
 Seola: 미안, 하지만 오빠 지금 표정 진짜 기분 나빠.
-
+@char Seola.3_2_1_068 pos:40,-44
 Seola: 어딘가 얼이 빠졌다고 해야 하나?
-
+@char Seola.3_2_1_069 pos:40,-44
 Seola: 뭐 그 분이라도 만났어? 
-
+@char Jicheol.2_2_1_070 pos:60,-44
 Jicheol: 오 어떻게 알았어?
-
+@char Jicheol.2_2_1_071 pos:60,-44
 Jicheol: 내가 그렇게 얼굴에 드러나는 사람이었나?
-
+@char Seola.3_2_1_072 pos:40,-44
 Seola: 아니, 그냥 항상 보고 있으니까 모르고 싶어도 모를 수가 없지.
-
+@char Jicheol.2_2_1_073 pos:60,-44
 Jicheol: 오늘 무슨 일이 있었냐면 말이야...
-
+@hide Jicheol,Seola
 설아에게 자초지종을 설명했다.
-
+@char Jicheol.2_2_1_073 pos:60,-44
+@char Seola.3_2_1_075 pos:40,-44
 Seola: 뭐 오빠가? 말도 안돼…
-
+@char Jicheol.2_2_1_076 pos:60,-44
 Jicheol: 뭐 언제까지 그러지 않아야 한다는 법은 없잖아?
-
+@char Seola.3_2_1_076 pos:40,-44
 Seola: 방구석 찐따 같던 우리 오빠가…
-
+@char Jicheol.2_2_1_078 pos:60,-44
 Jicheol: 오늘따라 말에 뼈가 있다?
-
+@char Jicheol.2_2_1_079 pos:60,-44
 Jicheol: 근데, 말만 겨우 붙여봤지 딱히 더 된 건 없어.
-
+@char Seola.3_2_1_080 pos:40,-44
 Seola: 흠… 그러면 말이야?
-
+@char Seola.3_2_1_081 pos:40,-44
 Seola: 내가 오빠 연애 도와줄까?
-
+@char Jicheol.2_2_1_082 pos:60,-44
 Jicheol: 뭐? 너가?
-
+@char Seola.3_2_1_083 pos:40,-44
 Seola: 그럼 아직도 나 좋다는 사람이 얼마나 많은데~
-
+@char Seola.3_2_1_084 pos:40,-44
 Seola: 내가 이런 건 또 전문가지~
-
+@char Jicheol.2_2_1_085 pos:60,-44
 Jicheol: 근데 나는 너가 연애 하는 걸 본 적 없는 것 같은데...?
-
+@char Seola.3_2_1_086 pos:40,-44
 Seola: 오빠도 잘 알잖아? 나 인기 엄청 많았던 거.
-
+@char Jicheol.2_2_1_087 pos:60,-44
 Jicheol: 그건 사실이지.
-
+@char Seola.3_2_1_088 pos:40,-44
 Seola: 내가 오빠랑 많이 붙어 다니던 것 맞는데
-
+@char Seola.3_2_1_089 pos:40,-44
 Seola: 그렇다고 우리가 항상 붙어 다니던 건 아니잖아? 
-
+@char Jicheol.2_2_1_090 pos:60,-44
 Jicheol: 듣고 보니 맞는 말이네.
-
+@char Seola.3_2_1_091 pos:40,-44
 Seola: 그러니까 하나하나 낱낱이 다 나에게 보고하도록!
-
+@char Jicheol.2_2_1_092 pos:60,-44
 뭔가 과한 면이 없지 않아 있는데…
-
+@hide Seola
+@char Jicheol.2_2_1_092 pos:50,-44
 흠…
-
+@char Jicheol.2_2_1_094 pos:50,-44
 그래,  뭐 좋은 게 좋은 거 아니겠어?
 
 @increaseStoryIndex

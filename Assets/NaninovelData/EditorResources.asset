@@ -171,15 +171,6 @@ MonoBehaviour:
     - name: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
       pathPrefix: Scripts
       guid: 7ee813acb6955fe47af87122d8cbeb47
-    - name: "\uB450\uBC88\uC9F8_\uB4DC\uC751\uAD50"
-      pathPrefix: Scripts
-      guid: d0a816b036f760949bebacf177a7cd1b
-    - name: "\uC138\uBC88\uC9F8_\uB4F1\uAD50\uC624"
-      pathPrefix: Scripts
-      guid: ebc6c769cd7d74541a9dbca64acefdea
-    - name: "\uBD80\uB044\uB7EC\uC6CC\uC694"
-      pathPrefix: Scripts
-      guid: 3b94582880df00048984a60f308865dc
     - name: "\uC5D4\uB529"
       pathPrefix: Scripts
       guid: 735e908017d9c8e41ae52b41d8c6701d
@@ -305,9 +296,15 @@ MonoBehaviour:
     - name: Station
       pathPrefix: Backgrounds/MainBackground
       guid: 654c6148e65ab7f4b95c32bc5db785cb
-    - name: Subway_line1
+    - name: Subway1
       pathPrefix: Backgrounds/MainBackground
       guid: ee60bf8badf47294c8c679ceb81f8a3e
+    - name: Subway2
+      pathPrefix: Backgrounds/MainBackground
+      guid: 
+    - name: Subway_door
+      pathPrefix: Backgrounds/MainBackground
+      guid: 3f47bc93df4e44a41a58f86039e0c5dc
     - name: End1
       pathPrefix: Backgrounds/MainBackground
       guid: b85bfcef227bffa45be97e2b12a0e140
@@ -490,6 +487,12 @@ MonoBehaviour:
     - name: 1_2_1_052
       pathPrefix: Characters/Haji
       guid: 02f27cf1a2c82e04b827e40a81192971
+    - name: 1_2_1_053
+      pathPrefix: Characters/Haji
+      guid: 35874f0f4ba99434e87bb6c3b1ac897a
+    - name: 1_2_1_054
+      pathPrefix: Characters/Haji
+      guid: 4af271512e7cc1a4ea6c4de0f3c6279b
     - name: 1_2_1_055
       pathPrefix: Characters/Haji
       guid: 69e32701e97e3bd4f81590f82fd69273
@@ -634,12 +637,6 @@ MonoBehaviour:
     - name: 1_2_2_103
       pathPrefix: Characters/Haji
       guid: 56eaac10796009e429f30aa693f00b03
-    - name: 
-      pathPrefix: Characters/Haji
-      guid: 
-    - name: 
-      pathPrefix: Characters/Haji
-      guid: 
     - name: 
       pathPrefix: Characters/Haji
       guid: 
@@ -1050,6 +1047,12 @@ MonoBehaviour:
     - name: 2_1_4_139
       pathPrefix: Characters/Jicheol
       guid: 3baf680ce2212df498fa78753bfec3c6
+    - name: 2_1_4_998
+      pathPrefix: Characters/Jicheol
+      guid: e615f65da589f0247a858857c2ba359d
+    - name: 2_1_4_999
+      pathPrefix: Characters/Jicheol
+      guid: 9c62d4231a62a2742b0dc80cf3a2a1a9
     - name: 2_2_1_001
       pathPrefix: Characters/Jicheol
       guid: 8d3a15cd62a5199458acf81cf0f0646b
@@ -1683,5 +1686,5 @@ MonoBehaviour:
     Resources: []
   - Id: Characters/57f53d6a-716a-46eb-a9a3-0634cbf3b12b
     Resources: []
-  - Id: Characters/b19c15e2-4ee1-403b-8303-69e5e27c6c99
+  - Id: CharacterAvatars
     Resources: []

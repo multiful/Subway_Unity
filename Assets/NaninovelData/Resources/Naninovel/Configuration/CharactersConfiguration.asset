@@ -72,7 +72,6 @@ MonoBehaviour:
     - Extra
     - Manager
     - Announcement
-    - Monologue
     metas:
     - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -101,7 +100,7 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: "\uD558\uC9C0"
-      UseCharacterColor: 1
+      UseCharacterColor: 0
       NameColor: {r: 0.8117648, g: 0.48627454, b: 0.35686275, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
@@ -143,7 +142,7 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: "\uC720\uC9C0\uCCA0"
-      UseCharacterColor: 1
+      UseCharacterColor: 0
       NameColor: {r: 0.2784314, g: 0.3647059, b: 0.7803922, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
@@ -185,7 +184,7 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: "\uCD5C\uC124\uC544"
-      UseCharacterColor: 1
+      UseCharacterColor: 0
       NameColor: {r: 0.572327, g: 1, b: 0.9813786, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
@@ -368,48 +367,6 @@ MonoBehaviour:
       VoiceSource: {fileID: 0}
       LinkedPrinter: 
       Poses: []
-    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Loader:
-        PathPrefix: Characters
-        ProviderTypes:
-        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      guid: b19c15e2-4ee1-403b-8303-69e5e27c6c99
-      customData:
-        rid: -2
-      Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
-      EnableDepthPass: 1
-      DepthAlphaCutoff: 0.5
-      CustomTextureShader: {fileID: 0}
-      CustomSpriteShader: {fileID: 0}
-      RenderTexture: {fileID: 0}
-      RenderRectangle:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1
-        height: 1
-      BakedLookDirection: 1
-      DisplayName: '.    '
-      UseCharacterColor: 1
-      NameColor: {r: 0.29411766, g: 0.6156863, b: 0.8745099, a: 1}
-      MessageColor: {r: 1, g: 1, b: 1, a: 1}
-      HighlightWhenSpeaking: 0
-      HighlightCharacterCount: 0
-      SpeakingPose: 
-      NotSpeakingPose: 
-      PlaceOnTop: 1
-      HighlightDuration: 0.35
-      HighlightEasing: 1
-      MessageSound: 
-      MessageSoundPlayback: 0
-      VoiceSource: {fileID: 0}
-      LinkedPrinter: 
-      Poses: []
   AvatarLoader:
     PathPrefix: CharacterAvatars
     ProviderTypes:
@@ -417,7 +374,39 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  SharedPoses: []
+  SharedPoses:
+  - name: Wall
+    actorState:
+      appearance: 
+      visible: 0
+      position: {x: 0, y: -18.72, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scale: {x: 1.44, y: 1.44, z: 1.44}
+      tintColor: {r: 0, g: 0, b: 0, a: 0}
+      lookDirection: 0
+    overriddenProperties:
+    - position
+    - scale
+  - name: 
+    actorState:
+      appearance: 
+      visible: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scale: {x: 0, y: 0, z: 0}
+      tintColor: {r: 0, g: 0, b: 0, a: 0}
+      lookDirection: 0
+    overriddenProperties: []
+  - name: 
+    actorState:
+      appearance: 
+      visible: 0
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scale: {x: 0, y: 0, z: 0}
+      tintColor: {r: 0, g: 0, b: 0, a: 0}
+      lookDirection: 0
+    overriddenProperties: []
   references:
     version: 2
     RefIds:
