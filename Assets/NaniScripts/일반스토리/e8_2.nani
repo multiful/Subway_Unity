@@ -1,2 +1,258 @@
+@back Black
+@back Subway1
+@char Haji.1_2_4_012 pose:Left
+@char Jicheol.2_2_4_012 pose:Right
+Haji: 고마워요. 매 번 덕분에 편하게 가네요.
+Haji: 늘 서서 가느라 힘들었는데…
+@char Jicheol.2_2_4_014
+하지씨가 뭐라고 하는지 머리 속에 잘 들어오지 않는다.
+설아가 알려준 대로 오늘은 누나라고 불러야 하는데…
+벌써 며칠 째 실패하고 있는 것인지 모르겠다.
+@char Jicheol.2_2_4_017
+Jicheol: 누…누…
+@char Haji.1_2_4_018
+Haji: 네?
+@char Jicheol.2_2_4_019
+Jicheol: 누텔라… 좋아하시나요…?
+@char Haji.1_2_4_020
+Haji: 누텔라? 그게 뭐죠?
+@char Jicheol.2_2_4_021
+Jicheol: 하하 초콜릿 맛 나는 잼이요. 
+Jicheol: 악마의 잼이라고 불리는 그거요.
+@char Haji.1_2_4_023
+Haji: 아, 그거요? 아니요 별로 안 좋아해요.
+@char Jicheol.2_2_4_024
+망했다. 왜 자꾸 누나라는 말은 입에서 떨어지지 않는 걸까?
+@char Haji.1_2_4_025
+Haji: 단 거는 딱히 좋아하지 않는데…
+@char Haji.1_2_4_026
+Haji: 그래도 저번에 주셨던 초콜릿은 좋아해요.
+@char Jicheol.2_2_4_027
+아, 초콜릿은 좋아하는구나…
+@char Jicheol.2_2_4_028
+아니 그 보다 또 실패다.
+진짜 한 번만 한 번만 다시 해보자…
+@char Jicheol.2_2_4_030
+Jicheol: 누…
+@char Haji.1_2_4_031
+Haji: 누?
+@char Jicheol.2_2_4_032
+Jicheol: 누…누…
+@char Jicheol.2_2_4_033
+Jicheol: 누…누가바
+Jicheol: 가만히 보니
+@char Jicheol.2_2_4_035
+Jicheol: 바밤바!!
+@char Jicheol.2_2_4_036
+우와 망했다….
+이런 되도 않는 드립이 입에서 나올 줄이야….
+@char Haji.1_2_4_038
+Haji: 바…밤바? 그게 뭐죠?
+Jicheol: 네? 혹시 안 드셔보셨어여?
+@char Haji.1_2_4_040
+@char Jicheol.2_2_4_040
+Haji: 바밤바는 처음 들어 보네요. 
+우와 바밤바를 모를 수도 있구나.
+@char Jicheol.2_2_4_042
+저번에도 그렇고 이 사람 은근히 모르는 게 많은 것 같은데?
+도대체 어떤 삶을 산 거지?
+@char Jicheol.2_2_4_044
+Jicheol: 밤 맛 나는 아이스크림인데 본 적 없으신 가 봐요?
+@char Haji.1_2_4_045
+Haji: 여기는 그런 것도 있군요. 
+@char Haji.1_2_4_046
+Haji: 아니, 근데 방금 그거 삼행시 한 건 가요?
+@char Jicheol.2_2_4_047
+Jicheol: 아니에요. 그냥 잊어주세요…
+아아아아아아아아아아아
+@char Jicheol.2_2_4_049
+진정하고 다시 한 번 시도해보자.
+@char Jicheol.2_2_4_050
+Jicheol: 누…누…
+@char Haji.1_2_4_051
+Haji: 누구세요?
+@char Jicheol.2_2_4_052
+Jicheol: 예…예?
+@char Haji.1_2_4_053
+Haji: 풉
+하지씨는 갑자기 웃기 시작했다.
+@char Haji.1_2_4_055
+Haji: 혹시 누나라고 부르고 싶어요?
+@char Jicheol.2_2_4_056
+Jicheol: !?
+@char Haji.1_2_4_057
+Haji: 그도 그럴게 요새 계속 이러시는 것 같아서요.
+Haji: 안 그런가요?
+@hide Jicheol,Haji
 
-@stop
+1. 아닌 척 한다. (호감도 -5)
+
+2. 솔직하게 맞다고 얘기한다. (호감도 +5)
+
+- 1 선택 시
+@char Haji.1_2_4_057 pose:Left
+@char Jicheol.2_2_4_062 pose:Right
+Jicheol: 아… 아니에요. 누나라니 그런 파렴치한 말을…
+@char Haji.1_2_4_063
+Haji: 음, 그런가요?
+@char Haji.1_2_4_064
+Haji: 흠……
+어쩐지 하지씨가 언짢다는 듯한 표정으로 나를 바라본다.
+@char Haji.1_2_4_066
+Haji: 그럼 이 기회에 서로 말 편하게 해요.
+Haji: 특별히 누나라고 부르는 거 허락해 줄게.
+@char Jicheol.2_2_4_068
+Jicheol: 네, 네?
+
+2 선택
+@char Haji.1_2_4_057 pose:Left
+@char Jicheol.2_2_4_070 pose:Right
+Jicheol: 맞아요.
+Jicheol: 요 며칠 꽤나 노력했는데 많이 티가 났나 보네요.
+Jicheol: 꽤 많이 만난 것 같은데 이름으로 부르는 건 너무 딱딱한 것 같아서요.  
+@char Jicheol.2_2_4_073
+Jicheol: ……
+@char Jicheol.2_2_4_074
+Jicheol: 혹시 누나라고 부르면 안 될까요?
+@char Haji.1_2_4_074
+하지씨는 한참을 날 뚫어져라 쳐다 봤다.
+@char Haji.1_2_4_077
+Haji: 지금 나한테 끼 부리는 거에요?
+@char Jicheol.2_2_4_078
+Jicheol: 아니요. 그냥… 친해지고 싶어서요.
+@char Jicheol.2_2_4_079
+괜히 이렇게 말했나? 내가 너무 무례했으려나?
+@char Haji.1_2_4_080
+Haji: 누나라… 
+@char Haji.1_2_4_081
+Haji: 좋네요.
+@char Haji.1_2_4_082
+Haji: 지금까지 나는 막내였거든요.
+Haji: 항상 오빠 소리만 했었는데
+@char Haji.1_2_4_084
+Haji: 누나라고 들으니 신선하고 좋다.
+
+@char Jicheol.2_2_4_085 pose:Right
+@char Haji.1_2_4_085 pose:Left
+Haji: 겸사겸사 우리 말도 놓자.
+@char Haji.1_2_4_086
+Haji: 그럼 누나라고 불러 볼래?
+@char Jicheol.2_2_4_087
+Jicheol: 갑자기 그러시면 저도 부끄러워요.
+@char Haji.1_2_4_088
+Haji: 이런 면도 있었구나.
+@char Haji.1_2_4_089
+Haji: 귀엽네.
+@char Jicheol.2_2_4_090
+Jicheol: …누나.
+Haji: 뭐라고? 잘 안 들리는데?
+@char Jicheol.2_2_4_092
+Jicheol: 누나! 이제 곧 내려야 해요.
+@char Haji.1_2_4_093
+@char Jicheol.2_2_4_093
+Haji: 내 정신 좀 봐. 하마터면 한 정거장 더 갈 뻔했네.
+Haji: 정말 시간 가는 줄 몰랐네. 
+@char Haji.1_2_4_095
+Haji: 역시 너랑 있으면 즐거워.
+@char Haji.1_2_4_096
+Haji: 나 먼저 간다.
+@char Haji.1_2_4_096 pos:30,-44
+@hide Haji
+@char Jicheol.2_2_4_097 pose:Mid
+누나가 사라지고 나니 괜스레 다른 사람들이 우리 대화를 듣지 않았을까 의식되기 시작했다.
+으… 부끄러워.
+@hide Jicheol
+
+@back Black
+@back Office
+@char Seola.3_2_4_100 pose:Left
+@char Jicheol.2_2_4_100 pos:80,-44
+@char Jicheol.2_2_4_100 pose:Right
+Seola: 오빠 왔어?
+@char Jicheol.2_2_4_101
+Jicheol: 설아야, 설아야.
+@char Seola.3_2_4_102
+Seola: 무슨 일있어?
+@char Jicheol.2_2_4_103
+Jicheol: 오늘 너 덕분에 완전 잘 풀린 것 같아!
+Jicheol: 정말 고마워.
+@char Seola.3_2_4_105
+Seola: 응? 뭐 했는데?
+Jicheol: 드디어 누나에게 누나라고 불렀어.
+@char Seola.3_2_4_107
+Seola: 그…래?
+@char Seola.3_2_4_108
+Seola: 그 사람이 혹시 싫어하지는 않았어?
+@char Jicheol.2_2_4_109
+Jicheol: 딱히 싫어하는 분위기는 아니였어.
+@char Jicheol.2_2_4_110
+Jicheol: 오히려 좋아하는 것 같던데?
+@char Seola.3_2_4_111
+Seola: ……
+@char Jicheol.2_2_4_113
+Jicheol: 설아야?
+@char Seola.3_2_4_113
+Seola: 오빠는 왜 지금까지 연애 안 하고 있었는지 알려줄 수 있어?
+@char Jicheol.2_2_4_114
+Jicheol: 어? 갑자기?
+@char Seola.3_2_4_115
+Seola: 요즘 보니까 연애에 아예 관심이 없는 건 아닌 것 같은데…?
+@char Jicheol.2_2_4_116
+Jicheol: 음… 그렇긴 하지.
+@char Seola.3_2_4_117
+Seola: 지금까지 이런 모습은 본 적 없는 것 같아서…?
+@char Jicheol.2_2_4_118
+Jicheol: 하하.
+@char Seola.3_2_4_119
+Seola: 그래서 왜 안 했어?
+@char Jicheol.2_2_4_120
+Jicheol: ……
+@char Jicheol.2_2_4_121
+Jicheol: 딱히 그냥…
+@char Jicheol.2_2_4_122
+Jicheol: 마음에 드는 사람이 없어서…?
+@char Seola.3_2_4_123
+Seola: 그래…? 
+@char Seola.3_2_4_124
+Seola: 그럼 나는…?
+@char Jicheol.2_2_4_124
+Jicheol: !?
+@char Seola.3_2_4_126
+Seola: 나는 마음에 든 적 없었어…?
+Jicheol: 음…
+@char Jicheol.2_2_4_128
+Jicheol: 너는 내 소중한 동생이잖아.
+@char Seola.3_2_4_129
+Seola: ……
+@char Seola.3_2_4_130
+Seola: …… 바보
+@char Jicheol.2_2_4_131
+Jicheol: 뭐라고?
+@char Seola.3_2_4_132
+Seola: 아니야, 나 해야 하는 게 생각나서.
+@char Seola.3_2_4_133
+Seola: 나는 마저 가서 할 일 할게~
+@char Jicheol.2_2_4_134
+Jicheol: 어… 그래? 알았어.
+@char Seola.3_2_4_133 pos:30,-44
+@hide Seola
+@char Jicheol.2_2_4_135 pose:Mid
+음……
+설아가 간 뒤에도 아까 했던 이야기들이 머리 속을 맴돌았다.
+@char Jicheol.2_2_4_137
+연애라……
+설아한테는 마음에 드는 사람이 없어서 라고 답은 했지만,
+사실 지금까지 연애와 관련된 순간들이 오면 항상 겁이 났었다.
+@char Jicheol.2_2_4_140
+새로운 사람을 만나는 것, 만남의 끝에는 헤어짐이 있다는 것,
+내 마음이 흔들려 일상이 망가지는 것…
+@char Jicheol.2_2_4_142
+새삼 스스로 생각해봐도 이런 겁쟁이가 또 있을까 싶다.
+@char Jicheol.2_2_4_143
+그래서인지 유독 누나에게는 이럴 수 있다는 게 정말 신기하다. 
+나는 평생 사랑 같은 거 못 할 줄 알았는데….
+@char Jicheol.2_2_4_145
+Jicheol: 보고 싶네, 누나.
+
+@increaseStoryIndex
+@finishStory

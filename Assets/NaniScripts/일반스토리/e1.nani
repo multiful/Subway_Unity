@@ -1,19 +1,19 @@
 @back Black
-Extra: 지철
+Extra: 지철아...
 @char Haji.1_1_1_002 pos:50,-44
 Extra: 빨리… 
 @char Haji.1_1_1_003 pos:50,-44
 Extra: 빨리 도망가!
 @char Haji.1_1_1_003 pos:65,-44
 @char Jicheol.2_1_1_006 pos:35,-44
-Monologue: 뭐라 말을 하고 싶지만 몸이 말을 듣지 않는다.
-Monologue: 비릿한 피 맛만이 입 안을 맴돈다.
+뭐라 말을 하고 싶지만 몸이 말을 듣지 않는다.
+비릿한 피 맛만이 입 안을 맴돈다.
 Jicheol: …!
 @char Jicheol.2_1_1_008 pos:-30,-44 time:1
 정체 모를 힘에 의해 몸이 어디론가 끌려 간다.
 @char Haji.1_1_1_003 pos:50,-44
 @hide Jicheol
-자꾸 그녀와의 거리가 멀어져만 간다.
+그녀와의 거리가 멀어져 간다.
 @char Haji.1_1_1_009 pos:50,-44
 Extra: 지철아
 Extra: 내 걱정은 하지 마.

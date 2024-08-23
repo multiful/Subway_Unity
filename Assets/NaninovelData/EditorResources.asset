@@ -264,6 +264,9 @@ MonoBehaviour:
     - name: End2. 2
       pathPrefix: Scripts
       guid: 472a7be848b8b374e8a3eb736d094daa
+    - name: e6_2
+      pathPrefix: Scripts
+      guid: 2968d6f0b64d71a49beb47d7deaf84ec
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Appeared
@@ -317,6 +320,9 @@ MonoBehaviour:
     - name: End4_1
       pathPrefix: Backgrounds/MainBackground
       guid: f9a447c17445f50408839b199940f04a
+    - name: Office_past
+      pathPrefix: Backgrounds/MainBackground
+      guid: 
   - Id: Characters/9ba60146-9d3a-4747-bcd2-c9aacd2e03c1
     Resources:
     - name: Haji
@@ -637,51 +643,261 @@ MonoBehaviour:
     - name: 1_2_2_103
       pathPrefix: Characters/Haji
       guid: 56eaac10796009e429f30aa693f00b03
-    - name: 
+    - name: 1_2_3_003
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 6badc57ed5187004485b4d709b632fe6
+    - name: 1_2_3_021
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: e669f6859bf0dae4d8e9635c344dbd72
+    - name: 1_2_3_024
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 5249feb46e1dbcb46b63d84f1e7ed9c5
+    - name: 1_2_3_030
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 48260ae4e0ad78e42a2a7a422483e80d
+    - name: 1_2_3_034
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 064c351507c6631418d9921e074943aa
+    - name: 1_2_3_036
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 024d6c1aced0185419cf985cfe543f37
+    - name: 1_2_3_037
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: a29f052af10f2844db17f31225fe6e96
+    - name: 1_2_3_038
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 4364031ac3c016a4caf7290c89bcfca2
+    - name: 1_2_3_039
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: cb88d546f16aca04e812732cedf790a1
+    - name: 1_2_3_043
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 971b93e0ebc42d84187727ecf24d1064
+    - name: 1_2_3_044
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 9917ced9d52d8d14685351dd5fecf706
+    - name: 1_2_3_045
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 686f02c63a93286448e1c7a90c20c1a5
+    - name: 1_2_3_046
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 248a65e26f345a643b0bdaf2200c20d1
+    - name: 1_2_3_048
       pathPrefix: Characters/Haji
-      guid: 
-    - name: 
+      guid: 3343e9472a553ea498c47c91411d0641
+    - name: 1_2_3_050
       pathPrefix: Characters/Haji
-      guid: 
+      guid: eb1a565d2e0a26a4d869c4364e0ccfdc
+    - name: 1_2_3_051
+      pathPrefix: Characters/Haji
+      guid: c024c5c959bc94641b8dc69a88de348c
+    - name: 1_2_3_052
+      pathPrefix: Characters/Haji
+      guid: 4b5670070f4a0284688e9d89e595dea5
+    - name: 1_2_3_053
+      pathPrefix: Characters/Haji
+      guid: 99d225feda017b4489ad077af09b2283
+    - name: 1_2_3_054
+      pathPrefix: Characters/Haji
+      guid: 1a8f9b311e55add498b85a941dd82ad1
+    - name: 1_2_3_058
+      pathPrefix: Characters/Haji
+      guid: e7ee931417e4229498719b7d7cbe3df1
+    - name: 1_2_3_059
+      pathPrefix: Characters/Haji
+      guid: fd09f696d4a99974a880e01566d252d6
+    - name: 1_2_3_064
+      pathPrefix: Characters/Haji
+      guid: 2c2c17d7f5571764f8adc255b5f1cb61
+    - name: 1_2_3_067
+      pathPrefix: Characters/Haji
+      guid: 3d51283c0e9d3e64492c1e3c8064f1ef
+    - name: 1_2_3_068
+      pathPrefix: Characters/Haji
+      guid: 37b85c16e17b6ce429a6d22565491d7c
+    - name: 1_2_3_074
+      pathPrefix: Characters/Haji
+      guid: e259c9a7129d68c43ad49f9526828d43
+    - name: 1_2_3_075
+      pathPrefix: Characters/Haji
+      guid: c091866a9eda1c64bae24dd15cd1edd3
+    - name: 1_2_3_079
+      pathPrefix: Characters/Haji
+      guid: b021dd11c7e1f264e91264085b780d90
+    - name: 1_2_3_081
+      pathPrefix: Characters/Haji
+      guid: bee2ebd45bb4b3d49800f8a2d47db379
+    - name: 1_2_3_087
+      pathPrefix: Characters/Haji
+      guid: 8f21f8ae28d27864e8f10e4415312d84
+    - name: 1_2_3_088
+      pathPrefix: Characters/Haji
+      guid: fa04531faf2a320499cf19dabe93c757
+    - name: 1_2_3_090
+      pathPrefix: Characters/Haji
+      guid: adfdcf1079f1b714187f8116be48e405
+    - name: 1_2_3_091
+      pathPrefix: Characters/Haji
+      guid: e3cb425adcc2749448d90e168046453e
+    - name: 1_2_3_094
+      pathPrefix: Characters/Haji
+      guid: e1aee2ac5b3658e409d1314921fa495b
+    - name: 1_2_3_095
+      pathPrefix: Characters/Haji
+      guid: db6c1e79d8bb25a49bf8c7764053f6ea
+    - name: 1_2_3_098
+      pathPrefix: Characters/Haji
+      guid: e8e702c3394463241845e0cd096ed9a6
+    - name: 1_2_3_099
+      pathPrefix: Characters/Haji
+      guid: 4d9b2778ea345e0418dad3da2fa1de38
+    - name: 1_2_3_102
+      pathPrefix: Characters/Haji
+      guid: a0f901c0bbc3268459abc92b10f641b9
+    - name: 1_2_3_103
+      pathPrefix: Characters/Haji
+      guid: b1d14f7d6a716b247af2340f9406223f
+    - name: 1_2_3_108
+      pathPrefix: Characters/Haji
+      guid: b51f401289d372c48831ae46caff3267
+    - name: 1_2_3_074_1
+      pathPrefix: Characters/Haji
+      guid: 16f9af5a0907ee544b3982150a010688
+    - name: 1_2_3_075_1
+      pathPrefix: Characters/Haji
+      guid: 51e5e36dda3a6e0468cbf8131de4bc26
+    - name: 1_2_3_079_1
+      pathPrefix: Characters/Haji
+      guid: ac82008fcc4c0654782db8e16bc9f537
+    - name: 1_2_3_081_1
+      pathPrefix: Characters/Haji
+      guid: a606dde0288f33f4b9fba96bf8200c80
+    - name: 1_2_3_087_1
+      pathPrefix: Characters/Haji
+      guid: d4b1325d7f9c5f041b46b36911f7f6cc
+    - name: 1_2_3_088_1
+      pathPrefix: Characters/Haji
+      guid: 272103b5604a9b7448ccc6cb388519a3
+    - name: 1_2_3_090_1
+      pathPrefix: Characters/Haji
+      guid: c25ee6efcfdd2d641ba8145eeac934f9
+    - name: 1_2_3_091_1
+      pathPrefix: Characters/Haji
+      guid: 10d0dc028f135b449a9527f82e1ecbe4
+    - name: 1_2_3_094_1
+      pathPrefix: Characters/Haji
+      guid: 3d9068414f940854f860c7789021746a
+    - name: 1_2_3_095_1
+      pathPrefix: Characters/Haji
+      guid: 64c473ac12b13ee41b6fbf245ee4034f
+    - name: 1_2_3_098_1
+      pathPrefix: Characters/Haji
+      guid: 0f52732d3adfbc0458f0465afaaf720a
+    - name: 1_2_3_099_1
+      pathPrefix: Characters/Haji
+      guid: d82c27adc38c82f458c951fddd3d7239
+    - name: 1_2_3_102_1
+      pathPrefix: Characters/Haji
+      guid: 70ac7917ad97b7b49998af8714e76e2d
+    - name: 1_2_3_103_1
+      pathPrefix: Characters/Haji
+      guid: 97d2e764d78cf9d4c83884957b1cc270
+    - name: 1_2_3_108_1
+      pathPrefix: Characters/Haji
+      guid: 8496ea7750f50394b8c4eaa1e55de709
+    - name: 1_2_4_012
+      pathPrefix: Characters/Haji
+      guid: bd3e86137637bcd4ebe281d134d288ef
+    - name: 1_2_4_018
+      pathPrefix: Characters/Haji
+      guid: 33db1f26823655840b7bfe71930f499c
+    - name: 1_2_4_020
+      pathPrefix: Characters/Haji
+      guid: 84da840eba4d3fd48ba3beb9ade1857b
+    - name: 1_2_4_023
+      pathPrefix: Characters/Haji
+      guid: 54cc341f4d30e294eba43d25411c6494
+    - name: 1_2_4_025
+      pathPrefix: Characters/Haji
+      guid: 60b336765ff52604d8f06a6841be993d
+    - name: 1_2_4_026
+      pathPrefix: Characters/Haji
+      guid: 6174b733f5a69724ea27ccd4447a989f
+    - name: 1_2_4_031
+      pathPrefix: Characters/Haji
+      guid: 82dae086903671a4886546482fbee46a
+    - name: 1_2_4_038
+      pathPrefix: Characters/Haji
+      guid: 0f288ac9acc309b4295c926029150ff6
+    - name: 1_2_4_040
+      pathPrefix: Characters/Haji
+      guid: fca482aaa8656f94c8983ebf09b4dfc7
+    - name: 1_2_4_045
+      pathPrefix: Characters/Haji
+      guid: 7f6c588dbf5374b4787b7308b7811389
+    - name: 1_2_4_046
+      pathPrefix: Characters/Haji
+      guid: e946323559264644cbd5abadaceaf768
+    - name: 1_2_4_051
+      pathPrefix: Characters/Haji
+      guid: 0f3e4512397f4b04aa0bf842aaf50d64
+    - name: 1_2_4_053
+      pathPrefix: Characters/Haji
+      guid: 6c67d9ddce480574abaf8f30acfe5715
+    - name: 1_2_4_055
+      pathPrefix: Characters/Haji
+      guid: 23820f67c73fa1442960de8e5c9ddc4b
+    - name: 1_2_4_057
+      pathPrefix: Characters/Haji
+      guid: 706a63567cdfdb44e85a13b4b7300c79
+    - name: 1_2_4_063
+      pathPrefix: Characters/Haji
+      guid: e697e969580378b4985eb0bb8c09bb63
+    - name: 1_2_4_064
+      pathPrefix: Characters/Haji
+      guid: d70e17a7b7497f84a84c2b1a44c59087
+    - name: 1_2_4_066
+      pathPrefix: Characters/Haji
+      guid: 4cfa9c951256a52409f94835190ee499
+    - name: 1_2_4_074
+      pathPrefix: Characters/Haji
+      guid: 63b176ff9efadd34fb10b7944067dc06
+    - name: 1_2_4_077
+      pathPrefix: Characters/Haji
+      guid: c92bfcfc00dcd1444a105dfebdda40af
+    - name: 1_2_4_080
+      pathPrefix: Characters/Haji
+      guid: 4b1c29886af7aa94382983c5f6ceff7b
+    - name: 1_2_4_081
+      pathPrefix: Characters/Haji
+      guid: 2bc2281c1f6b6434da3472047eb39bd1
+    - name: 1_2_4_082
+      pathPrefix: Characters/Haji
+      guid: d4ccf7418336b61458eff57a50261f85
+    - name: 1_2_4_084
+      pathPrefix: Characters/Haji
+      guid: fd19f4ae58720fb4ba57caa44f7f768d
+    - name: 1_2_4_085
+      pathPrefix: Characters/Haji
+      guid: e6b7261bfd7ac0244b514aa27ba14389
+    - name: 1_2_4_086
+      pathPrefix: Characters/Haji
+      guid: 82f88cad499ae9e419d833cade1da8cd
+    - name: 1_2_4_088
+      pathPrefix: Characters/Haji
+      guid: 9bef40e18404e0d4cb16298cb8b254fc
+    - name: 1_2_4_089
+      pathPrefix: Characters/Haji
+      guid: 61ba3104b16a2324e8ac705622397886
+    - name: 1_2_4_093
+      pathPrefix: Characters/Haji
+      guid: ef9a14519af07b840b3b183205e153e6
+    - name: 1_2_4_095
+      pathPrefix: Characters/Haji
+      guid: ac0690d963346a64ab4d8f9295e4618c
+    - name: 1_2_4_096
+      pathPrefix: Characters/Haji
+      guid: 7f40f0873cbaefa41bca3ecb8dfcdf9e
   - Id: Characters/5d2a4e08-f199-45f0-b488-0e8de0e8fe08
     Resources:
     - name: Jicheol
@@ -1329,6 +1545,318 @@ MonoBehaviour:
     - name: 2_2_2_137
       pathPrefix: Characters/Jicheol
       guid: d1f73555109328041a966a6d3096b0ff
+    - name: 2_2_3_001
+      pathPrefix: Characters/Jicheol
+      guid: 83d86f7af5275d649a05684dcf2bbbdb
+    - name: 2_2_3_003
+      pathPrefix: Characters/Jicheol
+      guid: b7e6fb1933a786545b9a53c59cbdee4d
+    - name: 2_2_3_008
+      pathPrefix: Characters/Jicheol
+      guid: f91dc5ffff89ccb47825eb59d8d1ad1f
+    - name: 2_2_3_010
+      pathPrefix: Characters/Jicheol
+      guid: 82feae0d3c2157f418edf97bf3f8f661
+    - name: 2_2_3_013
+      pathPrefix: Characters/Jicheol
+      guid: 94585a0383e1f1f4da8c7beb6e5e20f5
+    - name: 2_2_3_014
+      pathPrefix: Characters/Jicheol
+      guid: 02d7f3770a85de7499a0b269d7c4d4b3
+    - name: 2_2_3_017
+      pathPrefix: Characters/Jicheol
+      guid: 684c1d7ea1536b04888a9d3007feb5e7
+    - name: 2_2_3_022
+      pathPrefix: Characters/Jicheol
+      guid: bf1d57dbdb871c64b94ff6fc485f7ecd
+    - name: 2_2_3_025
+      pathPrefix: Characters/Jicheol
+      guid: aea86e663ca978544b1849b73c9470ee
+    - name: 2_2_3_026
+      pathPrefix: Characters/Jicheol
+      guid: d4a6920c217d82a40a79aaf110c6fb22
+    - name: 2_2_3_028
+      pathPrefix: Characters/Jicheol
+      guid: db7b4dc5f79af7247bf9d9afbd897af0
+    - name: 2_2_3_029
+      pathPrefix: Characters/Jicheol
+      guid: 5ae3e62407ac5214781e0c4094786e36
+    - name: 2_2_3_030
+      pathPrefix: Characters/Jicheol
+      guid: 37a48001a7dfb344abe31dfaa44c04bc
+    - name: 2_2_3_032
+      pathPrefix: Characters/Jicheol
+      guid: 63998cbde0129d045882fa01db078227
+    - name: 2_2_3_035
+      pathPrefix: Characters/Jicheol
+      guid: 5faca8abcb116514bae90ddb467e6ba9
+    - name: 2_2_3_040
+      pathPrefix: Characters/Jicheol
+      guid: 896bdf0799ded674881a9a9335f03365
+    - name: 2_2_3_042
+      pathPrefix: Characters/Jicheol
+      guid: f6a123b1b0270e840adf4e01cc0093bb
+    - name: 2_2_3_043
+      pathPrefix: Characters/Jicheol
+      guid: 8487acc63ca909d4e84a116cdc5a014d
+    - name: 2_2_3_047
+      pathPrefix: Characters/Jicheol
+      guid: c47aba506ff728949ab81a0927a5c0b4
+    - name: 2_2_3_056
+      pathPrefix: Characters/Jicheol
+      guid: 66a500b24ff41b64e9a1e554e476e7af
+    - name: 2_2_3_057
+      pathPrefix: Characters/Jicheol
+      guid: de9612ccb80471443800eeedefa925a4
+    - name: 2_2_3_061
+      pathPrefix: Characters/Jicheol
+      guid: 84bd8784a6893f341a420d0702c8cc87
+    - name: 2_2_3_063
+      pathPrefix: Characters/Jicheol
+      guid: 3757f2eb24324cb48aba28806829e41d
+    - name: 2_2_3_065
+      pathPrefix: Characters/Jicheol
+      guid: 0de5a6b4346fd224694df37e9123e391
+    - name: 2_2_3_070
+      pathPrefix: Characters/Jicheol
+      guid: 080afc1e02bf0d7418af2f0deea5f496
+    - name: 2_2_3_071
+      pathPrefix: Characters/Jicheol
+      guid: 6d055e773df8213449d323b98bcdf5e0
+    - name: 2_2_3_074
+      pathPrefix: Characters/Jicheol
+      guid: 6ae16da9f5b662e4aaec48a30538b7be
+    - name: 2_2_3_077
+      pathPrefix: Characters/Jicheol
+      guid: 3b265d9781e1e7a4eb0060302b1cb89f
+    - name: 2_2_3_080
+      pathPrefix: Characters/Jicheol
+      guid: 856a8889c6e236148a1d3765fdb43f56
+    - name: 2_2_3_082
+      pathPrefix: Characters/Jicheol
+      guid: ff807e5b936acd74d99da9e360b20761
+    - name: 2_2_3_083
+      pathPrefix: Characters/Jicheol
+      guid: 62bc1790f873d9944b11f334a0ea21b9
+    - name: 2_2_3_084
+      pathPrefix: Characters/Jicheol
+      guid: 6e9c7df643ae15b4da6b4a9ff94d3aba
+    - name: 2_2_3_085
+      pathPrefix: Characters/Jicheol
+      guid: 58fd4586a0ddd7a4b81fd4bb8b5f14ce
+    - name: 2_2_3_092
+      pathPrefix: Characters/Jicheol
+      guid: 7a0468b4965bc0f46a2bbf1e2b877fa5
+    - name: 2_2_3_096
+      pathPrefix: Characters/Jicheol
+      guid: d6751d22dea75804e91832cec0472925
+    - name: 2_2_3_100
+      pathPrefix: Characters/Jicheol
+      guid: d7bfe9ccf7e671b4cb0936af9aa893fb
+    - name: 2_2_3_101
+      pathPrefix: Characters/Jicheol
+      guid: 2974f3ca6dc8c2344b1b5957c0b360b6
+    - name: 2_2_3_104
+      pathPrefix: Characters/Jicheol
+      guid: 4496cd768b787b344a96213717381083
+    - name: 2_2_3_106
+      pathPrefix: Characters/Jicheol
+      guid: 6203633f1019772478bc38b696345783
+    - name: 2_2_3_107
+      pathPrefix: Characters/Jicheol
+      guid: 49ae096bf025887438c3d6447f0054ae
+    - name: 2_2_3_109
+      pathPrefix: Characters/Jicheol
+      guid: ff089cb2a74c8c846986d789b0e41319
+    - name: 2_2_3_110
+      pathPrefix: Characters/Jicheol
+      guid: 695cad552e2d9d040bd7644fcbdfb3b6
+    - name: 2_2_4_002
+      pathPrefix: Characters/Jicheol
+      guid: f9f48aa2a9abced4e8349f7271a324b0
+    - name: 2_2_4_005
+      pathPrefix: Characters/Jicheol
+      guid: 951d08dbb258b8d45b41af51b115fbb7
+    - name: 2_2_4_006
+      pathPrefix: Characters/Jicheol
+      guid: bf8636d67a755ce449500ca8c252f22d
+    - name: 2_2_4_008
+      pathPrefix: Characters/Jicheol
+      guid: abc07d862945ff84bbadfdffedf60d56
+    - name: 2_2_4_010
+      pathPrefix: Characters/Jicheol
+      guid: 309bfdffc88aabe40b4cf5eedeed9a50
+    - name: 2_2_4_011
+      pathPrefix: Characters/Jicheol
+      guid: a238fd09e2a71594a9df3e1bffdf4a86
+    - name: 2_2_4_012
+      pathPrefix: Characters/Jicheol
+      guid: d7f155d120d03a348a6561c0ace6e458
+    - name: 2_2_4_014
+      pathPrefix: Characters/Jicheol
+      guid: aae7291a429e6d14b8a0a1af07055c04
+    - name: 2_2_4_017
+      pathPrefix: Characters/Jicheol
+      guid: c3a1c39fdaea6f243ae250aa19d439c6
+    - name: 2_2_4_019
+      pathPrefix: Characters/Jicheol
+      guid: 01f3adc0dc796b242b089d6dcbc6eb64
+    - name: 2_2_4_021
+      pathPrefix: Characters/Jicheol
+      guid: 28a5f28ce7cfb444ca10e015b9512435
+    - name: 2_2_4_024
+      pathPrefix: Characters/Jicheol
+      guid: 69d12ab6e5c18cb45aba642cbb678edd
+    - name: 2_2_4_027
+      pathPrefix: Characters/Jicheol
+      guid: da9993e6501d4454480048bcd2ad2a74
+    - name: 2_2_4_028
+      pathPrefix: Characters/Jicheol
+      guid: ab468acdd6c8b924db6f8bae8a45d268
+    - name: 2_2_4_030
+      pathPrefix: Characters/Jicheol
+      guid: cf73c2570c102ba419777d06dee9d9eb
+    - name: 2_2_4_032
+      pathPrefix: Characters/Jicheol
+      guid: 402ca51b9d2639a49ade73950fa360ef
+    - name: 2_2_4_033
+      pathPrefix: Characters/Jicheol
+      guid: 914b72ac2ce563142b8d4f50ba07eef4
+    - name: 2_2_4_035
+      pathPrefix: Characters/Jicheol
+      guid: 3bafff170aa7b5a4eb8a807cdd14f0b0
+    - name: 2_2_4_036
+      pathPrefix: Characters/Jicheol
+      guid: c39bfaf8797bea4409fc675d5be83a81
+    - name: 2_2_4_040
+      pathPrefix: Characters/Jicheol
+      guid: f7e6c11c9f7888f46a968f9e5cf9ee7d
+    - name: 2_2_4_042
+      pathPrefix: Characters/Jicheol
+      guid: 68382e658a49f484588044f2a303edc2
+    - name: 2_2_4_044
+      pathPrefix: Characters/Jicheol
+      guid: e59fac0998f696f4585d2d79d8bc0ee1
+    - name: 2_2_4_047
+      pathPrefix: Characters/Jicheol
+      guid: c558306f9ad2f0a40b79fdd89c84ec7f
+    - name: 2_2_4_049
+      pathPrefix: Characters/Jicheol
+      guid: ec47f229b9ab00d45a4e0eb4952e7530
+    - name: 2_2_4_050
+      pathPrefix: Characters/Jicheol
+      guid: f349a355d607c0e4598b6262dd94b624
+    - name: 2_2_4_052
+      pathPrefix: Characters/Jicheol
+      guid: 5602d38741e27de43b8a5791ca920aea
+    - name: 2_2_4_056
+      pathPrefix: Characters/Jicheol
+      guid: 1ba9a6d2ebabc3742a5a054c467410b6
+    - name: 2_2_4_062
+      pathPrefix: Characters/Jicheol
+      guid: 20f229eb3209f2a41bb7f38bd4128662
+    - name: 2_2_4_068
+      pathPrefix: Characters/Jicheol
+      guid: 89cde1a0d8ee2c94aabf2a73941670bd
+    - name: 2_2_4_070
+      pathPrefix: Characters/Jicheol
+      guid: fc49c78650c4e764a81edc9c2eba011e
+    - name: 2_2_4_073
+      pathPrefix: Characters/Jicheol
+      guid: 4aa80f18a308dd24aba1bbe1fc6f03dd
+    - name: 2_2_4_074
+      pathPrefix: Characters/Jicheol
+      guid: daa770c22d09ad04f9fdab462fa9dd6c
+    - name: 2_2_4_078
+      pathPrefix: Characters/Jicheol
+      guid: 98e7a69a60efc42489acef7463469c3f
+    - name: 2_2_4_079
+      pathPrefix: Characters/Jicheol
+      guid: 06d8d3b6584a75b4aa8447daca98ebbb
+    - name: 2_2_4_085
+      pathPrefix: Characters/Jicheol
+      guid: a667ec8aaef5ab74eb296ce2516b5b74
+    - name: 2_2_4_087
+      pathPrefix: Characters/Jicheol
+      guid: b97262438ecaaf54d996d3d93d6ab412
+    - name: 2_2_4_090
+      pathPrefix: Characters/Jicheol
+      guid: 3251d58bc65a4f241adee477ec054d4a
+    - name: 2_2_4_092
+      pathPrefix: Characters/Jicheol
+      guid: acb3bd38937278345910b6db58499cc3
+    - name: 2_2_4_093
+      pathPrefix: Characters/Jicheol
+      guid: f857e708b6a4b73488aa630dfa64f0a4
+    - name: 2_2_4_097
+      pathPrefix: Characters/Jicheol
+      guid: aed428b0e16da7a4598226d3f4d3828d
+    - name: 2_2_4_100
+      pathPrefix: Characters/Jicheol
+      guid: 00129cd9e63d00f4b89cf42e15539b98
+    - name: 2_2_4_101
+      pathPrefix: Characters/Jicheol
+      guid: a5bf1941dae9d804abad46ec1ce6ccf4
+    - name: 2_2_4_103
+      pathPrefix: Characters/Jicheol
+      guid: a06bd76ba62363e41b23816176ee7322
+    - name: 2_2_4_109
+      pathPrefix: Characters/Jicheol
+      guid: f0cd5dd3a554b5a4c9148f3a4a996555
+    - name: 2_2_4_110
+      pathPrefix: Characters/Jicheol
+      guid: 60a789a0d57b2a848899cbc533ba7c9f
+    - name: 2_2_4_113
+      pathPrefix: Characters/Jicheol
+      guid: ec1a5fbffe7d08542826b16c5e345e0f
+    - name: 2_2_4_114
+      pathPrefix: Characters/Jicheol
+      guid: a0fb4ebb75f2b9848abdbe60d8241eda
+    - name: 2_2_4_116
+      pathPrefix: Characters/Jicheol
+      guid: 892a09df5a7ad2c4597c4541497f8ae5
+    - name: 2_2_4_118
+      pathPrefix: Characters/Jicheol
+      guid: c14106b0cfa45d64888b8efe21a69405
+    - name: 2_2_4_120
+      pathPrefix: Characters/Jicheol
+      guid: b9fc5565e6086e94792d3d1f859d3844
+    - name: 2_2_4_121
+      pathPrefix: Characters/Jicheol
+      guid: 551ae6fc22a79324d969b310192ec30b
+    - name: 2_2_4_122
+      pathPrefix: Characters/Jicheol
+      guid: 125d82437ab90ff45b9da0f8f6bdb669
+    - name: 2_2_4_124
+      pathPrefix: Characters/Jicheol
+      guid: 6bc8ab8d8d62ff240940c2cb3adc13d3
+    - name: 2_2_4_128
+      pathPrefix: Characters/Jicheol
+      guid: 05cdd2ad5c2ff524cb189649fede2645
+    - name: 2_2_4_131
+      pathPrefix: Characters/Jicheol
+      guid: e0a48c3d78a1c9749a621ae6d8796aeb
+    - name: 2_2_4_134
+      pathPrefix: Characters/Jicheol
+      guid: 1c0a785d18a5f23478051c3559f4391b
+    - name: 2_2_4_135
+      pathPrefix: Characters/Jicheol
+      guid: fddd6c99533204945a8ce01331f71a62
+    - name: 2_2_4_137
+      pathPrefix: Characters/Jicheol
+      guid: d86b467d55e7ac34f929fa0dbd22441c
+    - name: 2_2_4_140
+      pathPrefix: Characters/Jicheol
+      guid: b57aca5ef0ae2ee4e99c1dea829ef166
+    - name: 2_2_4_142
+      pathPrefix: Characters/Jicheol
+      guid: b482a8bde16bbb3498fe9d6921537403
+    - name: 2_2_4_143
+      pathPrefix: Characters/Jicheol
+      guid: 3e21c60cca0cbcc42894b93145ba4360
+    - name: 2_2_4_145
+      pathPrefix: Characters/Jicheol
+      guid: 91a771b00d4f0bf45b197371571b2fb9
   - Id: Characters/677956ea-e164-4bc6-8520-ef0604412de3
     Resources:
     - name: 1stMerchant
@@ -1656,30 +2184,75 @@ MonoBehaviour:
     - name: 3_2_2_135
       pathPrefix: Characters/Seola
       guid: 8cd279fa385c544459208ac9feadee4e
-    - name: 
+    - name: 3_2_4_001
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: 73941d5732ff6194399847a75f8a8cf9
+    - name: 3_2_4_003
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: 0c3db5b0d24d6db46aa2026f73ea2dd5
+    - name: 3_2_4_004
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: 81f281a94d42e174ba378a28d18cf3c0
+    - name: 3_2_4_007
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: e0687cd11b099d34a9622dc56dc67591
+    - name: 3_2_4_008
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: d7d8d050234b2ba4992f5d66b00bd32c
+    - name: 3_2_4_009
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: 6e3a998a188e47047a1fc04586cc24c2
+    - name: 3_2_4_100
       pathPrefix: Characters/Seola
-      guid: 
-    - name: 
+      guid: 07b257616bb7c2847a03305cf96a20d0
+    - name: 3_2_4_102
       pathPrefix: Characters/Seola
-      guid: 
+      guid: 0fbef615c4590dc4a8e89eebb493bd35
+    - name: 3_2_4_105
+      pathPrefix: Characters/Seola
+      guid: 776fb0937e282674b907301357268a2c
+    - name: 3_2_4_107
+      pathPrefix: Characters/Seola
+      guid: 8a8b79d1a7a1c294298a82503e940cd8
+    - name: 3_2_4_108
+      pathPrefix: Characters/Seola
+      guid: d5646f8f9e5400d4cb776e45c0e34fef
+    - name: 3_2_4_111
+      pathPrefix: Characters/Seola
+      guid: d59b75841612cfd4883f767235861573
+    - name: 3_2_4_113
+      pathPrefix: Characters/Seola
+      guid: e9d5929486397b94ab2f3f624a34a5f1
+    - name: 3_2_4_115
+      pathPrefix: Characters/Seola
+      guid: 5d4fdd901aa2d4548affb8bb5c4b7f16
+    - name: 3_2_4_117
+      pathPrefix: Characters/Seola
+      guid: 6b6677e91827f194a9eb32529ee96f45
+    - name: 3_2_4_119
+      pathPrefix: Characters/Seola
+      guid: 0ad32247b92285244ac236d579595799
+    - name: 3_2_4_123
+      pathPrefix: Characters/Seola
+      guid: d8ba85f0e05edaf409f76cac129b6955
+    - name: 3_2_4_124
+      pathPrefix: Characters/Seola
+      guid: 389d4b8c0bbcc154ea6a0df1c31a01cf
+    - name: 3_2_4_126
+      pathPrefix: Characters/Seola
+      guid: 8a2503f67c8dada469cffd3449d8431a
+    - name: 3_2_4_129
+      pathPrefix: Characters/Seola
+      guid: ceb8a33e992b9d047a69038eb2592769
+    - name: 3_2_4_130
+      pathPrefix: Characters/Seola
+      guid: 215bdab6ba0cbc54cbfc1567a7c56321
+    - name: 3_2_4_132
+      pathPrefix: Characters/Seola
+      guid: 075aad13dd10d9e43bacb5bca1e148da
+    - name: 3_2_4_133
+      pathPrefix: Characters/Seola
+      guid: 2158b04d22c9f334ea28b7d4c90303e3
   - Id: Characters/e4dfa0a6-7be1-4b46-a38b-23bcd6dc6168
     Resources: []
   - Id: Characters/0238e76b-0a92-4a7f-a775-2d99c5fff551

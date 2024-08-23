@@ -387,26 +387,39 @@ MonoBehaviour:
     overriddenProperties:
     - position
     - scale
-  - name: 
+  - name: Left
     actorState:
       appearance: 
       visible: 0
-      position: {x: 0, y: 0, z: 0}
+      position: {x: -2.96, y: -13.535999, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 0}
       scale: {x: 0, y: 0, z: 0}
       tintColor: {r: 0, g: 0, b: 0, a: 0}
       lookDirection: 0
-    overriddenProperties: []
-  - name: 
+    overriddenProperties:
+    - position
+  - name: Right
     actorState:
       appearance: 
       visible: 0
-      position: {x: 0, y: 0, z: 0}
+      position: {x: 2.96, y: -13.535999, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 0}
       scale: {x: 0, y: 0, z: 0}
       tintColor: {r: 0, g: 0, b: 0, a: 0}
       lookDirection: 0
-    overriddenProperties: []
+    overriddenProperties:
+    - position
+  - name: Mid
+    actorState:
+      appearance: 
+      visible: 0
+      position: {x: 0, y: -13.535999, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 0}
+      scale: {x: 0, y: 0, z: 0}
+      tintColor: {r: 0, g: 0, b: 0, a: 0}
+      lookDirection: 0
+    overriddenProperties:
+    - position
   references:
     version: 2
     RefIds:

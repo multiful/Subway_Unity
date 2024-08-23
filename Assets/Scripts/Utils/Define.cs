@@ -4,10 +4,29 @@ using UnityEngine;
 public enum NowStoryName
 {
     첫번째_등교,
-    두번째_드응교,
-    세번째_등교오,
-    부끄러워요,
-    엔딩,
+    e2,
+    e3_1,
+    e3_2,
+    e4_1,
+    e4_2,
+    e5_1,
+    e5_2,
+    e6_1,
+    e6_2,
+    e7_1,
+    e7_2,
+    e8_1,
+    e8_2,
+    e9_1,
+    e9_2,
+    e10_1,
+    e10_2,
+    e11,
+    e12,
+    e13,
+    e14,
+    e15,
+    e16,
     MaxCount
 }
 public enum CardFlipEnding

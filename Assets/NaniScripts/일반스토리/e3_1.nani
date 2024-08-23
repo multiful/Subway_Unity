@@ -11,7 +11,7 @@ Jicheol: 수고하셨습니다.
 @char Jicheol.2_1_3_007 pos:50,-44
 최근 들어 귀찮은 일이 하나 생겼다.
 @hide Jicheol
-@back Office_p
+@back Office_past
 @char Seola.3_1_3_008 pos:50,-44
 Seola: 오빠, 아까 깨지던데 괜찮아?
 @hide Seola
