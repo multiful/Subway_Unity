@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public enum NowStoryName
+public enum StoryName
 {
+    None,
     첫번째_등교,
     e2,
     e3_1,
@@ -27,7 +28,7 @@ public enum NowStoryName
     e14,
     e15,
     e16,
-    MaxCount
+    MaxCountPlusOne
 }
 public enum CardFlipEnding
 {
@@ -78,4 +79,15 @@ public enum EndingType
     배드엔딩,
     노멀엔딩,
     트루엔딩
+}
+public enum PrintTextMode
+{
+    Touch,
+    Auto
+}
+
+public enum MainBGM
+{
+    MainTheme1,
+    MainTheme2,
 }

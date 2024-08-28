@@ -6,7 +6,7 @@ public class ObstacleManager : MonoBehaviour
 {
     public GameObject[] obstaclePrefabs; // 장애물 프리팹 배열
     public GameObject player;
-    public GameManager1 gameManager; // GameManager1 스크립트 참조
+    public GetOnSubwayManager gameManager; // GetOnSubwayManager 스크립트 참조
     public float obstacleGap = 5.0f; // 장애물 간의 간격
     private List<GameObject> obstacles = new List<GameObject>(); // 생성된 장애물들을 저장할 리스트
     private List<ObstacleData[]> grid = new List<ObstacleData[]>(); // 장애물 위치와 이미지를 저장할 그리드

@@ -1,21 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class DataManager
 {
-    NowStoryName _nowStory;
-    public NowStoryName NowStory { get { return _nowStory; } 
-        set 
-        { 
-            _nowStory = value;
-            if (HomeScreen.Inst.isActiveAndEnabled) HomeScreen.Inst.UpdateUIs();
-        } 
-    }
-    
-    [ContextMenu("스토리 처음으로 돌리기")]
-    void ResetStory()
+    public static UserData userData;
+
+    public void SaveData() => DataToJSON();
+    public void LoadData() => DataFromJSON();
+
+    public void Init()
     {
-        NowStory = NowStoryName.첫번째_등교;
+        LoadData();
+    }
+
+    public void DataToJSON()
+    {
+        string path = Path.Combine(Application.persistentDataPath, "userData.json");
+        string jsonData = JsonUtility.ToJson(userData);
+        File.WriteAllText(path, jsonData);
+    }
+
+    public void DataFromJSON()
+    {
+        string path = Path.Combine(Application.persistentDataPath, "userData.json");
+        if (!File.Exists(path))
+        {
+            userData = new UserData();
+            userData.Init();
+            SaveData();
+        }
+        string jsonData = File.ReadAllText(path);
+        userData = JsonUtility.FromJson<UserData>(jsonData);
     }
 }

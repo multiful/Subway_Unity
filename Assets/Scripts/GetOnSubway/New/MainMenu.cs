@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+/*
 public class MainMenu : Menu
 {
     [Header("Menu Navigation")]
@@ -49,7 +49,7 @@ public class MainMenu : Menu
     {
         DisableMenuButtons();
         // save the game anytime before loading a new scene
-        DataPersistenceManager.instance.SaveGame();
+        GameManager.Data.SaveData();
         // load the next scene - which will in turn load the game because of 
         // OnSceneLoaded() in the DataPersistenceManager
         SceneManager.LoadSceneAsync("SampleScene");
@@ -78,3 +78,5 @@ public class MainMenu : Menu
         this.gameObject.SetActive(false);
     }
 }
+
+*/

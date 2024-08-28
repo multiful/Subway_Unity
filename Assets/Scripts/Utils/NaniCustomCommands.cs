@@ -24,7 +24,7 @@ public class NaniCustomCommands
             var naniCamera = Engine.GetService<ICameraManager>().Camera;
             naniCamera.enabled = false;
 
-            HomeScreen.Inst.gameObject.SetActive(true);
+            MainScreen.Inst.gameObject.SetActive(true);
         }
     }
 
@@ -33,7 +33,7 @@ public class NaniCustomCommands
     {
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            GameManager.Data.NowStory++;
+            GameManager.userData.NowStoryName++;
         }
     }
 

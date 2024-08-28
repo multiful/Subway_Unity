@@ -24,8 +24,8 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     public List<int> occupiedList = new List<int>(); //0~9 사이 앉은 자리 7개
     public List<int> unoccupiedList = new List<int>(); //그 외 남는 자리 3개
 
-    public int gameLevel = 0;
-    private int[] timeLimit = { 60, 60, 50, 50 };
+    public int gameLevel;
+    private readonly int[] timeLimit = { 60, 60, 50, 50 };
     private float _currentTime;
     private int reward;
 
@@ -36,6 +36,11 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
         InitArray();
 
+    }
+
+    private void Start()
+    {
+        gameLevel = GameManager.userData.CurrentGameLevel;
         _currentTime = timeLimit[gameLevel];
         StartCoroutine(StartTimer());
     }
@@ -75,36 +80,23 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     private IEnumerator GoodClear()
     {
+        GameManager.userData.LikeAbility += 5;
         yield return new WaitForSeconds(2f);
-        NaniScript("자리뺏기_대성공");
+        GameManager.Nani.PlayNani("자리뺏기_대성공");
     }
 
-    public async void NaniScript(string ScriptName)
-    {
-
-        // 2. Switch cameras.
-        var naniCamera = Engine.GetService<ICameraManager>().Camera;
-        naniCamera.enabled = true;
-
-        // 3. Load and play specified script (if assigned).
-        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(ScriptName);
-
-        // 4. Enable Naninovel input.
-        GameManager.Nani.InputManager.ProcessInput = true;
-
-    }
 
     private IEnumerator BadClear()
     {
         yield return new WaitForSeconds(2f);
-        NaniScript("자리뺏기_성공");
+        GameManager.Nani.PlayNani("자리뺏기_성공");
     }
 
     private void Fail()
     {
         StopGame();
         TMP_Time.text = "0";
-        NaniScript("자리뺏기_실패");
+        GameManager.Nani.PlayNani("자리뺏기_실패");
     }
 
     public void Clear(int manSeat)
@@ -112,12 +104,15 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
         StopAllCoroutines(); //타이머 종료
         StopGame(); //이벤트 델리게이트로 모든 버튼 비활성화
         reward = 500 * ((int)_currentTime + 1);
+        GameManager.userData.Money += reward;
 
         var varManager = Engine.GetService<ICustomVariableManager>();
         varManager.TrySetVariableValue("Reward", reward);
 
         if (IsNextSeat(womanSeat, manSeat)) StartCoroutine(GoodClear());
         else StartCoroutine(BadClear());
+
+        GameManager.Data.SaveData();
     }
 
     public void Penalty(float time)

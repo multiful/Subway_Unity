@@ -45,7 +45,7 @@ public class SaveSlot : MonoBehaviour
             hasDataContent.SetActive(true);
             clearButton.gameObject.SetActive(true);
 
-            percentageCompleteText.text = data.GetPercentageComplete() + "% COMPLETE";
+            percentageCompleteText.text = data.Progress + "% COMPLETE";
         }
     }
 

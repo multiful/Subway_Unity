@@ -38,7 +38,19 @@ public class NaniEngineManager
         ScriptPlayer = Engine.GetService<IScriptPlayer>();
         VarManager = Engine.GetService<ICustomVariableManager>();
         UIManager = Engine.GetService<IUIManager>();
-        //
+    }
+
+    public async void PlayNani(string scriptName)
+    {
+        // 2. Switch cameras.
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        // 3. Load and play specified script (if assigned).
+        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(scriptName);
+
+        // 4. Enable Naninovel input.
+        GameManager.Nani.InputManager.ProcessInput = true;
     }
 }
 

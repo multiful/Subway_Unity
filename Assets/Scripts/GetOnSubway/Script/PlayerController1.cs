@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController1 : MonoBehaviour
 {
-    public GameManager1 gameManager; // GameManager1 스크립트 참조
+    public GetOnSubwayManager gameManager; // GetOnSubwayManager 스크립트 참조
     public ObstacleManager obstacleManager; // ObstacleManager 스크립트 참조
 
     private int currentLane = 1; // 주인공의 현재 위치 (0: 왼쪽, 1: 중앙, 2: 오른쪽)

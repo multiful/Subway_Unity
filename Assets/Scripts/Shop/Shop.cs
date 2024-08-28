@@ -18,26 +18,24 @@ public class Shop : MonoBehaviour
     public Button setting;
     public TMP_Text speech;
 
-    private UserData userData = new UserData();
-
     DateTime now;
     int timeLeft;
 
     public void TicketMinus()
     {
-        userData.ticket--;
-        TMP_ticket.text = userData.ticket.ToString();
+        GameManager.userData.Ticket--;
+        TMP_ticket.text = GameManager.userData.Ticket.ToString();
 
-        if (userData.ticket <= 0)
+        if (GameManager.userData.Ticket <= 0)
         {
-            userData.lastTicketUsed = DateTime.Now;
+            GameManager.userData.LastTicketUsed = DateTime.Now;
             StartCoroutine(TicketTimer());
         }
     }
 
     public IEnumerator TicketTimer()
     {
-        DateTime last = userData.lastTicketUsed;
+        DateTime last = GameManager.userData.LastTicketUsed;
         now = DateTime.Now;
         timeLeft = 20 - (int)(now - last).TotalSeconds;
 
@@ -51,18 +49,16 @@ public class Shop : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
 
-        userData.ticket++;
-        TMP_ticket.text = userData.ticket.ToString();
+        GameManager.userData.Ticket++;
+        TMP_ticket.text = GameManager.userData.Ticket.ToString();
     }
 
-    private void Awake()
+    private void Start()
     {
-        userData.money = 20000;
-        userData.ticket = 5;
 
-        TMP_money.text = userData.money.ToString();
-        TMP_ticket.text = userData.ticket.ToString();
-        TMP_eyedrop.text = userData.eyedrop.ToString();
+        TMP_money.text = GameManager.userData.Money.ToString();
+        TMP_ticket.text = GameManager.userData.Ticket.ToString();
+        TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
 
         setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
 
@@ -71,10 +67,10 @@ public class Shop : MonoBehaviour
 
     public void ItemBuy(int itemNum)
     {
-        if (userData.money >= price[itemNum]) //enough money
+        if (GameManager.userData.Money >= price[itemNum]) //enough money
         {
-            userData.money -= price[itemNum];
-            TMP_money.text = userData.money.ToString();
+            GameManager.userData.Money -= price[itemNum];
+            TMP_money.text = GameManager.userData.Money.ToString();
             SuccessUI(itemNum);
 
             switch(itemNum) {
@@ -82,12 +78,12 @@ public class Shop : MonoBehaviour
                     BehindDiary[diaryUnlock++].GetComponent<Image>().color = Color.white;
                     break; 
                 case 1:
-                    userData.ticket++;
+                    GameManager.userData.Ticket++;
                     StopAllCoroutines();
-                    TMP_ticket.text = userData.ticket.ToString(); break;
+                    TMP_ticket.text = GameManager.userData.Ticket.ToString(); break;
                 case 2:
-                    userData.eyedrop++;
-                    TMP_eyedrop.text = userData.eyedrop.ToString(); break;
+                    GameManager.userData.Eyedrop++;
+                    TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString(); break;
             }
         }
         else NoMoneyUI();

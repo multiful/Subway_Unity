@@ -74,7 +74,7 @@ public class UIManager
         _order--;
     }
 
-    public void SetCanavas(GameObject go, bool sort = true)
+    public void SetCanvas(GameObject go, bool sort = true)
     {
         Canvas canvas = Util.GetOrAddComponent<Canvas>(go);
         canvas.renderMode= RenderMode.ScreenSpaceOverlay;

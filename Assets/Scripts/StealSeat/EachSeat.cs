@@ -17,8 +17,8 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     [SerializeField] private int seatNum;
     private int spriteNum;
 
-    private float[] changeInterval = { 1.5f, 1f, 1f, 0.7f };
-    private float currentInterval;
+    private readonly float[] changeInterval = { 1.5f, 1f, 1f, 0.7f };
+    private float _currentInterval;
 
 
     void Start()
@@ -28,7 +28,7 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
 
         spriteNum = MainControl.Inst.occupiedList[seatNum]; //스프라이트 번호 받기
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".1");
-        currentInterval = changeInterval[MainControl.Inst.gameLevel];
+        _currentInterval = changeInterval[MainControl.Inst.gameLevel];
     }
 
     private IEnumerator Activate()
@@ -61,7 +61,7 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     {
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".2");
         _currentState = State.Fake;
-        yield return new WaitForSeconds(currentInterval);
+        yield return new WaitForSeconds(_currentInterval);
         Sit(); //1초 대기 후 다시 착석
     }
 
@@ -69,7 +69,7 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
     {
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".3");
         _currentState = State.Stand;
-        yield return new WaitForSeconds(currentInterval);
+        yield return new WaitForSeconds(_currentInterval);
 
         spriteNum = MainControl.Inst.GetSeat(spriteNum); //1초 후 새로운 사람 착석
         Sit(); //0.5(임시 1초) 대기 후 다시 착석

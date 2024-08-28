@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+/*
 public class SaveSlotsMenu : Menu
 {
     // 메인 메뉴 객체
@@ -162,3 +162,4 @@ public class SaveSlotsMenu : Menu
     }
 }
 
+*/

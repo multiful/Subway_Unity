@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager1 : MonoBehaviour, IUserDataPersistence
+public class GetOnSubwayManager : MonoBehaviour
 {
     public float score_GetOnSub = 0;
     public float timeLimit = 60f;
@@ -20,13 +20,11 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
 
     private float currentTime;
     private int remainingTargets;
-    private int difficultyLevel = 1; // 난이도 초기값
+    private int difficultyLevel;
+    private readonly int[] target = { 30, 35, 40, 45 };
     private bool isGameOver = false;
-    private int gameID = 1; // 현재 게임의 ID
 
-    [SerializeField]
-    private UserData userData;
-    
+
 
     void Start()
     {
@@ -37,20 +35,6 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         currentTime = timeLimit;
 
 
-        // DataPersistenceManager.instance.DeleteProfileData(); // 데이터 삭제.
-
-        if (deleteButton != null)
-        {
-            deleteButton.onClick.AddListener(OnNewGameButtonClicked);
-        }
-
-        // 데이터를 로드하고 userData 초기화 // 필요없음
-        /*DataPersistenceManager.instance.LoadGame();
-        if (userData == null)
-        {
-            Debug.LogError("UserData is null after loading. Creating new UserData instance.");
-            userData = new UserData();
-        }*/
         SetDifficultyLevel();
         UpdateUI();
         obstacleManager.GenerateInitialObstacles();
@@ -160,7 +144,6 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
 
         // 클리어 처리
         CalculateReward();
-        SaveGameProgress();
 
         // 2. Switch cameras.
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
@@ -176,40 +159,8 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
 
     void SetDifficultyLevel()
     {
-        // userData가 null인지 확인
-        if (userData == null)
-        {
-            Debug.LogError("UserData is null. Cannot set difficulty level.");
-            return;
-        }
-
-        // gameAndDifficultyCleared가 null인지 확인하고 초기화
-        if (userData.gameAndDifficultyCleared == null)
-        {
-            userData.gameAndDifficultyCleared = new SerializableDictionary<int, SerializableDictionary<int, bool>>();
-        }
-
-        // gameID에 해당하는 난이도 데이터가 있는지 확인하고 초기화
-        if (!userData.gameAndDifficultyCleared.ContainsKey(gameID))
-        {
-            userData.gameAndDifficultyCleared[gameID] = new SerializableDictionary<int, bool>();
-        }
-        
-
-        // 난이도 설정
-        for (int level = 1; level <= 4; level++)
-        {
-            if (!userData.gameAndDifficultyCleared[gameID].ContainsKey(level) || !userData.gameAndDifficultyCleared[gameID][level])
-            {
-                difficultyLevel = level;
-                remainingTargets = 30 + (difficultyLevel - 1) * 5;
-                return;
-            }
-        }
-
-        // 기본 난이도 설정
-        difficultyLevel = 1;
-        remainingTargets = 30;
+        difficultyLevel = GameManager.userData.CurrentGameLevel;
+        remainingTargets = target[difficultyLevel];
     }
 
 
@@ -218,42 +169,12 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         int reward = Mathf.CeilToInt(currentTime) * 500 * difficultyLevel;
         rewardText.text = $" +  {reward}";
         rewardText.gameObject.SetActive(true);
-        userData.money += reward;
+        GameManager.userData.Money += reward;
 
-        SaveData(userData);
-        Debug.Log($"UserData + reward = {userData.money} ");
+        Debug.Log($"UserData + reward = {GameManager.userData.Money} ");
+        GameManager.Data.SaveData();
     }
 
-    void SaveGameProgress()
-    {
-        // 현재 난이도를 완료한 것으로 설정
-        if (!userData.gameAndDifficultyCleared.ContainsKey(gameID))
-        {
-            userData.gameAndDifficultyCleared[gameID] = new SerializableDictionary<int, bool>();
-        }
-
-        userData.gameAndDifficultyCleared[gameID][difficultyLevel] = true;
-        
-
-        // DataPersistenceManager를 사용해 게임 데이터를 저장
-        DataPersistenceManager.instance.SaveGame();
-    }
-
-    public void LoadData(UserData data)
-    {
-        
-        userData.gameAndDifficultyCleared = data.gameAndDifficultyCleared; 
-        userData.money = data.money;
-        Debug.Log($"데이터가 로드 되었습니다. money = {data.money}");
-    }
-
-    public void SaveData(UserData data)
-    {
-        data.gameAndDifficultyCleared = userData.gameAndDifficultyCleared;
-        data.money = userData.money;
-        Debug.Log($"현재 유저의 돈: {userData.money}, difficulty = {difficultyLevel}");
-
-    }
 
     public void ReduceTimeByFive()
     {
@@ -280,18 +201,5 @@ public class GameManager1 : MonoBehaviour, IUserDataPersistence
         alertText.gameObject.SetActive(false);
     }
 
-
-    private void OnNewGameButtonClicked()
-    {
-        if (DataPersistenceManager.instance != null)
-        {
-            DataPersistenceManager.instance.NewGame();
-            Debug.Log("New Game");
-        }
-        else
-        {
-            Debug.LogError("DataPersistentManager instance not found!");
-        }
-    }
     
 }

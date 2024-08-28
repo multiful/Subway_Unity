@@ -14,16 +14,16 @@ public class GameManager : MonoBehaviour
     UIManager _ui_manager = new UIManager();
     SoundManager _sound = new SoundManager();
     DataManager _data = new DataManager();
-    //NicknameManager _nickname = new NicknameManager();
-    //SceneMManager _scene = new SceneMManager();
+
+    public static UserData userData { get => DataManager.userData; }
+
 
     public static NaniEngineManager Nani { get { return Inst._nani; } }
     public static ResourceManager Resource { get { return Inst._resource; } }
     public static UIManager UI { get { return Inst._ui_manager; } }
     public static SoundManager Sound { get { return Inst._sound; } }
     public static DataManager Data { get { return Inst._data; } }
-    //public static NicknameManager NickName { get { return instance._nickname; } }
-    //public static SceneMManager Scene { get { return instance._scene; } }
+
 
     void Awake()
     {
@@ -47,10 +47,17 @@ public class GameManager : MonoBehaviour
 
             s_instance._nani.Init();
             s_instance._sound.Init();
-            //s_instance._data.Init();
-            //s_instance._scene.Init();
+            s_instance._data.Init();
         }
     }
+
+
+
+
+
+
+
+    // vvvvvvvvv        unless essential will be delete soon
 
     public static void SaveGame(string slotName)
     {
