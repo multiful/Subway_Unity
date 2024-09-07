@@ -33,7 +33,7 @@ namespace Naninovel.UI
         {
             player.SetAutoPlayEnabled(!player.AutoPlayActive);
         }
-
+         
         private void HandleAutoModeChange (bool enabled)
         {
             UIComponent.LabelColorMultiplier = enabled ? activeColorMultiplier : Color.white;

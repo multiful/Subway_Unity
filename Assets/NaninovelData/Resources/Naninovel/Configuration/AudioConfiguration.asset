@@ -37,11 +37,11 @@ MonoBehaviour:
   VoiceOverlapPolicy: 1
   VoiceLocales: []
   DefaultFadeDuration: 0.35
-  CustomAudioMixer: {fileID: 0}
-  MasterVolumeHandleName: Master Volume
+  CustomAudioMixer: {fileID: 24100000, guid: 9d3b4e452e440a748a7797be87d8acab, type: 2}
+  MasterVolumeHandleName: Master
   BgmGroupPath: Master/BGM
-  BgmVolumeHandleName: BGM Volume
+  BgmVolumeHandleName: BGM
   SfxGroupPath: Master/SFX
-  SfxVolumeHandleName: SFX Volume
+  SfxVolumeHandleName: SFX
   VoiceGroupPath: Master/Voice
   VoiceVolumeHandleName: Voice Volume

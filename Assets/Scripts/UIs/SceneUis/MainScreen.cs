@@ -25,6 +25,7 @@ public class MainScreen : MonoBehaviour
             GameManager.Sound.Play("MainTheme", Sound.Bgm);
         }
 
+
         TMP_money.text = GameManager.userData.Money.ToString();
         TMP_ticket.text = GameManager.userData.Ticket.ToString();
         TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
@@ -39,6 +40,8 @@ public class MainScreen : MonoBehaviour
 
     public void Transfer()
     {
+        GameManager.Sound.Clear();
+
         string ScriptName = GameManager.userData.NowStoryName.ToString();
         GameManager.Nani.PlayNani(ScriptName);
 

@@ -150,7 +150,7 @@ MonoBehaviour:
       guid: e3b234b4273b7f64ab3f1d9fe425ed23
     - name: SettingsUI
       pathPrefix: UI
-      guid: 65c37f59e9b266f468dd5381fdc03fc3
+      guid: 3c3445f03a0c9c6429f78f4e8094a465
     - name: TipsUI
       pathPrefix: UI
       guid: f5aae572225ee1b4c96d1a17fc5cb073
@@ -2261,3 +2261,8 @@ MonoBehaviour:
     Resources: []
   - Id: CharacterAvatars
     Resources: []
+  - Id: Audio
+    Resources:
+    - name: MainTheme
+      pathPrefix: Audio
+      guid: 4a8991ab1f474324a9379b04d9056860

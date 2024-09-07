@@ -11,6 +11,7 @@ public class NaniEngineManager
     public IScriptPlayer ScriptPlayer;
     public ICustomVariableManager VarManager;
     public IUIManager UIManager;
+    public IAudioManager AudioManager;
 
     public void Init()
     {
@@ -38,10 +39,15 @@ public class NaniEngineManager
         ScriptPlayer = Engine.GetService<IScriptPlayer>();
         VarManager = Engine.GetService<ICustomVariableManager>();
         UIManager = Engine.GetService<IUIManager>();
+        AudioManager = Engine.GetService<IAudioManager>();
+
+        var audioMixer = AudioManager.AudioMixer;
     }
 
     public async void PlayNani(string scriptName)
     {
+        GameManager.Sound.Clear();
+
         // 2. Switch cameras.
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
         naniCamera.enabled = true;
