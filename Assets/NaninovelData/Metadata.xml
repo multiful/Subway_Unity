@@ -3866,12 +3866,14 @@
         &lt;Path&gt;3_2_4_133&lt;/Path&gt;
         &lt;Type&gt;Characters/Seola&lt;/Type&gt;
       &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;MainTheme&lt;/Path&gt;
+        &lt;Type&gt;Audio&lt;/Type&gt;
+      &lt;/Resource&gt;
     &lt;/Resources&gt;
     &lt;Constants /&gt;
     &lt;Variables&gt;
       &lt;string&gt;Likeability&lt;/string&gt;
-      &lt;string&gt;Eyedrops&lt;/string&gt;
-      &lt;string&gt;Reward&lt;/string&gt;
     &lt;/Variables&gt;
     &lt;Functions /&gt;
   &lt;/Metadata&gt;

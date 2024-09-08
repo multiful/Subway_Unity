@@ -52,12 +52,12 @@ public class UI_EndingCollection : UI_Popup
         Bind<GameObject>(typeof(GameObjects));
         Bind<TextMeshProUGUI>(typeof(Texts));
 
-        Button close = Get<Button>((int)Buttons.CloseButton);
+        /*Button close = Get<Button>((int)Buttons.CloseButton);
         Button setting = Get<Button>((int)Buttons.Setting);
 
 
         close.onClick.AddListener(Close);
-        setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
+        setting.onClick.AddListener(GameManager.UI.ShowSettingUI);*/ //??????????????????
     }
 
     public void EndingSetup()
