@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 public class UI_EndingCollection : UI_Popup
 {
     enum Buttons
     {
-        CloseButton,
+        Back,
         Setting
     }
     enum Texts
@@ -24,15 +25,14 @@ public class UI_EndingCollection : UI_Popup
     }
     enum Images
     {
-        BackGround,
         ProgressCircle,
         LikeabilityImage
     }
 
     // 임시로 적용한 수치
-    private int _progress = 75;
+    private int _progress;
     private int _likeability = 60;
-    private int[] _ending = { 1 };
+    private int[] _ending = { 4, 1 };
 
     public GameObject[] endingObjects;
     public Sprite[] unlockEndingSprite;
@@ -52,17 +52,17 @@ public class UI_EndingCollection : UI_Popup
         Bind<GameObject>(typeof(GameObjects));
         Bind<TextMeshProUGUI>(typeof(Texts));
 
-        /*Button close = Get<Button>((int)Buttons.CloseButton);
-        Button setting = Get<Button>((int)Buttons.Setting);
-
-
+        Button close = Get<Button>((int)Buttons.Back);
         close.onClick.AddListener(Close);
-        setting.onClick.AddListener(GameManager.UI.ShowSettingUI);*/ //??????????????????
+
+        Button setting = Get<Button>((int)Buttons.Setting);
+        //setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
     }
 
     public void EndingSetup()
     {
         // 진행도 UI
+        _progress = _ending.Length * 25;
         Image progressImage = Get<Image>((int)Images.ProgressCircle);
         TextMeshProUGUI progressText = Get<TextMeshProUGUI>((int)Texts.ProgressText);
         progressImage.fillAmount = 0;
@@ -83,9 +83,9 @@ public class UI_EndingCollection : UI_Popup
         }
 
         // 엔딩 모음 UI
-        foreach (int end in _ending)
+        for (int end = 0; end  < _ending.Length; end++)
         {
-            switch (end)
+            switch (_ending[end])
             {
                 case 1:
                     EndingUnlock(endingObjects[0], 0);
@@ -100,7 +100,7 @@ public class UI_EndingCollection : UI_Popup
                     EndingUnlock(endingObjects[3], 3);
                     break;
             }
-        }
+        }    
     }
     public IEnumerator FillImage(Image img)
     {
@@ -125,6 +125,7 @@ public class UI_EndingCollection : UI_Popup
     {
         endingObj.GetComponent<Image>().sprite = unlockEndingSprite[index];
         endingObj.GetComponent<Button>().interactable = true;
+        endingObj.transform.GetChild(0).gameObject.SetActive(false);
     }
     private void ShowEndingPlayUI(int index)
     {
