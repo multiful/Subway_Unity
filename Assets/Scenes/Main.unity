@@ -1383,7 +1383,7 @@ GameObject:
   - component: {fileID: 1644418668}
   - component: {fileID: 1644418667}
   m_Layer: 5
-  m_Name: Text
+  m_Name: EyeDropText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1517,7 +1517,7 @@ GameObject:
   - component: {fileID: 1663636580}
   - component: {fileID: 1663636579}
   m_Layer: 5
-  m_Name: Text
+  m_Name: MoneyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 1978685120}
   - component: {fileID: 1978685119}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TicketText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

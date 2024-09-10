@@ -6,7 +6,7 @@ using UnityEngine;
 [Serializable]
 public class UserData
 {
-    public string UserName; // 플레이어 이름
+    //public string UserName; // 플레이어 이름
     public StoryName NowStoryName; // 마지막으로 본 에피소드
 
     public int CurrentGameLevel
@@ -20,8 +20,9 @@ public class UserData
         }
     }
 
-    public StoryName LastStoryName; //마지막으로 본 에피소드
-    public int LastLine; // 마지막으로 본 대사
+    //public StoryName LastStoryName; //마지막으로 본 에피소드
+    //public int LastLine; // 마지막으로 본 대사
+
     public int Ticket; // 승차권
     public int Money; // 돈
     public int Eyedrop; // 안약
@@ -29,7 +30,8 @@ public class UserData
     public int Diary; // 일기장 해금 정도
     public bool[,] IsEpisodeWatched; // 에피소드 열람 여부
     public bool[,] IsGameClear; // 미니게임 클리어 여부
-    public int Progress; // 진행도
+    public int Progress; // 진행도 => 엔딩 해금 여부에서 가져올수 있음
+
     public int LikeAbility; // 호감도
     public bool[] IsEndingUnlock; // 엔딩 해금 여부
 
@@ -44,10 +46,10 @@ public class UserData
 
     public void Init()
     {
-        UserName = string.Empty;
+        //UserName = string.Empty;
         NowStoryName = StoryName.첫번째_등교;
-        LastStoryName = StoryName.None;
-        LastLine = 0;
+        //LastStoryName = StoryName.None;
+        //LastLine = 0;
         Money = 0;
         Ticket = 5;
         Eyedrop = 0;

@@ -17,9 +17,7 @@ public class DataManager
 
     public void DataToJSON()
     {
-        string path = Path.Combine(Application.persistentDataPath, "userData.json");
-        string jsonData = JsonUtility.ToJson(userData);
-        File.WriteAllText(path, jsonData);
+
     }
 
     public void DataFromJSON()
@@ -27,13 +25,19 @@ public class DataManager
         string path = Path.Combine(Application.persistentDataPath, "userData.json");
         if (!File.Exists(path))
         {
-            Debug.Log("데이터 없음");
             userData = new UserData();
             userData.Init();
             SaveData();
         }
-        else Debug.Log("데이터 있음");
         string jsonData = File.ReadAllText(path);
         userData = JsonUtility.FromJson<UserData>(jsonData);
+    }
+    public void DataInit()
+    {
+        string path = Path.Combine(Application.persistentDataPath, "userData.json");
+        userData = new UserData();
+        userData.Init();
+        string jsonData = JsonUtility.ToJson(userData);
+        File.WriteAllText(path, jsonData);
     }
 }
