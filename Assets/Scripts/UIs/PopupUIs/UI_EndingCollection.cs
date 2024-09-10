@@ -32,7 +32,7 @@ public class UI_EndingCollection : UI_Popup
     // 임시로 적용한 수치
     private int _progress;
     private int _likeability = 60;
-    private int[] _ending = { 4, 1 };
+    private bool[] _ending;
 
     public GameObject[] endingObjects;
     public Sprite[] unlockEndingSprite;
@@ -46,6 +46,10 @@ public class UI_EndingCollection : UI_Popup
     public override void Init()
     {
         //세이브데이터에서 진행도, 호감도, 엔딩 수집 현황 받아옴
+        GameManager.userData.IsEndingUnlock[0] = true;
+
+        _ending = GameManager.userData.IsEndingUnlock;
+        Debug.Log(_ending);
         base.Init();
         Bind<Button>(typeof(Buttons));
         Bind<Image>(typeof(Images));
@@ -85,21 +89,26 @@ public class UI_EndingCollection : UI_Popup
         // 엔딩 모음 UI
         for (int end = 0; end  < _ending.Length; end++)
         {
-            switch (_ending[end])
+            if (_ending[end])
             {
-                case 1:
-                    EndingUnlock(endingObjects[0], 0);
-                    break;
-                case 2:
-                    EndingUnlock(endingObjects[1], 1);
-                    break;
-                case 3:
-                    EndingUnlock(endingObjects[2], 2);
-                    break;
-                case 4:
-                    EndingUnlock(endingObjects[3], 3);
-                    break;
+                EndingUnlock(endingObjects[end], end);
             }
+
+            //switch (_ending[end])
+            //{
+            //    case 1:
+            //        EndingUnlock(endingObjects[0], 0);
+            //        break;
+            //    case 2:
+            //        EndingUnlock(endingObjects[1], 1);
+            //        break;
+            //    case 3:
+            //        EndingUnlock(endingObjects[2], 2);
+            //        break;
+            //    case 4:
+            //        EndingUnlock(endingObjects[3], 3);
+            //        break;
+            //}
         }    
     }
     public IEnumerator FillImage(Image img)

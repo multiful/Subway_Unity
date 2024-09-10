@@ -35,6 +35,7 @@ public class CardFlipManager : MonoBehaviour
 
     public Camera mainCam;
 
+    public int reward;
     public void CreateCards()
     {
         List<Sprite> cardImageList = new List<Sprite>(cardSpriteList);
@@ -157,6 +158,11 @@ public class CardFlipManager : MonoBehaviour
         _isGameRunning = false;
         if (isWin)
         {
+            reward = (int)_gameTime * 100;
+            var varManager = Engine.GetService<ICustomVariableManager>();
+            varManager.TrySetVariableValue("CreditReward", reward);
+            GameManager.userData.Money += reward;
+            GameManager.Data.SaveData();
             _cardEnding = CardFlipEnding.카드뒤집기_성공;
         }
         else

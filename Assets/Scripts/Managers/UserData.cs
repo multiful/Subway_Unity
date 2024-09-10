@@ -34,12 +34,12 @@ public class UserData
     public bool[] IsEndingUnlock; // 엔딩 해금 여부
 
     // 환경설정
-    public float MasterVolume;
-    public float BgmVolume;
-    public float SfxVolume;
-    public PrintTextMode PrintTextMode;
-    public int PrintTextSpeed;
-    public MainBGM MainBGM;
+    //public float MasterVolume;
+    //public float BgmVolume;
+    //public float SfxVolume;
+    //public PrintTextMode PrintTextMode;
+    //public int PrintTextSpeed;
+    //public MainBGM MainBGM;
 
 
     public void Init()
@@ -59,12 +59,12 @@ public class UserData
         LikeAbility = 0;
         IsEndingUnlock = new bool[4];
 
-        MasterVolume = 1;
-        BgmVolume = 1;
-        SfxVolume = 1;
-        PrintTextMode = PrintTextMode.Touch;
-        PrintTextSpeed = 2;
-        MainBGM = MainBGM.MainTheme1;
+        //MasterVolume = 1;
+        //BgmVolume = 1;
+        //SfxVolume = 1;
+        //PrintTextMode = PrintTextMode.Touch;
+        //PrintTextSpeed = 2;
+        //MainBGM = MainBGM.MainTheme1;
     }
 
 }

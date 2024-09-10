@@ -7,6 +7,7 @@ public class NaniCustomCommands
     [CommandAlias("finishStory")]
     public class SwitchToAdventureMode : Command
     {
+        
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             // 1. Disable Naninovel input.
@@ -58,9 +59,20 @@ public class NaniCustomCommands
         public IntegerParameter likeability;
         public override async UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            //세이브 데이터 돈 올리기
+            //await GameManager.userData.IsEndingUnlock[]
         }
     }
+    [CommandAlias("endingOpen")]
+    public class EndingOpen : Command
+    {
+        public IntegerParameter ending;
+        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            GameManager.userData.IsEndingUnlock[ending - 1] = true;
+            GameManager.Data.SaveData();
+        }
+    }
+
 
     [CommandAlias("minigame")]
     public class GoMiniGame : Command

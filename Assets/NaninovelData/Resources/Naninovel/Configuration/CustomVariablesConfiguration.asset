@@ -15,3 +15,5 @@ MonoBehaviour:
   PredefinedVariables:
   - name: Likeability
     value: 50
+  - name: CreditReward
+    value: 0

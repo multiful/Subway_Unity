@@ -13,7 +13,6 @@ public class ControlPanelMover : MonoBehaviour
     public float moveDuration = 0.5f;
     public void MenuMove()
     {
-        Debug.Log("aa");
         controlPanel.transform.DOLocalMoveX(0, moveDuration);
         closeButton.gameObject.SetActive(true);
     }
