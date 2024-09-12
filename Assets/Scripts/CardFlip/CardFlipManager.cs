@@ -14,7 +14,7 @@ public class CardFlipManager : MonoBehaviour
     public Sprite[] cardSpriteList;
 
     public Transform cardSet;   //카드 덱 위치
-    public Transform cardParent; // 카드가 옮겨질 부모 오브젝트
+    public Transform cardParent; //카드 프리팹 부모
 
     public TextMeshProUGUI buttonText;
     public Button startButton;
@@ -36,6 +36,8 @@ public class CardFlipManager : MonoBehaviour
     public Camera mainCam;
 
     public int reward;
+
+    public Vector3[] cardPositions;
     public void CreateCards()
     {
         List<Sprite> cardImageList = new List<Sprite>(cardSpriteList);
@@ -59,7 +61,7 @@ public class CardFlipManager : MonoBehaviour
         // 카드 덱에 생성
         foreach (Sprite cardImage in cardImageList)
         {
-            GameObject cardObject = Instantiate(cardPrefab, cardSet.position, Quaternion.identity, cardSet);
+            GameObject cardObject = Instantiate(cardPrefab, cardSet.position, Quaternion.identity, cardParent);
             Card card = cardObject.GetComponent<Card>();
             card._frontSprite = cardImage;
             _cardList.Add(card);
@@ -74,34 +76,14 @@ public class CardFlipManager : MonoBehaviour
         StartCoroutine(MoveCards());
     }
     
-    Vector3 GetCardPosition(int index)
-    {
-        int colSize = 4;
-        int row = index / colSize;
-        int col = index % colSize;
-
-        RectTransform cardRect = cardPrefab.GetComponent<RectTransform>();
-        RectTransform cardParentRect = cardParent.GetComponent<RectTransform>();
-
-        Vector3 startPos = cardParent.position - new Vector3(cardParentRect.rect.width / 2, cardParentRect.rect.height / 2, 0);
-        Vector3 cardSize = new Vector3(cardRect.rect.width, cardRect.rect.height, 0);
-        Vector3 spacing = new Vector3(20, 20, 0);
-
-        Vector3 targetPos = startPos + new Vector3(col * (cardSize.x + spacing.x), -row * (cardSize.y + spacing.y), 0);
-        Vector3 worldPos = Camera.main.ScreenToWorldPoint(targetPos);
-        worldPos.z = 0;
-
-        return worldPos;
-    }
     IEnumerator MoveCards()
     {
         float delay = 0.2f;
         for (int i = 0; i < _cardList.Count; i++)
         {
-            RectTransform cardRect = _cardList[i].GetComponent<RectTransform>();
-            Vector3 targetPosition = GetCardPosition(i);
+            Vector3 targetPosition = cardPositions[i];
 
-            _cardList[i].transform.DOMove(targetPosition, 0.5f).SetEase(Ease.OutQuad);
+            _cardList[i].transform.DOLocalMove(targetPosition, 0.5f);
 
             yield return new WaitForSeconds(delay);
         }
