@@ -68,7 +68,7 @@ public class MainScreen : MonoBehaviour
     }
     public void ShowEndingCollection()
     {
-        GameManager.UI.ShowPopupUI<UI_EndingCollection>();
+        SceneManager.LoadScene(5);
     }
     
 }

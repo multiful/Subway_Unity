@@ -138,6 +138,7 @@ public class UI_EndingCollection : UI_Popup
     }
     private void ShowEndingPlayUI(int index)
     {
+        
         GameManager.UI.ShowEndingPlayUI(index);
     }
 }
