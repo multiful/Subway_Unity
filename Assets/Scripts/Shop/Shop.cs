@@ -115,7 +115,8 @@ public class Shop : MonoBehaviour
 
     public void GoCardFlip()
     {
-        SceneManager.LoadScene(MiniGame.CardFlip.ToString());
+        //SceneManager.LoadScene(MiniGame.CardFlip.ToString());
+        LoadingSceneManager.LoadScene(MiniGame.CardFlip.ToString());
     }
     public void GoMain()
     {

@@ -189,22 +189,22 @@ MonoBehaviour:
     - name: "\uC790\uB9AC\uBE8F\uAE30_\uC2E4\uD328"
       pathPrefix: Scripts
       guid: f56fe424eac006842a5a6f51b96a1a3a
-    - name: 1_4
+    - name: e4_1
       pathPrefix: Scripts
       guid: 838e5a953c7b32f40a1dcf45e681b13b
-    - name: 1_1
+    - name: e1
       pathPrefix: Scripts
       guid: e41c85b42b19cb946ac46825c1da11a2
-    - name: 1_1 1
+    - name: e2
       pathPrefix: Scripts
       guid: 6213a3e48cf330f4f9b5cd8dab83847d
-    - name: 1_2 1
+    - name: e3_1
       pathPrefix: Scripts
       guid: 19fefe353bffc574fb81392bfabde046
     - name: 1_3_1 1
       pathPrefix: Scripts
       guid: 7b37306c159cea348bb97d2dab073524
-    - name: 1_4_1 1
+    - name: e4_2
       pathPrefix: Scripts
       guid: 8136723f4e835034eb8d89833b9beb7b
     - name: NewScript
@@ -213,13 +213,13 @@ MonoBehaviour:
     - name: 2_4_1 1
       pathPrefix: Scripts
       guid: 07dbdf54b5ebdcb4c805893ea8518f9a
-    - name: 3_1_1
+    - name: e9_1
       pathPrefix: Scripts
       guid: e6ebd88e9cd3aa44c955a5a2c4fd2bb5
     - name: 3_1_1 1
       pathPrefix: Scripts
       guid: 2f4772e4239f7d642938a296d33a4acb
-    - name: 3_2_1
+    - name: e10_1
       pathPrefix: Scripts
       guid: e8ded003cb0c6384c99cba46fa868166
     - name: 3_2_1 1
@@ -228,7 +228,7 @@ MonoBehaviour:
     - name: 3_2_2 1
       pathPrefix: Scripts
       guid: f485f5ac8e88e864492836338280e4f0
-    - name: 3_3 1
+    - name: e12
       pathPrefix: Scripts
       guid: 245b68bfb9550eb46ba6d613f1692834
     - name: 3_4 1
@@ -237,7 +237,7 @@ MonoBehaviour:
     - name: 4_1 1
       pathPrefix: Scripts
       guid: d781ebca511d9634197f27fd88dce7d7
-    - name: 4_1 2
+    - name: e15
       pathPrefix: Scripts
       guid: f190752763d90ef4084125570fb2a252
     - name: 4_1 3

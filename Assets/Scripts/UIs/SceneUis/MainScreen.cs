@@ -43,6 +43,7 @@ public class MainScreen : MonoBehaviour
         GameManager.Sound.Clear();
 
         string ScriptName = GameManager.userData.NowStoryName.ToString();
+        Debug.Log(ScriptName);
         GameManager.Nani.PlayNani(ScriptName);
 
         _BackGroundObject.SetActive(false);

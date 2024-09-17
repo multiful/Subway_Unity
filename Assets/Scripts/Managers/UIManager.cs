@@ -1,8 +1,12 @@
+using JetBrains.Annotations;
+using Naninovel.Commands;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
-public class UIManager
+public class UIManager : MonoBehaviour
 {
     int _order = 0;
 
@@ -28,9 +32,7 @@ public class UIManager
         GameObject go = GameManager.Resource.Instantiate($"UI/Popup/{name}");
         T popup = Util.GetOrAddComponent<T>(go);
         _popupStack.Push(popup);
-
         go.transform.SetParent(Root.transform);
-
         return popup;
     }
     public void ShowSettingUI()
@@ -42,38 +44,30 @@ public class UIManager
         GameObject go = GameManager.Resource.Instantiate("UI/Popup/UI_EndingPlay");
         UI_EndingPlay popup = Util.GetOrAddComponent<UI_EndingPlay>(go);
         popup.SetEndingTexts(index);
-
         _popupStack.Push(popup);
         go.transform.SetParent(Root.transform);
-
         return popup;
     }
     public void ClosePopupUI(UI_Popup popup)
     {
         if (_popupStack.Count == 0)
             return;
-
         if (_popupStack.Peek() != popup)
         {
             Debug.Log("Close Popup Failed");
             return;
         }
-
         ClosePopupUI();
     }
-
     public void ClosePopupUI()
     {
         if (_popupStack.Count == 0)
             return;
-
         UI_Popup popup = _popupStack.Pop();
         GameManager.Resource.Destroy(popup.gameObject);
         popup = null;
-
         _order--;
     }
-
     public void SetCanvas(GameObject go, bool sort = true)
     {
         Canvas canvas = Util.GetOrAddComponent<Canvas>(go);

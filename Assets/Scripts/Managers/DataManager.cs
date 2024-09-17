@@ -12,7 +12,8 @@ public class DataManager
 
     public void Init()
     {
-        LoadData();
+        //LoadData();
+        DataInit();
     }
 
     public void DataToJSON()
