@@ -90,21 +90,6 @@ public class GetOnSubwayManager : MonoBehaviour
         }
     }
 
-    public async void Transfer()
-    {
-        
-        // 2. Switch cameras.
-        var naniCamera = Engine.GetService<ICameraManager>().Camera;
-        naniCamera.enabled = true;
-
-        // 3. Load and play specified script (if assigned).
-        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync("빠르게환승", label: "실패1");
-
-        // 4. Enable Naninovel input.
-        GameManager.Nani.InputManager.ProcessInput = true;
-
-        gameObject.SetActive(false);
-    }
     void UpdateUI()
     {
         timerText.text = "" + Mathf.CeilToInt(currentTime).ToString();
@@ -119,7 +104,7 @@ public class GetOnSubwayManager : MonoBehaviour
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
 
-        Transfer();
+        GameManager.Nani.PlayNani("빠르게환승", "실패" + (difficultyLevel + 1).ToString());
 
         foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
         {
@@ -145,16 +130,7 @@ public class GetOnSubwayManager : MonoBehaviour
         // 클리어 처리
         CalculateReward();
 
-        // 2. Switch cameras.
-        var naniCamera = Engine.GetService<ICameraManager>().Camera;
-        naniCamera.enabled = true;
-
-        // Naninovel 대화 스크립트 호출 (성공 시 성공1 라벨로 이동)
-        var runner = Engine.GetService<IScriptPlayer>();
-        runner.PreloadAndPlayAsync("빠르게환승", label: "성공1").Forget();
-
-        // 4. Enable Naninovel input.
-        GameManager.Nani.InputManager.ProcessInput = true;
+        GameManager.Nani.PlayNani("빠르게환승", "성공" + (difficultyLevel + 1).ToString());
     }
 
     void SetDifficultyLevel()
@@ -166,12 +142,16 @@ public class GetOnSubwayManager : MonoBehaviour
 
     void CalculateReward()
     {
-        int reward = Mathf.CeilToInt(currentTime) * 500 * difficultyLevel;
+        int reward = Mathf.CeilToInt(currentTime) * 500;
         rewardText.text = $" +  {reward}";
         rewardText.gameObject.SetActive(true);
+
+        var varManager = Engine.GetService<ICustomVariableManager>();
+        varManager.TrySetVariableValue("reward", reward);
         GameManager.userData.Money += reward;
 
         Debug.Log($"UserData + reward = {GameManager.userData.Money} ");
+        GameManager.userData.IsGameClear[0, difficultyLevel] = true;
         GameManager.Data.SaveData();
     }
 

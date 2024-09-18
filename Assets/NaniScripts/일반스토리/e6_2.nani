@@ -7,25 +7,25 @@
 @char Jicheol.2_2_2_025 pos:60,-44
 @char Haji.1_2_2_006 pose:Left
 Haji: 안녕하세요. 오늘은 또 만나네요.
-@char Haji.1_2_2_007 
+@char Haji.1_2_2_007
 Haji: 매 번 이 시간에 지하철을 타시나 봐요?
 @char Jicheol.2_2_2_008 pose:Right
 주인공: 이제는 그렇게 하려고 노력하고 있습니다.
-@char Haji.1_2_2_009 
+@char Haji.1_2_2_009
 Haji: 그래요? 그러면 앞으로도 종종 볼 수 있겠네요.
-@char Haji.1_2_2_010 
+@char Haji.1_2_2_010
 Haji: 아침에는 정말 고마웠어요.
 @char Jicheol.2_2_2_011
 주인공: 별거 아니에요.
 @char Jicheol.2_2_2_012
 주인공: 그러고 보니 매 번 서초역에서 내리시던데 직장이 그 근처인가요?
-@char Haji.1_2_2_013 
+@char Haji.1_2_2_013
 Haji: 업무 때문에 중앙 도서관에 가야 하거든요.
 @char Jicheol.2_2_2_014
 주인공: 중앙 도서관이라… 뭔가 찾기 힘든 자료를 찾아야 하시나 봐요?
-@char Haji.1_2_2_015 
+@char Haji.1_2_2_015
 Haji: 뭐 대충 그런 셈이에요.
-@char Haji.1_2_2_016 
+@char Haji.1_2_2_016
 Haji: 아, 그러고 보니 보통 지하철에서 책을 읽으시던데
 @char Haji.1_2_2_017
 Haji: 괜히 저 때문에 시간 뺏기는 거 아닌가요?
@@ -94,7 +94,7 @@ Haji: …4.9% 큰일 났다 벌써 0.3%나 올랐네…
 주인공: 뭐 보시고 계시나요.
 @char Haji.1_2_2_050
 Haji: 아니에요. 그냥…
-@char Haji.1_2_2_051 
+@char Haji.1_2_2_051
 Haji: 습도, 습도 보고 있었어요. 여름이라 그런지 좀 더워서요.
 @char Haji.1_2_2_051_1
 Haji: 여름이라 그런지 좀 더워서요.
@@ -270,5 +270,4 @@ Haji: 저 먼저 가 볼게요.
 @char Jicheol.2_2_2_137
 그래 괜찮을 거야….
 
-@increaseStoryIndex
 @finishStory

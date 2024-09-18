@@ -6,4 +6,5 @@
 @char Jicheol.2_2_1_006 pos:50,-44
 아… 오늘은 그냥 버스 탈 걸 그랬나?
 @hide Jicheol
-@minigame_03
+
+@minigame gameType:1 gameLevel:1

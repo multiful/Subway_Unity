@@ -82,21 +82,21 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     {
         GameManager.userData.LikeAbility += 5;
         yield return new WaitForSeconds(2f);
-        GameManager.Nani.PlayNani("자리뺏기_대성공");
+        GameManager.Nani.PlayNani("자리뺏기", "대성공" + (gameLevel + 1).ToString());
     }
 
 
     private IEnumerator BadClear()
     {
         yield return new WaitForSeconds(2f);
-        GameManager.Nani.PlayNani("자리뺏기_성공");
+        GameManager.Nani.PlayNani("자리뺏기", "성공" + (gameLevel + 1).ToString());
     }
 
     private void Fail()
     {
         StopGame();
         TMP_Time.text = "0";
-        GameManager.Nani.PlayNani("자리뺏기_실패");
+        GameManager.Nani.PlayNani("자리뺏기", "실패" + (gameLevel + 1).ToString());
     }
 
     public void Clear(int manSeat)
@@ -107,7 +107,9 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
         GameManager.userData.Money += reward;
 
         var varManager = Engine.GetService<ICustomVariableManager>();
-        varManager.TrySetVariableValue("Reward", reward);
+        varManager.TrySetVariableValue("reward", reward);
+
+        GameManager.userData.IsGameClear[1, gameLevel] = true;
 
         if (IsNextSeat(womanSeat, manSeat)) StartCoroutine(GoodClear());
         else StartCoroutine(BadClear());

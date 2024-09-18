@@ -44,7 +44,7 @@ public class NaniEngineManager
         var audioMixer = AudioManager.AudioMixer;
     }
 
-    public async void PlayNani(string scriptName)
+    public async void PlayNani(string scriptName, string label = null)
     {
         GameManager.Sound.Clear(); // ?
 
@@ -52,7 +52,8 @@ public class NaniEngineManager
         CameraManager.Camera.enabled = true;
 
         // 3. Load and play specified script (if assigned).
-        await ScriptPlayer.PreloadAndPlayAsync(scriptName);
+        await (label != null ? ScriptPlayer.PreloadAndPlayAsync(scriptName, label : label)
+            : ScriptPlayer.PreloadAndPlayAsync(scriptName));
 
         // 4. Enable Naninovel input.
         InputManager.ProcessInput = true;

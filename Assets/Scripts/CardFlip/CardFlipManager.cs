@@ -125,16 +125,6 @@ public class CardFlipManager : MonoBehaviour
         _isCardChecking = false;
     }
 
-    public async void CardScriptStart()
-    {
-
-        var naniCamera = Engine.GetService<ICameraManager>().Camera;
-        naniCamera.enabled = true;
-
-        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(_cardEnding.ToString());
-        GameManager.Nani.InputManager.ProcessInput = true;
-    }
-
     public void EndGame(bool isWin)
     {
         _isGameRunning = false;
@@ -142,17 +132,16 @@ public class CardFlipManager : MonoBehaviour
         {
             reward = (int)_gameTime * 100;
             var varManager = Engine.GetService<ICustomVariableManager>();
-            varManager.TrySetVariableValue("CreditReward", reward);
+            varManager.TrySetVariableValue("reward", reward);
             GameManager.userData.Money += reward;
             GameManager.Data.SaveData();
-            _cardEnding = CardFlipEnding.카드뒤집기_성공;
+            GameManager.Nani.PlayNani("카드뒤집기", "성공");
         }
         else
         {
-            _cardEnding = CardFlipEnding.카드뒤집기_실패;
+            GameManager.Nani.PlayNani("카드뒤집기", "실패");
         }
         mainCam.depth = -1;
-        CardScriptStart();
     }
 
     public void ShowSettingUI()

@@ -31,7 +31,7 @@ Jicheol: 아니야. 그 정도는 아니야 이제부터 조심할게.
 Seola: 오빠 내가 말했지 혼자서 끙끙 앓지 말라고.
 @char Seola.3_1_4_016 pos:36,-44
 Seola: 그냥 대충 정리하고 나와.
-@hide Jicheol,Seola 
+@hide Jicheol,Seola
 @back Black
 @back Cafe
 @char Seola.3_1_4_017 pos:36,-44
@@ -124,4 +124,4 @@ Seola: 더 있으면 부장님한테 혼나겠어.
 ……
 기분 탓이겠지?
 
-@minigame_02
+@minigame gameType:1 gameLevel:1

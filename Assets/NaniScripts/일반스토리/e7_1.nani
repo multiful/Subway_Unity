@@ -57,4 +57,5 @@ Haji: 네. 잘 들어갔어요.
 저 사람은 분명 이 근처에서 내리는 사람인데?
 @char Jicheol.2_2_3_029
 잘 하면 오늘은 앉아서 갈 수 있나…?
-@minigame_05
+
+@minigame gameType:1 gameLevel:1

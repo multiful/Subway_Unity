@@ -54,8 +54,8 @@ public class NaniCustomCommands
     }
 
 
-    [CommandAlias("goMinigame")]
-    public class GoMiniGame : Command           // gameType 1 => 빠르게환승, 2 => 자리뺏기, 레벨 1,2,3,4
+    [CommandAlias("minigame")]
+    public class MiniGame : Command           // gameType 1=빠르게환승, 2=자리뺏기, 레벨 1,2,3,4
     {
         [RequiredParameter]
         public IntegerParameter gameType, gameLevel;
@@ -68,6 +68,18 @@ public class NaniCustomCommands
 
             if (gameType == 1) LoadingSceneManager.LoadScene("GetOnSubway");
             else if (gameType == 2) LoadingSceneManager.LoadScene("StealSeat");
+
+            return UniTask.CompletedTask;
+        }
+    }
+
+    [CommandAlias("clearMinigame")]
+    public class ClearMinigame : Command
+    {
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
+        {
+            GameManager.userData.NowStoryName++;
+            LoadingSceneManager.LoadScene("Nani");
 
             return UniTask.CompletedTask;
         }
