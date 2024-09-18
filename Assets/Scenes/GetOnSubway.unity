@@ -3222,7 +3222,7 @@ MonoBehaviour:
   - {fileID: 599500026}
   player: {fileID: 8370141124849775130}
   gameManager: {fileID: 1085710274}
-  obstacleGap: 4.95
+  obstacleGap: 3.6
 --- !u!1 &1054581768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5402,6 +5402,7 @@ GameObject:
   - component: {fileID: 1471573861}
   - component: {fileID: 1471573860}
   - component: {fileID: 1471573859}
+  - component: {fileID: 1471573862}
   m_Layer: 5
   m_Name: SettingButton
   m_TagString: Untagged
@@ -5511,6 +5512,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471573857}
   m_CullTransparentMesh: 1
+--- !u!114 &1471573862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471573857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c6a9510b2e3cef4b944c7c6f141f32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsButton: {fileID: 1471573859}
 --- !u!1 &1485055946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,7 +8065,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2563921826412284628, guid: 7ad22bdd585929f47a561f88330eccb9, type: 3}
       propertyPath: laneWidth
-      value: 3.825
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 2563921826412284628, guid: 7ad22bdd585929f47a561f88330eccb9, type: 3}
       propertyPath: gameManager
@@ -8103,15 +8117,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7487449441576569692, guid: 7ad22bdd585929f47a561f88330eccb9, type: 3}
       propertyPath: m_SortingLayer
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7487449441576569692, guid: 7ad22bdd585929f47a561f88330eccb9, type: 3}
       propertyPath: m_SortingOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7487449441576569692, guid: 7ad22bdd585929f47a561f88330eccb9, type: 3}
       propertyPath: m_SortingLayerID
-      value: 0
+      value: 1476943175
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
