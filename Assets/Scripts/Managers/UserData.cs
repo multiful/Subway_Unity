@@ -9,16 +9,7 @@ public class UserData
     //public string UserName; // 플레이어 이름
     public StoryName NowStoryName; // 마지막으로 본 에피소드
 
-    public int CurrentGameLevel
-    {
-        get {
-            switch (NowStoryName)
-            {
-                case StoryName.첫번째_등교: return 0;
-                default: return 1;
-            }
-        }
-    }
+    public int CurrentGameLevel;
 
     //public StoryName LastStoryName; //마지막으로 본 에피소드
     //public int LastLine; // 마지막으로 본 대사

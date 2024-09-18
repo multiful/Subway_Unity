@@ -5,133 +5,83 @@ using UnityEngine.SceneManagement;
 public class NaniCustomCommands
 {
     [CommandAlias("finishStory")]
-    public class SwitchToAdventureMode : Command
-    {   
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
-        {
-            // 1. Disable Naninovel input.
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = false;
-
-            // 2. Stop script player.
-            var scriptPlayer = Engine.GetService<IScriptPlayer>();
-            scriptPlayer.Stop();
-
-            // 3. Reset state.
-            await GameManager.Nani.StateManager.ResetStateAsync();
-
-            // 4. Switch cameras.
-            var naniCamera = Engine.GetService<ICameraManager>().Camera;
-            naniCamera.enabled = false;
-
-            if (SceneManager.GetActiveScene().name == "Main")
-                MainScreen.Inst.gameObject.SetActive(true);
-        }
-    }
-
-    [CommandAlias("increaseStoryIndex")]
-    public class IncreaseStoryIndex : Command
+    public class FinishStory : Command
     {
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             GameManager.userData.NowStoryName++;
+            LoadingSceneManager.LoadScene("Main");
+
+            return UniTask.CompletedTask;
         }
     }
+
 
     [CommandAlias("increaseLikeability")]
     public class IncreaseLikeability : Command
     {
         public IntegerParameter likeability;
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            //var varManager = Engine.GetService<ICustomVariableManager>();
-            //var curlikeability = varManager.GetVariableValue("Likeability");
-            //curlikeability += likeability;
-            //varManager.SetVariableValue("Likeability", curlikeability);
+            GameManager.userData.LikeAbility += likeability;
 
-            // 세이브 데이터 호감도 올리기
+            return UniTask.CompletedTask;
         }
     }
 
     [CommandAlias("increaseMoney")]
     public class IncreaseMoney : Command
     {
-        public IntegerParameter likeability;
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public IntegerParameter money;
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            //await GameManager.userData.IsEndingUnlock[]
+            GameManager.userData.Money += money;
+
+            return UniTask.CompletedTask;
         }
     }
+
     [CommandAlias("endingOpen")]
     public class EndingOpen : Command
     {
         public IntegerParameter ending;
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             GameManager.userData.IsEndingUnlock[ending - 1] = true;
-            GameManager.Data.SaveData();
+
+            return UniTask.CompletedTask;
         }
     }
 
 
-    [CommandAlias("minigame")]
-    public class GoMiniGame : Command
+    [CommandAlias("goMinigame")]
+    public class GoMiniGame : Command           // gameType 1 => 빠르게환승, 2 => 자리뺏기, 레벨 1,2,3,4
     {
-        public IntegerParameter game;
+        [RequiredParameter]
+        public IntegerParameter gameType, gameLevel;
 
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            // 1. Disable Naninovel input.
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = false;
+            GameManager.Nani.StopNani();
 
-            // 2. Stop script player.
-            var scriptPlayer = Engine.GetService<IScriptPlayer>();
-            scriptPlayer.Stop();
+            GameManager.userData.CurrentGameLevel = gameLevel - 1;
 
-            // 3. Reset state.
-            await GameManager.Nani.StateManager.ResetStateAsync();
+            if (gameType == 1) LoadingSceneManager.LoadScene("GetOnSubway");
+            else if (gameType == 2) LoadingSceneManager.LoadScene("StealSeat");
 
-            // 4. Switch cameras.
-            var naniCamera = Engine.GetService<ICameraManager>().Camera;
-            naniCamera.enabled = false;
-
-            int _gameNum = game;
-            if (_gameNum <= 4)
-            {
-                // 나중에 난이도 별로 실행
-                SceneManager.LoadScene(MiniGame.GetOnSubway.ToString());
-            }
-            else if (_gameNum <= 8)
-            {
-                SceneManager.LoadScene(MiniGame.StealSeat.ToString());
-            }
-            else
-                return;
+            return UniTask.CompletedTask;
         }
     }
 
-    [CommandAlias("gomain")]
-    public class BackToMain : Command
+    [CommandAlias("goMain")]
+    public class GoMain : Command
     {
-        public override async UniTask ExecuteAsync(AsyncToken asyncToken)
+        public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            // 1. Disable Naninovel input.
-            var inputManager = Engine.GetService<IInputManager>();
-            inputManager.ProcessInput = false;
+            GameManager.Nani.StopNani();
+            LoadingSceneManager.LoadScene("Main");
 
-            // 2. Stop script player.
-            var scriptPlayer = Engine.GetService<IScriptPlayer>();
-            scriptPlayer.Stop();
-
-            // 3. Reset state.
-            await GameManager.Nani.StateManager.ResetStateAsync();
-
-            // 4. Switch cameras.
-            var naniCamera = Engine.GetService<ICameraManager>().Camera;
-            naniCamera.enabled = false;
-
-            SceneManager.LoadScene("Main");
+            return UniTask.CompletedTask;
         }
     }
 }

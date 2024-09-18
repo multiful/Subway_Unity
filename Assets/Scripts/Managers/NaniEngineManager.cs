@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class NaniEngineManager
 {
-    public Camera MainCamera;
+    public ICameraManager CameraManager;
     public IInputManager InputManager;
     public IStateManager StateManager;
     public IScriptPlayer ScriptPlayer;
@@ -25,7 +25,7 @@ public class NaniEngineManager
         CacheEngineServices();
         
         //메인 카메라 설정 변경
-        MainCamera.clearFlags = CameraClearFlags.Depth;
+        CameraManager.Camera.clearFlags = CameraClearFlags.Depth;
     }
 
     /// <summary>
@@ -33,7 +33,7 @@ public class NaniEngineManager
     /// </summary>
     void CacheEngineServices()
     {
-        MainCamera   = Engine.GetService<ICameraManager>().Camera;
+        CameraManager = Engine.GetService<ICameraManager>();
         InputManager = Engine.GetService<IInputManager>();
         StateManager = Engine.GetService<IStateManager>();
         ScriptPlayer = Engine.GetService<IScriptPlayer>();
@@ -46,17 +46,32 @@ public class NaniEngineManager
 
     public async void PlayNani(string scriptName)
     {
-        GameManager.Sound.Clear();
+        GameManager.Sound.Clear(); // ?
 
         // 2. Switch cameras.
-        var naniCamera = Engine.GetService<ICameraManager>().Camera;
-        naniCamera.enabled = true;
+        CameraManager.Camera.enabled = true;
 
         // 3. Load and play specified script (if assigned).
-        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync(scriptName);
+        await ScriptPlayer.PreloadAndPlayAsync(scriptName);
 
         // 4. Enable Naninovel input.
-        GameManager.Nani.InputManager.ProcessInput = true;
+        InputManager.ProcessInput = true;
+    }
+
+    public async void StopNani()
+    {
+        // 1. Disable Naninovel input.
+        InputManager.ProcessInput = false;
+
+        // 2. Stop script player.
+        ScriptPlayer.Stop();
+
+        // 3. Reset state.
+        await StateManager.ResetStateAsync();
+
+        // 4. Switch cameras.
+        CameraManager.Camera.enabled = false;
+
     }
 }
 

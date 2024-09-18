@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 6b47f11847f4a5b4ca6eb9fddf784444
+  - enabled: 1
+    path: Assets/Scenes/Nani.unity
+    guid: b716903b494076841aa866080284fe15
   m_configObjects: {}

@@ -201,67 +201,67 @@ MonoBehaviour:
     - name: e3_1
       pathPrefix: Scripts
       guid: 19fefe353bffc574fb81392bfabde046
-    - name: 1_3_1 1
+    - name: e3_2
       pathPrefix: Scripts
       guid: 7b37306c159cea348bb97d2dab073524
     - name: e4_2
       pathPrefix: Scripts
       guid: 8136723f4e835034eb8d89833b9beb7b
-    - name: NewScript
+    - name: e8_1
       pathPrefix: Scripts
       guid: ecc2f0be35903ba4b933f42682cb218c
-    - name: 2_4_1 1
+    - name: e8_2
       pathPrefix: Scripts
       guid: 07dbdf54b5ebdcb4c805893ea8518f9a
     - name: e9_1
       pathPrefix: Scripts
       guid: e6ebd88e9cd3aa44c955a5a2c4fd2bb5
-    - name: 3_1_1 1
+    - name: e9_2
       pathPrefix: Scripts
       guid: 2f4772e4239f7d642938a296d33a4acb
     - name: e10_1
       pathPrefix: Scripts
       guid: e8ded003cb0c6384c99cba46fa868166
-    - name: 3_2_1 1
+    - name: e10_2
       pathPrefix: Scripts
       guid: 51ff3be6fbc2f5c44b8728babc4685e7
-    - name: 3_2_2 1
+    - name: e11
       pathPrefix: Scripts
       guid: f485f5ac8e88e864492836338280e4f0
     - name: e12
       pathPrefix: Scripts
       guid: 245b68bfb9550eb46ba6d613f1692834
-    - name: 3_4 1
+    - name: e13
       pathPrefix: Scripts
       guid: 6979afd9e8f39b34f98f53db7322c60b
-    - name: 4_1 1
+    - name: e14
       pathPrefix: Scripts
       guid: d781ebca511d9634197f27fd88dce7d7
     - name: e15
       pathPrefix: Scripts
       guid: f190752763d90ef4084125570fb2a252
-    - name: 4_1 3
+    - name: e16
       pathPrefix: Scripts
       guid: c4880077c8c02b64787f2a430fa9da01
-    - name: "\uBE68\uAC04"
+    - name: red_diary
       pathPrefix: Scripts
       guid: c88351194f8c1b54eaf6febf3daa8130
     - name: blue_diary
       pathPrefix: Scripts
       guid: ebb443367c5f9ac44befd62c76286d83
-    - name: blue_diary 1
+    - name: black_diary
       pathPrefix: Scripts
       guid: e69f2b096c168d44d8eeffab091507ef
-    - name: End1.
+    - name: End1
       pathPrefix: Scripts
       guid: 7fef24ebafd7c2044adf1a0796ba7c17
-    - name: End2.
+    - name: End2
       pathPrefix: Scripts
       guid: 98c068de6c63c8c41ab66e4cab3f41c1
-    - name: End2. 1
+    - name: End3
       pathPrefix: Scripts
       guid: a09ee638d65f2f8488f47f5c5c7ff9ac
-    - name: End2. 2
+    - name: End4
       pathPrefix: Scripts
       guid: 472a7be848b8b374e8a3eb736d094daa
     - name: e6_2
