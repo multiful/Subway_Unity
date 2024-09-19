@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 222317969144025850}
   - component: {fileID: 114681617684082448}
   - component: {fileID: 114120130011215396}
+  - component: {fileID: 1752443649256751209}
   m_Layer: 5
   m_Name: SavePanel
   m_TagString: Untagged
@@ -222,6 +223,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1752443649256751209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157129641183862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b65355fe53e4064f930135a5c9387b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1203322626459398
 GameObject:
   m_ObjectHideFlags: 0

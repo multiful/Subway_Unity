@@ -126,7 +126,7 @@ MonoBehaviour:
       guid: 71da50c8dae82bd42ba67528804e820c
     - name: ConfirmationUI
       pathPrefix: UI
-      guid: 88d03f19bcbff914ba33a7c9895e2d7c
+      guid: d5b8a9c17d2738e4f9884edb7da08324
     - name: ContinueInputUI
       pathPrefix: UI
       guid: 1add671f8348e8443bcc56290e82fc5e
@@ -165,7 +165,7 @@ MonoBehaviour:
       guid: 480f5db62ea305c46b89a86496d2a0c9
     - name: ToastUI
       pathPrefix: UI
-      guid: dd85ce99288c2f8488447fa511b1c0d6
+      guid: f892c791398b24f44927ccb9feb24f3c
   - Id: Scripts
     Resources:
     - name: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
