@@ -4,7 +4,7 @@ using UnityEngine;
 public enum StoryName
 {
     None,
-    Ã¹¹øÂ°_µî±³,
+    ì²«ë²ˆì§¸_ë“±êµ,
     e2,
     e3_1,
     e3_2,
@@ -32,14 +32,14 @@ public enum StoryName
 }
 public enum CardFlipEnding
 {
-    Ä«µåµÚÁı±â_¼º°ø,
-    Ä«µåµÚÁı±â_½ÇÆĞ
+    ì¹´ë“œë’¤ì§‘ê¸°_ì„±ê³µ,
+    ì¹´ë“œë’¤ì§‘ê¸°_ì‹¤íŒ¨
 }
 public enum Diary
 {
-    ÇÏÁö,
-    ¼³¾Æ,
-    ÁöÃ¶
+    í•˜ì§€,
+    ì„¤ì•„,
+    ì§€ì² 
 }
 public enum UIEvent
 {
@@ -69,16 +69,16 @@ public enum MiniGame
 
 public enum Ending
 {
-    Ã¹¹øÂ°¿£µù,
-    µÎ¹øÂ°¿£µù,
-    ¼¼¹øÂ°¿£µù,
-    ³×¹øÂ°¿£µù
+    ì²«ë²ˆì§¸ì—”ë”©,
+    ë‘ë²ˆì§¸ì—”ë”©,
+    ì„¸ë²ˆì§¸ì—”ë”©,
+    ë„¤ë²ˆì§¸ì—”ë”©
 }
 public enum EndingType
 {
-    ¹èµå¿£µù,
-    ³ë¸Ö¿£µù,
-    Æ®·ç¿£µù
+    ë°°ë“œì—”ë”©,
+    ë…¸ë©€ì—”ë”©,
+    íŠ¸ë£¨ì—”ë”©
 }
 public enum PrintTextMode
 {

@@ -82,7 +82,7 @@ namespace Naninovel
                 RollbackButton.gameObject.SetActive(canRollback);*/
         }
 
-        //Content Size FitterÀÇ »çÀÌÁî¸¦ ¹ŞÀ» ¶§ 0ÀÌ ¸®ÅÏµÇ´Â ÀÌ½´, µû¶ó¼­ ÇÑ Æ½ µÚ¿¡ ½ÇÇà
+        //Content Size Fitterì˜ ì‚¬ì´ì¦ˆë¥¼ ë°›ì„ ë•Œ 0ì´ ë¦¬í„´ë˜ëŠ” ì´ìŠˆ, ë”°ë¼ì„œ í•œ í‹± ë’¤ì— ì‹¤í–‰
         private IEnumerator NextFrame()
         {
             yield return null;
@@ -108,7 +108,7 @@ namespace Naninovel
         {
             base.OnEnable();
 
-            StartCoroutine(NextFrame()); //»ó´Ü ÄÚ·çÆ¾ ¼³¸í Âü°í
+            StartCoroutine(NextFrame()); //ìƒë‹¨ ì½”ë£¨í‹´ ì„¤ëª… ì°¸ê³ 
 
             /*if (PlayVoiceButton)
                 PlayVoiceButton.onClick.AddListener(HandlePlayVoiceButtonClicked);
@@ -139,35 +139,35 @@ namespace Naninovel
             LeftProfile.gameObject.SetActive(false);
             RightProfile.gameObject.SetActive(false);
 
-            if (value == null) //È¥Àã¸»
+            if (value == null) //í˜¼ì£ë§
             {
                 MessageText.alignment = TextAnchor.UpperRight;
-                //ÇÁ·ÎÇÊÀÌ ¶ßÁö ¾Ê´Â ´ë½Å ´õ ¿À¸¥ÂÊ¿¡ ÅØ½ºÆ® Ãâ·Â
+                //í”„ë¡œí•„ì´ ëœ¨ì§€ ì•ŠëŠ” ëŒ€ì‹  ë” ì˜¤ë¥¸ìª½ì— í…ìŠ¤íŠ¸ ì¶œë ¥
                 Vector2 vec = MessageText.GetComponent<RectTransform>().localPosition;
                 MessageText.GetComponent<RectTransform>().localPosition = new Vector2(vec.x + 100, vec.y);
             }
 
             switch (value)
             {
-                case "Same": //°°Àº »ç¶÷, ¹«½Ã
+                case "Same": //ê°™ì€ ì‚¬ëŒ, ë¬´ì‹œ
                     break;
-                case "SameÁöÃ¶":
+                case "Sameì§€ì² ":
                     MessageText.alignment = TextAnchor.UpperRight;
                     break;
-                case "ÁöÃ¶":
+                case "ì§€ì² ":
                     RightProfile.sprite = Resources.Load<Sprite>("UI/Log/Jicheol");
                     MessageText.alignment = TextAnchor.UpperRight;
                     RightProfile.gameObject.SetActive(true);
                     break;
-                case "ÇÏÁö":
+                case "í•˜ì§€":
                     LeftProfile.sprite = Resources.Load<Sprite>("UI/Log/Haji");
                     LeftProfile.gameObject.SetActive(true);
                     break;
-                case "1È£¼± »óÀÎ":
+                case "1í˜¸ì„  ìƒì¸":
                     LeftProfile.sprite = Resources.Load<Sprite>("UI/Log/Peddler");
                     LeftProfile.gameObject.SetActive(true);
                     break;
-                case "¼³¾Æ":
+                case "ì„¤ì•„":
                     LeftProfile.sprite = Resources.Load<Sprite>("UI/Log/Seola");
                     LeftProfile.gameObject.SetActive(true);
                     break;

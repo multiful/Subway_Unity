@@ -29,7 +29,7 @@ public class UI_EndingCollection : UI_Popup
         LikeabilityImage
     }
 
-    // ÀÓ½Ã·Î Àû¿ëÇÑ ¼öÄ¡
+    // ì„ì‹œë¡œ ì ìš©í•œ ìˆ˜ì¹˜
     private int _progress;
     private int _likeability = 60;
     private bool[] _ending;
@@ -45,7 +45,7 @@ public class UI_EndingCollection : UI_Popup
     }
     public override void Init()
     {
-        //¼¼ÀÌºêµ¥ÀÌÅÍ¿¡¼­ ÁøÇàµµ, È£°¨µµ, ¿£µù ¼öÁı ÇöÈ² ¹Ş¾Æ¿È
+        //ì„¸ì´ë¸Œë°ì´í„°ì—ì„œ ì§„í–‰ë„, í˜¸ê°ë„, ì—”ë”© ìˆ˜ì§‘ í˜„í™© ë°›ì•„ì˜´
         GameManager.userData.IsEndingUnlock[0] = true;
 
         _ending = GameManager.userData.IsEndingUnlock;
@@ -65,7 +65,7 @@ public class UI_EndingCollection : UI_Popup
 
     public void EndingSetup()
     {
-        // ÁøÇàµµ UI
+        // ì§„í–‰ë„ UI
         _progress = _ending.Length * 25;
         Image progressImage = Get<Image>((int)Images.ProgressCircle);
         TextMeshProUGUI progressText = Get<TextMeshProUGUI>((int)Texts.ProgressText);
@@ -75,18 +75,18 @@ public class UI_EndingCollection : UI_Popup
         StartCoroutine(FillImage(progressImage));
         progressText.text = _progress.ToString() + "%";
 
-        // È£°¨µµ UI
+        // í˜¸ê°ë„ UI
         TextMeshProUGUI likeabilityText = Get<TextMeshProUGUI>((int)Texts.LikeabilityText);
         likeabilityText.text = _likeability.ToString();
 
-        // ¿£µù ¹öÆ° ±â´É ³Ö±â
+        // ì—”ë”© ë²„íŠ¼ ê¸°ëŠ¥ ë„£ê¸°
         for (int i = 0; i < endingObjects.Length; i++)
         {
             int index = i;
             endingObjects[i].GetComponent<Button>().onClick.AddListener(() => ShowEndingPlayUI(index));
         }
 
-        // ¿£µù ¸ğÀ½ UI
+        // ì—”ë”© ëª¨ìŒ UI
         for (int end = 0; end  < _ending.Length; end++)
         {
             if (_ending[end])
@@ -117,10 +117,10 @@ public class UI_EndingCollection : UI_Popup
 
         while (img.fillAmount < targetFillAmount)
         {
-            // Time.smoothDeltaTimeÀ» °öÇØ ºÎµå·´°Ô Áõ°¡ÇÏµµ·Ï ¼³Á¤
+            // Time.smoothDeltaTimeì„ ê³±í•´ ë¶€ë“œëŸ½ê²Œ ì¦ê°€í•˜ë„ë¡ ì„¤ì •
             img.fillAmount += Time.smoothDeltaTime * 1.5f;
 
-            // ¸ñÇ¥Ä¡¿¡ µµ´ŞÇÑ °æ¿ì, ÄÚ·çÆ¾À» Á¾·áÇÕ´Ï´Ù.
+            // ëª©í‘œì¹˜ì— ë„ë‹¬í•œ ê²½ìš°, ì½”ë£¨í‹´ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.
             if (img.fillAmount >= targetFillAmount)
             {
                 img.fillAmount = targetFillAmount;

@@ -9,16 +9,16 @@ public class SettingsUIOn : MonoBehaviour
 
     async void Start()
     {
-        // ³ª´Ï³ëº§ ¿£ÁøÀÌ ÃÊ±âÈ­µÉ ¶§±îÁö ±â´Ù¸²
+        // ë‚˜ë‹ˆë…¸ë²¨ ì—”ì§„ì´ ì´ˆê¸°í™”ë  ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¼
         await RuntimeInitializer.InitializeAsync();
 
-        // ¹öÆ°¿¡ ¸®½º³Ê Ãß°¡
+        // ë²„íŠ¼ì— ë¦¬ìŠ¤ë„ˆ ì¶”ê°€
         settingsButton.onClick.AddListener(OpenSettingsUI);
     }
 
     void OpenSettingsUI()
     {
-        // ³ª´Ï³ëº§ÀÇ Settings UI È£Ãâ
+        // ë‚˜ë‹ˆë…¸ë²¨ì˜ Settings UI í˜¸ì¶œ
         var settingsUI = Engine.GetService<IUIManager>().GetUI<ISettingsUI>();
         settingsUI.Show();
     }

@@ -62,7 +62,7 @@ public class Shop : MonoBehaviour
 
         setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
 
-        speech.text = "¤¾¤·";
+        speech.text = "ã…ã…‡";
     }
 
     public void ItemBuy(int itemNum)
@@ -92,24 +92,24 @@ public class Shop : MonoBehaviour
     private void SuccessUI(int itemNum)
     {
         itemZoom[itemNum].SetActive(false);
-        speech.text = "¤£";
+        speech.text = "ã„³";
         items.SetActive(true);
         cardFlip.SetActive(true);
     }
 
     private void NoMoneyUI()
     {
-        speech.text = "µ·ÀÌ ¾ø´Ù°í? ¹°°ÇÀº ÆÈ ¼ö ¾ø°Ú¾î. ³­ ¼ÀÀÌ Ã¶ÀúÇÑ ÆíÀÌ¶ó.";
+        speech.text = "ëˆì´ ì—†ë‹¤ê³ ? ë¬¼ê±´ì€ íŒ” ìˆ˜ ì—†ê² ì–´. ë‚œ ì…ˆì´ ì² ì €í•œ í¸ì´ë¼.";
     }
 
     public void Diary(int diaryNum)
     {
         if (diaryUnlock <= diaryNum)
         {
-            speech.text = "ºñ¹Ğ¿¡´Â ´ë°¡°¡ ÇÊ¿äÇÑ ¹ı...";
+            speech.text = "ë¹„ë°€ì—ëŠ” ëŒ€ê°€ê°€ í•„ìš”í•œ ë²•...";
             return;
         }
-        speech.text = "±Â";
+        speech.text = "êµ¿";
         //OnDiaryClick
     }
 

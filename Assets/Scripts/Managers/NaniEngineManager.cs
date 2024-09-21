@@ -24,12 +24,12 @@ public class NaniEngineManager
     {
         CacheEngineServices();
         
-        //¸ŞÀÎ Ä«¸Ş¶ó ¼³Á¤ º¯°æ
+        //ë©”ì¸ ì¹´ë©”ë¼ ì„¤ì • ë³€ê²½
         CameraManager.Camera.clearFlags = CameraClearFlags.Depth;
     }
 
     /// <summary>
-    /// ÀÚÁÖ »ç¿ëµÇ´Â ¿£Áø¼­ºñ½ºµéÀ» ¹Ì¸® Ä³½ÌÇØµÒ
+    /// ìì£¼ ì‚¬ìš©ë˜ëŠ” ì—”ì§„ì„œë¹„ìŠ¤ë“¤ì„ ë¯¸ë¦¬ ìºì‹±í•´ë‘ 
     /// </summary>
     void CacheEngineServices()
     {

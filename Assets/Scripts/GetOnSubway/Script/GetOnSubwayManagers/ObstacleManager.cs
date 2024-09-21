@@ -5,14 +5,14 @@ using UnityEngine.UIElements;
 
 public class ObstacleManager : MonoBehaviour
 {
-    public GameObject[] obstaclePrefabs; // Àå¾Ö¹° ÇÁ¸®ÆÕ ¹è¿­
+    public GameObject[] obstaclePrefabs; // ì¥ì• ë¬¼ í”„ë¦¬íŒ¹ ë°°ì—´
     public GameObject player;
-    public GetOnSubwayManager gameManager; // GetOnSubwayManager ½ºÅ©¸³Æ® ÂüÁ¶
-    public float obstacleGap = 5.0f; // Àå¾Ö¹° °£ÀÇ °£°İ
-    private List<GameObject> obstacles = new List<GameObject>(); // »ı¼ºµÈ Àå¾Ö¹°µéÀ» ÀúÀåÇÒ ¸®½ºÆ®
-    private List<ObstacleData[]> grid = new List<ObstacleData[]>(); // Àå¾Ö¹° À§Ä¡¿Í ÀÌ¹ÌÁö¸¦ ÀúÀåÇÒ ±×¸®µå
-    private int gridCols = 3; // ±×¸®µåÀÇ ¿­ ¼ö
-    private int count = 0; // Çà »ı¼ºÀ» À§ÇÑ Ä«¿îÆ® º¯¼ö
+    public GetOnSubwayManager gameManager; // GetOnSubwayManager ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
+    public float obstacleGap = 5.0f; // ì¥ì• ë¬¼ ê°„ì˜ ê°„ê²©
+    private List<GameObject> obstacles = new List<GameObject>(); // ìƒì„±ëœ ì¥ì• ë¬¼ë“¤ì„ ì €ì¥í•  ë¦¬ìŠ¤íŠ¸
+    private List<ObstacleData[]> grid = new List<ObstacleData[]>(); // ì¥ì• ë¬¼ ìœ„ì¹˜ì™€ ì´ë¯¸ì§€ë¥¼ ì €ì¥í•  ê·¸ë¦¬ë“œ
+    private int gridCols = 3; // ê·¸ë¦¬ë“œì˜ ì—´ ìˆ˜
+    private int count = 0; // í–‰ ìƒì„±ì„ ìœ„í•œ ì¹´ìš´íŠ¸ ë³€ìˆ˜
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class ObstacleManager : MonoBehaviour
 
     public void GenerateInitialObstacles()
     {
-        // ÃÊ±â Àå¾Ö¹° »ı¼º (ÇÃ·¹ÀÌ¾î ¸Ó¸® À§·Î 3°³ÀÇ Çà »ı¼º)
+        // ì´ˆê¸° ì¥ì• ë¬¼ ìƒì„± (í”Œë ˆì´ì–´ ë¨¸ë¦¬ ìœ„ë¡œ 3ê°œì˜ í–‰ ìƒì„±)
         for (int i = 0; i < 3; i++)
         {
             GenerateObstacleRow(i);
@@ -36,25 +36,25 @@ public class ObstacleManager : MonoBehaviour
 
     public void MoveObstaclesDown()
     {
-        // »õ·Î¿î Çà »ı¼º
+        // ìƒˆë¡œìš´ í–‰ ìƒì„±
         GenerateObstacleRow(grid.Count);
 
-        // ¸ğµç Àå¾Ö¹°ÀÇ À§Ä¡ ¾÷µ¥ÀÌÆ®
+        // ëª¨ë“  ì¥ì• ë¬¼ì˜ ìœ„ì¹˜ ì—…ë°ì´íŠ¸
         UpdateObstaclePositions();
     }
 
     private void GenerateObstacleRow(int row)
     {
-        int emptySpace = GetNextEmptySpace(row); // ºó °ø°£ À§Ä¡ °áÁ¤
-        int obstacleCount = Random.Range(1, 3); // 1 ¶Ç´Â 2°³ÀÇ Àå¾Ö¹° »ı¼º
+        int emptySpace = GetNextEmptySpace(row); // ë¹ˆ ê³µê°„ ìœ„ì¹˜ ê²°ì •
+        int obstacleCount = Random.Range(1, 3); // 1 ë˜ëŠ” 2ê°œì˜ ì¥ì• ë¬¼ ìƒì„±
 
         ObstacleData[] newRow = new ObstacleData[gridCols];
         for (int i = 0; i < gridCols; i++)
         {
-            newRow[i] = new ObstacleData { hasObstacle = false, prefabIndex = -1 }; // ¸ÕÀú ¸ğµç Ä­À» ºó °ø°£À¸·Î ÃÊ±âÈ­
+            newRow[i] = new ObstacleData { hasObstacle = false, prefabIndex = -1 }; // ë¨¼ì € ëª¨ë“  ì¹¸ì„ ë¹ˆ ê³µê°„ìœ¼ë¡œ ì´ˆê¸°í™”
         }
 
-        // Àå¾Ö¹° »ı¼º
+        // ì¥ì• ë¬¼ ìƒì„±
         int generatedObstacles = 0;
         while (generatedObstacles < obstacleCount)
         {
@@ -63,7 +63,7 @@ public class ObstacleManager : MonoBehaviour
                 if (generatedObstacles >= obstacleCount)
                     break;
 
-                // ºó °ø°£ÀÌ ¾Æ´Ñ °÷¿¡¸¸ Àå¾Ö¹° ¹èÄ¡
+                // ë¹ˆ ê³µê°„ì´ ì•„ë‹Œ ê³³ì—ë§Œ ì¥ì• ë¬¼ ë°°ì¹˜
                 if (i != emptySpace)
                 {
                     newRow[i].hasObstacle = true;
@@ -75,7 +75,7 @@ public class ObstacleManager : MonoBehaviour
 
         if (count > 2)
         {
-            grid.Insert(0, newRow); // »õ·Î¿î ÇàÀ» ±×¸®µåÀÇ ¸Ç ¾Õ¿¡ Ãß°¡
+            grid.Insert(0, newRow); // ìƒˆë¡œìš´ í–‰ì„ ê·¸ë¦¬ë“œì˜ ë§¨ ì•ì— ì¶”ê°€
         }
         count++;
 
@@ -84,14 +84,14 @@ public class ObstacleManager : MonoBehaviour
 
     private int GetNextEmptySpace(int row)
     {
-        if (row % 2 == 0) // Â¦¼ö Çà
+        if (row % 2 == 0) // ì§ìˆ˜ í–‰
         {
-            int[] possibleCols = { 0, 2 }; // 1¿­ ¶Ç´Â 3¿­ (index 0 ¶Ç´Â 2)
+            int[] possibleCols = { 0, 2 }; // 1ì—´ ë˜ëŠ” 3ì—´ (index 0 ë˜ëŠ” 2)
             return possibleCols[Random.Range(0, possibleCols.Length)];
         }
-        else // È¦¼ö Çà
+        else // í™€ìˆ˜ í–‰
         {
-            return 1; // 2¿­ (index 1)
+            return 1; // 2ì—´ (index 1)
         }
     }
 
@@ -99,7 +99,7 @@ public class ObstacleManager : MonoBehaviour
     {
         float startY = player.transform.position.y +10.1f;
 
-        // ±âÁ¸ Àå¾Ö¹° Á¦°Å
+        // ê¸°ì¡´ ì¥ì• ë¬¼ ì œê±°
         ClearExistingObstacles();
 
         Quaternion fixedRotation = Quaternion.Euler(0, 0, 0);
@@ -115,11 +115,11 @@ public class ObstacleManager : MonoBehaviour
                     GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, fixedRotation);
                     obstacle.transform.localScale = fixedScale;
 
-                    // Sorting Layer ¹× Sorting Order ¼³Á¤
+                    // Sorting Layer ë° Sorting Order ì„¤ì •
                     SpriteRenderer spriteRenderer = obstacle.GetComponent<SpriteRenderer>();
                     if (spriteRenderer != null)
                     {
-                        // ·¹ÀÌ¾î ¼³Á¤
+                        // ë ˆì´ì–´ ì„¤ì •
                         if (i == 0)
                             spriteRenderer.sortingLayerName = "LastGround"; 
                         else if (i == 1)
@@ -129,8 +129,8 @@ public class ObstacleManager : MonoBehaviour
                         else
                             spriteRenderer.sortingLayerName = "Foreground";
 
-                        // °°Àº ·¹ÀÌ¾î ³»¿¡¼­ ±×¸®±â ¼ø¼­¸¦ Á¶Á¤ (i°¡ Å¬¼ö·Ï µÚ¿¡ À§Ä¡)
-                        spriteRenderer.sortingOrder = i; // i °ªÀÌ Å¬¼ö·Ï ÀÛÀº sortingOrder ºÎ¿©
+                        // ê°™ì€ ë ˆì´ì–´ ë‚´ì—ì„œ ê·¸ë¦¬ê¸° ìˆœì„œë¥¼ ì¡°ì • (iê°€ í´ìˆ˜ë¡ ë’¤ì— ìœ„ì¹˜)
+                        spriteRenderer.sortingOrder = i; // i ê°’ì´ í´ìˆ˜ë¡ ì‘ì€ sortingOrder ë¶€ì—¬
                     }
 
                     obstacles.Add(obstacle);
@@ -146,7 +146,7 @@ public class ObstacleManager : MonoBehaviour
 
     public bool IsLaneClear(int targetLane)
     {
-        // ÀÌµ¿ÇÏ·Á´Â À§Ä¡ÀÇ ·¹ÀÎÀÌ ºó °ø°£ÀÎÁö È®ÀÎ
+        // ì´ë™í•˜ë ¤ëŠ” ìœ„ì¹˜ì˜ ë ˆì¸ì´ ë¹ˆ ê³µê°„ì¸ì§€ í™•ì¸
         return !grid[2][targetLane].hasObstacle;
     }
 
@@ -170,7 +170,7 @@ public class ObstacleManager : MonoBehaviour
 
     private void RemoveOldRows()
     {
-        // ¿À·¡µÈ ÇàÀÌ Á¸ÀçÇÏ°í ±×¸®µåÀÇ ±æÀÌ°¡ 6À» ÃÊ°úÇÒ °æ¿ì ¿À·¡µÈ Çà Á¦°Å
+        // ì˜¤ë˜ëœ í–‰ì´ ì¡´ì¬í•˜ê³  ê·¸ë¦¬ë“œì˜ ê¸¸ì´ê°€ 6ì„ ì´ˆê³¼í•  ê²½ìš° ì˜¤ë˜ëœ í–‰ ì œê±°
         while (grid.Count > 6)
         {
             grid.RemoveAt(grid.Count - 1);

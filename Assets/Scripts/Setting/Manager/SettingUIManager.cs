@@ -16,11 +16,11 @@ public class SettingsUIManager : MonoBehaviour
     public Button miscButton;
     public Button exitButton;
 
-    public AudioMixer audioMixer; // ¿Àµğ¿À ¹Í¼­ ÂüÁ¶
+    public AudioMixer audioMixer; // ì˜¤ë””ì˜¤ ë¯¹ì„œ ì°¸ì¡°
 
     private void Start()
     {
-        // ¹öÆ° Å¬¸¯ ÀÌº¥Æ® ¸®½º³Ê ¼³Á¤
+        // ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸ ë¦¬ìŠ¤ë„ˆ ì„¤ì •
         soundButton.onClick.AddListener(() => ShowPanel(soundSettingsPanel, soundButton));
         soundButton.onClick.AddListener(() => SetTextMode(0));
 
@@ -31,18 +31,18 @@ public class SettingsUIManager : MonoBehaviour
         miscButton.onClick.AddListener(() => SetTextMode(2));
         exitButton.onClick.AddListener(CloseSettings);
 
-        // ÃÊ±â¿¡´Â »ç¿îµå ¼³Á¤ ÆĞ³ÎÀ» º¸¿©ÁÜ
+        // ì´ˆê¸°ì—ëŠ” ì‚¬ìš´ë“œ ì„¤ì • íŒ¨ë„ì„ ë³´ì—¬ì¤Œ
         ShowPanel(soundSettingsPanel, soundButton);
         SetTextMode(0);
     }
 
-    // ¼±ÅÃÇÑ ¹öÆ°ÀÇ ÅØ½ºÆ®¸¦ ±½°Ô ¼³Á¤
+    // ì„ íƒí•œ ë²„íŠ¼ì˜ í…ìŠ¤íŠ¸ë¥¼ êµµê²Œ ì„¤ì •
     private void SetTextMode(int mode)
     {
-        // ¸ğµå ÀúÀå
+        // ëª¨ë“œ ì €ì¥
         PlayerPrefs.SetInt("TextMode", mode);
 
-        // ¹öÆ° ½ºÅ¸ÀÏ º¯°æ
+        // ë²„íŠ¼ ìŠ¤íƒ€ì¼ ë³€ê²½
         soundButton.GetComponentInChildren<TMP_Text>().fontStyle = mode == 0 ? FontStyles.Bold : FontStyles.Normal;
         textButton.GetComponentInChildren<TMP_Text>().fontStyle = mode == 1 ? FontStyles.Bold : FontStyles.Normal;
         miscButton.GetComponentInChildren<TMP_Text>().fontStyle = mode == 2 ? FontStyles.Bold : FontStyles.Normal;
@@ -50,19 +50,19 @@ public class SettingsUIManager : MonoBehaviour
 
     private void ShowPanel(GameObject panelToShow, Button selectedButton)
     {
-        // ¸ğµç ÆĞ³Î ºñÈ°¼ºÈ­
+        // ëª¨ë“  íŒ¨ë„ ë¹„í™œì„±í™”
         soundSettingsPanel.SetActive(false);
         textSettingsPanel.SetActive(false);
         miscSettingsPanel.SetActive(false);
 
-        // ¼±ÅÃÇÑ ÆĞ³Î È°¼ºÈ­
+        // ì„ íƒí•œ íŒ¨ë„ í™œì„±í™”
         panelToShow.SetActive(true);
 
-        // ¸ğµç ¹öÆ°ÀÇ ÅØ½ºÆ®¸¦ ÀÏ¹İÀ¸·Î ¼³Á¤
+        // ëª¨ë“  ë²„íŠ¼ì˜ í…ìŠ¤íŠ¸ë¥¼ ì¼ë°˜ìœ¼ë¡œ ì„¤ì •
         
 
-        // BGM ÀÏ½Ã Á¤Áö
-        audioMixer.SetFloat("BGMVolume", -80); // BGM º¼·ıÀ» ÃÖ¼Ò·Î ¼³Á¤ÇÏ¿© ÀÏ½ÃÁ¤Áö È¿°ú
+        // BGM ì¼ì‹œ ì •ì§€
+        audioMixer.SetFloat("BGMVolume", -80); // BGM ë³¼ë¥¨ì„ ìµœì†Œë¡œ ì„¤ì •í•˜ì—¬ ì¼ì‹œì •ì§€ íš¨ê³¼
         // AudioManager.Instance.PauseAllBGM();
     }
 
@@ -73,11 +73,11 @@ public class SettingsUIManager : MonoBehaviour
         textSettingsPanel.SetActive(false);
         miscSettingsPanel.SetActive(false);
 
-        // BGM Àç»ı Àç°³
+        // BGM ì¬ìƒ ì¬ê°œ
         audioMixer.SetFloat("BGMVolume", 0);
         // AudioManager.Instance.ResumeAllBGM();
 
-        // ¼³Á¤ Ã¢ ´İ±â
+        // ì„¤ì • ì°½ ë‹«ê¸°
         settingsPanel.SetActive(false);
     }
 }

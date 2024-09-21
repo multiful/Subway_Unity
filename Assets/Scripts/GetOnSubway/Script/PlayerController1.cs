@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerController1 : MonoBehaviour
 {
-    public GetOnSubwayManager gameManager; // GetOnSubwayManager ½ºÅ©¸³Æ® ÂüÁ¶
-    public ObstacleManager obstacleManager; // ObstacleManager ½ºÅ©¸³Æ® ÂüÁ¶
+    public GetOnSubwayManager gameManager; // GetOnSubwayManager ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
+    public ObstacleManager obstacleManager; // ObstacleManager ìŠ¤í¬ë¦½íŠ¸ ì°¸ì¡°
 
-    private int currentLane = 1; // ÁÖÀÎ°øÀÇ ÇöÀç À§Ä¡ (0: ¿ŞÂÊ, 1: Áß¾Ó, 2: ¿À¸¥ÂÊ)
-    public float laneWidth = 3.0f; // Àå¾Ö¹° °£ÀÇ °£°İ
+    private int currentLane = 1; // ì£¼ì¸ê³µì˜ í˜„ì¬ ìœ„ì¹˜ (0: ì™¼ìª½, 1: ì¤‘ì•™, 2: ì˜¤ë¥¸ìª½)
+    public float laneWidth = 3.0f; // ì¥ì• ë¬¼ ê°„ì˜ ê°„ê²©
 
     private void Update()
     {
-        // ÁÂ¿ì È­»ìÇ¥ Å° ÀÔ·ÂÀ» °¨ÁöÇÏ¿© ÁÖÀÎ°øÀ» ÀÌµ¿½ÃÅµ´Ï´Ù.
+        // ì¢Œìš° í™”ì‚´í‘œ í‚¤ ì…ë ¥ì„ ê°ì§€í•˜ì—¬ ì£¼ì¸ê³µì„ ì´ë™ì‹œí‚µë‹ˆë‹¤.
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             MoveLeft();
@@ -36,12 +36,12 @@ public class PlayerController1 : MonoBehaviour
             }
             else
             {
-                gameManager.HitObstacle(); // Àå¾Ö¹°¿¡ ºÎµúÈ÷¸é ½Ã°£¸¸ °¨¼Ò
+                gameManager.HitObstacle(); // ì¥ì• ë¬¼ì— ë¶€ë”ªíˆë©´ ì‹œê°„ë§Œ ê°ì†Œ
             }
         }
         else
         {
-            // °¡Àå ¿ŞÂÊ¿¡¼­ ¿ŞÂÊÀ¸·Î ´õ ÀÌµ¿ ½Ãµµ ½Ã
+            // ê°€ì¥ ì™¼ìª½ì—ì„œ ì™¼ìª½ìœ¼ë¡œ ë” ì´ë™ ì‹œë„ ì‹œ
             gameManager.ReduceTimeByFive();
         }
     }
@@ -59,22 +59,22 @@ public class PlayerController1 : MonoBehaviour
             }
             else
             {
-                gameManager.HitObstacle(); // Àå¾Ö¹°¿¡ ºÎµúÈ÷¸é ½Ã°£¸¸ °¨¼Ò
+                gameManager.HitObstacle(); // ì¥ì• ë¬¼ì— ë¶€ë”ªíˆë©´ ì‹œê°„ë§Œ ê°ì†Œ
             }
         }
         else
         {
-            // °¡Àå ¿À¸¥ÂÊ¿¡¼­ ¿À¸¥ÂÊÀ¸·Î ´õ ÀÌµ¿ ½Ãµµ ½Ã
+            // ê°€ì¥ ì˜¤ë¥¸ìª½ì—ì„œ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ë” ì´ë™ ì‹œë„ ì‹œ
             gameManager.ReduceTimeByFive();
         }
     }
 
     private void ProcessMovement()
     {
-        // ÇÃ·¹ÀÌ¾î ÀÌµ¿ ÈÄ Àå¾Ö¹° ÀÌµ¿
+        // í”Œë ˆì´ì–´ ì´ë™ í›„ ì¥ì• ë¬¼ ì´ë™
         obstacleManager.MoveObstaclesDown();
 
-        // Àå¾Ö¹° Ãæµ¹ ¿©ºÎ È®ÀÎ
+        // ì¥ì• ë¬¼ ì¶©ëŒ ì—¬ë¶€ í™•ì¸
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.1f);
         bool hitObstacle = false;
         foreach (var collider in hitColliders)
@@ -83,25 +83,25 @@ public class PlayerController1 : MonoBehaviour
             {
                 
                 hitObstacle = true;
-                Destroy(collider.gameObject); // Ãæµ¹ÇÑ Àå¾Ö¹° Á¦°Å
+                Destroy(collider.gameObject); // ì¶©ëŒí•œ ì¥ì• ë¬¼ ì œê±°
                 break;
             }
         }
 
         if (!hitObstacle)
         {
-            // Debug.Log("PassLine -> ¸ñÇ¥¼ö -1");
+            // Debug.Log("PassLine -> ëª©í‘œìˆ˜ -1");
             gameManager.PassLine();
         }
     }
 
     private bool CanMoveToPosition(Vector3 targetPosition)
     {
-        int targetLane = (int)((targetPosition.x / laneWidth) + 1); // ¸ñÇ¥ À§Ä¡ÀÇ ·¹ÀÎ
+        int targetLane = (int)((targetPosition.x / laneWidth) + 1); // ëª©í‘œ ìœ„ì¹˜ì˜ ë ˆì¸
         if (obstacleManager.IsLaneClear(targetLane))
         {
-            return true; // ÀÌµ¿ °¡´É
+            return true; // ì´ë™ ê°€ëŠ¥
         }
-        return false; // ÀÌµ¿ ºÒ°¡
+        return false; // ì´ë™ ë¶ˆê°€
     }
 }

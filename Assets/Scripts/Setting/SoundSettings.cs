@@ -11,12 +11,12 @@ public class SoundSettings : MonoBehaviour
 
     void Start()
     {
-        // ½½¶óÀÌ´õ ÃÊ±â°ª ¼³Á¤
+        // ìŠ¬ë¼ì´ë” ì´ˆê¸°ê°’ ì„¤ì •
         masterSlider.value = PlayerPrefs.GetFloat("MasterVolume", 0.75f);
         bgmSlider.value = PlayerPrefs.GetFloat("BGMVolume", 0.75f);
         sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.75f);
 
-        // ½½¶óÀÌ´õ °ª º¯°æ ½Ã ÀÌº¥Æ® ¼³Á¤
+        // ìŠ¬ë¼ì´ë” ê°’ ë³€ê²½ ì‹œ ì´ë²¤íŠ¸ ì„¤ì •
         masterSlider.onValueChanged.AddListener(SetMasterVolume);
         bgmSlider.onValueChanged.AddListener(SetBGMVolume);
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);

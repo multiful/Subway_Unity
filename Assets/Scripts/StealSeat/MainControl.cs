@@ -12,17 +12,17 @@ using UnityEngine.UIElements;
 using UnityEngine.VFX;
 using UnityEngine.XR;
 
-public class MainControl : MonoBehaviour //ÀüÃ¼ µÎ´õÁö°ÔÀÓ °ü¸®
+public class MainControl : MonoBehaviour //ì „ì²´ ë‘ë”ì§€ê²Œì„ ê´€ë¦¬
 {
 
     public static MainControl Inst; //temporary singleton
     public TMP_Text TMP_Time;
-    public int womanSeat = -1; //¿©ÀÚ°¡ ¾ÆÁ÷ ¾È ¾ÉÀº »óÅÂ
+    public int womanSeat = -1; //ì—¬ìê°€ ì•„ì§ ì•ˆ ì•‰ì€ ìƒíƒœ
     public delegate void stopGame();
     public static event stopGame StopGame;
 
-    public List<int> occupiedList = new List<int>(); //0~9 »çÀÌ ¾ÉÀº ÀÚ¸® 7°³
-    public List<int> unoccupiedList = new List<int>(); //±× ¿Ü ³²´Â ÀÚ¸® 3°³
+    public List<int> occupiedList = new List<int>(); //0~9 ì‚¬ì´ ì•‰ì€ ìë¦¬ 7ê°œ
+    public List<int> unoccupiedList = new List<int>(); //ê·¸ ì™¸ ë‚¨ëŠ” ìë¦¬ 3ê°œ
 
     public int gameLevel;
     private readonly int[] timeLimit = { 60, 60, 50, 50 };
@@ -45,13 +45,13 @@ public class MainControl : MonoBehaviour //ÀüÃ¼ µÎ´õÁö°ÔÀÓ °ü¸®
         StartCoroutine(StartTimer());
     }
 
-    private void InitArray() //½ºÇÁ¶óÀÌÆ® ¹øÈ£ ³ª¿­
+    private void InitArray() //ìŠ¤í”„ë¼ì´íŠ¸ ë²ˆí˜¸ ë‚˜ì—´
     {
         for (int i = 0; i <= 20; i++)
         {
             unoccupiedList.Add(i); //0~20
         }
-        for (int i = 0; i <= 6; i++) //7ÀÚ¸® Ã¤¿ì±â
+        for (int i = 0; i <= 6; i++) //7ìë¦¬ ì±„ìš°ê¸°
         {
             int rand = Random.Range(0, unoccupiedList.Count);
             occupiedList.Add(unoccupiedList[rand]);
@@ -61,14 +61,14 @@ public class MainControl : MonoBehaviour //ÀüÃ¼ µÎ´õÁö°ÔÀÓ °ü¸®
 
     private IEnumerator StartTimer()
     {
-        while (_currentTime > 0f) //Á¦ÇÑ½Ã°£ timeLevel[gameLevel]ÃÊ
+        while (_currentTime > 0f) //ì œí•œì‹œê°„ timeLevel[gameLevel]ì´ˆ
         {
-            TMP_Time.text = ((int)_currentTime + 1).ToString(); //°æ°ú ½Ã°£ Ç¥½Ã
+            TMP_Time.text = ((int)_currentTime + 1).ToString(); //ê²½ê³¼ ì‹œê°„ í‘œì‹œ
 
             _currentTime -= Time.deltaTime;
             yield return null;
         }
-        Fail(); //60ÃÊ ÃÊ°ú ½Ã ½ÇÆĞ
+        Fail(); //60ì´ˆ ì´ˆê³¼ ì‹œ ì‹¤íŒ¨
     }
 
     private bool IsNextSeat(int seat1, int seat2)
@@ -82,27 +82,27 @@ public class MainControl : MonoBehaviour //ÀüÃ¼ µÎ´õÁö°ÔÀÓ °ü¸®
     {
         GameManager.userData.LikeAbility += 5;
         yield return new WaitForSeconds(2f);
-        GameManager.Nani.PlayNani("ÀÚ¸®»¯±â", "´ë¼º°ø" + (gameLevel + 1).ToString());
+        GameManager.Nani.PlayNani("ìë¦¬ëºê¸°", "ëŒ€ì„±ê³µ" + (gameLevel + 1).ToString());
     }
 
 
     private IEnumerator BadClear()
     {
         yield return new WaitForSeconds(2f);
-        GameManager.Nani.PlayNani("ÀÚ¸®»¯±â", "¼º°ø" + (gameLevel + 1).ToString());
+        GameManager.Nani.PlayNani("ìë¦¬ëºê¸°", "ì„±ê³µ" + (gameLevel + 1).ToString());
     }
 
     private void Fail()
     {
         StopGame();
         TMP_Time.text = "0";
-        GameManager.Nani.PlayNani("ÀÚ¸®»¯±â", "½ÇÆĞ" + (gameLevel + 1).ToString());
+        GameManager.Nani.PlayNani("ìë¦¬ëºê¸°", "ì‹¤íŒ¨" + (gameLevel + 1).ToString());
     }
 
     public void Clear(int manSeat)
     {
-        StopAllCoroutines(); //Å¸ÀÌ¸Ó Á¾·á
-        StopGame(); //ÀÌº¥Æ® µ¨¸®°ÔÀÌÆ®·Î ¸ğµç ¹öÆ° ºñÈ°¼ºÈ­
+        StopAllCoroutines(); //íƒ€ì´ë¨¸ ì¢…ë£Œ
+        StopGame(); //ì´ë²¤íŠ¸ ë¸ë¦¬ê²Œì´íŠ¸ë¡œ ëª¨ë“  ë²„íŠ¼ ë¹„í™œì„±í™”
         reward = 500 * ((int)_currentTime + 1);
         GameManager.userData.Money += reward;
 
@@ -126,12 +126,12 @@ public class MainControl : MonoBehaviour //ÀüÃ¼ µÎ´õÁö°ÔÀÓ °ü¸®
     {
         int rand = Random.Range(0, unoccupiedList.Count);
         int num = unoccupiedList[rand];
-        occupiedList.Add(num); //»õ·Î¿î »ç¶÷
+        occupiedList.Add(num); //ìƒˆë¡œìš´ ì‚¬ëŒ
         unoccupiedList.RemoveAt(rand);
 
-        occupiedList.Remove(prevNum); //ÀÌÀü »ç¶÷ ÀçÂø¼® ¹æÁö
+        occupiedList.Remove(prevNum); //ì´ì „ ì‚¬ëŒ ì¬ì°©ì„ ë°©ì§€
         unoccupiedList.Add(prevNum);
-        return num; //»õ·Î¿î »ç¶÷ ½ºÇÁ¶óÀÌÆ® ¹øÈ£ Àü´Ş
+        return num; //ìƒˆë¡œìš´ ì‚¬ëŒ ìŠ¤í”„ë¼ì´íŠ¸ ë²ˆí˜¸ ì „ë‹¬
     }
 
 }

@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EachSeat : MonoBehaviour //°¢ ¹öÆ°º° µ¶¸³ µ¿ÀÛ
+public class EachSeat : MonoBehaviour //ê° ë²„íŠ¼ë³„ ë…ë¦½ ë™ì‘
 {
 
     private enum State
@@ -23,29 +23,29 @@ public class EachSeat : MonoBehaviour //°¢ ¹öÆ°º° µ¶¸³ µ¿ÀÛ
 
     void Start()
     {
-        MainControl.StopGame += DeActivate; //µ¨¸®°ÔÀÌÆ®¿¡ ºñÈ°¼º ÇÔ¼ö Ãß°¡
+        MainControl.StopGame += DeActivate; //ë¸ë¦¬ê²Œì´íŠ¸ì— ë¹„í™œì„± í•¨ìˆ˜ ì¶”ê°€
         StartCoroutine(Activate());
 
-        spriteNum = MainControl.Inst.occupiedList[seatNum]; //½ºÇÁ¶óÀÌÆ® ¹øÈ£ ¹Ş±â
+        spriteNum = MainControl.Inst.occupiedList[seatNum]; //ìŠ¤í”„ë¼ì´íŠ¸ ë²ˆí˜¸ ë°›ê¸°
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".1");
         _currentInterval = changeInterval[MainControl.Inst.gameLevel];
     }
 
     private IEnumerator Activate()
     {
-        yield return new WaitForSeconds(Random.Range(3f, 7f)); //½ÃÀÛ ½Ã 3~7ÃÊ ´ë±â
+        yield return new WaitForSeconds(Random.Range(3f, 7f)); //ì‹œì‘ ì‹œ 3~7ì´ˆ ëŒ€ê¸°
         while (true)
         {
             float rand = Random.Range(0f, 1f);
-            if (rand < 0.33f) StartCoroutine(Fake()); //3ºĞÀÇ 1 È®·ü·Î ÆäÀÌÅ©
-            if (rand > 0.66f) StartCoroutine(Stand()); //3ºĞÀÇ 1 È®·ü·Î ÀÏ¾î³²,
-                                                       //³²Àº 3ºĞÀÇ 1 È®·üÀº °è¼Ó ¾É¾ÆÀÖÀ½
+            if (rand < 0.33f) StartCoroutine(Fake()); //3ë¶„ì˜ 1 í™•ë¥ ë¡œ í˜ì´í¬
+            if (rand > 0.66f) StartCoroutine(Stand()); //3ë¶„ì˜ 1 í™•ë¥ ë¡œ ì¼ì–´ë‚¨,
+                                                       //ë‚¨ì€ 3ë¶„ì˜ 1 í™•ë¥ ì€ ê³„ì† ì•‰ì•„ìˆìŒ
 
-            yield return new WaitForSeconds(Random.Range(3f, 7f)); //3~7ÃÊ¸¶´Ù À§ÀÇ Çàµ¿
+            yield return new WaitForSeconds(Random.Range(3f, 7f)); //3~7ì´ˆë§ˆë‹¤ ìœ„ì˜ í–‰ë™
         }
     }
 
-    private void DeActivate() //¹öÆ° ºñÈ°¼ºÈ­
+    private void DeActivate() //ë²„íŠ¼ ë¹„í™œì„±í™”
     {
         StopAllCoroutines();
         GetComponent<Button>().interactable = false;
@@ -62,7 +62,7 @@ public class EachSeat : MonoBehaviour //°¢ ¹öÆ°º° µ¶¸³ µ¿ÀÛ
         gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/" + (spriteNum + 1).ToString() + ".2");
         _currentState = State.Fake;
         yield return new WaitForSeconds(_currentInterval);
-        Sit(); //1ÃÊ ´ë±â ÈÄ ´Ù½Ã Âø¼®
+        Sit(); //1ì´ˆ ëŒ€ê¸° í›„ ë‹¤ì‹œ ì°©ì„
     }
 
     private IEnumerator Stand()
@@ -71,29 +71,29 @@ public class EachSeat : MonoBehaviour //°¢ ¹öÆ°º° µ¶¸³ µ¿ÀÛ
         _currentState = State.Stand;
         yield return new WaitForSeconds(_currentInterval);
 
-        spriteNum = MainControl.Inst.GetSeat(spriteNum); //1ÃÊ ÈÄ »õ·Î¿î »ç¶÷ Âø¼®
-        Sit(); //0.5(ÀÓ½Ã 1ÃÊ) ´ë±â ÈÄ ´Ù½Ã Âø¼®
+        spriteNum = MainControl.Inst.GetSeat(spriteNum); //1ì´ˆ í›„ ìƒˆë¡œìš´ ì‚¬ëŒ ì°©ì„
+        Sit(); //0.5(ì„ì‹œ 1ì´ˆ) ëŒ€ê¸° í›„ ë‹¤ì‹œ ì°©ì„
     }
 
-    public void ButtonClick() //0~6¹ø ¹öÆ°¸¶´Ù ¹öÆ° ¹øÈ£ Àü´Ş¹ŞÀ½
+    public void ButtonClick() //0~6ë²ˆ ë²„íŠ¼ë§ˆë‹¤ ë²„íŠ¼ ë²ˆí˜¸ ì „ë‹¬ë°›ìŒ
     {
-        if (_currentState != State.Stand) //ÀÏ¾î¼± »óÅÂ°¡ ¾Æ´Ï¸é
+        if (_currentState != State.Stand) //ì¼ì–´ì„  ìƒíƒœê°€ ì•„ë‹ˆë©´
         {
-            MainControl.Inst.Penalty(10f); //10ÃÊ Æä³ÎÆ¼
+            MainControl.Inst.Penalty(10f); //10ì´ˆ í˜ë„í‹°
             return;
         }
 
-        DeActivate(); //¹öÆ° °íÁ¤
-        if (MainControl.Inst.womanSeat == -1) //¾ÆÁ÷ ¿©ÀÚ°¡ ¾È ¾É¾Ò´Ù¸é
+        DeActivate(); //ë²„íŠ¼ ê³ ì •
+        if (MainControl.Inst.womanSeat == -1) //ì•„ì§ ì—¬ìê°€ ì•ˆ ì•‰ì•˜ë‹¤ë©´
         {
             gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/woman");
-            MainControl.Inst.womanSeat = seatNum; //¿©ÀÚ ÁÂ¼®¹øÈ£ Àü´Ş
+            MainControl.Inst.womanSeat = seatNum; //ì—¬ì ì¢Œì„ë²ˆí˜¸ ì „ë‹¬
             _currentState = State.Woman;
         }
-        else //¿©ÀÚ°¡ ÀÌ¹Ì ¾ÉÀº »óÅÂ(°ÔÀÓ ¼º°ø)
+        else //ì—¬ìê°€ ì´ë¯¸ ì•‰ì€ ìƒíƒœ(ê²Œì„ ì„±ê³µ)
         {
             gameObject.GetComponent<Image>().sprite = Resources.Load<Sprite>("npc/man");
-            MainControl.Inst.Clear(seatNum); //³²ÀÚ ÁÂ¼®¹øÈ£ Àü´Ş
+            MainControl.Inst.Clear(seatNum); //ë‚¨ì ì¢Œì„ë²ˆí˜¸ ì „ë‹¬
             _currentState = State.Man;
         }
 

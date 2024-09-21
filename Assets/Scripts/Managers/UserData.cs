@@ -6,27 +6,27 @@ using UnityEngine;
 [Serializable]
 public class UserData
 {
-    //public string UserName; // ÇÃ·¹ÀÌ¾î ÀÌ¸§
-    public StoryName NowStoryName; // ¸¶Áö¸·À¸·Î º» ¿¡ÇÇ¼Òµå
+    //public string UserName; // í”Œë ˆì´ì–´ ì´ë¦„
+    public StoryName NowStoryName; // ë§ˆì§€ë§‰ìœ¼ë¡œ ë³¸ ì—í”¼ì†Œë“œ
 
     public int CurrentGameLevel;
 
-    //public StoryName LastStoryName; //¸¶Áö¸·À¸·Î º» ¿¡ÇÇ¼Òµå
-    //public int LastLine; // ¸¶Áö¸·À¸·Î º» ´ë»ç
+    //public StoryName LastStoryName; //ë§ˆì§€ë§‰ìœ¼ë¡œ ë³¸ ì—í”¼ì†Œë“œ
+    //public int LastLine; // ë§ˆì§€ë§‰ìœ¼ë¡œ ë³¸ ëŒ€ì‚¬
 
-    public int Ticket; // ½ÂÂ÷±Ç
-    public int Money; // µ·
-    public int Eyedrop; // ¾È¾à
-    public DateTime LastTicketUsed; // ¸¶Áö¸· Æ¼ÄÏ »ç¿ë ½Ã°¢
-    public int Diary; // ÀÏ±âÀå ÇØ±İ Á¤µµ
-    public bool[,] IsEpisodeWatched; // ¿¡ÇÇ¼Òµå ¿­¶÷ ¿©ºÎ
-    public bool[,] IsGameClear; // ¹Ì´Ï°ÔÀÓ Å¬¸®¾î ¿©ºÎ
-    public int Progress; // ÁøÇàµµ => ¿£µù ÇØ±İ ¿©ºÎ¿¡¼­ °¡Á®¿Ã¼ö ÀÖÀ½
+    public int Ticket; // ìŠ¹ì°¨ê¶Œ
+    public int Money; // ëˆ
+    public int Eyedrop; // ì•ˆì•½
+    public DateTime LastTicketUsed; // ë§ˆì§€ë§‰ í‹°ì¼“ ì‚¬ìš© ì‹œê°
+    public int Diary; // ì¼ê¸°ì¥ í•´ê¸ˆ ì •ë„
+    public bool[,] IsEpisodeWatched; // ì—í”¼ì†Œë“œ ì—´ëŒ ì—¬ë¶€
+    public bool[,] IsGameClear; // ë¯¸ë‹ˆê²Œì„ í´ë¦¬ì–´ ì—¬ë¶€
+    public int Progress; // ì§„í–‰ë„ => ì—”ë”© í•´ê¸ˆ ì—¬ë¶€ì—ì„œ ê°€ì ¸ì˜¬ìˆ˜ ìˆìŒ
 
-    public int LikeAbility; // È£°¨µµ
-    public bool[] IsEndingUnlock; // ¿£µù ÇØ±İ ¿©ºÎ
+    public int LikeAbility; // í˜¸ê°ë„
+    public bool[] IsEndingUnlock; // ì—”ë”© í•´ê¸ˆ ì—¬ë¶€
 
-    // È¯°æ¼³Á¤
+    // í™˜ê²½ì„¤ì •
     //public float MasterVolume;
     //public float BgmVolume;
     //public float SfxVolume;
@@ -38,7 +38,7 @@ public class UserData
     public void Init()
     {
         //UserName = string.Empty;
-        NowStoryName = StoryName.Ã¹¹øÂ°_µî±³;
+        NowStoryName = StoryName.ì²«ë²ˆì§¸_ë“±êµ;
         //LastStoryName = StoryName.None;
         //LastLine = 0;
         Money = 0;

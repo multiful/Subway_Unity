@@ -55,7 +55,7 @@ public class NaniCustomCommands
 
 
     [CommandAlias("minigame")]
-    public class MiniGame : Command           // gameType 1=ºü¸£°ÔÈ¯½Â, 2=ÀÚ¸®»¯±â, ·¹º§ 1,2,3,4
+    public class MiniGame : Command           // gameType 1=ë¹ ë¥´ê²Œí™˜ìŠ¹, 2=ìë¦¬ëºê¸°, ë ˆë²¨ 1,2,3,4
     {
         [RequiredParameter]
         public IntegerParameter gameType, gameLevel;

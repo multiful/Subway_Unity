@@ -13,8 +13,8 @@ public class CardFlipManager : MonoBehaviour
     public GameObject cardPrefab;
     public Sprite[] cardSpriteList;
 
-    public Transform cardSet;   //Ä«µå µ¦ À§Ä¡
-    public Transform cardParent; //Ä«µå ÇÁ¸®ÆÕ ºÎ¸ğ
+    public Transform cardSet;   //ì¹´ë“œ ë± ìœ„ì¹˜
+    public Transform cardParent; //ì¹´ë“œ í”„ë¦¬íŒ¹ ë¶€ëª¨
 
     public TextMeshProUGUI buttonText;
     public Button startButton;
@@ -43,13 +43,13 @@ public class CardFlipManager : MonoBehaviour
         List<Sprite> cardImageList = new List<Sprite>(cardSpriteList);
         cardImageList.AddRange(cardSpriteList);
 
-        // Ä«µå ¼ö 8°³ Á¦ÇÑ
+        // ì¹´ë“œ ìˆ˜ 8ê°œ ì œí•œ
         while (cardImageList.Count > 8)
         {
             cardImageList.RemoveAt(cardImageList.Count - 1);
         }
 
-        // Ä«µå ¼¯±â
+        // ì¹´ë“œ ì„ê¸°
         for (int i = 0; i < cardImageList.Count; i++)
         {
             int rand = Random.Range(0, cardImageList.Count);
@@ -58,7 +58,7 @@ public class CardFlipManager : MonoBehaviour
             cardImageList[rand] = temp;
         }
 
-        // Ä«µå µ¦¿¡ »ı¼º
+        // ì¹´ë“œ ë±ì— ìƒì„±
         foreach (Sprite cardImage in cardImageList)
         {
             GameObject cardObject = Instantiate(cardPrefab, cardSet.position, Quaternion.identity, cardParent);
@@ -71,7 +71,7 @@ public class CardFlipManager : MonoBehaviour
     {
         _matchedCard = 0;
         _gameTime = 60f;
-        buttonText.text = "°ÔÀÓ ÁøÇàÁß";
+        buttonText.text = "ê²Œì„ ì§„í–‰ì¤‘";
         startButton.interactable = false;
         StartCoroutine(MoveCards());
     }
@@ -135,11 +135,11 @@ public class CardFlipManager : MonoBehaviour
             varManager.TrySetVariableValue("reward", reward);
             GameManager.userData.Money += reward;
             GameManager.Data.SaveData();
-            GameManager.Nani.PlayNani("Ä«µåµÚÁı±â", "¼º°ø");
+            GameManager.Nani.PlayNani("ì¹´ë“œë’¤ì§‘ê¸°", "ì„±ê³µ");
         }
         else
         {
-            GameManager.Nani.PlayNani("Ä«µåµÚÁı±â", "½ÇÆĞ");
+            GameManager.Nani.PlayNani("ì¹´ë“œë’¤ì§‘ê¸°", "ì‹¤íŒ¨");
         }
         mainCam.depth = -1;
     }

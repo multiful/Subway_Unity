@@ -30,12 +30,12 @@ public class UI_EndingPlay : UI_Popup
         _name.text = ending.ToString();
         _type.text = endingType.ToString();
 
-        _info.text = $"{index+1}¹ø ¿£µù ÁÙ°Å¸®";
+        _info.text = $"{index+1}ë²ˆ ì—”ë”© ì¤„ê±°ë¦¬";
         _play.onClick.AddListener(() => EndingPlay(index));
     }
     private void EndingPlay(int index)
     {
-        Debug.Log($"{index+1}¹ø ¿£µù ÇÃ·¹ÀÌ");
+        Debug.Log($"{index+1}ë²ˆ ì—”ë”© í”Œë ˆì´");
     }
     public override void Init()
     {

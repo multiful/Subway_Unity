@@ -11,7 +11,7 @@ public class MiscSettings : MonoBehaviour
 
     private void Start()
     {
-        // ¹öÆ° Å¬¸¯ ÀÌº¥Æ® ¼³Á¤
+        // ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸ ì„¤ì •
         helpButton.onClick.AddListener(OpenHelp);
         creditsButton.onClick.AddListener(OpenCredits);
         mainMenuButton.onClick.AddListener(GoToMainMenu);
@@ -20,25 +20,25 @@ public class MiscSettings : MonoBehaviour
 
     private void OpenHelp()
     {
-        // µµ¿ò¸» È­¸éÀ¸·Î ÀüÈ¯
+        // ë„ì›€ë§ í™”ë©´ìœ¼ë¡œ ì „í™˜
         SceneManager.LoadScene("HelpScene");
     }
 
     private void OpenCredits()
     {
-        // Å©·¹µ÷ È­¸éÀ¸·Î ÀüÈ¯
+        // í¬ë ˆë”§ í™”ë©´ìœ¼ë¡œ ì „í™˜
         SceneManager.LoadScene("CreditsScene");
     }
 
     private void GoToMainMenu()
     {
-        // ¸ŞÀÎ È­¸éÀ¸·Î ÀÌµ¿
+        // ë©”ì¸ í™”ë©´ìœ¼ë¡œ ì´ë™
         SceneManager.LoadScene("Sample Scene");
     }
 
     private void QuitGame()
     {
-        // °ÔÀÓ Á¾·á
+        // ê²Œì„ ì¢…ë£Œ
         Application.Quit();
     }
 }

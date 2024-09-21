@@ -3,33 +3,33 @@ using UnityEngine.UI;
 
 public class SaveLoadUIManager : MonoBehaviour
 {
-    public GameObject[] saveSlots; // ÀúÀå ½½·Ô ¹è¿­
-    public Button nextButton, prevButton; // ÆäÀÌÁö ³Ñ±â´Â ¹öÆ°
-    public Text pageIndicator; // ÆäÀÌÁö ¹øÈ£¸¦ Ç¥½ÃÇÏ´Â Text UI
-    private int currentPage = 1; // ÇöÀç ÆäÀÌÁö
-    private int totalPages = 4; // ÃÑ ÆäÀÌÁö ¼ö
+    public GameObject[] saveSlots; // ì €ì¥ ìŠ¬ë¡¯ ë°°ì—´
+    public Button nextButton, prevButton; // í˜ì´ì§€ ë„˜ê¸°ëŠ” ë²„íŠ¼
+    public Text pageIndicator; // í˜ì´ì§€ ë²ˆí˜¸ë¥¼ í‘œì‹œí•˜ëŠ” Text UI
+    private int currentPage = 1; // í˜„ì¬ í˜ì´ì§€
+    private int totalPages = 4; // ì´ í˜ì´ì§€ ìˆ˜
 
     void Start()
     {
-        UpdatePageIndicator(); // ÆäÀÌÁö ÀÎµğÄÉÀÌÅÍ ÃÊ±âÈ­
-        UpdateUI(); // ÃÊ±â UI ¾÷µ¥ÀÌÆ®
+        UpdatePageIndicator(); // í˜ì´ì§€ ì¸ë””ì¼€ì´í„° ì´ˆê¸°í™”
+        UpdateUI(); // ì´ˆê¸° UI ì—…ë°ì´íŠ¸
 
         nextButton.onClick.AddListener(NextPage);
         prevButton.onClick.AddListener(PreviousPage);
 
-        // ÆäÀÌÁö ³Ñ±è ¹öÆ° È°¼ºÈ­/ºñÈ°¼ºÈ­ »óÅÂ ÃÊ±âÈ­
+        // í˜ì´ì§€ ë„˜ê¹€ ë²„íŠ¼ í™œì„±í™”/ë¹„í™œì„±í™” ìƒíƒœ ì´ˆê¸°í™”
         UpdateButtonStates();
     }
 
     void UpdatePageIndicator()
     {
-        // ÆäÀÌÁö ÀÎµğÄÉÀÌÅÍ¸¦ "1 2 3 4" Çü½ÄÀ¸·Î Ç¥½Ã, ÇöÀç ÆäÀÌÁö´Â »ö±òÀ» ¹Ù²ã¼­ °­Á¶ °¡´É
+        // í˜ì´ì§€ ì¸ë””ì¼€ì´í„°ë¥¼ "1 2 3 4" í˜•ì‹ìœ¼ë¡œ í‘œì‹œ, í˜„ì¬ í˜ì´ì§€ëŠ” ìƒ‰ê¹”ì„ ë°”ê¿”ì„œ ê°•ì¡° ê°€ëŠ¥
         string pageDisplay = "";
         for (int i = 1; i <= totalPages; i++)
         {
             if (i == currentPage)
             {
-                // ÇöÀç ÆäÀÌÁö´Â »ö»óÀÌ³ª ½ºÅ¸ÀÏ·Î °­Á¶
+                // í˜„ì¬ í˜ì´ì§€ëŠ” ìƒ‰ìƒì´ë‚˜ ìŠ¤íƒ€ì¼ë¡œ ê°•ì¡°
                 pageDisplay += $"<b><color=yellow>{i}</color></b> ";
             }
             else
@@ -43,11 +43,11 @@ public class SaveLoadUIManager : MonoBehaviour
 
     void UpdateUI()
     {
-        // ¸ğµç ½½·Ô ºñÈ°¼ºÈ­
+        // ëª¨ë“  ìŠ¬ë¡¯ ë¹„í™œì„±í™”
         foreach (var slot in saveSlots)
             slot.SetActive(false);
 
-        // ÇöÀç ÆäÀÌÁö¿¡ ÇØ´çÇÏ´Â ½½·Ô¸¸ È°¼ºÈ­
+        // í˜„ì¬ í˜ì´ì§€ì— í•´ë‹¹í•˜ëŠ” ìŠ¬ë¡¯ë§Œ í™œì„±í™”
         int startSlot = (currentPage - 1) * 4;
         int endSlot = Mathf.Min(startSlot + 4, saveSlots.Length);
         for (int i = startSlot; i < endSlot; i++)
@@ -55,7 +55,7 @@ public class SaveLoadUIManager : MonoBehaviour
             saveSlots[i].SetActive(true);
         }
 
-        // ÆäÀÌÁö ÀÎµğÄÉÀÌÅÍ ¹× ¹öÆ° »óÅÂ ¾÷µ¥ÀÌÆ®
+        // í˜ì´ì§€ ì¸ë””ì¼€ì´í„° ë° ë²„íŠ¼ ìƒíƒœ ì—…ë°ì´íŠ¸
         UpdatePageIndicator();
         UpdateButtonStates();
     }
@@ -65,7 +65,7 @@ public class SaveLoadUIManager : MonoBehaviour
         if (currentPage < totalPages)
         {
             currentPage++;
-            UpdateUI(); // ÆäÀÌÁö ³Ñ±è ÈÄ UI ¾÷µ¥ÀÌÆ®
+            UpdateUI(); // í˜ì´ì§€ ë„˜ê¹€ í›„ UI ì—…ë°ì´íŠ¸
         }
     }
 
@@ -74,16 +74,16 @@ public class SaveLoadUIManager : MonoBehaviour
         if (currentPage > 1)
         {
             currentPage--;
-            UpdateUI(); // ÆäÀÌÁö ³Ñ±è ÈÄ UI ¾÷µ¥ÀÌÆ®
+            UpdateUI(); // í˜ì´ì§€ ë„˜ê¹€ í›„ UI ì—…ë°ì´íŠ¸
         }
     }
 
-    // ÆäÀÌÁö ³Ñ±è ¹öÆ° È°¼ºÈ­/ºñÈ°¼ºÈ­ »óÅÂ¸¦ ¾÷µ¥ÀÌÆ®ÇÏ´Â ÇÔ¼ö
+    // í˜ì´ì§€ ë„˜ê¹€ ë²„íŠ¼ í™œì„±í™”/ë¹„í™œì„±í™” ìƒíƒœë¥¼ ì—…ë°ì´íŠ¸í•˜ëŠ” í•¨ìˆ˜
     void UpdateButtonStates()
     {
-        // ´ÙÀ½ ¹öÆ°Àº ÇöÀç ÆäÀÌÁö°¡ ÃÖ´ë ÆäÀÌÁöÀÏ ¶§ ºñÈ°¼ºÈ­
+        // ë‹¤ìŒ ë²„íŠ¼ì€ í˜„ì¬ í˜ì´ì§€ê°€ ìµœëŒ€ í˜ì´ì§€ì¼ ë•Œ ë¹„í™œì„±í™”
         nextButton.interactable = currentPage < totalPages;
-        // ÀÌÀü ¹öÆ°Àº ÇöÀç ÆäÀÌÁö°¡ Ã¹ ÆäÀÌÁöÀÏ ¶§ ºñÈ°¼ºÈ­
+        // ì´ì „ ë²„íŠ¼ì€ í˜„ì¬ í˜ì´ì§€ê°€ ì²« í˜ì´ì§€ì¼ ë•Œ ë¹„í™œì„±í™”
         prevButton.interactable = currentPage > 1;
     }
 }

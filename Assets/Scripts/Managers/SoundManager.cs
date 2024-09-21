@@ -15,7 +15,7 @@ public class SoundManager
 
     public void Init()
     {
-        //³ªÁß¿¡ ¼¼ÀÌºêµ¥ÀÌÅÍ¿¡¼­ ¹Ş¾Æ¿À±â
+        //ë‚˜ì¤‘ì— ì„¸ì´ë¸Œë°ì´í„°ì—ì„œ ë°›ì•„ì˜¤ê¸°
         currentBGMVolume = 1;
         currentEffectVolume = 1;
 

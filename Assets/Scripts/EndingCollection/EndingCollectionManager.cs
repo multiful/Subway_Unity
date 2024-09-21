@@ -27,7 +27,7 @@ public class EndingCollectionManager : MonoBehaviour
 
     private void Init()
     {
-        //ÀÏ´Ü 1¹ø ¿£µù¸¸ ¿­¾îµĞ »óÅÂ
+        //ì¼ë‹¨ 1ë²ˆ ì—”ë”©ë§Œ ì—´ì–´ë‘” ìƒíƒœ
         GameManager.userData.IsEndingUnlock[0] = true;
 
         _openedEnding = GameManager.userData.IsEndingUnlock;
@@ -38,8 +38,8 @@ public class EndingCollectionManager : MonoBehaviour
     }
     private void EndingSetup()
     {
-        //_progress = ÁøÇàµµ °¡Á®¿È
-        _progress = 22; //ÀÓ½Ã ¼³Á¤ °ª
+        //_progress = ì§„í–‰ë„ ê°€ì ¸ì˜´
+        _progress = 22; //ì„ì‹œ ì„¤ì • ê°’
         progressImg.fillAmount = 0;
 
         StartCoroutine(Fillimg(progressImg));
@@ -82,7 +82,7 @@ public class EndingCollectionManager : MonoBehaviour
     }
     public void BackButtonFunc()
     {
-        // ¾À ·Îµå
+        // ì”¬ ë¡œë“œ
         SceneManager.LoadScene(0);
     }
     // Start is called before the first frame update

@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public static void SaveGame(string slotName)
     {
-        // ¿¹½Ã: ³ª´Ï³ëº§ »óÅÂ ÀúÀå
+        // ì˜ˆì‹œ: ë‚˜ë‹ˆë…¸ë²¨ ìƒíƒœ ì €ì¥
         var stateManager = Engine.GetService<IStateManager>();
         stateManager.SaveGameAsync(slotName);
         Debug.Log($"Game saved in slot: {slotName}");
@@ -69,7 +69,7 @@ public class GameManager : MonoBehaviour
 
     public static void LoadGame(string slotName)
     {
-        // ¿¹½Ã: ³ª´Ï³ëº§ »óÅÂ ºÒ·¯¿À±â
+        // ì˜ˆì‹œ: ë‚˜ë‹ˆë…¸ë²¨ ìƒíƒœ ë¶ˆëŸ¬ì˜¤ê¸°
         var stateManager = Engine.GetService<IStateManager>();
         stateManager.LoadGameAsync(slotName);
         Debug.Log($"Game loaded from slot: {slotName}");

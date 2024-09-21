@@ -9,15 +9,15 @@ public class UI_EventHandler : MonoBehaviour, IPointerClickHandler, IDragHandler
 	public Action<PointerEventData> OnClickHandler = null;
 	public Action<PointerEventData> OnDragHandler = null;
 
-	public void OnPointerClick(PointerEventData eventData) // Å¬¸¯ ÀÌº¥Æ® ¿À¹ö¶óÀÌµù
+	public void OnPointerClick(PointerEventData eventData) // í´ë¦­ ì´ë²¤íŠ¸ ì˜¤ë²„ë¼ì´ë”©
 	{
 		if (OnClickHandler != null)
-			OnClickHandler.Invoke(eventData); // Å¬¸¯¿Í °ü·ÃµÈ ¾×¼Ç ½ÇÇà
+			OnClickHandler.Invoke(eventData); // í´ë¦­ì™€ ê´€ë ¨ëœ ì•¡ì…˜ ì‹¤í–‰
 	}
 
-    public void OnDrag(PointerEventData eventData) // µå·¡±× ÀÌº¥Æ® ¿À¹ö¶óÀÌµù
+    public void OnDrag(PointerEventData eventData) // ë“œë˜ê·¸ ì´ë²¤íŠ¸ ì˜¤ë²„ë¼ì´ë”©
     {
         if (OnDragHandler != null)
-            OnDragHandler.Invoke(eventData); // µå·¡±×¿Í °ü·ÃµÈ ¾×¼Ç ½ÇÇà
+            OnDragHandler.Invoke(eventData); // ë“œë˜ê·¸ì™€ ê´€ë ¨ëœ ì•¡ì…˜ ì‹¤í–‰
     }
 }

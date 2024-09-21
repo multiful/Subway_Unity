@@ -9,7 +9,7 @@ public class UI_ChoiceLikeability : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // µ¥ÀÌÅÍ¿¡¼­ °¡Á®¿À´øÁö ¾Æ´Ï¸é Ä¿½ºÅÒ º¯¼ö¿¡¼­ °¡Á®¿À´øÁö ÇÏ¸é µÉµí
+        // ë°ì´í„°ì—ì„œ ê°€ì ¸ì˜¤ë˜ì§€ ì•„ë‹ˆë©´ ì»¤ìŠ¤í…€ ë³€ìˆ˜ì—ì„œ ê°€ì ¸ì˜¤ë˜ì§€ í•˜ë©´ ë ë“¯
         int likeability = 50;
         likeabilityText.text = $"{likeability}";
     }

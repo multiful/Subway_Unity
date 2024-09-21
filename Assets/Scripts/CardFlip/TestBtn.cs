@@ -20,12 +20,12 @@ public class TestBtn : MonoBehaviour
 
     public async void scriptStart()
     {
-        // Ä«¸Ş¶ó ¼³Á¤
+        // ì¹´ë©”ë¼ ì„¤ì •
         var naniCamera = Engine.GetService<ICameraManager>().Camera;
         naniCamera.enabled = true;
 
-        // ½ºÅ©¸³Æ® ºÒ·¯¿À±â
-        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync("Ä«µåµÚÁı±â_¼º°ø");
+        // ìŠ¤í¬ë¦½íŠ¸ ë¶ˆëŸ¬ì˜¤ê¸°
+        await GameManager.Nani.ScriptPlayer.PreloadAndPlayAsync("ì¹´ë“œë’¤ì§‘ê¸°_ì„±ê³µ");
 
         // Enable Naninovel inout
         GameManager.Nani.InputManager.ProcessInput = true;

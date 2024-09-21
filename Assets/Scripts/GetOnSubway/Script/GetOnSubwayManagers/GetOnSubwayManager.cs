@@ -11,7 +11,7 @@ public class GetOnSubwayManager : MonoBehaviour
     public TMP_Text timerText;
     public TMP_Text targetText;
     public TMP_Text alertText;
-    public TMP_Text rewardText; // º¸»óÀ» Ç¥½ÃÇÒ ÅØ½ºÆ® Ãß°¡
+    public TMP_Text rewardText; // ë³´ìƒì„ í‘œì‹œí•  í…ìŠ¤íŠ¸ ì¶”ê°€
     public GameObject gameOverText;
     public GameObject gameClearText;
     public GameObject player;
@@ -31,7 +31,7 @@ public class GetOnSubwayManager : MonoBehaviour
         gameOverText.SetActive(false);
         gameClearText.SetActive(false);
         alertText.gameObject.SetActive(false);
-        rewardText.gameObject.SetActive(false); // º¸»ó ÅØ½ºÆ® ¼û±è
+        rewardText.gameObject.SetActive(false); // ë³´ìƒ í…ìŠ¤íŠ¸ ìˆ¨ê¹€
         currentTime = timeLimit;
 
 
@@ -104,7 +104,7 @@ public class GetOnSubwayManager : MonoBehaviour
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
 
-        GameManager.Nani.PlayNani("ºü¸£°ÔÈ¯½Â", "½ÇÆĞ" + (difficultyLevel + 1).ToString());
+        GameManager.Nani.PlayNani("ë¹ ë¥´ê²Œí™˜ìŠ¹", "ì‹¤íŒ¨" + (difficultyLevel + 1).ToString());
 
         foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
         {
@@ -127,10 +127,10 @@ public class GetOnSubwayManager : MonoBehaviour
             Destroy(obstacle);
         }
 
-        // Å¬¸®¾î Ã³¸®
+        // í´ë¦¬ì–´ ì²˜ë¦¬
         CalculateReward();
 
-        GameManager.Nani.PlayNani("ºü¸£°ÔÈ¯½Â", "¼º°ø" + (difficultyLevel + 1).ToString());
+        GameManager.Nani.PlayNani("ë¹ ë¥´ê²Œí™˜ìŠ¹", "ì„±ê³µ" + (difficultyLevel + 1).ToString());
     }
 
     void SetDifficultyLevel()

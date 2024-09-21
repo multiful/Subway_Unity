@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-public class UIManager : MonoBehaviour
+public class UIManager
 {
     int _order = 0;
 

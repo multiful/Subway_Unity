@@ -15,27 +15,27 @@ public class TextSettings : MonoBehaviour
 
     private void Start()
     {
-        // ÃÊ±â ¼³Á¤
+        // ì´ˆê¸° ì„¤ì •
         SetTextMode(PlayerPrefs.GetInt("TextMode", 0)); // 0: Touch, 1: Auto
         textSpeedSlider.value = PlayerPrefs.GetFloat("TextSpeed", 100.0f);
 
-        // ¹öÆ° Å¬¸¯ ÀÌº¥Æ® ¼³Á¤
+        // ë²„íŠ¼ í´ë¦­ ì´ë²¤íŠ¸ ì„¤ì •
         touchModeButton.onClick.AddListener(() => SetTextMode(0));
         autoModeButton.onClick.AddListener(() => SetTextMode(1));
 
-        // ½½¶óÀÌ´õ °ª º¯°æ ½Ã ÀÌº¥Æ® ¼³Á¤
+        // ìŠ¬ë¼ì´ë” ê°’ ë³€ê²½ ì‹œ ì´ë²¤íŠ¸ ì„¤ì •
         textSpeedSlider.onValueChanged.AddListener(SetTextSpeed);
 
-        // ÅØ½ºÆ® ¿¹½Ã ÃÊ±âÈ­
+        // í…ìŠ¤íŠ¸ ì˜ˆì‹œ ì´ˆê¸°í™”
         textCoroutine = StartCoroutine(ShowTextExample());
     }
 
     private void SetTextMode(int mode)
     {
-        // ¸ğµå ÀúÀå
+        // ëª¨ë“œ ì €ì¥
         PlayerPrefs.SetInt("TextMode", mode);
 
-        // ¹öÆ° ½ºÅ¸ÀÏ º¯°æ
+        // ë²„íŠ¼ ìŠ¤íƒ€ì¼ ë³€ê²½
         touchModeButton.GetComponentInChildren<TMP_Text>().fontStyle = mode == 0 ? FontStyles.Bold : FontStyles.Normal;
         autoModeButton.GetComponentInChildren<TMP_Text>().fontStyle = mode == 1 ? FontStyles.Bold : FontStyles.Normal;
     }
@@ -54,7 +54,7 @@ public class TextSettings : MonoBehaviour
     {
         textExample.text = "";
 
-        float delay = 0.1f / Mathf.Max(textSpeedSlider.value, 0.1f); // ÃÖ¼Ò µô·¹ÀÌ °ª ¼³Á¤
+        float delay = 0.1f / Mathf.Max(textSpeedSlider.value, 0.1f); // ìµœì†Œ ë”œë ˆì´ ê°’ ì„¤ì •
 
         foreach (char c in exampleText)
         {

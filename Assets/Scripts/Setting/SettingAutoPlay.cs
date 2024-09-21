@@ -29,14 +29,14 @@ namespace Naninovel.UI
             player.SetAutoPlayEnabled(true);
             _autoColor.a = 1f;
             _touchColor.a = 0f;
-            Debug.Log("ÀÚµ¿");
+            Debug.Log("ìë™");
         }
         public void TouchPlay()
         {
             player.SetAutoPlayEnabled(false);
             _autoColor.a = 0f;
             _touchColor.a = 1f;
-            Debug.Log("ÅÍÄ¡");
+            Debug.Log("í„°ì¹˜");
         }
     }
 }

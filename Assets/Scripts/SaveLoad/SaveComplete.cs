@@ -12,14 +12,14 @@ public class SaveComplete : MonoBehaviour
         stateManager = Engine.GetService<IStateManager>();
         uiManager = Engine.GetService<IUIManager>();
 
-        // ¼¼ÀÌºê°¡ ¿Ï·áµÇ¾úÀ» ¶§ È£ÃâµÇ´Â ÀÌº¥Æ®¿¡ Ä¿½ºÅÒ Toast ¿¬°á
+        // ì„¸ì´ë¸Œê°€ ì™„ë£Œë˜ì—ˆì„ ë•Œ í˜¸ì¶œë˜ëŠ” ì´ë²¤íŠ¸ì— ì»¤ìŠ¤í…€ Toast ì—°ê²°
         stateManager.OnGameSaveFinished += OnSaveComplete;
     }
 
     private void OnSaveComplete(GameSaveLoadArgs args)
     {
-        // Toast UI ºÒ·¯¿À±â
+        // Toast UI ë¶ˆëŸ¬ì˜¤ê¸°
         var toastUI = uiManager.GetUI<IToastUI>();
-        toastUI.Show($"¼¼ÀÌºê°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+        toastUI.Show($"ì„¸ì´ë¸Œê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
     }
 }

@@ -14,9 +14,9 @@ public abstract class UI_Base : MonoBehaviour
 	{
 		string[] names = Enum.GetNames(type);
 		UnityEngine.Object[] objects = new UnityEngine.Object[names.Length];
-		_objects.Add(typeof(T), objects); // Dictionary ¿¡ Ãß°¡
+		_objects.Add(typeof(T), objects); // Dictionary ì— ì¶”ê°€
 
-		// T ¿¡ ¼ÓÇÏ´Â ¿ÀºêÁ§Æ®µéÀ» DictionaryÀÇ ValueÀÎ objects ¹è¿­ÀÇ ¿ø¼Òµé¿¡ ÇÏ³ªÇÏ³ª Ãß°¡
+		// T ì— ì†í•˜ëŠ” ì˜¤ë¸Œì íŠ¸ë“¤ì„ Dictionaryì˜ Valueì¸ objects ë°°ì—´ì˜ ì›ì†Œë“¤ì— í•˜ë‚˜í•˜ë‚˜ ì¶”ê°€
 		for (int i = 0; i < names.Length; i++)
 		{
 			if (typeof(T) == typeof(GameObject))
