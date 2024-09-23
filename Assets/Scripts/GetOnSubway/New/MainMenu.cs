@@ -17,11 +17,11 @@ public class MainMenu : Menu
 
     private void Start()
     {
-        // ¹öÆ° »óÅÂ ¼³Á¤
+        // ë²„íŠ¼ ìƒíƒœ ì„¤ì •
         DisableButtonsDependingOnData();
     }
 
-    // ÀúÀåµÈ °ÔÀÓ µ¥ÀÌÅÍ°¡ ÀÖ´ÂÁö È®ÀÎÇÏ°í, ¾øÀ¸¸é continueGameButton°ú loadGameButtonÀ» ºñÈ°¼º
+    // ì €ì¥ëœ ê²Œì„ ë°ì´í„°ê°€ ìˆëŠ”ì§€ í™•ì¸í•˜ê³ , ì—†ìœ¼ë©´ continueGameButtonê³¼ loadGameButtonì„ ë¹„í™œì„±
     private void DisableButtonsDependingOnData()
     {
         if (!DataPersistenceManager.instance.HasGameData())
@@ -30,33 +30,32 @@ public class MainMenu : Menu
             loadGameButton.interactable = false;
         }
     }
-    // »õ·Î¿î °ÔÀÓÀ» Å¬¸¯ÇßÀ» ¶§ È£Ãâ
+    // ìƒˆë¡œìš´ ê²Œì„ì„ í´ë¦­í–ˆì„ ë•Œ í˜¸ì¶œ
     public void OnNewGameClicked()
     {
         saveSlotsMenu.ActivateMenu(false);
         this.DeactivateMenu();
     }
 
-    // ÀúÀåµÈ °ÔÀÓÀ» ºÒ·¯¿À´Â ¹öÆ°À» Å¬¸¯ÇßÀ» ¶§ È£Ãâ
+    // ì €ì¥ëœ ê²Œì„ì„ ë¶ˆëŸ¬ì˜¤ëŠ” ë²„íŠ¼ì„ í´ë¦­í–ˆì„ ë•Œ í˜¸ì¶œ
     public void OnLoadGameClicked()
     {
         saveSlotsMenu.ActivateMenu(true);
         this.DeactivateMenu();
     }
 
-    // ±âÁ¸ °ÔÀÓÀ» °è¼ÓÇÏ´Â ¹öÆ°À» Å¬¸¯ÇßÀ» ¶§ È£Ãâ
+    // ê¸°ì¡´ ê²Œì„ì„ ê³„ì†í•˜ëŠ” ë²„íŠ¼ì„ í´ë¦­í–ˆì„ ë•Œ í˜¸ì¶œ
     public void OnContinueGameClicked()
     {
         DisableMenuButtons();
         // save the game anytime before loading a new scene
-        GameManager.Data.SaveData();
         // load the next scene - which will in turn load the game because of 
         // OnSceneLoaded() in the DataPersistenceManager
         SceneManager.LoadSceneAsync("SampleScene");
     }
 
 
-    // ¸Ş´º ¹öÆ° ºñÈ°¼º
+    // ë©”ë‰´ ë²„íŠ¼ ë¹„í™œì„±
     private void DisableMenuButtons()
     {
         newGameButton.interactable = false;
@@ -64,7 +63,7 @@ public class MainMenu : Menu
     }
 
 
-    // ¸Ş´º ¹öÆ° È°¼º
+    // ë©”ë‰´ ë²„íŠ¼ í™œì„±
     public void ActivateMenu()
     {
         this.gameObject.SetActive(true);
@@ -72,7 +71,7 @@ public class MainMenu : Menu
     }
 
 
-    // ¸Ş´º ºñÈ°¼º.
+    // ë©”ë‰´ ë¹„í™œì„±.
     public void DeactivateMenu()
     {
         this.gameObject.SetActive(false);

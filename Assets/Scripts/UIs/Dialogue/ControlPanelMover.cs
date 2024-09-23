@@ -15,11 +15,13 @@ public class ControlPanelMover : MonoBehaviour
     {
         controlPanel.transform.DOLocalMoveX(0, moveDuration);
         closeButton.gameObject.SetActive(true);
+        menuButton.gameObject.SetActive(false);
     }
     public void MenuClose()
     {
         controlPanel.transform.DOLocalMoveX(440, moveDuration);
         closeButton.gameObject.SetActive(false);
+        menuButton.gameObject.SetActive(true);
     }
     private void Start()
     {

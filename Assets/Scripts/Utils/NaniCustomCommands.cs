@@ -10,6 +10,7 @@ public class NaniCustomCommands
         public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             GameManager.userData.NowStoryName++;
+            GameManager.Nani.StopNani();
             LoadingSceneManager.LoadScene("Main");
 
             return UniTask.CompletedTask;

@@ -6,58 +6,152 @@ using UnityEngine;
 [Serializable]
 public class UserData
 {
-    //public string UserName; // 플레이어 이름
-    public StoryName NowStoryName; // 마지막으로 본 에피소드
 
-    public int CurrentGameLevel;
+    public StoryName NowStoryName // 마지막으로 본 에피소드
+    {
+        get { return nowStoryName; }
+        set
+        {
+            nowStoryName = value;
+            GameManager.Data.SaveData();
+        }
+    }
 
-    //public StoryName LastStoryName; //마지막으로 본 에피소드
-    //public int LastLine; // 마지막으로 본 대사
+    public int CurrentGameLevel
+    {
+        get { return currentGameLevel; }
+        set
+        {
+            currentGameLevel = value;
+            GameManager.Data.SaveData();
+        }
+    }
 
-    public int Ticket; // 승차권
-    public int Money; // 돈
-    public int Eyedrop; // 안약
-    public DateTime LastTicketUsed; // 마지막 티켓 사용 시각
-    public int Diary; // 일기장 해금 정도
-    public bool[,] IsEpisodeWatched; // 에피소드 열람 여부
-    public bool[,] IsGameClear; // 미니게임 클리어 여부
-    public int Progress; // 진행도 => 엔딩 해금 여부에서 가져올수 있음
+    public int Ticket // 승차권
+    {
+        get { return ticket; }
+        set
+        {
+            LastTicketUsed = DateTime.Now;
+            ticket = value;
+            GameManager.Data.SaveData();
+        }
+    }
 
-    public int LikeAbility; // 호감도
-    public bool[] IsEndingUnlock; // 엔딩 해금 여부
+    public string TicketTime
+    {
+        get
+        {
+            int sec = (DateTime.Now - LastTicketUsed).Seconds;
+            if (sec >= 1200) Ticket++;
 
-    // 환경설정
-    //public float MasterVolume;
-    //public float BgmVolume;
-    //public float SfxVolume;
-    //public PrintTextMode PrintTextMode;
-    //public int PrintTextSpeed;
-    //public MainBGM MainBGM;
+            sec = 1200 - sec;
+            return (sec / 60).ToString() + " : " + (sec % 60).ToString();
+        }
+    }
+
+    public int Money // 돈
+    {
+        get { return money; }
+        set
+        {
+            money = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public int Eyedrop // 안약
+    {
+        get { return eyedrop; }
+        set
+        {
+            eyedrop = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public DateTime LastTicketUsed // 마지막 티켓 사용 시각
+    {
+        get { return lastTicketUsed; }
+        set
+        {
+            lastTicketUsed = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public int Diary // 일기장 해금 정도
+    {
+        get { return diary; }
+        set
+        {
+            diary = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public bool[,] IsGameClear // 미니게임 클리어 여부
+    {
+        get { return isGameClear; }
+        set
+        {
+            isGameClear = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public int Progress // 진행도
+    {
+        get //incompleted
+        {
+            return 50; // NowStoryName enum을 쓰고 싶으나 뒤죽박죽이다. 같은 스토리는 나니노벨 하나로 합쳤으면
+        }
+    }
+
+    public int LikeAbility // 호감도
+    {
+        get { return likeAbility; }
+        set
+        {
+            likeAbility = Math.Min(100, value); // 퍼펙트로 선택지 골랐을때 딱 100이라면 무의미
+            GameManager.Data.SaveData();
+        }
+    }
+
+    public bool[] IsEndingUnlock // 엔딩 해금 여부
+    {
+        get { return isEndingUnlock; }
+        set
+        {
+            isEndingUnlock = value;
+            GameManager.Data.SaveData();
+        }
+    }
+
+    private StoryName nowStoryName;
+    private int currentGameLevel;
+    private int ticket;
+    private int money;
+    private int eyedrop;
+    private DateTime lastTicketUsed;
+    private int diary;
+    private bool[,] isGameClear;
+    private int likeAbility;
+    private bool[] isEndingUnlock;
 
 
     public void Init()
     {
-        //UserName = string.Empty;
         NowStoryName = StoryName.첫번째_등교;
-        //LastStoryName = StoryName.None;
-        //LastLine = 0;
+        currentGameLevel = 0;
         Money = 0;
         Ticket = 5;
         Eyedrop = 0;
-        LastTicketUsed = DateTime.MinValue;
+        LastTicketUsed = DateTime.Now;
         Diary = 0;
-        IsEpisodeWatched = new bool[4, 4];
-        IsGameClear = new bool[4, 4];
-        Progress = 0;
+        IsGameClear = new bool[2, 4];
         LikeAbility = 0;
         IsEndingUnlock = new bool[4];
-
-        //MasterVolume = 1;
-        //BgmVolume = 1;
-        //SfxVolume = 1;
-        //PrintTextMode = PrintTextMode.Touch;
-        //PrintTextSpeed = 2;
-        //MainBGM = MainBGM.MainTheme1;
     }
 
 }

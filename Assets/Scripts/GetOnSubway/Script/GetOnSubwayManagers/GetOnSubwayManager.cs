@@ -152,7 +152,6 @@ public class GetOnSubwayManager : MonoBehaviour
 
         Debug.Log($"UserData + reward = {GameManager.userData.Money} ");
         GameManager.userData.IsGameClear[0, difficultyLevel] = true;
-        GameManager.Data.SaveData();
     }
 
 

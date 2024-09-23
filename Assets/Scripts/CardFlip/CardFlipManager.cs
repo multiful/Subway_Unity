@@ -134,7 +134,6 @@ public class CardFlipManager : MonoBehaviour
             var varManager = Engine.GetService<ICustomVariableManager>();
             varManager.TrySetVariableValue("reward", reward);
             GameManager.userData.Money += reward;
-            GameManager.Data.SaveData();
             GameManager.Nani.PlayNani("카드뒤집기", "성공");
         }
         else

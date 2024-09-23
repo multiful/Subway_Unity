@@ -24,45 +24,23 @@ public class Shop : MonoBehaviour
     public void TicketMinus()
     {
         GameManager.userData.Ticket--;
-        TMP_ticket.text = GameManager.userData.Ticket.ToString();
-
-        if (GameManager.userData.Ticket <= 0)
-        {
-            GameManager.userData.LastTicketUsed = DateTime.Now;
-            StartCoroutine(TicketTimer());
-        }
-    }
-
-    public IEnumerator TicketTimer()
-    {
-        DateTime last = GameManager.userData.LastTicketUsed;
-        now = DateTime.Now;
-        timeLeft = 20 - (int)(now - last).TotalSeconds;
-
-        while (timeLeft > 0)
-        {
-            timeLeft--;
-
-            string timeLeftText = (timeLeft / 60).ToString() + " : " + (timeLeft % 60).ToString();
-            TMP_ticket.text = timeLeftText;
-
-            yield return new WaitForSeconds(1);
-        }
-
-        GameManager.userData.Ticket++;
-        TMP_ticket.text = GameManager.userData.Ticket.ToString();
     }
 
     private void Start()
     {
 
         TMP_money.text = GameManager.userData.Money.ToString();
-        TMP_ticket.text = GameManager.userData.Ticket.ToString();
         TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
 
         setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
 
         speech.text = "ㅎㅇ";
+    }
+
+    private void Update()
+    {
+        TMP_ticket.text = GameManager.userData.Ticket == 0 ?
+            GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
     }
 
     public void ItemBuy(int itemNum)

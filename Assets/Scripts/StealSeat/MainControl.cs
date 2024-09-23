@@ -113,8 +113,6 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
         if (IsNextSeat(womanSeat, manSeat)) StartCoroutine(GoodClear());
         else StartCoroutine(BadClear());
-
-        GameManager.Data.SaveData();
     }
 
     public void Penalty(float time)

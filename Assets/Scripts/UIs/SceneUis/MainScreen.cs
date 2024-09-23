@@ -20,13 +20,18 @@ public class MainScreen : MonoBehaviour
         }
 
         TMP_money.text = GameManager.userData.Money.ToString();
-        TMP_ticket.text = GameManager.userData.Ticket.ToString();
         TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
+    }
+
+    private void Update()
+    {
+        TMP_ticket.text = GameManager.userData.Ticket == 0 ?
+            GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
     }
 
     public void Transfer()
     {
-        GameManager.userData.Ticket--; //should modify
+        GameManager.userData.Ticket--; // 티켓이 부족하면?
 
         LoadingSceneManager.LoadScene("Nani");
     }
