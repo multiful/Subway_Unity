@@ -7,7 +7,18 @@ public class GameManager : MonoBehaviour
 {
     static GameManager s_instance;
 
-    public static GameManager Inst { get { Init(); return s_instance; } }
+    public static GameManager Inst
+    { 
+        get
+        { 
+            if (s_instance == null)
+            {
+                s_instance = new GameManager();
+                Init();
+            }
+            return s_instance; 
+        } 
+    }
 
     NaniEngineManager _nani = new NaniEngineManager();
     ResourceManager _resource = new ResourceManager();

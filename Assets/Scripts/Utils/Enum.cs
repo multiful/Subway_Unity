@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 public enum StoryName
 {
     None,
@@ -90,4 +87,11 @@ public enum MainBGM
 {
     MainTheme1,
     MainTheme2,
+}
+public enum StoryType
+{
+    일반스토리,
+    엔딩,
+    일기장,
+    미니게임
 }

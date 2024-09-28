@@ -12,8 +12,8 @@
             "{\"QualityLevel\":5}",
             "{\"SelectedLocale\":\"en\"}",
             "{\"SkipMode\":0}",
-            "{\"BaseRevealSpeed\":0.7857224345207214,\"BaseAutoDelay\":0.1440526694059372}",
-            "{\"MasterVolume\":0.41004523634910586,\"BgmVolume\":1.0,\"SfxVolume\":1.0,\"VoiceVolume\":1.0,\"VoiceLocale\":\"\",\"AuthorVolume\":[]}",
+            "{\"BaseRevealSpeed\":0.6327795386314392,\"BaseAutoDelay\":1.0}",
+            "{\"MasterVolume\":1.0,\"BgmVolume\":1.0,\"SfxVolume\":1.0,\"VoiceVolume\":1.0,\"VoiceLocale\":\"\",\"AuthorVolume\":[]}",
             "{\"FontName\":\"\",\"FontSize\":-1}"
         ]
     }
