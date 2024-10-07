@@ -32,7 +32,7 @@ public class Shop : MonoBehaviour
         TMP_money.text = GameManager.userData.Money.ToString();
         TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
 
-        setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
+        //setting.onClick.AddListener(GameManager.UI.ShowSettingUI);
 
         speech.text = "ㅎㅇ";
     }

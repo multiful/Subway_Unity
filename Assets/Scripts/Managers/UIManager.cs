@@ -1,5 +1,7 @@
 using JetBrains.Annotations;
+using Naninovel;
 using Naninovel.Commands;
+using Naninovel.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,7 +39,8 @@ public class UIManager
     }
     public void ShowSettingUI()
     {
-        ShowPopupUI<UI_Setting>();
+        var settingsUI = Engine.GetService<IUIManager>().GetUI<ISettingsUI>();
+        settingsUI.Show();
     }
     public UI_EndingPlay ShowEndingPlayUI(int index)
     {

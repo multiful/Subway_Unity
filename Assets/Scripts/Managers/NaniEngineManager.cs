@@ -44,7 +44,7 @@ public class NaniEngineManager
         var audioMixer = AudioManager.AudioMixer;
     }
 
-    public async void PlayNani(string scriptName, string label = null)
+    public async void PlayNani(string scriptName, string label = null, StoryType type = StoryType.일반스토리)
     {
         GameManager.Sound.Clear(); // ?
 
@@ -52,6 +52,14 @@ public class NaniEngineManager
         CameraManager.Camera.enabled = true;
 
         // 3. Load and play specified script (if assigned).
+        switch (type)
+        {
+            case StoryType.일반스토리:
+                scriptName = "일반스토리" + scriptName; break;
+            case StoryType.미니게임:
+                scriptName = "" + scriptName; break;
+        }
+
         await (label != null ? ScriptPlayer.PreloadAndPlayAsync(scriptName, label : label)
             : ScriptPlayer.PreloadAndPlayAsync(scriptName));
 

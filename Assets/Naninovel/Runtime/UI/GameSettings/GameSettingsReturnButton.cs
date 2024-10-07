@@ -21,6 +21,7 @@ namespace Naninovel.UI
         {
             using (var _ = new InteractionBlocker())
                 await settingsManager.SaveSettingsAsync();
+
             settingsMenu.Hide();
         }
     }

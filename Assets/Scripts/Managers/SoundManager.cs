@@ -84,7 +84,14 @@ public class SoundManager
     AudioClip GetOrAddAudioClip(string path, Sound type = Sound.Effect)
     {
         if (path.Contains("Sounds/") == false)
+        {
+            if (type == Sound.Effect)
+                path = "SFX/" + path;
+            else if (type == Sound.Bgm)
+                path = "BGM/" + path;
             path = $"Sounds/{path}";
+        }
+        Debug.Log(path);
         AudioClip audioClip = null;
 
         if (type == Sound.Bgm)

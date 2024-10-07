@@ -16,7 +16,7 @@ public class MainScreen : MonoBehaviour
     {
         if (!GameManager.Sound.isBGMPlaying())
         {
-            GameManager.Sound.Play("MainTheme", Sound.Bgm);
+            GameManager.Sound.Play("subwayWayMainTheme1", Sound.Bgm);
         }
 
         TMP_money.text = GameManager.userData.Money.ToString();
@@ -38,7 +38,7 @@ public class MainScreen : MonoBehaviour
 
     public void ShowSettingUI()
     {
-        GameManager.UI.ShowPopupUI<UI_Setting>();
+        GameManager.UI.ShowSettingUI();
     }
     public void GoShop()
     {
