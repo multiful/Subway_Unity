@@ -18,19 +18,11 @@ Jicheol: 누텔라… 좋아하시나요…?
 Haji: 누텔라? 그게 뭐죠?
 @char Jicheol.2_2_4_021
 Jicheol: 하하 초콜릿 맛 나는 잼이요. 
-Jicheol: 악마의 잼이라고 불리는 그거요.
+Jicheol: 악마의 잼이라고 불리는 유명한 그거요.
 @char Haji.1_2_4_023
-Haji: 아, 그거요? 아니요 별로 안 좋아해요.
+Haji: 아, 그거요? 알죠 알죠. 하하...
 @char Jicheol.2_2_4_024
 망했다. 왜 자꾸 누나라는 말은 입에서 떨어지지 않는 걸까?
-@char Haji.1_2_4_025
-Haji: 단 거는 딱히 좋아하지 않는데…
-@char Haji.1_2_4_026
-Haji: 그래도 저번에 주셨던 초콜릿은 좋아해요.
-@char Jicheol.2_2_4_027
-아, 초콜릿은 좋아하는구나…
-@char Jicheol.2_2_4_028
-아니 그 보다 또 실패다.
 진짜 한 번만 한 번만 다시 해보자…
 @char Jicheol.2_2_4_030
 Jicheol: 누…
@@ -47,7 +39,7 @@ Jicheol: 바밤바!!
 우와 망했다….
 이런 되도 않는 드립이 입에서 나올 줄이야….
 @char Haji.1_2_4_038
-Haji: 바…밤바? 그게 뭐죠?
+Haji: 바…밤바? 그건 또 뭐죠?
 Jicheol: 네? 혹시 안 드셔보셨어여?
 @char Haji.1_2_4_040
 @char Jicheol.2_2_4_040
@@ -59,7 +51,7 @@ Haji: 바밤바는 처음 들어 보네요.
 @char Jicheol.2_2_4_044
 Jicheol: 밤 맛 나는 아이스크림인데 본 적 없으신 가 봐요?
 @char Haji.1_2_4_045
-Haji: 여기는 그런 것도 있군요. 
+Haji: 이쪽 세상은 그런 것도 있군요. 
 @char Haji.1_2_4_046
 Haji: 아니, 근데 방금 그거 삼행시 한 건 가요?
 @char Jicheol.2_2_4_047
@@ -192,17 +184,20 @@ Seola: ……
 @char Jicheol.2_2_4_113
 Jicheol: 설아야?
 @char Seola.3_2_4_113
-Seola: 오빠는 왜 지금까지 연애 안 하고 있었는지 알려줄 수 있어?
+Seola: 우리 그래도 대학교때부터 지금까지 꽤 오래 만났지?
+Jicheol: 응.
+Seola: 솔직히 나 오빠가 이러는 모습은 처음 보는 것 같은데...
+Seola: 왜 지금까지 연애 안 하고 있었는지 알려줄 수 있어?
 @char Jicheol.2_2_4_114
 Jicheol: 어? 갑자기?
 @char Seola.3_2_4_115
-Seola: 요즘 보니까 연애에 아예 관심이 없는 건 아닌 것 같은데…?
+Seola: 요즘 보니까 연애에 아예 관심이 없었던 건 아닌 것 같은데…?
 @char Jicheol.2_2_4_116
 Jicheol: 음… 그렇긴 하지.
 @char Seola.3_2_4_117
-Seola: 지금까지 이런 모습은 본 적 없는 것 같아서…?
+Seola: 오빠가 갑자기 이러니까 괜히 궁금해지네.
 @char Jicheol.2_2_4_118
-Jicheol: 하하.
+Jicheol: 하하하.
 @char Seola.3_2_4_119
 Seola: 그래서 왜 안 했어?
 @char Jicheol.2_2_4_120
@@ -214,7 +209,7 @@ Jicheol: 마음에 드는 사람이 없어서…?
 @char Seola.3_2_4_123
 Seola: 그래…? 
 @char Seola.3_2_4_124
-Seola: 그럼 나는…?
+Seola: 그러면 나는…?
 @char Jicheol.2_2_4_124
 Jicheol: !?
 @char Seola.3_2_4_126

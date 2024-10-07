@@ -1,19 +1,19 @@
 # 대성공1
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
-Haji: ...고마워요. 덕분에 편하게 가네요.[br](보상 : {reward}원, 호감도 +5)
+Haji: 같이 앉아가니까 좋네요.....[br](보상 : {reward}원, 호감도 +5)
 @clearMinigame
 
 # 대성공2
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
-Haji: 같이 앉아가니까 좋네요..[br](보상 : {reward}원, 호감도 +5)
+Haji: 고마워요. 덕분에 편하게 가네요.[br](보상 : {reward}원, 호감도 +5)
 @clearMinigame
 
 # 대성공3
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
-Haji: 피곤해서 그런데, 잠깐 기대도 될까?.[br](보상 : {reward}원, 호감도 +5)
+Haji: 피곤해서 그런데, 잠깐 기대도 될까요?.[br](보상 : {reward}원, 호감도 +5)
 @clearMinigame
 
 # 대성공4
@@ -24,12 +24,12 @@ Haji: 같이 앉아가니까 좋다. 그렇지?.[br](보상 : {reward}원, 호�
 
 # 성공1
 @char Haji pos:50,-36
-Haji: ...고마워요.[br](보상 : {reward}원)
+Haji: 덕분에 편하게 가네요.[br](보상 : {reward}원)
 @clearMinigame
 
 # 성공2
 @char Haji pos:50,-36
-Haji: 매번 덕분에 편하게 가네요.[br](보상 : {reward}원)
+Haji: ...고마워요.[br](보상 : {reward}원)
 @clearMinigame
 
 # 성공3
@@ -54,10 +54,10 @@ Haji: 너무 갑갑해서 도저히 못 있겠어요. 전 다음 열차 탈게�
 
 # 실패3
 @char Haji pos:50,-36
-Haji: 이 시간대는 사람이 너무 많아. 차라리 늦게 퇴근할까봐.
+Haji: 역시 이 시간대는 사람이 너무 많아. 차라리 조금 일찍 출근할까봐.
 @goMain
 
 # 실패4
 @char Haji pos:50,-36
-Haji: 출근길은 정말 지옥철이야.
+Haji: 정말 출근길은 정말 지옥철이야.
 @goMain

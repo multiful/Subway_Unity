@@ -7,6 +7,25 @@
 그녀와 만나는 시간들이 더욱 각별하고 기쁘다.
 @char Jicheol.2_2_2_004 pos:50,-44
 운명을 믿는 것은 아니지만 이런 게 운명이라는 것일까?
-Jicheol: 시간을 보니 잘하면 또 만날 수 있겠는 걸?
-
-@minigame gameType:1 gameLevel:1
+시간을 보니 잘하면 또 만날 수 있겠는 걸?
+@back Black
+@back Subway1
+기대를 품고 지하철에 탔지만 하지씨는 보이지 않았다.
+@char Jicheol.2_2_2_137 pos:50,-44
+역시 저녁에도 또 만나는 건 욕심인가...?
+그 때 뒤에서 누군가가 내 등을 두드렸다.
+@char Jicheol.2_2_2_025 pos:60,-44
+@char Haji.1_2_2_006 pose:Left
+Haji: 안녕하세요. 오늘은 또 만나네요.
+@char Haji.1_2_2_007
+Haji: 매 번 이 시간에 지하철을 타시나 봐요?
+@char Jicheol.2_2_2_008 pose:Right
+주인공: 이제는 그렇게 하려고 노력하고 있습니다.
+@char Haji.1_2_2_009
+Haji: 그래요? 그러면 앞으로도 종종 볼 수 있겠네요.
+@char Haji.1_2_2_010
+그 때 자리 앉은 사람들 사이에서 눈에 익은 사람들이 보인다. 
+???: ……
+저 사람은 분명 이 근처에서 내리는 사람인데?
+잘 하면 오늘은 앉아서 갈 수 있겠는데…?
+@minigame gameType:2 gameLevel:1

@@ -1,0 +1,72 @@
+@back Black
+@back Station
+@char Jicheol.2_1_2_071 pos:50,-44
+퇴원한지도 벌써 일주일이 지났다. 그날은 단순한 해프닝으로 마무리되었다.
+@char Jicheol.2_1_2_072
+그날은 정말 뭐였을까?
+쓰러진 덕분에 조금 쉴 수 있었지만 아직도 석연치 않은 부분이 많다.
+@char Jicheol.2_1_2_074
+좋은 게 좋은 거라고 생각해야 하나…?
+@char Jicheol.2_1_2_075
+그런데... 내가 왜 이쪽으로 왔지?
+@char Jicheol.2_1_2_076
+집까지 갈 수는 있지만 지금 시간에 1호선 타고 가는 건 많이 불편한데..?
+@char Jicheol.2_1_2_077
+하. 뭔가 기시감 같은 게 느껴진다.
+안내 방송: 지금 서동탄, 서동탄행 열차가 들어오고 있습니다.
+@char Jicheol.2_1_2_079
+대체 왜 이러는 거지? 좀처럼 이해가 가지 않는데...
+안내 방송: 스크린 도어가 열립니다.
+@hide Jicheol
+@sfx paper
+@back Black.Ripple
+문이 열리자 어디선가 날아온 종이 쪼가리가 내 눈을 가렸다.
+종이를 치우자 그곳에는 생각지도 못한 사람이 있었다.
+@hideAll
+@back Black scale:1.75 pos:60,52
+@back First_plus scale:1.75 pos:60,52 time:2.5
+@back First_plus scale:1.2 pos:45,36 time:2.5
+@wait 2.5
+@back White
+@back White scale:0.72 pos:50,50
+@back First_plus1.Crossfade scale:0.72 pos:50,50 time:1
+@wait 3
+그 사람이다.
+순간 시간이 멈춘 것만 같았다.
+@spawn SunShafts params:1,5
+열차가 출발하자 하늘에 드리워진 노을 빛이 열차 안을 가득 매웠다.
+난폭한 황금 빛과 붉은 빛의 조화가 그녀의 얼굴을 물들였다.
+적갈색 머리카락은 노을 빛을 받아 찬란하고 아름답게 빛난다.
+그저 졸고 있었지만 그것만으로도 자못 신비한 분위기를 자아낸다.
+그렇게 한참을 그녀만을 바라보았다.
+한 번도 누군가를 이렇게 지긋이 쳐다본 적은 없었다.
+@despawn SunShafts
+@hideall
+@back Black
+@back Black
+@sfx one_hit_heartbeat
+어째서인지 설명하기 어려운 감정들이 마구 피어오른다.
+@back Subway1
+@char Haji.1_1_2_091 pos:40,-44
+@char Jicheol.2_1_2_091 pos:60,-44
+@char Haji.1_1_2_092
+???: …!
+부스스 잠에서 깬 그녀의 눈동자 속에는 붉은 물결이 일렁이고 있다.
+알 수 없는 묘한 힘이 나를 사로잡는다.
+안내 방송: 출입문이 열립니다. 
+@char Haji.1_1_2_096
+???: 아?! 안돼!!!
+@char Haji.1_1_2_096 pos:100,-44
+@hide Haji
+@char Jicheol.2_1_2_091 pos:50,-44
+졸음에서 막 벗어난 그녀는 당황스러운 듯한 표정을 짓더니,
+황급히 짐을 챙기고는 지하철 밖으로 빠져 나갔다.
+@sfx subway_door
+지하철에서 그녀와 마주치고 그녀가 지하철을 나가기까지
+나는 멍하니 선 채 그녀를 바라 보는 것 말고는 아무 것도 할 수 없었다.
+@back Black
+@sfx heartbeat
+그녀가 사라진 지금도 쿵쾅쿵쾅 심장이 쉴 새 없이 요동친다.
+뭐 하나 제대로 이해하기 힘든 상황이지만 그래도 이거 하나 만큼은 확신할 수 있다. 
+그래, 아마 나는 이 순간을 평생 못 잊을 것 같다.
+@finishStory
