@@ -42,16 +42,16 @@ public class UI_EndingPlay : UI_Popup
         }
         switch (index)
         {
-            case 0:
+            case 1:
                 GameManager.userData.NowStoryName = StoryName.End1;
                 break;
-            case 1:
+            case 2:
                 GameManager.userData.NowStoryName = StoryName.End2;
                 break;
-            case 2:
+            case 3:
                 GameManager.userData.NowStoryName = StoryName.End3;
                 break;
-            case 3:
+            case 4:
                 GameManager.userData.NowStoryName = StoryName.End4;
                 break;
             default:
