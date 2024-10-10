@@ -1111,7 +1111,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 090f65d3ffd3bde47a4163da02957657, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0bbf14e9b4ec9274e911a86aefd8d04f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0bbf14e9b4ec9274e911a86aefd8d04f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17ae969ad23fc6f43aa2efee03fa6787, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2591,7 +2591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 17ae969ad23fc6f43aa2efee03fa6787, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 090f65d3ffd3bde47a4163da02957657, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2681,19 +2681,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backButton: {fileID: 6602078525836159604}
   settingButton: {fileID: 3715773403693217798}
-  progressText: {fileID: 43180171292810959}
-  likeabilityText: {fileID: 2635779953531875652}
   endings:
   - {fileID: 8988141880750534682}
   - {fileID: 3811507105604863218}
   - {fileID: 3480571102372477950}
   - {fileID: 4594101113645523218}
   progressImg: {fileID: 3028010200574504723}
-  likeabilityImg: {fileID: 0}
   unlockedEndingSprites:
-  - {fileID: 21300000, guid: b3af9898ba23288448148e3ffe139a9a, type: 3}
   - {fileID: 21300000, guid: 84e3515f933f25348b9c088aa2b8fbe2, type: 3}
   - {fileID: 21300000, guid: 203825e2018d6d841bb00a3553023122, type: 3}
+  - {fileID: 21300000, guid: b3af9898ba23288448148e3ffe139a9a, type: 3}
   - {fileID: 21300000, guid: 84e3515f933f25348b9c088aa2b8fbe2, type: 3}
 --- !u!1 &7284558807812703970
 GameObject:

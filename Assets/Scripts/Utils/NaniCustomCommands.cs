@@ -143,7 +143,8 @@ public class NaniCustomCommands
                 GameManager.userData.NowStoryName = StoryName.None + 1; // 스토리 맨 처음으로
             }
             GameManager.Nani.StopNani();
-            SceneManager.LoadScene("Main");
+            LoadingSceneManager.LoadScene("Main");
+            //SceneManager.LoadScene("Main");
             return UniTask.CompletedTask;
         }
     }
