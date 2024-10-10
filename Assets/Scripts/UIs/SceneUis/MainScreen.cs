@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Naninovel;
 using UnityEngine.SceneManagement;
+using Naninovel.UI;
 
 public class MainScreen : MonoBehaviour
 {
@@ -47,6 +48,11 @@ public class MainScreen : MonoBehaviour
     public void ShowEndingCollection()
     {
         SceneManager.LoadScene(5);
+    }
+    public void MainSceenLoadUI()
+    {
+        var settingsUI = Engine.GetService<IUIManager>().GetUI<ISaveLoadUI>();
+        settingsUI.Show();
     }
     
 }

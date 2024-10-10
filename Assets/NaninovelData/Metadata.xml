@@ -1313,11 +1313,11 @@
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;카드뒤집기_성공&lt;/Path&gt;
+        &lt;Path&gt;자리뺏기&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;자리뺏기_대성공&lt;/Path&gt;
+        &lt;Path&gt;카드뒤집기&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
@@ -1329,7 +1329,7 @@
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;e2&lt;/Path&gt;
+        &lt;Path&gt;e2_1&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
@@ -1422,6 +1422,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;e6_2&lt;/Path&gt;
+        &lt;Type&gt;Scripts&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;빠르게환승&lt;/Path&gt;
         &lt;Type&gt;Scripts&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
