@@ -7,6 +7,5 @@ namespace Naninovel.UI
     [RequireComponent(typeof(CanvasGroup))]
     public class GameSettingsMenu : CustomUI, ISettingsUI
     {
-        
     }
 }

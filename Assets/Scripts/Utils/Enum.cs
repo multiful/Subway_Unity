@@ -25,6 +25,10 @@ public enum StoryName
     e14,
     e15,
     e16,
+    End1,
+    End2,
+    End3,
+    End4,
     MaxCountPlusOne
 }
 public enum CardFlipEnding
@@ -62,14 +66,6 @@ public enum MiniGame
     GetOnSubway,
     StealSeat,
     CardFlip
-}
-
-public enum Ending
-{
-    첫번째엔딩,
-    두번째엔딩,
-    세번째엔딩,
-    네번째엔딩
 }
 public enum EndingType
 {

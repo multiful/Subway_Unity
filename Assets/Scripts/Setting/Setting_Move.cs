@@ -14,14 +14,6 @@ public class Setting_Move : MonoBehaviour
     {
         settingsMenu = GetComponentInParent<GameSettingsMenu>();
         settingsManager = Engine.GetService<IStateManager>();
-        if(SceneManager.GetActiveScene().name == "Main")
-        {
-            mainButton.interactable = false;
-        }
-        else
-        {
-            mainButton.interactable = true;
-        }
     }
     private void CloseSetting()
     {

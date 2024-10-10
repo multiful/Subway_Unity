@@ -40,6 +40,7 @@ public class UIManager
     public void ShowSettingUI()
     {
         var settingsUI = Engine.GetService<IUIManager>().GetUI<ISettingsUI>();
+        
         settingsUI.Show();
     }
     public UI_EndingPlay ShowEndingPlayUI(int index)

@@ -24,10 +24,11 @@ public class UI_EndingPlay : UI_Popup
     Button _play;
     public void SetEndingTexts(int index)
     {
-        Ending ending = (Ending)(index);
+        //이거 수정해야함
+        //Ending ending = (Ending)(index);
         EndingType endingType = (EndingType)(index);
 
-        _name.text = ending.ToString();
+        //_name.text = ending.ToString();
         _type.text = endingType.ToString();
 
         _info.text = $"{index+1}번 엔딩 줄거리";
@@ -35,7 +36,31 @@ public class UI_EndingPlay : UI_Popup
     }
     private void EndingPlay(int index)
     {
-        Debug.Log($"{index+1}번 엔딩 플레이");
+        Debug.Log(GameManager.userData.NowStoryName);
+        if (GameManager.userData.NowStoryName != StoryName.None+1)
+        {
+            GameManager.Nani.nowStory = GameManager.userData.NowStoryName;
+        }
+        switch (index)
+        {
+            case 0:
+                GameManager.userData.NowStoryName = StoryName.End1;
+                break;
+            case 1:
+                GameManager.userData.NowStoryName = StoryName.End2;
+                break;
+            case 2:
+                GameManager.userData.NowStoryName = StoryName.End3;
+                break;
+            case 3:
+                GameManager.userData.NowStoryName = StoryName.End4;
+                break;
+            default:
+                return;
+        }
+
+
+        LoadingSceneManager.LoadScene("Nani");
     }
     public override void Init()
     {

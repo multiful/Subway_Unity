@@ -1,4 +1,5 @@
 using Naninovel;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,11 +14,14 @@ public class NaniEngineManager
     public IUIManager UIManager;
     public IAudioManager AudioManager;
 
+    public StoryName nowStory;
+
     public void Init()
     {
         // Engine may not be initialized here, so check first.
         if (Engine.Initialized) InitProcess();
         else Engine.OnInitializationFinished += InitProcess;
+        nowStory = StoryName.None + 1;
     }
 
     private void InitProcess()
@@ -44,7 +48,7 @@ public class NaniEngineManager
         var audioMixer = AudioManager.AudioMixer;
     }
 
-    public async void PlayNani(string scriptName, string label = null, StoryType type = StoryType.일반스토리)
+    public async void PlayNani(string scriptName, string label = null)
     {
         GameManager.Sound.Clear(); // ?
 
