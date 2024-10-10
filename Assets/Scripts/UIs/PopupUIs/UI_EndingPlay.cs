@@ -22,17 +22,16 @@ public class UI_EndingPlay : UI_Popup
     TextMeshProUGUI _info;
 
     Button _play;
-    public void SetEndingTexts(int index)
+    public void SetEndingTexts(EndingSO so)
     {
-        //이거 수정해야함
         //Ending ending = (Ending)(index);
-        EndingType endingType = (EndingType)(index);
+        //EndingType endingType = (EndingType)(so.index);
 
-        //_name.text = ending.ToString();
-        _type.text = endingType.ToString();
+        _name.text = so.name;
+        _type.text = so.endingType.ToString();
 
-        _info.text = $"{index+1}번 엔딩 줄거리";
-        _play.onClick.AddListener(() => EndingPlay(index));
+        _info.text = so.description;
+        _play.onClick.AddListener(() => EndingPlay(so.index));
     }
     private void EndingPlay(int index)
     {

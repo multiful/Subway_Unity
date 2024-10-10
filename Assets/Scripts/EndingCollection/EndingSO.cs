@@ -7,5 +7,6 @@ public class EndingSO : ScriptableObject
 {
     public int index;
     public string endingName;
+    public EndingType endingType;
     public string description;
 }

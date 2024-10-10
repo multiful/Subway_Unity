@@ -43,11 +43,11 @@ public class UIManager
         
         settingsUI.Show();
     }
-    public UI_EndingPlay ShowEndingPlayUI(int index)
+    public UI_EndingPlay ShowEndingPlayUI(EndingSO so)
     {
         GameObject go = GameManager.Resource.Instantiate("UI/Popup/UI_EndingPlay");
         UI_EndingPlay popup = Util.GetOrAddComponent<UI_EndingPlay>(go);
-        popup.SetEndingTexts(index);
+        popup.SetEndingTexts(so);
         _popupStack.Push(popup);
         go.transform.SetParent(Root.transform);
         return popup;

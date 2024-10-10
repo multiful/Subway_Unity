@@ -19,13 +19,13 @@ public class EndingCollectionManager : MonoBehaviour
 
     private bool[] _openedEnding;
 
-    private EndingSO[] _endingSOList;
+    //public EndingSO[] _endingSOList;
     //private Ending[] _endingList;
     private void Init()
     {
         //일단 1번 엔딩만 열어둔 상태
         GameManager.userData.IsEndingUnlock[0] = true;
-
+        GameManager.userData.IsEndingUnlock[3] = true;
         _openedEnding = GameManager.userData.IsEndingUnlock;
         //_openedEnding = new bool[4];
         //_openedEnding[0] = true;
@@ -53,9 +53,9 @@ public class EndingCollectionManager : MonoBehaviour
     //{
 
     //}
-    public void ShowEndingPlayUI(int index)
+    public void ShowEndingPlayUI(EndingSO so)
     {
-        GameManager.UI.ShowEndingPlayUI(index);
+        GameManager.UI.ShowEndingPlayUI(so);
     }
     public void BackButtonFunc()
     {
