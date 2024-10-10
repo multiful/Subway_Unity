@@ -21,10 +21,10 @@ public class Shop : MonoBehaviour
     DateTime now;
     int timeLeft;
 
-    public void TicketMinus()
-    {
-        GameManager.userData.Ticket--;
-    }
+    //public void TicketMinus()
+    //{
+    //    GameManager.userData.Ticket--;
+    //}
 
     private void Start()
     {
@@ -39,8 +39,8 @@ public class Shop : MonoBehaviour
 
     private void Update()
     {
-        TMP_ticket.text = GameManager.userData.Ticket == 0 ?
-            GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
+        //TMP_ticket.text = GameManager.userData.Ticket == 0 ?
+        //    GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
     }
 
     public void ItemBuy(int itemNum)
@@ -56,9 +56,9 @@ public class Shop : MonoBehaviour
                     BehindDiary[diaryUnlock++].GetComponent<Image>().color = Color.white;
                     break; 
                 case 1:
-                    GameManager.userData.Ticket++;
-                    StopAllCoroutines();
-                    TMP_ticket.text = GameManager.userData.Ticket.ToString(); break;
+                    //GameManager.userData.Ticket++;
+                    StopAllCoroutines(); break;
+                    //TMP_ticket.text = GameManager.userData.Ticket.ToString(); break;
                 case 2:
                     GameManager.userData.Eyedrop++;
                     TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString(); break;

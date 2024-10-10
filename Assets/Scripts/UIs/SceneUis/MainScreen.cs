@@ -26,13 +26,13 @@ public class MainScreen : MonoBehaviour
 
     private void Update()
     {
-        TMP_ticket.text = GameManager.userData.Ticket == 0 ?
-            GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
+        //TMP_ticket.text = GameManager.userData.Ticket == 0 ?
+        //    GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
     }
 
     public void Transfer()
     {
-        GameManager.userData.Ticket--; // 티켓이 부족하면?
+        //GameManager.userData.Ticket--; // 티켓이 부족하면?
 
         LoadingSceneManager.LoadScene("Nani");
     }

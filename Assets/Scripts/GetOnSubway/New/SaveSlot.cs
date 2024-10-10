@@ -29,7 +29,7 @@ public class SaveSlot : MonoBehaviour
 
     public void SetData(UserData data)
     {
-        // µ¥ÀÌÅÍ°¡ ¾ø´Â °æ¿ì
+        // ë°ì´í„°ê°€ ì—†ëŠ” ê²½ìš°
         if (data == null)
         {
             hasData = false;
@@ -37,7 +37,7 @@ public class SaveSlot : MonoBehaviour
             hasDataContent.SetActive(false);
             clearButton.gameObject.SetActive(false);
         }
-        // µ¥ÀÌÅÍ°¡ ÀÖ´Â °æ¿ì
+        // ë°ì´í„°ê°€ ìˆëŠ” ê²½ìš°
         else
         {
             hasData = true;
@@ -45,7 +45,7 @@ public class SaveSlot : MonoBehaviour
             hasDataContent.SetActive(true);
             clearButton.gameObject.SetActive(true);
 
-            percentageCompleteText.text = data.Progress + "% COMPLETE";
+            //percentageCompleteText.text = data.Progress + "% COMPLETE";
         }
     }
 

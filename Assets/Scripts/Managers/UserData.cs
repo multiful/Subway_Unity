@@ -27,28 +27,28 @@ public class UserData
         }
     }
 
-    public int Ticket // 승차권
-    {
-        get { return ticket; }
-        set
-        {
-            LastTicketUsed = DateTime.Now;
-            ticket = value;
-            GameManager.Data.SaveData();
-        }
-    }
+    //public int Ticket // 승차권
+    //{
+    //    get { return ticket; }
+    //    set
+    //    {
+    //        LastTicketUsed = DateTime.Now;
+    //        ticket = value;
+    //        GameManager.Data.SaveData();
+    //    }
+    //}
 
-    public string TicketTime
-    {
-        get
-        {
-            int sec = (DateTime.Now - LastTicketUsed).Seconds;
-            if (sec >= 1200) Ticket++;
+    //public string TicketTime
+    //{
+    //    get
+    //    {
+    //        int sec = (DateTime.Now - LastTicketUsed).Seconds;
+    //        if (sec >= 1200) Ticket++;
 
-            sec = 1200 - sec;
-            return (sec / 60).ToString() + " : " + (sec % 60).ToString();
-        }
-    }
+    //        sec = 1200 - sec;
+    //        return (sec / 60).ToString() + " : " + (sec % 60).ToString();
+    //    }
+    //}
 
     public int Money // 돈
     {
@@ -70,15 +70,15 @@ public class UserData
         }
     }
 
-    public DateTime LastTicketUsed // 마지막 티켓 사용 시각
-    {
-        get { return lastTicketUsed; }
-        set
-        {
-            lastTicketUsed = value;
-            GameManager.Data.SaveData();
-        }
-    }
+    //public DateTime LastTicketUsed // 마지막 티켓 사용 시각
+    //{
+    //    get { return lastTicketUsed; }
+    //    set
+    //    {
+    //        lastTicketUsed = value;
+    //        GameManager.Data.SaveData();
+    //    }
+    //}
 
     public int Diary // 일기장 해금 정도
     {
@@ -100,13 +100,13 @@ public class UserData
         }
     }
 
-    public int Progress // 진행도
-    {
-        get //incompleted
-        {
-            return 50; // NowStoryName enum을 쓰고 싶으나 뒤죽박죽이다. 같은 스토리는 나니노벨 하나로 합쳤으면
-        }
-    }
+    //public int Progress // 진행도
+    //{
+    //    get //incompleted
+    //    {
+    //        return 50; // NowStoryName enum을 쓰고 싶으나 뒤죽박죽이다. 같은 스토리는 나니노벨 하나로 합쳤으면
+    //    }
+    //}
 
     public int LikeAbility // 호감도
     {
@@ -130,10 +130,10 @@ public class UserData
 
     private StoryName nowStoryName;
     private int currentGameLevel;
-    private int ticket;
+    //private int ticket;
     private int money;
     private int eyedrop;
-    private DateTime lastTicketUsed;
+    //private DateTime lastTicketUsed;
     private int diary;
     private bool[,] isGameClear;
     private int likeAbility;
@@ -145,9 +145,9 @@ public class UserData
         NowStoryName = StoryName.첫번째_등교;
         currentGameLevel = 0;
         Money = 0;
-        Ticket = 5;
+        //Ticket = 5;
         Eyedrop = 0;
-        LastTicketUsed = DateTime.Now;
+        //LastTicketUsed = DateTime.Now;
         Diary = 0;
         IsGameClear = new bool[2, 4];
         LikeAbility = 0;

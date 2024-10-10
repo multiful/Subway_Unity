@@ -11,18 +11,18 @@ public class EndingCollectionManager : MonoBehaviour
     public Button backButton;
     public Button settingButton;
 
-    public TextMeshProUGUI progressText;
-    public TextMeshProUGUI likeabilityText;
+    //public TextMeshProUGUI progressText;
+    //public TextMeshProUGUI likeabilityText;
 
     public GameObject[] endings;
 
     public Image progressImg;
-    public Image likeabilityImg;
+    //public Image likeabilityImg;
 
     public Sprite[] unlockedEndingSprites;
 
-    private int _progress;
-    private int _likeability;
+    //private int _progress;
+    //private int _likeability;
     private bool[] _openedEnding;
 
     private void Init()
@@ -39,13 +39,13 @@ public class EndingCollectionManager : MonoBehaviour
     private void EndingSetup()
     {
         //_progress = 진행도 가져옴
-        _progress = 22; //임시 설정 값
-        progressImg.fillAmount = 0;
+        //_progress = 22; //임시 설정 값
+        //progressImg.fillAmount = 0;
 
-        StartCoroutine(Fillimg(progressImg));
-        progressText.text = _progress.ToString() + "%";
+        //StartCoroutine(Fillimg(progressImg));
+        //progressText.text = _progress.ToString() + "%";
 
-        likeabilityText.text = _likeability.ToString();
+        //likeabilityText.text = _likeability.ToString();
 
         for (int end = 0; end < _openedEnding.Length; end++)
         {
@@ -55,21 +55,21 @@ public class EndingCollectionManager : MonoBehaviour
             }
         }
     }
-    private IEnumerator Fillimg(Image img)
-    {
-        float targetFillAmount = _progress / 100f;
-        while(img.fillAmount < targetFillAmount)
-        {
-            img.fillAmount += Time.smoothDeltaTime * 1.5f;
+    //private IEnumerator Fillimg(Image img)
+    //{
+    //    float targetFillAmount = _progress / 100f;
+    //    while(img.fillAmount < targetFillAmount)
+    //    {
+    //        img.fillAmount += Time.smoothDeltaTime * 1.5f;
 
-            if (img.fillAmount >= targetFillAmount)
-            {
-                img.fillAmount = targetFillAmount;
-                break;
-            }
-            yield return null;
-        }
-    }
+    //        if (img.fillAmount >= targetFillAmount)
+    //        {
+    //            img.fillAmount = targetFillAmount;
+    //            break;
+    //        }
+    //        yield return null;
+    //    }
+    //}
     private void EndingUnlock(GameObject ending, int index)
     {
         ending.GetComponent<Image>().sprite = unlockedEndingSprites[index];
