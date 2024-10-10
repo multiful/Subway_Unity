@@ -171,19 +171,19 @@ MonoBehaviour:
     - name: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
       pathPrefix: Scripts
       guid: 7ee813acb6955fe47af87122d8cbeb47
-    - name: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30_\uC131\uACF5"
-      pathPrefix: Scripts
-      guid: c508d448ca7a0854ab29edad919ccfec
-    - name: "\uC790\uB9AC\uBE8F\uAE30_\uB300\uC131\uACF5"
+    - name: "\uC790\uB9AC\uBE8F\uAE30"
       pathPrefix: Scripts
       guid: 611526f0529cf854b845158e99f423d1
+    - name: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30"
+      pathPrefix: Scripts
+      guid: c508d448ca7a0854ab29edad919ccfec
     - name: e4_1
       pathPrefix: Scripts
       guid: 838e5a953c7b32f40a1dcf45e681b13b
     - name: e1
       pathPrefix: Scripts
       guid: e41c85b42b19cb946ac46825c1da11a2
-    - name: e2
+    - name: e2_1
       pathPrefix: Scripts
       guid: 6213a3e48cf330f4f9b5cd8dab83847d
     - name: e3_1
@@ -255,6 +255,9 @@ MonoBehaviour:
     - name: e6_2
       pathPrefix: Scripts
       guid: 2968d6f0b64d71a49beb47d7deaf84ec
+    - name: "\uBE60\uB974\uAC8C\uD658\uC2B9"
+      pathPrefix: Scripts
+      guid: 9f274fe79c05213439367464cb8ab385
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Bar

@@ -133,8 +133,10 @@ namespace Naninovel
                 var fullPath = source.BuildFullPath(path);
                 if (!await source.Provider.ResourceExistsAsync<TResource>(fullPath)) continue;
 
+                
                 var resource = await source.Provider.LoadResourceAsync<TResource>(fullPath);
                 LoadedResources.Add(new LoadedResource(resource, source));
+
                 return resource;
             }
 

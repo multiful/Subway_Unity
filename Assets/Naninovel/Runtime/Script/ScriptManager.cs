@@ -99,9 +99,9 @@ namespace Naninovel
                 OnScriptLoadCompleted?.Invoke();
                 return scriptLoader.GetLoadedOrNull(name);
             }
-
             var scriptResource = await scriptLoader.LoadAsync(name);
-            if (!scriptResource.Valid) throw new Error($"Failed to load `{name}` script: The resource is not available.");
+
+            if (!scriptResource.Valid) throw new Error($"Failed to load `{name}` script: The resource is not available."); 
 
             await TryAddLocalizationScriptAsync(scriptResource);
 

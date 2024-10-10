@@ -91,7 +91,6 @@ public class SoundManager
                 path = "BGM/" + path;
             path = $"Sounds/{path}";
         }
-        Debug.Log(path);
         AudioClip audioClip = null;
 
         if (type == Sound.Bgm)
