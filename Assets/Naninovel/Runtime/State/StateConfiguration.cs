@@ -18,7 +18,7 @@ namespace Naninovel
         [Tooltip("Mask used to name quick save slots.")]
         public string QuickSaveSlotMask = "GameQuickSave{0:000}";
         [Tooltip("Maximum number of save slots."), Range(1, 999)]
-        public int SaveSlotLimit = 99;
+        public int SaveSlotLimit = 8;
         [Tooltip("Maximum number of quick save slots."), Range(1, 999)]
         public int QuickSaveSlotLimit = 18;
         [Tooltip("Whether to compress and store the saves as binary files (.nson) instead of text files (.json). This will significantly reduce the files size and make them harder to edit (to prevent cheating), but will consume more memory and CPU time when saving and loading.")]

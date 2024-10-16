@@ -97,13 +97,13 @@ public class ObstacleManager : MonoBehaviour
 
     private void UpdateObstaclePositions()
     {
-        float startY = player.transform.position.y +10.1f;
+        float startY = player.transform.position.y + 10.1f;
 
         // 기존 장애물 제거
         ClearExistingObstacles();
 
         Quaternion fixedRotation = Quaternion.Euler(0, 0, 0);
-        Vector3 fixedScale = new Vector3(0.6400706f, 0.37f, 0);
+        Vector3 fixedScale = new Vector3(2.3f, 5.0f, 0);
 
         for (int i = 0; i < grid.Count; i++)
         {
@@ -113,23 +113,28 @@ public class ObstacleManager : MonoBehaviour
                 {
                     Vector3 position = new Vector3((j - 1) * obstacleGap, startY - i * obstacleGap, 0);
                     GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, fixedRotation);
-                    obstacle.transform.localScale = fixedScale;
 
-                    // Sorting Layer 및 Sorting Order 설정
+                    // SpriteRenderer 컴포넌트에서 스프라이트의 원래 크기를 기준으로 스케일 조정
                     SpriteRenderer spriteRenderer = obstacle.GetComponent<SpriteRenderer>();
                     if (spriteRenderer != null)
                     {
-                        // 레이어 설정
+                        // 스프라이트의 원래 크기를 얻어 스케일 조정
+                        Vector3 spriteSize = spriteRenderer.sprite.bounds.size;
+                        obstacle.transform.localScale = new Vector3(fixedScale.x / spriteSize.x, fixedScale.y / spriteSize.y, 1);
+                    }
+
+                    // Sorting Layer 및 Sorting Order 설정
+                    if (spriteRenderer != null)
+                    {
                         if (i == 0)
-                            spriteRenderer.sortingLayerName = "LastGround"; 
+                            spriteRenderer.sortingLayerName = "LastGround";
                         else if (i == 1)
-                            spriteRenderer.sortingLayerName = "Background"; 
+                            spriteRenderer.sortingLayerName = "Background";
                         else if (i == 2)
                             spriteRenderer.sortingLayerName = "Midground";
                         else
                             spriteRenderer.sortingLayerName = "Foreground";
 
-                        // 같은 레이어 내에서 그리기 순서를 조정 (i가 클수록 뒤에 위치)
                         spriteRenderer.sortingOrder = i; // i 값이 클수록 작은 sortingOrder 부여
                     }
 
@@ -138,6 +143,8 @@ public class ObstacleManager : MonoBehaviour
             }
         }
     }
+
+
 
 
 
