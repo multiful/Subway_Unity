@@ -15,11 +15,13 @@
 @char Jicheol.2_1_2_077
 하. 뭔가 기시감 같은 게 느껴진다.
 안내 방송: 지금 서동탄, 서동탄행 열차가 들어오고 있습니다.
+@sfx Subway_stopping
 @char Jicheol.2_1_2_079
 대체 왜 이러는 거지? 좀처럼 이해가 가지 않는데...
+@stopSfx
 안내 방송: 스크린 도어가 열립니다.
 @hide Jicheol
-@sfx paper
+@sfx paper_puck
 @back Black.Ripple
 문이 열리자 어디선가 날아온 종이 쪼가리가 내 눈을 가렸다.
 종이를 치우자 그곳에는 생각지도 못한 사람이 있었다.
@@ -35,10 +37,12 @@
 그 사람이다.
 순간 시간이 멈춘 것만 같았다.
 @spawn SunShafts params:1,5
+@sfx rattle_rattle loop:true
 열차가 출발하자 하늘에 드리워진 노을 빛이 열차 안을 가득 매웠다.
 난폭한 황금 빛과 붉은 빛의 조화가 그녀의 얼굴을 물들였다.
 적갈색 머리카락은 노을 빛을 받아 찬란하고 아름답게 빛난다.
 그저 졸고 있었지만 그것만으로도 자못 신비한 분위기를 자아낸다.
+@sfx rattle_rattle loop:false
 그렇게 한참을 그녀만을 바라보았다.
 한 번도 누군가를 이렇게 지긋이 쳐다본 적은 없었다.
 @despawn SunShafts
