@@ -2,7 +2,8 @@ public enum StoryName
 {
     None,
     첫번째_등교,
-    e2,
+    e2_1,
+    e2_2,
     e3_1,
     e3_2,
     e4_1,

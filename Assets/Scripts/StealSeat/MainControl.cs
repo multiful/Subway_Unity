@@ -27,7 +27,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     public int gameLevel;
     private readonly int[] timeLimit = { 60, 60, 50, 50 };
     private float _currentTime;
-    private int reward;
+    //private int reward;
 
     void Awake()
     {
@@ -103,11 +103,11 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     {
         StopAllCoroutines(); //타이머 종료
         StopGame(); //이벤트 델리게이트로 모든 버튼 비활성화
-        reward = 500 * ((int)_currentTime + 1);
-        GameManager.userData.Money += reward;
+        //reward = 500 * ((int)_currentTime + 1);
+        //GameManager.userData.Money += reward;
 
-        var varManager = Engine.GetService<ICustomVariableManager>();
-        varManager.TrySetVariableValue("reward", reward);
+        //var varManager = Engine.GetService<ICustomVariableManager>();
+        //varManager.TrySetVariableValue("reward", reward);
 
         GameManager.userData.IsGameClear[1, gameLevel] = true;
 

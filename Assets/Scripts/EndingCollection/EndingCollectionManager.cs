@@ -19,7 +19,7 @@ public class EndingCollectionManager : MonoBehaviour
 
     private bool[] _openedEnding;
 
-    public TextMeshProUGUI tmp_Money;
+    //public TextMeshProUGUI tmp_Money;
 
     //public EndingSO[] _endingSOList;
     //private Ending[] _endingList;
@@ -33,7 +33,7 @@ public class EndingCollectionManager : MonoBehaviour
         //_openedEnding[0] = true;
         //_openedEnding[3] = true;
 
-        tmp_Money.text = GameManager.userData.Money.ToString();
+        //tmp_Money.text = GameManager.userData.Money.ToString();
 
     }
     private void EndingSetup()
