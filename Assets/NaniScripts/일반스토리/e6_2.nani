@@ -1,4 +1,5 @@
 @back Black
+@back Subway2
 Haji: 아침에는 정말 고마웠어요.
 @char Jicheol.2_2_2_011
 Jicheol: 별거 아니에요.
@@ -94,16 +95,20 @@ Jicheol: 혹시 나이가 어떻게 되시나요?
 Haji:……
 @char Haji.1_2_2_058
 Haji: 제가 지철씨 보다는 많을 것 같아요.
-1. 그래요? 하지씨는 엄청 어려보이는데 의외네요. (호감도 +5)
-2. 그러면 혹시 나이가 어떻게 되시나요? (호감도 -5)
+@stop
 
-1 선택 시
+@choice "그래요? 하지씨는 엄청 어려보이는데 의외네요." goto:.Select1
+@choice "그러면 혹시 나이가 어떻게 되시나요?" goto:.Select2
+
+#Select1
 @char Jicheol.2_2_2_062
 Jicheol: 하지씨는 엄청 어려보여서 지금까지 제 또래 아니면 밑이라고 생각했어요.
 @char Haji.1_2_2_063
 Haji: 그렇게 봐 주다니 고마워요.
+@goto .KG
 
-2 선택 시
+
+#Select2
 @char Jicheol.2_2_2_065
 Jicheol: 혹시 그러면 나이가 어떻게 되시나요?
 Jicheol: 저보다 많기 쉽지 않은데?
@@ -111,16 +116,18 @@ Jicheol: 저보다 많기 쉽지 않은데?
 Haji: 여자에게 나이를 묻다니 실례예요.
 @char Jicheol.2_2_2_068
 Jicheol: 죄송합니다.
+@goto .KG1
 
+#KG1
 @char Jicheol.2_2_2_069
 Jicheol: 저는 28살이에요.
 @char Haji.1_2_2_070
 Haji: 그럼 저는 몇 살일 것 같아요?
 
-1. 음… 4살? (호감도 +5)
-2. ……29살? (호감도 0)
+@choice "음… 4살?" goto:.Select3
+@choice " ……29살?" goto:.Select4
 
-1 선택 시
+#Select3
 @char Jicheol.2_2_2_074
 Jicheol: 음… 4살?
 @char Haji.1_2_2_075
@@ -132,14 +139,17 @@ Jicheol: 피부가요. 피부가 4살.
 @char Haji.1_2_2_078
 그러더니 새삼 기쁘다는 표정을 지으며 말했다.
 Haji: 그렇게 봐 주다니 좋네요.
+@goto .KG2
 
-2 선택
+#Select4
 @char Jicheol.2_2_2_081
 Jicheol: 29살?
 잠깐 정적이 흐르다가 하지씨가 말했다.
 @char Haji.1_2_2_083
 Haji: 아쉽게도 틀렸어요.
+@goto .KG2
 
+#KG2
 @char Haji.1_2_2_084
 Haji: 나는 30살이에요.
 @char Jicheol.2_2_2_085
