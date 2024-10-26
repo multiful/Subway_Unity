@@ -46,14 +46,10 @@ public class MainScreen : MonoBehaviour
         LoadingSceneManager.LoadScene("Nani");
     }
 
-    public void ShowSettingUI()
-    {
-        GameManager.UI.ShowSettingUI();
-    }
-    public void GoShop()
-    {
-        SceneManager.LoadScene("Shop");
-    }
+    //public void GoShop()
+    //{
+    //    SceneManager.LoadScene("Shop");
+    //}
     public void ShowEndingCollection()
     {
         SceneManager.LoadScene(5);

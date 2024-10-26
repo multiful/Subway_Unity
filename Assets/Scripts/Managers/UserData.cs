@@ -1,12 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 [Serializable]
 public class UserData
 {
-
+    Array _stroyName = Enum.GetValues(typeof(StoryName));
     public StoryName NowStoryName // 마지막으로 본 에피소드
     {
         get { return nowStoryName; }
@@ -70,26 +71,6 @@ public class UserData
         }
     }
 
-    //public DateTime LastTicketUsed // 마지막 티켓 사용 시각
-    //{
-    //    get { return lastTicketUsed; }
-    //    set
-    //    {
-    //        lastTicketUsed = value;
-    //        GameManager.Data.SaveData();
-    //    }
-    //}
-
-    public int Diary // 일기장 해금 정도
-    {
-        get { return diary; }
-        set
-        {
-            diary = value;
-            GameManager.Data.SaveData();
-        }
-    }
-
     public bool[,] IsGameClear // 미니게임 클리어 여부
     {
         get { return isGameClear; }
@@ -100,23 +81,16 @@ public class UserData
         }
     }
 
-    //public int Progress // 진행도
+
+    //public int LikeAbility // 호감도
     //{
-    //    get //incompleted
+    //    get { return likeAbility; }
+    //    set
     //    {
-    //        return 50; // NowStoryName enum을 쓰고 싶으나 뒤죽박죽이다. 같은 스토리는 나니노벨 하나로 합쳤으면
+    //        likeAbility = Math.Min(100, value); // 퍼펙트로 선택지 골랐을때 딱 100이라면 무의미
+    //        GameManager.Data.SaveData();
     //    }
     //}
-
-    public int LikeAbility // 호감도
-    {
-        get { return likeAbility; }
-        set
-        {
-            likeAbility = Math.Min(100, value); // 퍼펙트로 선택지 골랐을때 딱 100이라면 무의미
-            GameManager.Data.SaveData();
-        }
-    }
 
     public bool[] IsEndingUnlock // 엔딩 해금 여부
     {
@@ -142,15 +116,15 @@ public class UserData
 
     public void Init()
     {
-        NowStoryName = StoryName.첫번째_등교;
+        //StoryName 이넘의 두번째 항목이 제일 먼저 재생되도록
+        NowStoryName = (StoryName)_stroyName.GetValue(1);
         currentGameLevel = 0;
         Money = 0;
         //Ticket = 5;
         Eyedrop = 0;
         //LastTicketUsed = DateTime.Now;
-        Diary = 0;
         IsGameClear = new bool[2, 4];
-        LikeAbility = 0;
+        //LikeAbility = 0;
         IsEndingUnlock = new bool[4];
     }
 

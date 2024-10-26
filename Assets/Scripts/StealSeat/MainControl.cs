@@ -80,7 +80,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     private IEnumerator GoodClear()
     {
-        GameManager.userData.LikeAbility += 5;
+        //GameManager.userData.LikeAbility += 5;
         yield return new WaitForSeconds(2f);
         GameManager.Nani.PlayNani("자리뺏기", "대성공" + (gameLevel + 1).ToString());
     }

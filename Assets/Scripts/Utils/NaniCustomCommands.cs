@@ -1,5 +1,6 @@
 using Naninovel;
 using Naninovel.Commands;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NaniCustomCommands
@@ -24,8 +25,10 @@ public class NaniCustomCommands
         public IntegerParameter likeability;
         public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
-            GameManager.userData.LikeAbility += likeability;
-
+            var varManager = Engine.GetService<ICustomVariableManager>();
+            varManager.TryGetVariableValue<int>("G_Likeability", out int curlikeability);
+            curlikeability += likeability;
+            varManager.SetVariableValue("G_Likeability", curlikeability.ToString());
             return UniTask.CompletedTask;
         }
     }

@@ -13,7 +13,5 @@ MonoBehaviour:
   m_Name: CustomVariablesConfiguration
   m_EditorClassIdentifier: 
   PredefinedVariables:
-  - name: Likeability
+  - name: G_Likeability
     value: 50
-  - name: CreditReward
-    value: 0

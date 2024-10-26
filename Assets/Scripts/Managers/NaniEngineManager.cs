@@ -21,6 +21,8 @@ public class NaniEngineManager
         // Engine may not be initialized here, so check first.
         if (Engine.Initialized) InitProcess();
         else Engine.OnInitializationFinished += InitProcess;
+
+        // 나중에 수정해야할수도 있음
         nowStory = StoryName.None + 1;
     }
 

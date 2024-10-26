@@ -1,0 +1,9 @@
+
+호감도 증감용 테스트 스크립트입니다
+
+현재 호감도 : {G_Likeability}
+
+
+@increaseLikeability likeability:10
+바뀐 호감도 입니다 : {G_Likeability}
+@goMain

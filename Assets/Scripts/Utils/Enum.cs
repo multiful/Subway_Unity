@@ -1,6 +1,7 @@
 public enum StoryName
 {
     None,
+    Test,
     첫번째_등교,
     e2_1,
     e2_2,
