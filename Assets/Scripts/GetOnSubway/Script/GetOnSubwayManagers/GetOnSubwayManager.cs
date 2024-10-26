@@ -71,6 +71,7 @@ public class GetOnSubwayManager : MonoBehaviour
                 currentTime = 0f;
                 EndGame();
             }
+            GameManager.Sound.Play("bump", Sound.Effect);
             ShowAlert("Time -5");
             UpdateUI();
         }

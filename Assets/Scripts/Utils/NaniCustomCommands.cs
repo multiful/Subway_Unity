@@ -80,6 +80,7 @@ public class NaniCustomCommands
     {
         public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
+            GameManager.Nani.StopNani();
             GameManager.userData.NowStoryName++;
             LoadingSceneManager.LoadScene("Nani");
 
