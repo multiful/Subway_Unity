@@ -17,7 +17,16 @@ public class MainScreen : MonoBehaviour
     {
         if (!GameManager.Sound.isBGMPlaying())
         {
-            GameManager.Sound.Play("subwayWayMainTheme1", Sound.Bgm);
+            int randInt = Random.Range(0, 2);
+            Debug.Log(randInt);
+            if (randInt == 0)
+            {
+                GameManager.Sound.Play("subwayWayMainTheme1", Sound.Bgm);
+            }
+            else
+            {
+                GameManager.Sound.Play("subwayWayMainTheme2", Sound.Bgm);
+            }
         }
 
         TMP_money.text = GameManager.userData.Money.ToString();
@@ -51,8 +60,10 @@ public class MainScreen : MonoBehaviour
     }
     public void MainSceenLoadUI()
     {
-        var settingsUI = Engine.GetService<IUIManager>().GetUI<ISaveLoadUI>();
-        settingsUI.Show();
+        var loadUI = Engine.GetService<IUIManager>().GetUI<ISaveLoadUI>();
+        if (loadUI is null) return;
+        loadUI.PresentationMode = SaveLoadUIPresentationMode.Load;
+        loadUI.Show();
     }
     
 }
