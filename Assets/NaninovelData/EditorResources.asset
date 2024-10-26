@@ -2658,6 +2658,9 @@ MonoBehaviour:
     - name: 2_1_1_042
       pathPrefix: Characters/Jicheol
       guid: c2d361df9c6a24b4a880c6070d037331
+    - name: 2_1_1_072
+      pathPrefix: Characters/Jicheol
+      guid: d7a2dcd96e871fc4284015e3f22e835f
   - Id: Characters/677956ea-e164-4bc6-8520-ef0604412de3
     Resources:
     - name: 1stMerchant
