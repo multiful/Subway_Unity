@@ -1,12 +1,10 @@
 @back Black
 @back Subway1
-@char Jicheol.2_2_1_007 pos:80,-44
 @char Jicheol.2_2_1_007 pos:50,-44
 비가 와서 그런지 오늘따라 지하철에 사람이 많다.
 옷을 적시는 우산, 사람들의 체온과 지하철을 가득 메우는 습기까지
 @char Jicheol.2_2_1_003 pos:50,-44
 비오는 날 출근 시간 지하철은 아무리 참아보려고 해도 불쾌하지 않을 수 없다.
-@goto e2_1
 안내 방송: 출입문이 열립니다.
 어김 없이 밀려 들어오는 사람들 속에서 강렬한 붉은 머리가 눈에 띈다.
 @char Jicheol.2_2_1_009 pos:50,-44
@@ -83,9 +81,16 @@ Haji: 음~ 향이 엄청 좋네요.
 @hide Jicheol,Haji
 @goto .KG
 
+
 # KG
 사람들: 내릴게요!!!
-@char Haji.1_2_1_043 pos:40,-44
+@char Haji.1_2_1_043 pos:40,-44 time:0.01
+@char Haji.1_2_1_043 pos:42,-44 time:0.01
+@char Haji.1_2_1_043 pos:38,-44 time:0.01
+@char Haji.1_2_1_043 pos:40,-44 time:0.01
+@char Haji.1_2_1_043 pos:42,-44 time:0.01
+@char Haji.1_2_1_043 pos:38,-44 time:0.01
+
 Haji: 꺄악!?
 갑작스러운 인파에 그녀의 몸이 휘청거린다.
 @hide Haji
@@ -124,9 +129,10 @@ Haji: 다음에 또 봐요.
 @hide Haji
 @back Black
 지하철 문이 열리자마자 그녀는 부리나케 달려나갔다. 
-두근두근 효과음
+@sfx heartbeat
 Jicheol: 이거 심장에 안 좋은데...?
 @back Black
+@wait 1
 @back Office
 @char Jicheol.2_2_1_065 pos:50,-44
 회사에 도착한 지도 벌써 몇시간이나 지났지만
@@ -150,7 +156,6 @@ Jicheol: 내가 그렇게 얼굴에 드러나는 사람이었나?
 Seola: 아니, 그냥 항상 보고 있으니까 모르고 싶어도 모를 수가 없지.
 @char Jicheol.2_2_1_073 pos:60,-44
 Jicheol: 오늘 무슨 일이 있었냐면 말이야...
-@hide Jicheol,Seola
 설아에게 자초지종을 설명했다.
 @char Jicheol.2_2_1_073 pos:60,-44
 @char Seola.3_2_1_075 pos:40,-44
@@ -194,3 +199,6 @@ Seola: 그러니까 하나하나 낱낱이 다 나에게 보고하도록!
 흠…
 @char Jicheol.2_2_1_094 pos:50,-44
 그래,  뭐 좋은 게 좋은 거 아니겠어?
+@hideAll
+@back Black
+@goto e6_1

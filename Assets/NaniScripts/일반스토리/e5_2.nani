@@ -49,6 +49,7 @@ Haji: 조금 냄새가 날 까봐요… 하하
 @char Jicheol.2_2_1_026 pos:60,-44
 수줍은 듯한 목소리, 부끄럽다는 듯한 몸짓
 의식하지 않던 걸 의식하게 되자 나도 덩달아 얼굴이 달아오른다.
+@stop
 
 @choice "향긋한 냄새만 나요." goto:.Select1
 @choice "아무 냄새도 안나요." goto:.Select2
@@ -194,4 +195,4 @@ Seola: 그러니까 하나하나 낱낱이 다 나에게 보고하도록!
 @char Jicheol.2_2_1_094 pos:50,-44
 그래,  뭐 좋은 게 좋은 거 아니겠어?
 
-@finishStory
+@goto e6_1
