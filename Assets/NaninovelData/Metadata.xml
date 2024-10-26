@@ -434,6 +434,7 @@
           &lt;string&gt;2_1_1_040&lt;/string&gt;
           &lt;string&gt;2_1_1_041&lt;/string&gt;
           &lt;string&gt;2_1_1_042&lt;/string&gt;
+          &lt;string&gt;2_1_1_072&lt;/string&gt;
         &lt;/Appearances&gt;
         &lt;Description&gt;유지철&lt;/Description&gt;
       &lt;/Actor&gt;
@@ -4682,6 +4683,10 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;2_1_1_042&lt;/Path&gt;
+        &lt;Type&gt;Characters/Jicheol&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;2_1_1_072&lt;/Path&gt;
         &lt;Type&gt;Characters/Jicheol&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
