@@ -1,978 +1,195 @@
 @back Black
-???: 지철아
-@char Haji.1_1_1_001 pos:50,-44
-???: 빨리…
-@sfx broken
-@char Haji.1_1_1_002
-???: 빨리 도망가!
-@char Haji.1_1_1_002
-뭐라 말을 하고 싶지만 몸이 말을 듣지 않는다.
-비릿한 피 맛만이 입 안을 맴돈다.
-Jicheol: …!
-@char Haji.1_1_1_007
-???: 걱정하지마. 나는 널 만난 걸 후회하지 않아.
-@sfx disturb
-@hide Haji time:0.0008
-@char Haji.1_1_1_008 pos:50,-44 scale:2.74 time:0.008
-@char Haji.1_1_1_008_0 time:0.008
-@char Haji.1_1_1_008_1 time:0.008
-@char Haji.1_1_1_008_2 time:0.008
-@char Haji.1_1_1_008_3 time:0.008
-@char Haji.1_1_1_008_4 time:0.008
-@char Haji.1_1_1_008_5 time:0.008
-@char Haji.1_1_1_008_6 time:0.008
-@char Haji.1_1_1_008_7 time:0.008
-@char Haji.1_1_1_008_8 time:0.008
-@char Haji.1_1_1_008_9 time:0.008
-@char Haji.1_1_1_008_10 time:0.008
-@char Haji.1_1_1_008_11 time:0.008
-@char Haji.1_1_1_008_12 time:0.008
-@char Haji.1_1_1_008_13 time:0.008
-@char Haji.1_1_1_008_14 time:0.008
-@char Haji.1_1_1_008_15 time:0.008
-@char Haji.1_1_1_008_16 time:0.008
-@char Haji.1_1_1_008_17 time:0.008
-@char Haji.1_1_1_008_18 time:0.008
-@char Haji.1_1_1_008_19 time:0.008
-@char Haji.1_1_1_008_20 time:0.008
-@char Haji.1_1_1_008_21 time:0.008
-@char Haji.1_1_1_008_22 time:0.008
-@char Haji.1_1_1_008_23 time:0.008
-@char Haji.1_1_1_008_24 time:0.008
-@char Haji.1_1_1_008_25 time:0.008
-@char Haji.1_1_1_008_26 time:0.008
-@char Haji.1_1_1_008_27 time:0.008
-@char Haji.1_1_1_008_28 time:0.008
-@char Haji.1_1_1_008_29 time:0.008
-@char Haji.1_1_1_008_30 time:0.008
-@char Haji.1_1_1_008_31 time:0.008
-@char Haji.1_1_1_008_32 time:0.008
-@char Haji.1_1_1_008_33 time:0.008
-@char Haji.1_1_1_008_34 time:0.008
-@char Haji.1_1_1_008_35 time:0.008
-@char Haji.1_1_1_008_36 time:0.008
-@char Haji.1_1_1_008_37 time:0.008
-@char Haji.1_1_1_008_38 time:0.008
-@char Haji.1_1_1_008_39 time:0.008
-@char Haji.1_1_1_008_40 time:0.008
-@char Haji.1_1_1_008_41 time:0.008
-@char Haji.1_1_1_008_42 time:0.008
-@char Haji.1_1_1_008_43 time:0.008
-@char Haji.1_1_1_008_44 time:0.008
-@char Haji.1_1_1_008_45 time:0.008
-@char Haji.1_1_1_008_46 time:0.008
-@char Haji.1_1_1_008_47 time:0.008
-@char Haji.1_1_1_008_48 time:0.008
-@char Haji.1_1_1_008_49 time:0.008
-@char Haji.1_1_1_008_50 time:0.008
-@char Haji.1_1_1_008_51 time:0.008
-@char Haji.1_1_1_008_52 time:0.008
-@char Haji.1_1_1_008_53 time:0.008
-@char Haji.1_1_1_008_54 time:0.008
-@char Haji.1_1_1_008_55 time:0.008
-@char Haji.1_1_1_008_56 time:0.008
-@char Haji.1_1_1_008_57 time:0.008
-@char Haji.1_1_1_008_58 time:0.008
-@char Haji.1_1_1_008_59 time:0.008
-@char Haji.1_1_1_008_60 time:0.008
-@char Haji.1_1_1_008_61 time:0.008
-@char Haji.1_1_1_008_62 time:0.008
-@char Haji.1_1_1_008_63 time:0.008
-@char Haji.1_1_1_008_64 time:0.008
-@char Haji.1_1_1_008_65 time:0.008
-@char Haji.1_1_1_008_66 time:0.008
-@char Haji.1_1_1_008_67 time:0.008
-@char Haji.1_1_1_008_68 time:0.008
-@char Haji.1_1_1_008_69 time:0.008
-@char Haji.1_1_1_008_70 time:0.008
-@char Haji.1_1_1_008_71 time:0.008
-@char Haji.1_1_1_008_72 time:0.008
-@char Haji.1_1_1_008_73 time:0.008
-@char Haji.1_1_1_008_74 time:0.008
-@char Haji.1_1_1_008_75 time:0.008
-@char Haji.1_1_1_008_76 time:0.008
-@char Haji.1_1_1_008_77 time:0.008
-@char Haji.1_1_1_008_78 time:0.008
-@char Haji.1_1_1_008_79 time:0.008
-@hide Haji time:0.0008
-@char Haji.1_1_1_008 scale:1
-???: 지철아.
-@hide Haji time:0.0008
-@char Haji.1_1_1_009 pos:50,-44 scale:2.74 time:0.008
-@char Haji.1_1_1_009_1 time:0.008
-@char Haji.1_1_1_009_2 time:0.008
-@char Haji.1_1_1_009_3 time:0.008
-@char Haji.1_1_1_009_4 time:0.008
-@char Haji.1_1_1_009_5 time:0.008
-@char Haji.1_1_1_009_6 time:0.008
-@char Haji.1_1_1_009_7 time:0.008
-@char Haji.1_1_1_009_8 time:0.008
-@char Haji.1_1_1_009_9 time:0.008
-@char Haji.1_1_1_009_10 time:0.008
-@char Haji.1_1_1_009_11 time:0.008
-@char Haji.1_1_1_009_12 time:0.008
-@char Haji.1_1_1_009_13 time:0.008
-@char Haji.1_1_1_009_14 time:0.008
-@char Haji.1_1_1_009_15 time:0.008
-@char Haji.1_1_1_009_16 time:0.008
-@char Haji.1_1_1_009_17 time:0.008
-@char Haji.1_1_1_009_18 time:0.008
-@char Haji.1_1_1_009_19 time:0.008
-@char Haji.1_1_1_009_20 time:0.008
-@char Haji.1_1_1_009_21 time:0.008
-@char Haji.1_1_1_009_22 time:0.008
-@char Haji.1_1_1_009_23 time:0.008
-@char Haji.1_1_1_009_24 time:0.008
-@char Haji.1_1_1_009_25 time:0.008
-@char Haji.1_1_1_009_26 time:0.008
-@char Haji.1_1_1_009_27 time:0.008
-@char Haji.1_1_1_009_28 time:0.008
-@char Haji.1_1_1_009_29 time:0.008
-@char Haji.1_1_1_009_30 time:0.008
-@char Haji.1_1_1_009_31 time:0.008
-@char Haji.1_1_1_009_32 time:0.008
-@char Haji.1_1_1_009_33 time:0.008
-@char Haji.1_1_1_009_34 time:0.008
-@char Haji.1_1_1_009_35 time:0.008
-@char Haji.1_1_1_009_36 time:0.008
-@char Haji.1_1_1_009_37 time:0.008
-@char Haji.1_1_1_009_38 time:0.008
-@char Haji.1_1_1_009_39 time:0.008
-@char Haji.1_1_1_009_40 time:0.008
-@char Haji.1_1_1_009_41 time:0.008
-@char Haji.1_1_1_009_42 time:0.008
-@char Haji.1_1_1_009_43 time:0.008
-@char Haji.1_1_1_009_44 time:0.008
-@char Haji.1_1_1_009_45 time:0.008
-@char Haji.1_1_1_009_46 time:0.008
-@char Haji.1_1_1_009_47 time:0.008
-@char Haji.1_1_1_009_48 time:0.008
-@char Haji.1_1_1_009_49 time:0.008
-@char Haji.1_1_1_009_50 time:0.008
-@char Haji.1_1_1_009_51 time:0.008
-@char Haji.1_1_1_009_52 time:0.008
-@char Haji.1_1_1_009_53 time:0.008
-@char Haji.1_1_1_009_54 time:0.008
-@char Haji.1_1_1_009_55 time:0.008
-@char Haji.1_1_1_009_56 time:0.008
-@char Haji.1_1_1_009_57 time:0.008
-@char Haji.1_1_1_009_58 time:0.008
-@char Haji.1_1_1_009_59 time:0.008
-@char Haji.1_1_1_009_60 time:0.008
-@char Haji.1_1_1_009_61 time:0.008
-@char Haji.1_1_1_009_62 time:0.008
-@char Haji.1_1_1_009_63 time:0.008
-@char Haji.1_1_1_009_64 time:0.008
-@char Haji.1_1_1_009_65 time:0.008
-@char Haji.1_1_1_009_66 time:0.008
-@char Haji.1_1_1_009_67 time:0.008
-@char Haji.1_1_1_009_68 time:0.008
-@char Haji.1_1_1_009_69 time:0.008
-@char Haji.1_1_1_009_70 time:0.008
-@char Haji.1_1_1_009_71 time:0.008
-@char Haji.1_1_1_009_72 time:0.008
-@char Haji.1_1_1_009_73 time:0.008
-@char Haji.1_1_1_009_74 time:0.008
-@char Haji.1_1_1_009_75 time:0.008
-@char Haji.1_1_1_009_76 time:0.008
-@hide Haji time:0.0008
-@char Haji.1_1_1_009 scale:1
-???: 다른 건 기억 못한다고 하더라도 이것만큼은 기억해줄래?
-@hide Haji time:0.0008
-@char Haji.1_1_1_010 pos:50,-44 scale:2.74 time:0.008
-@char Haji.1_1_1_010_0 time:0.008
-@char Haji.1_1_1_010_1 time:0.008
-@char Haji.1_1_1_010_2 time:0.008
-@char Haji.1_1_1_010_3 time:0.008
-@char Haji.1_1_1_010_4 time:0.008
-@char Haji.1_1_1_010_5 time:0.008
-@char Haji.1_1_1_010_6 time:0.008
-@char Haji.1_1_1_010_7 time:0.008
-@char Haji.1_1_1_010_8 time:0.008
-@char Haji.1_1_1_010_9 time:0.008
-@char Haji.1_1_1_010_10 time:0.008
-@char Haji.1_1_1_010_11 time:0.008
-@char Haji.1_1_1_010_12 time:0.008
-@char Haji.1_1_1_010_13 time:0.008
-@char Haji.1_1_1_010_14 time:0.008
-@char Haji.1_1_1_010_15 time:0.008
-@char Haji.1_1_1_010_16 time:0.008
-@char Haji.1_1_1_010_17 time:0.008
-@char Haji.1_1_1_010_18 time:0.008
-@char Haji.1_1_1_010_19 time:0.008
-@char Haji.1_1_1_010_20 time:0.008
-@char Haji.1_1_1_010_21 time:0.008
-@char Haji.1_1_1_010_22 time:0.008
-@char Haji.1_1_1_010_23 time:0.008
-@char Haji.1_1_1_010_24 time:0.008
-@char Haji.1_1_1_010_25 time:0.008
-@char Haji.1_1_1_010_26 time:0.008
-@char Haji.1_1_1_010_27 time:0.008
-@char Haji.1_1_1_010_28 time:0.008
-@char Haji.1_1_1_010_29 time:0.008
-@char Haji.1_1_1_010_30 time:0.008
-@char Haji.1_1_1_010_31 time:0.008
-@char Haji.1_1_1_010_32 time:0.008
-@char Haji.1_1_1_010_33 time:0.008
-@char Haji.1_1_1_010_34 time:0.008
-@char Haji.1_1_1_010_35 time:0.008
-@char Haji.1_1_1_010_36 time:0.008
-@char Haji.1_1_1_010_37 time:0.008
-@char Haji.1_1_1_010_38 time:0.008
-@char Haji.1_1_1_010_39 time:0.008
-@char Haji.1_1_1_010_40 time:0.008
-@char Haji.1_1_1_010_41 time:0.008
-@char Haji.1_1_1_010_42 time:0.008
-@char Haji.1_1_1_010_43 time:0.008
-@char Haji.1_1_1_010_44 time:0.008
-@char Haji.1_1_1_010_45 time:0.008
-@char Haji.1_1_1_010_46 time:0.008
-@char Haji.1_1_1_010_47 time:0.008
-@char Haji.1_1_1_010_48 time:0.008
-@char Haji.1_1_1_010_49 time:0.008
-@char Haji.1_1_1_010_50 time:0.008
-@char Haji.1_1_1_010_51 time:0.008
-@char Haji.1_1_1_010_52 time:0.008
-@char Haji.1_1_1_010_53 time:0.008
-@char Haji.1_1_1_010_54 time:0.008
-@char Haji.1_1_1_010_55 time:0.008
-@char Haji.1_1_1_010_56 time:0.008
-@char Haji.1_1_1_010_57 time:0.008
-@char Haji.1_1_1_010_58 time:0.008
-@char Haji.1_1_1_010_59 time:0.008
-@char Haji.1_1_1_010_60 time:0.008
-@char Haji.1_1_1_010_61 time:0.008
-@char Haji.1_1_1_010_62 time:0.008
-@char Haji.1_1_1_010_63 time:0.008
-@char Haji.1_1_1_010_64 time:0.008
-@char Haji.1_1_1_010_65 time:0.008
-@char Haji.1_1_1_010_66 time:0.008
-@char Haji.1_1_1_010_67 time:0.008
-@char Haji.1_1_1_010_68 time:0.008
-@char Haji.1_1_1_010_69 time:0.008
-@char Haji.1_1_1_010_70 time:0.008
-@char Haji.1_1_1_010_71 time:0.008
-@char Haji.1_1_1_010_72 time:0.008
-@char Haji.1_1_1_010_73 time:0.008
-@char Haji.1_1_1_010_74 time:0.008
-@char Haji.1_1_1_010_75 time:0.008
-@char Haji.1_1_1_010_76 time:0.008
-@char Haji.1_1_1_010_77 time:0.008
-@char Haji.1_1_1_010_78 time:0.008
-@char Haji.1_1_1_010_79 time:0.008
-@hide Haji time:0.0008
-@char Haji.1_1_1_010 scale:1
-???: 너가 날 못 알아보게 된다고 하더라도
-@hide Haji time:0.0008
-@char Haji.1_1_1_011 pos:50,-44 scale:2.74 time:0.008
-@char Haji.1_1_1_011_0 time:0.008
-@char Haji.1_1_1_011_1 time:0.008
-@char Haji.1_1_1_011_2 time:0.008
-@char Haji.1_1_1_011_3 time:0.008
-@char Haji.1_1_1_011_4 time:0.008
-@char Haji.1_1_1_011_5 time:0.008
-@char Haji.1_1_1_011_6 time:0.008
-@char Haji.1_1_1_011_7 time:0.008
-@char Haji.1_1_1_011_8 time:0.008
-@char Haji.1_1_1_011_9 time:0.008
-@char Haji.1_1_1_011_11 time:0.008
-@char Haji.1_1_1_011_11 time:0.008
-@char Haji.1_1_1_011_12 time:0.008
-@char Haji.1_1_1_011_13 time:0.008
-@char Haji.1_1_1_011_14 time:0.008
-@char Haji.1_1_1_011_15 time:0.008
-@char Haji.1_1_1_011_16 time:0.008
-@char Haji.1_1_1_011_17 time:0.008
-@char Haji.1_1_1_011_18 time:0.008
-@char Haji.1_1_1_011_19 time:0.008
-@char Haji.1_1_1_011_20 time:0.008
-@char Haji.1_1_1_011_21 time:0.008
-@char Haji.1_1_1_011_22 time:0.008
-@char Haji.1_1_1_011_23 time:0.008
-@char Haji.1_1_1_011_24 time:0.008
-@char Haji.1_1_1_011_25 time:0.008
-@char Haji.1_1_1_011_26 time:0.008
-@char Haji.1_1_1_011_27 time:0.008
-@char Haji.1_1_1_011_28 time:0.008
-@char Haji.1_1_1_011_29 time:0.008
-@char Haji.1_1_1_011_30 time:0.008
-@char Haji.1_1_1_011_31 time:0.008
-@char Haji.1_1_1_011_32 time:0.008
-@char Haji.1_1_1_011_33 time:0.008
-@char Haji.1_1_1_011_34 time:0.008
-@char Haji.1_1_1_011_35 time:0.008
-@char Haji.1_1_1_011_36 time:0.008
-@char Haji.1_1_1_011_37 time:0.008
-@char Haji.1_1_1_011_38 time:0.008
-@char Haji.1_1_1_011_39 time:0.008
-@char Haji.1_1_1_011_40 time:0.008
-@char Haji.1_1_1_011_41 time:0.008
-@char Haji.1_1_1_011_42 time:0.008
-@char Haji.1_1_1_011_43 time:0.008
-@char Haji.1_1_1_011_44 time:0.008
-@char Haji.1_1_1_011_45 time:0.008
-@char Haji.1_1_1_011_46 time:0.008
-@char Haji.1_1_1_011_47 time:0.008
-@char Haji.1_1_1_011_48 time:0.008
-@char Haji.1_1_1_011_49 time:0.008
-@char Haji.1_1_1_011_50 time:0.008
-@char Haji.1_1_1_011_51 time:0.008
-@char Haji.1_1_1_011_52 time:0.008
-@char Haji.1_1_1_011_53 time:0.008
-@char Haji.1_1_1_011_54 time:0.008
-@char Haji.1_1_1_011_55 time:0.008
-@char Haji.1_1_1_011_56 time:0.008
-@char Haji.1_1_1_011_57 time:0.008
-@char Haji.1_1_1_011_58 time:0.008
-@char Haji.1_1_1_011_59 time:0.008
-@char Haji.1_1_1_011_60 time:0.008
-@char Haji.1_1_1_011_61 time:0.008
-@char Haji.1_1_1_011_62 time:0.008
-@char Haji.1_1_1_011_63 time:0.008
-@char Haji.1_1_1_011_64 time:0.008
-@char Haji.1_1_1_011_65 time:0.008
-@char Haji.1_1_1_011_66 time:0.008
-@char Haji.1_1_1_011_67 time:0.008
-@char Haji.1_1_1_011_68 time:0.008
-@char Haji.1_1_1_011_69 time:0.008
-@char Haji.1_1_1_011_70 time:0.008
-@char Haji.1_1_1_011_71 time:0.008
-@char Haji.1_1_1_011_72 time:0.008
-@char Haji.1_1_1_011_73 time:0.008
-@char Haji.1_1_1_011_74 time:0.008
-@char Haji.1_1_1_011_75 time:0.008
-@char Haji.1_1_1_011_76 time:0.008
-@char Haji.1_1_1_011_77 time:0.008
-@char Haji.1_1_1_011_78 time:0.008
-@char Haji.1_1_1_011_79 time:0.008
-@hide Haji time:0.0008
-@char Haji.1_1_1_011 scale:1
-???: 나는 한결같이 너를 사랑할 거야.
-@hide Haji time:0.0008
-@char Haji.1_1_1_012 pos:50,-44 scale:2.74 time:0.008
-@char Haji.1_1_1_012_0 time:0.008
-@char Haji.1_1_1_012_1 time:0.008
-@char Haji.1_1_1_012_2 time:0.008
-@char Haji.1_1_1_012_3 time:0.008
-@char Haji.1_1_1_012_4 time:0.008
-@char Haji.1_1_1_012_5 time:0.008
-@char Haji.1_1_1_012_6 time:0.008
-@char Haji.1_1_1_012_7 time:0.008
-@char Haji.1_1_1_012_8 time:0.008
-@char Haji.1_1_1_012_9 time:0.008
-@char Haji.1_1_1_012_12 time:0.008
-@char Haji.1_1_1_012_12 time:0.008
-@char Haji.1_1_1_012_12 time:0.008
-@char Haji.1_1_1_012_13 time:0.008
-@char Haji.1_1_1_012_14 time:0.008
-@char Haji.1_1_1_012_15 time:0.008
-@char Haji.1_1_1_012_16 time:0.008
-@char Haji.1_1_1_012_17 time:0.008
-@char Haji.1_1_1_012_18 time:0.008
-@char Haji.1_1_1_012_19 time:0.008
-@char Haji.1_1_1_012_20 time:0.008
-@char Haji.1_1_1_012_21 time:0.008
-@char Haji.1_1_1_012_22 time:0.008
-@char Haji.1_1_1_012_23 time:0.008
-@char Haji.1_1_1_012_24 time:0.008
-@char Haji.1_1_1_012_25 time:0.008
-@char Haji.1_1_1_012_26 time:0.008
-@char Haji.1_1_1_012_27 time:0.008
-@char Haji.1_1_1_012_28 time:0.008
-@char Haji.1_1_1_012_29 time:0.008
-@char Haji.1_1_1_012_30 time:0.008
-@char Haji.1_1_1_012_31 time:0.008
-@char Haji.1_1_1_012_32 time:0.008
-@char Haji.1_1_1_012_33 time:0.008
-@char Haji.1_1_1_012_34 time:0.008
-@char Haji.1_1_1_012_35 time:0.008
-@char Haji.1_1_1_012_36 time:0.008
-@char Haji.1_1_1_012_37 time:0.008
-@char Haji.1_1_1_012_38 time:0.008
-@char Haji.1_1_1_012_39 time:0.008
-@char Haji.1_1_1_012_40 time:0.008
-@char Haji.1_1_1_012_41 time:0.008
-@char Haji.1_1_1_012_42 time:0.008
-@char Haji.1_1_1_012_43 time:0.008
-@char Haji.1_1_1_012_44 time:0.008
-@char Haji.1_1_1_012_45 time:0.008
-@char Haji.1_1_1_012_46 time:0.008
-@char Haji.1_1_1_012_47 time:0.008
-@char Haji.1_1_1_012_48 time:0.008
-@char Haji.1_1_1_012_49 time:0.008
-@char Haji.1_1_1_012_50 time:0.008
-@char Haji.1_1_1_012_51 time:0.008
-@char Haji.1_1_1_012_52 time:0.008
-@char Haji.1_1_1_012_53 time:0.008
-@char Haji.1_1_1_012_54 time:0.008
-@char Haji.1_1_1_012_55 time:0.008
-@char Haji.1_1_1_012_56 time:0.008
-@char Haji.1_1_1_012_57 time:0.008
-@char Haji.1_1_1_012_58 time:0.008
-@char Haji.1_1_1_012_59 time:0.008
-@char Haji.1_1_1_012_60 time:0.008
-@char Haji.1_1_1_012_61 time:0.008
-@char Haji.1_1_1_012_62 time:0.008
-@char Haji.1_1_1_012_63 time:0.008
-@char Haji.1_1_1_012_64 time:0.008
-@char Haji.1_1_1_012_65 time:0.008
-@char Haji.1_1_1_012_66 time:0.008
-@char Haji.1_1_1_012_67 time:0.008
-@char Haji.1_1_1_012_68 time:0.008
-@char Haji.1_1_1_012_69 time:0.008
-@char Haji.1_1_1_012_70 time:0.008
-@char Haji.1_1_1_012_71 time:0.008
-@char Haji.1_1_1_012_72 time:0.008
-@char Haji.1_1_1_012_73 time:0.008
-@char Haji.1_1_1_012_74 time:0.008
-@char Haji.1_1_1_012_75 time:0.008
-@char Haji.1_1_1_012_76 time:0.008
-@char Haji.1_1_1_012_77 time:0.008
-@char Haji.1_1_1_012_78 time:0.008
-@char Haji.1_1_1_012_79 time:0.008
-@hide Haji time:0.0008
-@char Haji.1_1_1_012 scale:1
-???: 그러니 그 곳에는 부디…
-@hide Haji
-@stopSfx
-@back White.BandedSwirl time:1
-@back Black
-@back Black scale:0.7
-아…!
-또 그 꿈이다.
-@bgm Main1 loop:true
-@sfx rattle_rattle loop:true
-유독 그런 날이 있다,
-@back Subway3.RadialBlur time:1.5
-@back Black
-@back Subway3.RadialBlur time:1
-이상하게 평소보다 지치고 힘들어서 골아 떨어질 수 밖에 없는 그런 날이.
-@sfx rattle_rattle loop:false
-그냥 잠깐 눈만 붙이려고 했었다.
-잠깐 아주 잠깐인 줄 알았는데, 그게 아니었나 보다.
-@char Jicheol.2_1_1_019 pos:50,-44
-으… 여긴 어딜까…?
-@char Jicheol.2_1_1_020
-나 이쪽은 처음 와 보는데….?
+@back Subway1
+@char Jicheol.2_2_1_007 pos:80,-44
+@char Jicheol.2_2_1_007 pos:50,-44
+비가 와서 그런지 오늘따라 지하철에 사람이 많다.
+옷을 적시는 우산, 사람들의 체온과 지하철을 가득 메우는 습기까지
+@char Jicheol.2_2_1_003 pos:50,-44
+비오는 날 출근 시간 지하철은 아무리 참아보려고 해도 불쾌하지 않을 수 없다.
+안내 방송: 출입문이 열립니다.
+어김 없이 밀려 들어오는 사람들 속에서 강렬한 붉은 머리가 눈에 띈다.
+@char Jicheol.2_2_1_009 pos:50,-44
+하지씨다!!
+@char Jicheol.2_2_1_009 pos:40,-44
 @hide Jicheol
 @back Black
-@back Subway1_NH
-그 많던 사람들은 다 어디 가고 지하철에는 어떤 여자와 나 단 둘만이 남았다.
-@back Black
-@back Subway3
-@char Jicheol.2_1_1_022
-하… 내일은 반차 써야지….
-어떻게 보면 요즘 들어 피곤한 건 다 그 꿈 때문이다.
-@stopBgm
-@hide Jicheol
-@back Black
-언제부터였을까?
-요즘 들어 계속 같은 꿈을 하나 꾸고 있다.
-@hideAll
-@back Black
-@back End4_1
-@sfx running_footsteps loop:true
-그 꿈에서 나는 어떤 여자의 손에 이끌려 정신 없이 달린다.
-@sfx gunshot
-뒤에서는 총알이 날아오고 우리의 몸은 점점 피로 물들어가지만
-우리는 그 어떤 것도 신경 쓰지 않고 그저 계속해서 달린다.
-@stopSfx
-더 이상 도망칠 수 없을 때까지 그렇게 한참을 도망치다 보면,
-@sfx machine_working loop:true
-@back White.CloudReveal
-갑자기 정체 모를 빛이 내 몸을 휘감더니, 내 몸이 조금씩 사라지기 시작한다.
-@stopSfx
-@char Haji.1_1_1_031 pos:50,-44
-???: 사랑해 지철아.
-억누를 수 없어 터져 나오는 애틋함, 한 치 거짓도 없다는 듯한 목소리.
-그녀의 불안하게 흔들리는 미소는 숨을 내쉬는 것조차 버겁게 만든다.
+@back Subway1
+@char Jicheol.2_2_1_009 pos:60,-44
+@char Haji.1_2_1_008 pos:40,-44
+나는 문쪽으로 걸음을 옮겼다.
+@char Haji.1_2_1_011 pos:40,-44
+Haji: 안녕…하세요. 
+@char Jicheol.2_2_1_012 pos:60,-44
+Jicheol: 안녕하세요!
+@char Jicheol.2_2_1_013 pos:60,-44
+Jicheol: 오랜만에 뵙네요. 그간 잘 지내셨나요?
+@char Haji.1_2_1_014 pos:40,-44
+Haji: 아, 네 별 일 없었어요.
+@char Jicheol.2_2_1_015 pos:60,-44
+어쩐지 하지씨는 안절부절 못 하는 것 같아 보인다.
+@char Haji.1_2_1_016 pos:40,-44
+Haji: 저기... 죄송한데...
+Haji: 혹시 조금만 거리를 둬 주실 수 있을까요?
+@char Jicheol.2_2_1_018 pos:60,-44
+Jicheol: 네? 어디 불편하신 곳이라도 있으세요?
+@char Haji.1_2_1_019 pos:40,-44
+Haji: 아니요. 그… 그게
+@char Jicheol.2_2_1_020 pos:60,-44
+Jicheol: 혹시 제가 뭐 잘못한 거라도…
+@char Haji.1_2_1_021 pos:40,-44
+Haji: 아니 그게… 
+@char Haji.1_2_1_022 pos:40,-44
+Haji: 그런 게 아니라…
+@char Haji.1_2_1_023 pos:40,-44
+Haji: 오늘 비도 오고… 아까 올 때 좀 뛰어서…
+@char Jicheol.2_2_1_024 pos:60,-44
+Jicheol: 네?
+@char Haji.1_2_1_025 pos:40,-44
+Haji: 조금 냄새가 날 까봐요… 하하
+@char Jicheol.2_2_1_026 pos:60,-44
+수줍은 듯한 목소리, 부끄럽다는 듯한 몸짓
+의식하지 않던 걸 의식하게 되자 나도 덩달아 얼굴이 달아오른다.
+
+@choice "향긋한 냄새만 나요." goto:.Select1
+@choice "아무 냄새도 안나요." goto:.Select2
+
+#Select1
+호감도 -5
+@char Jicheol.2_2_1_031 pos:60,-44
+Jicheol: 킁킁..킁킁…
+@char Jicheol.2_2_1_032 pos:60,-44
+Jicheol: 향긋한 냄새만 나요.
+@char Haji.1_2_1_033 pos:40,-44
+Haji: ………………
+@hide Jicheol,Haji
+@goto .KG
+
+#Select2
+호감도 +5
+@char Jicheol.2_2_1_035 pos:60,-44
+Jicheol: 괜찮아요. 아무 냄새 안 나요.
+@char Jicheol.2_2_1_036 pos:60,-44
+Jicheol: 신경 쓰이시면 향수 빌려드릴까요?
+Jicheol: 괜찮으시다면 이거 쓰실래요?
+가방에서 작은 향수 병을 꺼냈다.
+@char Jicheol.2_2_1_039 pos:60,-44
+Jicheol: 이제 여름이다보니 저도 신경 쓰여서 가지고 다니는 향수입니다.
+@char Haji.1_2_1_040 pos:40,-44
+Haji: 감사합니다.
+@char Haji.1_2_1_041 pos:40,-44
+Haji: 음~ 향이 엄청 좋네요.
+@hide Jicheol,Haji
+@goto .KG
+
+
+# KG
+사람들: 내릴게요!!!
+@char Haji.1_2_1_043 pos:40,-44
+Haji: 꺄악!?
+갑작스러운 인파에 그녀의 몸이 휘청거린다.
 @hide Haji
-마지막으로 딱 한 번만 그녀를 붙잡아보려고 손을 뻗어보지만
-그럴 수 없다는 듯 내 몸은 사라지다가
 @back Black
-잠에서 깬다.
-@back Subway3
-@char Jicheol.2_1_1_037 pos:50,-44
-…….
-@char Jicheol.2_1_1_038
-이런 꿈을 계속해서 꾸고 있다니… 
-내가 요새 많이 외로운가?
-@char Jicheol.2_1_1_040
-그런데 그 여자는 누굴까? 어떻게 내 이름을 아는 거지?
-@char Jicheol.2_1_1_041
-본 적도 없는 사람이 꿈에서 나오는 게 가능한 일인가?
-@char Jicheol.2_1_1_042
-글쎄 한 번도 본 적 없는 사람이 사랑한다고 말하는 게 적잖이 웃기다.
-@hideall
-@back Black
-@char Haji.1_1_1_043 pos:50,-44
-???: 사랑해…
-꿈에서 나온 그 여자가 자꾸 내 눈에 밟힌다...
-아니... 내가 눈으로 밟게 된다.
-사랑에 대해 잘 안다고 말 할 수 없지만, 
-그냥 그 사람의 눈빛만으로도 충분히 사랑 받고 있다는 느낌이 든다.
-그 애틋한 감정이 눈빛을 타고 선명하게 남아 
-이 꿈을 꾸는 날이면 종일 이 꿈에 대해 생각하게 된다.
+순간 그녀를 보호해야 한다는 생각에 자연스레 몸이 움직였다.
+양팔을 뻗어 보호하듯 전철의 벽을 짚고, 하지씨의 앞을 막아섰다.
+
+@back Subway_door
+Jicheol: 하지씨 괜찮아요?
+@char Haji.1_2_1_048 pose:Wall
+Haji: ……
+@char Haji.1_2_1_049
+Haji: …감사합니다.
+둘 사이 어색한 침묵만이 맴돈다.
+우리는 지하철 문을 기대고 서로 밀착하며 섰다.
+@char Haji.1_2_1_052
+가까이 서서 그런지 하지씨의 얼굴이 한 눈에 들어온다.
+@char Haji.1_2_1_053
+하지씨는 얼굴을 붉히며 내 눈을 피한다.
+@char Haji.1_2_1_055
+길게 내려 앉은 속눈썹만이 간간이 희미하게 떨린다.
+@char Haji.1_2_1_058
+달콤한 냄새가 코 끝을 간질인다.
+@char Haji.1_2_1_054
+가까이에서 그녀의 얼굴을 바라보고 있으니 심장이 마구 뛴다.
+어떻게 속눈썹마저 이렇게 길고 곧지?
+사람이 이렇게 예쁠 수 있나?
+안내 방송: 이번 역은 서초역입니다. 내리실 문은 오른쪽입니다. 
+@char Haji.1_2_1_060
+Haji: 저…저기 여기서 내려야 해서요…
+@char Haji.1_2_1_061
+Haji: 저는 먼저 내려볼게요. 
+@char Haji.1_2_1_062
+Haji: 오늘도 도와줘서 고마워요.
+Haji: 다음에 또 봐요.
 @hide Haji
-@back Black scale:0.8
-@back Subway1_NH
-하… 그나저나 집까지 언제 가지?
-안내방송: 잠시 후, 전력 공급 방식 변경으로 객실 안 일부 전등이 소등되며...
-불현듯 말로 설명하기 힘든 이상한 느낌이 들었다.
-응? 뭐지?
-@hideAll
-@sfx suck_in_whoosh
-@back DH_48 time:0.006
-@back DH_49 time:0.006
-@back DH_50 time:0.006
-@back DH_51 time:0.006
-@back DH_52 time:0.006
-@back DH_53 time:0.006
-@back DH_54 time:0.006
-@back DH_55 time:0.006
-@back DH_56 time:0.006
-@back DH_57 time:0.006
-@back DH_58 time:0.006
-@back DH_59 time:0.006
-@back DH_60 time:0.006
-@back DH_61 time:0.006
-@back DH_62 time:0.006
-@back DH_63 time:0.006
-@back DH_64 time:0.006
-@back DH_65 time:0.006
-@back DH_66 time:0.006
-@back DH_67 time:0.006
-@back DH_68 time:0.006
-@back DH_69 time:0.006
-@back DH_70 time:0.006
-@back DH_71 time:0.006
-@back DH_72 time:0.006
-@back DH_73 time:0.006
-@back DH_74 time:0.006
-@back DH_75 time:0.006
-@back DH_76 time:0.006
-@back DH_77 time:0.006
-@back DH_78 time:0.006
-@back DH_79 time:0.006
-@back DH_79 time:0.006
-@back DH_78 time:0.006
-@back DH_77 time:0.006
-@back DH_76 time:0.006
-@back DH_75 time:0.006
-@back DH_74 time:0.006
-@back DH_73 time:0.006
-@back DH_72 time:0.006
-@back DH_71 time:0.006
-@back DH_70 time:0.006
-@back DH_69 time:0.006
-@back DH_68 time:0.006
-@back DH_67 time:0.006
-@back DH_66 time:0.006
-@back DH_65 time:0.006
-@back DH_64 time:0.006
-@back DH_63 time:0.006
-@back DH_62 time:0.006
-@back DH_61 time:0.006
-@back DH_60 time:0.006
-@back DH_59 time:0.006
-@back DH_58 time:0.006
-@back DH_57 time:0.006
-@back DH_56 time:0.006
-@back DH_55 time:0.006
-@back DH_54 time:0.006
-@back DH_53 time:0.006
-@back DH_52 time:0.006
-@back DH_51 time:0.006
-@back DH_50 time:0.006
-@back DH_49 time:0.006
-@back DH_48 time:0.006
-@back Subway1_DH time:0.006
-@back Black time:0.009
-@back White time:0.009
-@back Subway1_D.RadialBlur time:1
-@wait 1
-@sfx rattle_rattle
-......!?
-응? 잠깐만…?
-조금 전까지 있었던 갑자기 사람이 사라졌다.
-Jicheol: !!!!!
-뭐야 저 사람… 갑자기 사라진 거야…? 
-주위를 두리번거렸지만 지하철에서는 나 말고 그 어떤 사람도 보이지 않았다.
-뭐지?
-내가 아직도 꿈을 꾸고 있나…?
 @back Black
-@back Subway1_NH.RadialBlur time:1
-다시 불이 켜지자 그 사람은 언제 그랬냐는 듯 그 자리에 있었다.
-뭐야? 저 사람....?
-설마… 귀신…?
-실례라는 걸 알지만 그 사람에게 시선을 땔 수 없었다.
-어라? 잠깐만 그러고 보니 저 사람은…?
-허리까지 이어진 긴 적갈색 곱슬머리, 작은 고양이 같아 보이는 인상..
-틀림 없다. 꿈에서 나오는 그 여자다.
-Jicheol: 저기…
-순간 갑자기 코에서 피가 주르륵 흘러 내렸다.
-@back Black.RadialBlur time:1
-온 몸에 식은 땀이 흐르고, 심장은 마구 쿵쾅거린다.
-Jicheol: 으…윽
-Jicheol: 으으으으아아아아아아!!!
-무언가가 사정 없이 머리 속을 짓이기는 것만 같다.
-@back Black scale:0.8
-@hideAll
-@sfx glitch loop:true
-@back Mem1_0 time:0.009
-@back Mem1_1 time:0.009
-@back Mem1_2 time:0.009
-@back Mem1_3 time:0.009
-@back Mem1_4 time:0.009
-@back Mem1_5 time:0.009
-@back Mem1_6 time:0.009
-@back Mem1_7 time:0.009
-@back Mem1_8 time:0.009
-@back Mem1_9 time:0.009
-@back Mem1_10 time:0.009
-@back Mem1_11 time:0.009
-@back Mem1_12 time:0.009
-@back Mem1_13 time:0.009
-@back Mem1_14 time:0.009
-@back Mem1_15 time:0.009
-@back Mem1_16 time:0.009
-@back Mem1_17 time:0.009
-@back Mem1_18 time:0.009
-@back Mem1_19 time:0.009
-@back Mem1_20 time:0.009
-@back Mem1_21 time:0.009
-@back Mem1_22 time:0.009
-@back Mem1_23 time:0.009
-@back Mem1_24 time:0.009
-@back Mem1_25 time:0.009
-@back Mem1_26 time:0.009
-@back Mem1_27 time:0.009
-@back Mem1_28 time:0.009
-@back Mem1_29 time:0.009
-@back Mem1_30 time:0.009
-@back Mem1_31 time:0.009
-@back Mem1_32 time:0.009
-@back Mem1_33 time:0.009
-@back Mem1_34 time:0.009
-@back Mem1_35 time:0.009
-@back Mem1_36 time:0.009
-@back Mem1_37 time:0.009
-@back Mem1_38 time:0.009
-@back Mem1_39 time:0.009
-@back Mem1_40 time:0.009
-@back Mem1_41 time:0.009
-@back Mem1_42 time:0.009
-@back Mem1_43 time:0.009
-@back Mem1_44 time:0.009
-@back Mem1_45 time:0.009
-@back Mem1_46 time:0.009
-@back Mem1_47 time:0.009
-@back Mem1 time:0.009
-@wait 0.36
-@back Mem1_48 time:0.009
-@back Mem1_49 time:0.009
-@back Mem1_50 time:0.009
-@back Mem1_51 time:0.009
-@back Mem1_52 time:0.009
-@back Mem1_53 time:0.009
-@back Mem1_54 time:0.009
-@back Mem1_55 time:0.009
-@back Mem1_56 time:0.009
-@back Mem1_57 time:0.009
-@back Mem1_58 time:0.009
-@back Mem1_59 time:0.009
-@back Mem1_60 time:0.009
-@back Mem1_61 time:0.009
-@back Mem1_62 time:0.009
-@back Mem1_63 time:0.009
-@back Mem1_64 time:0.009
-@back Mem1_65 time:0.009
-@back Mem1_66 time:0.009
-@back Mem1_67 time:0.009
-@back Mem1_68 time:0.009
-@back Mem1_69 time:0.009
-@back Mem1_70 time:0.009
-@back Mem1_71 time:0.009
-@back Mem1_72 time:0.009
-@back Mem1_73 time:0.009
-@back Mem1_74 time:0.009
-@back Mem1_75 time:0.009
-@back Mem1_76 time:0.009
-@back Mem1_77 time:0.009
-@back Mem1_78 time:0.009
-@back Mem1_79 time:0.009
-@back Mem1 time:0.009
-@wait 0.1
-@back Mem2_0 time:0.009
-@back Mem2_1 time:0.009
-@back Mem2_2 time:0.009
-@back Mem2_3 time:0.009
-@back Mem2_4 time:0.009
-@back Mem2_5 time:0.009
-@back Mem2_6 time:0.009
-@back Mem2_7 time:0.009
-@back Mem2_8 time:0.009
-@back Mem2_9 time:0.009
-@back Mem2_10 time:0.009
-@back Mem2_11 time:0.009
-@back Mem2_12 time:0.009
-@back Mem2_13 time:0.009
-@back Mem2_14 time:0.009
-@back Mem2_15 time:0.009
-@back Mem2_16 time:0.009
-@back Mem2_17 time:0.009
-@back Mem2_18 time:0.009
-@back Mem2_19 time:0.009
-@back Mem2_20 time:0.009
-@back Mem2_21 time:0.009
-@back Mem2_22 time:0.009
-@back Mem2_23 time:0.009
-@back Mem2_24 time:0.009
-@back Mem2_25 time:0.009
-@back Mem2_26 time:0.009
-@back Mem2_27 time:0.009
-@back Mem2_28 time:0.009
-@back Mem2_29 time:0.009
-@back Mem2_30 time:0.009
-@back Mem2_31 time:0.009
-@back Mem2_32 time:0.009
-@back Mem2_33 time:0.009
-@back Mem2_34 time:0.009
-@back Mem2_35 time:0.009
-@back Mem2_36 time:0.009
-@back Mem2_37 time:0.009
-@back Mem2_38 time:0.009
-@back Mem2_39 time:0.009
-@back Mem2_40 time:0.009
-@back Mem2_41 time:0.009
-@back Mem2_42 time:0.009
-@back Mem2_43 time:0.009
-@back Mem2_44 time:0.009
-@back Mem2_45 time:0.009
-@back Mem2_46 time:0.009
-@back Mem2_47 time:0.009
-@back Mem2 time:0.009
-@wait 0.36
-@back Mem2_48 time:0.009
-@back Mem2_49 time:0.009
-@back Mem2_50 time:0.009
-@back Mem2_51 time:0.009
-@back Mem2_52 time:0.009
-@back Mem2_53 time:0.009
-@back Mem2_54 time:0.009
-@back Mem2_55 time:0.009
-@back Mem2_56 time:0.009
-@back Mem2_57 time:0.009
-@back Mem2_58 time:0.009
-@back Mem2_59 time:0.009
-@back Mem2_60 time:0.009
-@back Mem2_61 time:0.009
-@back Mem2_62 time:0.009
-@back Mem2_63 time:0.009
-@back Mem2_64 time:0.009
-@back Mem2_65 time:0.009
-@back Mem2_66 time:0.009
-@back Mem2_67 time:0.009
-@back Mem2_68 time:0.009
-@back Mem2_69 time:0.009
-@back Mem2_70 time:0.009
-@back Mem2_71 time:0.009
-@back Mem2_72 time:0.009
-@back Mem2_73 time:0.009
-@back Mem2_74 time:0.009
-@back Mem2_75 time:0.009
-@back Mem2_76 time:0.009
-@back Mem2_77 time:0.009
-@back Mem2_78 time:0.009
-@back Mem2_79 time:0.009
-@back Mem2 time:0.009
-@wait 0.1
-@back Mem3_0 time:0.009
-@back Mem3_1 time:0.009
-@back Mem3_2 time:0.009
-@back Mem3_3 time:0.009
-@back Mem3_4 time:0.009
-@back Mem3_5 time:0.009
-@back Mem3_6 time:0.009
-@back Mem3_7 time:0.009
-@back Mem3_8 time:0.009
-@back Mem3_9 time:0.009
-@back Mem3_10 time:0.009
-@back Mem3_11 time:0.009
-@back Mem3_12 time:0.009
-@back Mem3_13 time:0.009
-@back Mem3_14 time:0.009
-@back Mem3_15 time:0.009
-@back Mem3_16 time:0.009
-@back Mem3_17 time:0.009
-@back Mem3_18 time:0.009
-@back Mem3_19 time:0.009
-@back Mem3_20 time:0.009
-@back Mem3_21 time:0.009
-@back Mem3_22 time:0.009
-@back Mem3_23 time:0.009
-@back Mem3_24 time:0.009
-@back Mem3_25 time:0.009
-@back Mem3_26 time:0.009
-@back Mem3_27 time:0.009
-@back Mem3_28 time:0.009
-@back Mem3_29 time:0.009
-@back Mem3_30 time:0.009
-@back Mem3_31 time:0.009
-@back Mem3_32 time:0.009
-@back Mem3_33 time:0.009
-@back Mem3_34 time:0.009
-@back Mem3_35 time:0.009
-@back Mem3_36 time:0.009
-@back Mem3_37 time:0.009
-@back Mem3_38 time:0.009
-@back Mem3_39 time:0.009
-@back Mem3_40 time:0.009
-@back Mem3_41 time:0.009
-@back Mem3_42 time:0.009
-@back Mem3_43 time:0.009
-@back Mem3_44 time:0.009
-@back Mem3_45 time:0.009
-@back Mem3_46 time:0.009
-@back Mem3_47 time:0.009
-@back Mem3 time:0.009
-@wait 0.36
-@back Mem3_48 time:0.009
-@back Mem3_49 time:0.009
-@back Mem3_50 time:0.009
-@back Mem3_51 time:0.009
-@back Mem3_52 time:0.009
-@back Mem3_53 time:0.009
-@back Mem3_54 time:0.009
-@back Mem3_55 time:0.009
-@back Mem3_56 time:0.009
-@back Mem3_57 time:0.009
-@back Mem3_58 time:0.009
-@back Mem3_59 time:0.009
-@back Mem3_60 time:0.009
-@back Mem3_61 time:0.009
-@back Mem3_62 time:0.009
-@back Mem3_63 time:0.009
-@back Mem3_64 time:0.009
-@back Mem3_65 time:0.009
-@back Mem3_66 time:0.009
-@back Mem3_67 time:0.009
-@back Mem3_68 time:0.009
-@back Mem3_69 time:0.009
-@back Mem3_70 time:0.009
-@back Mem3_71 time:0.009
-@back Mem3_72 time:0.009
-@back Mem3_73 time:0.009
-@back Mem3_74 time:0.009
-@back Mem3_75 time:0.009
-@back Mem3_76 time:0.009
-@back Mem3_77 time:0.009
-@back Mem3_78 time:0.009
-@back Mem3_79 time:0.009
-@back Mem3 time:0.009
-@wait 0.1
-@back Mem4_0 time:0.009
-@back Mem4_1 time:0.009
-@back Mem4_2 time:0.009
-@back Mem4_3 time:0.009
-@back Mem4_4 time:0.009
-@back Mem4_5 time:0.009
-@back Mem4_6 time:0.009
-@back Mem4_7 time:0.009
-@back Mem4_8 time:0.009
-@back Mem4_9 time:0.009
-@back Mem4_10 time:0.009
-@back Mem4_11 time:0.009
-@back Mem4_12 time:0.009
-@back Mem4_13 time:0.009
-@back Mem4_14 time:0.009
-@back Mem4_15 time:0.009
-@back Mem4_16 time:0.009
-@back Mem4_17 time:0.009
-@back Mem4_18 time:0.009
-@back Mem4_19 time:0.009
-@back Mem4_20 time:0.009
-@back Mem4_21 time:0.009
-@back Mem4_22 time:0.009
-@back Mem4_23 time:0.009
-@back Mem4_24 time:0.009
-@back Mem4_25 time:0.009
-@back Mem4_26 time:0.009
-@back Mem4_27 time:0.009
-@back Mem4_28 time:0.009
-@back Mem4_29 time:0.009
-@back Mem4_30 time:0.009
-@back Mem4_31 time:0.009
-@back Mem4_32 time:0.009
-@back Mem4_33 time:0.009
-@back Mem4_34 time:0.009
-@back Mem4_35 time:0.009
-@back Mem4_36 time:0.009
-@back Mem4_37 time:0.009
-@back Mem4_38 time:0.009
-@back Mem4_39 time:0.009
-@back Mem4_40 time:0.009
-@back Mem4_41 time:0.009
-@back Mem4_42 time:0.009
-@back Mem4_43 time:0.009
-@back Mem4_44 time:0.009
-@back Mem4_45 time:0.009
-@back Mem4_46 time:0.009
-@back Mem4_47 time:0.009
-@back End3 time:0.009
-@wait 0.54
-@back Mem4_48 time:0.009
-@back Mem4_49 time:0.009
-@back Mem4_50 time:0.009
-@back Mem4_51 time:0.009
-@back Mem4_52 time:0.009
-@back Mem4_53 time:0.009
-@back Mem4_54 time:0.009
-@back Mem4_55 time:0.009
-@back Mem4_56 time:0.009
-@back Mem4_57 time:0.009
-@back Mem4_58 time:0.009
-@back Mem4_59 time:0.009
-@back Mem4_60 time:0.009
-@back Mem4_61 time:0.009
-@back Mem4_62 time:0.009
-@back Mem4_63 time:0.009
-@back Mem4_64 time:0.009
-@back Mem4_65 time:0.009
-@back Mem4_66 time:0.009
-@back Mem4_67 time:0.009
-@back Mem4_68 time:0.009
-@back Mem4_69 time:0.009
-@back Mem4_70 time:0.009
-@back Mem4_71 time:0.009
-@back Mem4_72 time:0.009
-@back Mem4_73 time:0.009
-@back Mem4_74 time:0.009
-@back Mem4_75 time:0.009
-@back Mem4_76 time:0.009
-@back Mem4_77 time:0.009
-@back Mem4_78 time:0.009
-@back Mem4_79 time:0.009
-@back End3 time:0.009
-@stopSfx
-@back White time:0.009
-@sfx beep loop:true
-@back White pose:Normal
-Jicheol: 어…?
-몸 안에서 무언가가 끊어 지는 것 같은 느낌이 들었다.
-@stopSfx
-@back Subway1_N
-@char Jicheol.2_1_1_072 pos:50,-44
-@wait 1
-@char Jicheol.2_1_1_072 pos:50,-100 time:0.5
-@sfx body_fall
-@hide Jicheol
-Jicheol: ㅎ..ㅏ..ㅈ
-@char Haji.1_1_1_073 pos:50,-44
-???: 저기요?
-@char Haji.1_1_1_074
-???: 저기요? 괜찮으세요?
-@char Haji.1_1_1_075
-???: 저기요!!!
-@hideAll
-@finishStory
+지하철 문이 열리자마자 그녀는 부리나케 달려나갔다. 
+두근두근 효과음
+Jicheol: 이거 심장에 안 좋은데...?
+@back Black
+@back Office
+@char Jicheol.2_2_1_065 pos:50,-44
+회사에 도착한 지도 벌써 몇시간이나 지났지만
+나는 아직 하지씨와의 여운에 빠져있었다.
+@char Jicheol.2_2_1_065 pos:60,-44
+@char Seola.3_2_1_065 pos:40,-44
+Seola: 표정이 왜 그래? 기분 나빠.
+@char Jicheol.2_2_1_066 pos:60,-44
+Jicheol: 오늘은 기분이 좋으니 뭐라 말해도 넘어가 줄게.
+@char Seola.3_2_1_067 pos:40,-44
+Seola: 미안, 하지만 오빠 지금 표정 진짜 기분 나빠.
+@char Seola.3_2_1_068 pos:40,-44
+Seola: 어딘가 얼이 빠졌다고 해야 하나?
+@char Seola.3_2_1_069 pos:40,-44
+Seola: 뭐 그 분이라도 만났어? 
+@char Jicheol.2_2_1_070 pos:60,-44
+Jicheol: 오 어떻게 알았어?
+@char Jicheol.2_2_1_071 pos:60,-44
+Jicheol: 내가 그렇게 얼굴에 드러나는 사람이었나?
+@char Seola.3_2_1_072 pos:40,-44
+Seola: 아니, 그냥 항상 보고 있으니까 모르고 싶어도 모를 수가 없지.
+@char Jicheol.2_2_1_073 pos:60,-44
+Jicheol: 오늘 무슨 일이 있었냐면 말이야...
+@hide Jicheol,Seola
+설아에게 자초지종을 설명했다.
+@char Jicheol.2_2_1_073 pos:60,-44
+@char Seola.3_2_1_075 pos:40,-44
+Seola: 뭐 오빠가? 말도 안돼…
+@char Jicheol.2_2_1_076 pos:60,-44
+Jicheol: 뭐 언제까지 그러지 않아야 한다는 법은 없잖아?
+@char Seola.3_2_1_076 pos:40,-44
+Seola: 방구석 찐따 같던 우리 오빠가…
+@char Jicheol.2_2_1_078 pos:60,-44
+Jicheol: 오늘따라 말에 뼈가 있다?
+@char Jicheol.2_2_1_079 pos:60,-44
+Jicheol: 근데, 말만 겨우 붙여봤지 딱히 더 된 건 없어.
+@char Seola.3_2_1_080 pos:40,-44
+Seola: 흠… 그러면 말이야?
+@char Seola.3_2_1_081 pos:40,-44
+Seola: 내가 오빠 연애 도와줄까?
+@char Jicheol.2_2_1_082 pos:60,-44
+Jicheol: 뭐? 너가?
+@char Seola.3_2_1_083 pos:40,-44
+Seola: 그럼 아직도 나 좋다는 사람이 얼마나 많은데~
+@char Seola.3_2_1_084 pos:40,-44
+Seola: 내가 이런 건 또 전문가지~
+@char Jicheol.2_2_1_085 pos:60,-44
+Jicheol: 근데 나는 너가 연애 하는 걸 본 적 없는 것 같은데...?
+@char Seola.3_2_1_086 pos:40,-44
+Seola: 오빠도 잘 알잖아? 나 인기 엄청 많았던 거.
+@char Jicheol.2_2_1_087 pos:60,-44
+Jicheol: 그건 사실이지.
+@char Seola.3_2_1_088 pos:40,-44
+Seola: 내가 오빠랑 많이 붙어 다니던 것 맞는데
+@char Seola.3_2_1_089 pos:40,-44
+Seola: 그렇다고 우리가 항상 붙어 다니던 건 아니잖아? 
+@char Jicheol.2_2_1_090 pos:60,-44
+Jicheol: 듣고 보니 맞는 말이네.
+@char Seola.3_2_1_091 pos:40,-44
+Seola: 그러니까 하나하나 낱낱이 다 나에게 보고하도록!
+@char Jicheol.2_2_1_092 pos:60,-44
+뭔가 과한 면이 없지 않아 있는데…
+@hide Seola
+@char Jicheol.2_2_1_092 pos:50,-44
+흠…
+@char Jicheol.2_2_1_094 pos:50,-44
+그래,  뭐 좋은 게 좋은 거 아니겠어?

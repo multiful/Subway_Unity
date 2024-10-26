@@ -12,6 +12,8 @@
 하지씨다!!
 @char Jicheol.2_2_1_009 pos:40,-44
 @hide Jicheol
+@back Black
+@back Subway1
 @char Jicheol.2_2_1_009 pos:60,-44
 @char Haji.1_2_1_008 pos:40,-44
 나는 문쪽으로 걸음을 옮겼다.
@@ -48,10 +50,11 @@ Haji: 조금 냄새가 날 까봐요… 하하
 수줍은 듯한 목소리, 부끄럽다는 듯한 몸짓
 의식하지 않던 걸 의식하게 되자 나도 덩달아 얼굴이 달아오른다.
 
-1. 향긋한 냄새만 나요. (호감도 -5)
-2. 아무 냄새도 안나요. (호감도 +5)
+@choice "향긋한 냄새만 나요." goto:.Select1
+@choice "아무 냄새도 안나요." goto:.Select2
 
-- 1 선택
+#Select1
+호감도 -5
 @char Jicheol.2_2_1_031 pos:60,-44
 Jicheol: 킁킁..킁킁…
 @char Jicheol.2_2_1_032 pos:60,-44
@@ -59,8 +62,10 @@ Jicheol: 향긋한 냄새만 나요.
 @char Haji.1_2_1_033 pos:40,-44
 Haji: ………………
 @hide Jicheol,Haji
+@goto .KG
 
-- 2 선택
+#Select2
+호감도 +5
 @char Jicheol.2_2_1_035 pos:60,-44
 Jicheol: 괜찮아요. 아무 냄새 안 나요.
 @char Jicheol.2_2_1_036 pos:60,-44
@@ -74,7 +79,10 @@ Haji: 감사합니다.
 @char Haji.1_2_1_041 pos:40,-44
 Haji: 음~ 향이 엄청 좋네요.
 @hide Jicheol,Haji
+@goto .KG
 
+
+# KG
 사람들: 내릴게요!!!
 @char Haji.1_2_1_043 pos:40,-44
 Haji: 꺄악!?
