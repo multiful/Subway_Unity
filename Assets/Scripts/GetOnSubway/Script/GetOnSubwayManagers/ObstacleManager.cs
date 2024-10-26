@@ -114,14 +114,15 @@ public class ObstacleManager : MonoBehaviour
                     Vector3 position = new Vector3((j - 1) * obstacleGap, startY - i * obstacleGap, 0);
                     GameObject obstacle = Instantiate(obstaclePrefabs[grid[i][j].prefabIndex], position, fixedRotation);
 
+                    obstacle.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
                     // SpriteRenderer 컴포넌트에서 스프라이트의 원래 크기를 기준으로 스케일 조정
                     SpriteRenderer spriteRenderer = obstacle.GetComponent<SpriteRenderer>();
-                    if (spriteRenderer != null)
-                    {
-                        // 스프라이트의 원래 크기를 얻어 스케일 조정
-                        Vector3 spriteSize = spriteRenderer.sprite.bounds.size;
-                        obstacle.transform.localScale = new Vector3(fixedScale.x / spriteSize.x, fixedScale.y / spriteSize.y, 1);
-                    }
+                    //if (spriteRenderer != null)
+                    //{
+                    //    // 스프라이트의 원래 크기를 얻어 스케일 조정
+                    //    Vector3 spriteSize = spriteRenderer.sprite.bounds.size;
+                    //    obstacle.transform.localScale = new Vector3(fixedScale.x / spriteSize.x, fixedScale.y / spriteSize.y, 1);
+                    //}
 
                     // Sorting Layer 및 Sorting Order 설정
                     if (spriteRenderer != null)

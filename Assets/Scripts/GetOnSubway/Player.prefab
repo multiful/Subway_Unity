@@ -143,5 +143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d96c533d9ff331245862b59ce8486ae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  gameManager: {fileID: 0}
+  obstacleManager: {fileID: 0}
   laneWidth: 1

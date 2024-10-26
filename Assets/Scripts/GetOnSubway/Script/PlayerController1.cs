@@ -12,11 +12,14 @@ public class PlayerController1 : MonoBehaviour
 
     private SpriteRenderer playerSpriteRenderer;
 
+    private Animator _animator;
+
     private void Start()
     {
         // 플레이어의 SpriteRenderer를 가져옴
         playerSpriteRenderer = GetComponent<SpriteRenderer>();
         SetPlayerNativeSize();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -36,14 +39,15 @@ public class PlayerController1 : MonoBehaviour
     {
         if (playerSpriteRenderer != null)
         {
-            // 스프라이트의 원래 크기를 가져옴
-            Vector2 spriteSize = playerSpriteRenderer.sprite.bounds.size;
+            //// 스프라이트의 원래 크기를 가져옴
+            //Vector2 spriteSize = playerSpriteRenderer.sprite.bounds.size;
 
-            // 고정된 크기 (예: fixedScale)와 원래 스프라이트 크기를 기준으로 스케일을 조정
-            Vector3 fixedScale = new Vector3(1.8f, 3.8f, 0f); // 원하는 스케일
+            //// 고정된 크기 (예: fixedScale)와 원래 스프라이트 크기를 기준으로 스케일을 조정
+            //Vector3 fixedScale = new Vector3(1.8f, 3.8f, 0f); // 원하는 스케일
 
-            // 스프라이트 크기를 기준으로 스케일을 계산하여 적용
-            transform.localScale = new Vector3(fixedScale.x / spriteSize.x, fixedScale.y / spriteSize.y, 1.0f);
+            //// 스프라이트 크기를 기준으로 스케일을 계산하여 적용
+            //transform.localScale = new Vector3(fixedScale.x / spriteSize.x, fixedScale.y / spriteSize.y, 1.0f);
+            gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 1f);
         }
     }
 
@@ -126,5 +130,9 @@ public class PlayerController1 : MonoBehaviour
             return true; // 이동 가능
         }
         return false; // 이동 불가
+    }
+    public void StopMove()
+    {
+        _animator.speed = 0;
     }
 }

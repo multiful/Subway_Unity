@@ -23,4 +23,8 @@ public class BackgroundMoveUp : MonoBehaviour
             transform.position = target.position - moveDirection * scrollAmount;
         }
     }
+    public void StopMove()
+    {
+        moveSpeed = 0;
+    }
 }

@@ -28,7 +28,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
     private readonly int[] timeLimit = { 60, 60, 50, 50 };
     private float _currentTime;
     //private int reward;
-
+    public Camera mainCam;
     void Awake()
     {
         if (Inst == null) Inst = this;
@@ -101,6 +101,7 @@ public class MainControl : MonoBehaviour //전체 두더지게임 관리
 
     public void Clear(int manSeat)
     {
+        mainCam.depth = -1;
         StopAllCoroutines(); //타이머 종료
         StopGame(); //이벤트 델리게이트로 모든 버튼 비활성화
         //reward = 500 * ((int)_currentTime + 1);

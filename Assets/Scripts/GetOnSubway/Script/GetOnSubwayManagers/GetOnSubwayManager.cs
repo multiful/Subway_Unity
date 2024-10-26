@@ -11,9 +11,9 @@ public class GetOnSubwayManager : MonoBehaviour
     public TMP_Text timerText;
     public TMP_Text targetText;
     public TMP_Text alertText;
-    public TMP_Text rewardText; // 보상을 표시할 텍스트 추가
-    public GameObject gameOverText;
-    public GameObject gameClearText;
+    //public TMP_Text rewardText; // 보상을 표시할 텍스트 추가
+    //public GameObject gameOverText;
+    //public GameObject gameClearText;
     public GameObject player;
     public ObstacleManager obstacleManager;
     [SerializeField] private Button deleteButton;
@@ -24,14 +24,16 @@ public class GetOnSubwayManager : MonoBehaviour
     private readonly int[] target = { 30, 35, 40, 45 };
     private bool isGameOver = false;
 
-
+    public BackgroundMoveUp bg1;
+    public BackgroundMoveUp bg2;
+    public PlayerController1 p1;
 
     void Start()
     {
-        gameOverText.SetActive(false);
-        gameClearText.SetActive(false);
+        //gameOverText.SetActive(false);
+        //gameClearText.SetActive(false);
         alertText.gameObject.SetActive(false);
-        rewardText.gameObject.SetActive(false); // 보상 텍스트 숨김
+        //rewardText.gameObject.SetActive(false); // 보상 텍스트 숨김
         currentTime = timeLimit;
 
 
@@ -98,9 +100,10 @@ public class GetOnSubwayManager : MonoBehaviour
 
     void EndGame()
     {
+        StopGame();
         isGameOver = true;
         Debug.Log("Game Over");
-        gameOverText.SetActive(true);
+        //gameOverText.SetActive(true);
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
 
@@ -111,16 +114,15 @@ public class GetOnSubwayManager : MonoBehaviour
             Destroy(obstacle);
         }
 
-        Time.timeScale = 0;
     }
 
     void ClearGame()
     {
+        StopGame();
         Debug.Log("Game Cleared");
-        gameClearText.SetActive(true);
+        //gameClearText.SetActive(true);
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
-        Time.timeScale = 0;
 
         foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
         {
@@ -129,7 +131,7 @@ public class GetOnSubwayManager : MonoBehaviour
 
         // 클리어 처리
         CalculateReward();
-
+        
         GameManager.Nani.PlayNani("빠르게환승", "성공" + (difficultyLevel + 1).ToString());
     }
 
@@ -142,15 +144,15 @@ public class GetOnSubwayManager : MonoBehaviour
 
     void CalculateReward()
     {
-        int reward = Mathf.CeilToInt(currentTime) * 500;
-        rewardText.text = $" +  {reward}";
-        rewardText.gameObject.SetActive(true);
+        //int reward = Mathf.CeilToInt(currentTime) * 500;
+        //rewardText.text = $" +  {reward}";
+        //rewardText.gameObject.SetActive(true);
 
-        var varManager = Engine.GetService<ICustomVariableManager>();
-        varManager.TrySetVariableValue("reward", reward);
-        GameManager.userData.Money += reward;
+        //var varManager = Engine.GetService<ICustomVariableManager>();
+        //varManager.TrySetVariableValue("reward", reward);
+        //GameManager.userData.Money += reward;
 
-        Debug.Log($"UserData + reward = {GameManager.userData.Money} ");
+        //Debug.Log($"UserData + reward = {GameManager.userData.Money} ");
         GameManager.userData.IsGameClear[0, difficultyLevel] = true;
     }
 
@@ -180,5 +182,10 @@ public class GetOnSubwayManager : MonoBehaviour
         alertText.gameObject.SetActive(false);
     }
 
-    
+    private void StopGame()
+    {
+        bg1.StopMove();
+        bg2.StopMove();
+        p1.StopMove();
+    }
 }

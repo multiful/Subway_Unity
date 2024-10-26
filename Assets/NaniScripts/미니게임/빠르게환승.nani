@@ -1,27 +1,25 @@
 ; 빠르게 환승
 ; PreloadAndPlayAsync
-@back Black
 @char Jicheol
 
 # 성공1
-@back Black
 @char Jicheol.transfer_lv1_clear pos:50,-36
-Jicheol: 그날은 정말 뭐였을까?[br](보상 : {reward}원)
+Jicheol: 그날은 정말 뭐였을까?
 @clearMinigame
 
 # 성공2
 @char Jicheol.transfer_lv2_clear pos:50,-36
-Jicheol: 휴... 겨우 탔네.[br](보상 : {reward}원)
+Jicheol: 휴... 겨우 탔네.
 @clearMinigame
 
 # 성공3
 @char Jicheoltransfer_lv3_clear pos:50,-36
-Jicheol: 오늘은 꼭 말 걸어봐야지.[br](보상 : {reward}원)
+Jicheol: 오늘은 꼭 말 걸어봐야지.
 @clearMinigame
 
 # 성공4
 @char Jicheoltransfer_lv4_clear pos:50,-36
-Jicheol: 늘 이 시간대에 마주쳤으니까, 어쩌면 오늘도...[br](보상 : {reward}원)
+Jicheol: 늘 이 시간대에 마주쳤으니까, 어쩌면 오늘도...
 @clearMinigame
 
 # 실패1

@@ -69,6 +69,7 @@ public class NaniCustomCommands
 
             if (gameType == 1) LoadingSceneManager.LoadScene("GetOnSubway");
             else if (gameType == 2) LoadingSceneManager.LoadScene("StealSeat");
+            else if (gameType == 3) LoadingSceneManager.LoadScene("CardFlip");
 
             return UniTask.CompletedTask;
         }

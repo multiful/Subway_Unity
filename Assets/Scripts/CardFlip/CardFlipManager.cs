@@ -130,10 +130,10 @@ public class CardFlipManager : MonoBehaviour
         _isGameRunning = false;
         if (isWin)
         {
-            reward = (int)_gameTime * 100;
-            var varManager = Engine.GetService<ICustomVariableManager>();
-            varManager.TrySetVariableValue("reward", reward);
-            GameManager.userData.Money += reward;
+            //reward = (int)_gameTime * 100;
+            //var varManager = Engine.GetService<ICustomVariableManager>();
+            //varManager.TrySetVariableValue("reward", reward);
+            //GameManager.userData.Money += reward;
             GameManager.Nani.PlayNani("카드뒤집기", "성공");
         }
         else
