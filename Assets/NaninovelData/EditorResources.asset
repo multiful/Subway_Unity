@@ -2770,3 +2770,9 @@ MonoBehaviour:
     - name: beep
       pathPrefix: Audio
       guid: abe168447b4440a4ea080985f04ae7a5
+    - name: broken
+      pathPrefix: Audio
+      guid: fac16c0dcd22ccf4dad9e5a1e59a08a6
+    - name: disturb
+      pathPrefix: Audio
+      guid: c2ffed9be3277144e9f19f28e4b5361e
