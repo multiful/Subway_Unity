@@ -46,7 +46,7 @@ Haji: 아침마다 늘 고마워~
 # 실패1
 @char Haji pos:50,-36
 Haji: 몸이 안 좋아서... 택시라도 타고 가야겠어요. 먼저 가볼게요.
-@goMain
+@goto e6_1.minigame
 
 # 실패2
 @char Haji pos:50,-36

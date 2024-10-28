@@ -124,6 +124,7 @@ Seola: 비싼 거 먹을 거니까 각오 단단히 해~
 @char Jicheol.2_1_2_070
 그래 뭐 별일이야 있겠어?
 @back Black
+# minigame
 
 @minigame gameType:1 gameLevel:1
 

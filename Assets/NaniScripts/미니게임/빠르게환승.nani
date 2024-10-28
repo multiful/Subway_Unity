@@ -27,7 +27,7 @@ Jicheol: 늘 이 시간대에 마주쳤으니까, 어쩌면 오늘도...
 # 실패1
 @char Jicheol.transfer_lv1_over pos:50,-36
 Jicheol: 요새 내가 많이 힘든가?
-@goMain
+@goto e2_1.minigame
 
 # 실패2
 @char Jicheol.transfer_lv2_over pos:50,-36

@@ -1,8 +1,6 @@
 # 성공
 @char 1stMerchant pos:50,-46
 1stMerchant: 운명을 엿본 소감이 어떤가.....? 후후...[br](보상 : {reward}원)
-
-
 @goMain
 
 # 실패

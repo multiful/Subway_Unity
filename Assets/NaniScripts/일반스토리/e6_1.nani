@@ -28,4 +28,6 @@ Haji: 그래요? 그러면 앞으로도 종종 볼 수 있겠네요.
 ???: ……
 저 사람은 분명 이 근처에서 내리는 사람인데?
 잘 하면 오늘은 앉아서 갈 수 있겠는데…?
+@back Black
+# minigame
 @minigame gameType:2 gameLevel:1

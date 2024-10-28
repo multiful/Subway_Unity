@@ -449,7 +449,7 @@
 @back Black
 @back Subway1_past
 @char Haji
-지하지: 미안해요.
+Haji: 미안해요.
 @hide Haji
 @back Black
 @back Subway2
@@ -475,35 +475,13 @@
 
 이런 저런 생각을 하면서 시간을 보내고 있을 때 사람들 사이에서 하지 씨가 다가왔다.
 
-지하지: 안녕하세요.
+Haji: 안녕하세요.
 
-유지철: 어제는 잘 들어가셨어요?
+Jicheol: 어제는 잘 들어가셨어요?
 
-지하지: 네. 잘 들어갔어요.
+Haji: 네. 잘 들어갔어요.
 
 기분 탓인가? 오늘 컨디션이 안 좋으신가…?
 
-
-
-
-
-
-그러고 보니 꿈 속 그 여자
-하지씨랑 닮았네…?
-@char Jicheol.2_2_3_017
-신기하네. 이런 일도 있구나.
-어쩐지 굉장히 낯이 익더라니….
-이거 혹시 전생의 기억 같은 건 아닐까?
-말도 안 되는 상상을 하면서 시간을 보내고 있을 때 사람들 사이에서 하지씨가 다가왔다.
-@char Jicheol.2_2_3_017 pose:Right
-@char Haji.1_2_3_021 pose:Left
-Haji: 안녕하세요.
-@char Jicheol.2_2_3_022 
-Jicheol: 어제는 잘 들어가셨어요?
-Haji: 네. 잘 들어갔어요.
-@char Haji.1_2_3_024
-@char Jicheol.2_2_3_025
-뭐지? 기분 탓인가?
-오늘은 묘하게 차가운 것 같은데
 
 @minigame gameType:2 gameLevel:2
