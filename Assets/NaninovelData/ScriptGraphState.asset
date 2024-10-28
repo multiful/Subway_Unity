@@ -16,224 +16,252 @@ MonoBehaviour:
   - scriptName: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"
     position:
       serializedVersion: 2
-      x: 19.2
-      y: -310.4
-      width: 157.6
-      height: 268.80002
+      x: 260
+      y: -1205.3334
+      width: 158.66666
+      height: 270.6667
   - scriptName: "\uC790\uB9AC\uBE8F\uAE30"
     position:
       serializedVersion: 2
-      x: 1198.4
-      y: -332
-      width: 96
-      height: 364.80002
+      x: 596
+      y: -1006
+      width: 104
+      height: 558.6667
   - scriptName: "\uCE74\uB4DC\uB4A4\uC9D1\uAE30"
     position:
       serializedVersion: 2
-      x: 1056
-      y: -117.600006
+      x: 1291.3334
+      y: -592
       width: 108
-      height: 124.8
-  - scriptName: e4_1
-    position:
-      serializedVersion: 2
-      x: 468
-      y: 70.399994
-      width: 73.599976
-      height: 76.8
-  - scriptName: e1
-    position:
-      serializedVersion: 2
-      x: 192
-      y: 106.399994
-      width: 65.600006
-      height: 76.8
-  - scriptName: e2_1
-    position:
-      serializedVersion: 2
-      x: 300.8
-      y: 60.000004
-      width: 72.80002
-      height: 76.8
-  - scriptName: e3_1
-    position:
-      serializedVersion: 2
-      x: 386.4
-      y: 59.2
-      width: 73.600006
-      height: 76.8
-  - scriptName: e3_2
-    position:
-      serializedVersion: 2
-      x: 392
-      y: 157.59999
-      width: 75.20001
-      height: 76.8
-  - scriptName: e4_2
-    position:
-      serializedVersion: 2
-      x: 482.4
-      y: 155.2
-      width: 75.19998
-      height: 76.8
-  - scriptName: e8_1
-    position:
-      serializedVersion: 2
-      x: 572.8
-      y: 45.600002
-      width: 72.79999
-      height: 76.799995
-  - scriptName: e8_2
-    position:
-      serializedVersion: 2
-      x: 583.2
-      y: 172.8
-      width: 74.39996
-      height: 76.79999
-  - scriptName: e9_1
-    position:
-      serializedVersion: 2
-      x: 669.6
-      y: 53.600002
-      width: 72.80005
-      height: 76.799995
-  - scriptName: e9_2
-    position:
-      serializedVersion: 2
-      x: 676
-      y: 160
-      width: 74.400024
-      height: 76.8
-  - scriptName: e10_1
-    position:
-      serializedVersion: 2
-      x: 752.8
-      y: 52.000004
-      width: 78.400024
-      height: 76.8
-  - scriptName: e10_2
-    position:
-      serializedVersion: 2
-      x: 765.6
-      y: 167.2
-      width: 80
-      height: 76.79999
-  - scriptName: e11
-    position:
-      serializedVersion: 2
-      x: 864
-      y: 111.2
-      width: 65.599976
-      height: 76.8
-  - scriptName: e12
-    position:
-      serializedVersion: 2
-      x: 948.8
-      y: 110.399994
-      width: 67.20001
-      height: 76.8
-  - scriptName: e13
-    position:
-      serializedVersion: 2
-      x: 1039.2
-      y: 110.399994
-      width: 68
-      height: 76.8
-  - scriptName: e14
-    position:
-      serializedVersion: 2
-      x: 1136.8
-      y: 106.399994
-      width: 68
-      height: 76.8
-  - scriptName: e15
-    position:
-      serializedVersion: 2
-      x: 1224
-      y: 111.2
-      width: 67.19995
-      height: 76.8
-  - scriptName: e16
-    position:
-      serializedVersion: 2
-      x: 1304.8
-      y: 117.59999
-      width: 68
-      height: 76.8
-  - scriptName: red_diary
-    position:
-      serializedVersion: 2
-      x: 900
-      y: -212
-      width: 100
-      height: 76.799995
-  - scriptName: blue_diary
-    position:
-      serializedVersion: 2
-      x: 766.4
-      y: -220
-      width: 105.599976
-      height: 76.799995
-  - scriptName: black_diary
-    position:
-      serializedVersion: 2
-      x: 606.4
-      y: -219.2
-      width: 111.19995
-      height: 76.799995
-  - scriptName: End1
-    position:
-      serializedVersion: 2
-      x: -87.2
-      y: -201.6
-      width: 75.2
-      height: 76.8
-  - scriptName: End2
-    position:
-      serializedVersion: 2
-      x: 119.2
-      y: -188
-      width: 76.8
-      height: 76.799995
-  - scriptName: End3
-    position:
-      serializedVersion: 2
-      x: 264.8
-      y: -184
-      width: 76.80002
-      height: 76.799995
-  - scriptName: End4
-    position:
-      serializedVersion: 2
-      x: 400.8
-      y: -188.8
-      width: 76.80002
-      height: 76.8
-  - scriptName: e6_2
-    position:
-      serializedVersion: 2
-      x: 567.2
-      y: 306.40002
-      width: 157.59998
-      height: 412.8
+      height: 126.66669
   - scriptName: "\uBE60\uB974\uAC8C\uD658\uC2B9"
     position:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 138.4
-      height: 312
-  - scriptName: Test
+      x: 0.6666667
+      y: -900.6666
+      width: 139.33333
+      height: 409.3333
+  - scriptName: e1
     position:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 72.8
-      height: 76.8
+      x: -102.666664
+      y: -999.3333
+      width: 66.666664
+      height: 78.66669
+  - scriptName: e2_1
+    position:
+      serializedVersion: 2
+      x: -103.333336
+      y: -901.3333
+      width: 72.66667
+      height: 78.66669
   - scriptName: e2_2
     position:
       serializedVersion: 2
-      x: 0
-      y: 0
-      width: 74.4
-      height: 76.8
+      x: 198.66667
+      y: -897.3333
+      width: 74.66667
+      height: 78.66669
+  - scriptName: e3_1
+    position:
+      serializedVersion: 2
+      x: -103.333336
+      y: -798.6666
+      width: 73.333336
+      height: 78.666626
+  - scriptName: e3_2
+    position:
+      serializedVersion: 2
+      x: 198.66667
+      y: -799.3333
+      width: 74.66667
+      height: 78.66669
+  - scriptName: e4_1
+    position:
+      serializedVersion: 2
+      x: -102
+      y: -697.3333
+      width: 73.333336
+      height: 78.66669
+  - scriptName: e4_2
+    position:
+      serializedVersion: 2
+      x: 196
+      y: -703.3333
+      width: 75.33334
+      height: 78.66669
+  - scriptName: e5_1
+    position:
+      serializedVersion: 2
+      x: -98
+      y: -606
+      width: 72.666664
+      height: 78.66669
+  - scriptName: e5_2
+    position:
+      serializedVersion: 2
+      x: 204
+      y: -604
+      width: 158.66666
+      height: 270.6667
+  - scriptName: e6_1
+    position:
+      serializedVersion: 2
+      x: 498.66666
+      y: -999.3333
+      width: 73.33334
+      height: 78.66669
+  - scriptName: e6_2
+    position:
+      serializedVersion: 2
+      x: 792.6667
+      y: -1336
+      width: 158.66663
+      height: 438.66663
+  - scriptName: e7_1
+    position:
+      serializedVersion: 2
+      x: 498
+      y: -898.6666
+      width: 72.66669
+      height: 78.666626
+  - scriptName: e7_2
+    position:
+      serializedVersion: 2
+      x: 802
+      y: -870
+      width: 74
+      height: 78.66669
+  - scriptName: e8_1
+    position:
+      serializedVersion: 2
+      x: 498.66666
+      y: -802
+      width: 73.33334
+      height: 78.66669
+  - scriptName: e8_2
+    position:
+      serializedVersion: 2
+      x: 800
+      y: -759.3333
+      width: 158.66669
+      height: 246.66666
+  - scriptName: e9_1
+    position:
+      serializedVersion: 2
+      x: 497.33334
+      y: -694
+      width: 73.33334
+      height: 78.66669
+  - scriptName: e9_2
+    position:
+      serializedVersion: 2
+      x: 799.3333
+      y: -468
+      width: 74.66669
+      height: 78.66666
+  - scriptName: e10_1
+    position:
+      serializedVersion: 2
+      x: 523.3333
+      y: -396
+      width: 78.66669
+      height: 78.66666
+  - scriptName: e10_2
+    position:
+      serializedVersion: 2
+      x: 624
+      y: -398
+      width: 80.66669
+      height: 78.66666
+  - scriptName: e11
+    position:
+      serializedVersion: 2
+      x: 529.3333
+      y: -296.6667
+      width: 66.66669
+      height: 78.66667
+  - scriptName: e12
+    position:
+      serializedVersion: 2
+      x: 628
+      y: -301.33334
+      width: 67.33331
+      height: 78.66667
+  - scriptName: e13
+    position:
+      serializedVersion: 2
+      x: 733.3333
+      y: -294.6667
+      width: 68
+      height: 78.66667
+  - scriptName: e14
+    position:
+      serializedVersion: 2
+      x: 837.3333
+      y: -297.33334
+      width: 68
+      height: 78.66667
+  - scriptName: e15
+    position:
+      serializedVersion: 2
+      x: 930.6667
+      y: -302
+      width: 67.33331
+      height: 78.66666
+  - scriptName: e16
+    position:
+      serializedVersion: 2
+      x: 1030.6666
+      y: -304
+      width: 68
+      height: 78.66666
+  - scriptName: red_diary
+    position:
+      serializedVersion: 2
+      x: 1504
+      y: -996.6666
+      width: 100
+      height: 78.666626
+  - scriptName: blue_diary
+    position:
+      serializedVersion: 2
+      x: 1500
+      y: -901.3333
+      width: 105.333374
+      height: 78.66669
+  - scriptName: black_diary
+    position:
+      serializedVersion: 2
+      x: 1499.3334
+      y: -798.6666
+      width: 111.33325
+      height: 78.666626
+  - scriptName: End1
+    position:
+      serializedVersion: 2
+      x: 1295.3334
+      y: -998
+      width: 74.666626
+      height: 78.66669
+  - scriptName: End2
+    position:
+      serializedVersion: 2
+      x: 1300
+      y: -900.6666
+      width: 76.666626
+      height: 78.666626
+  - scriptName: End3
+    position:
+      serializedVersion: 2
+      x: 1294.6666
+      y: -802.6666
+      width: 76.66675
+      height: 78.666626
+  - scriptName: End4
+    position:
+      serializedVersion: 2
+      x: 1296.6666
+      y: -698.6666
+      width: 77.333374
+      height: 78.666626

@@ -105,7 +105,7 @@ Haji: 제가 지철씨 보다는 많을 것 같아요.
 Jicheol: 하지씨는 엄청 어려보여서 지금까지 제 또래 아니면 밑이라고 생각했어요.
 @char Haji.1_2_2_063
 Haji: 그렇게 봐 주다니 고마워요.
-@goto .KG
+@goto .KG1
 
 
 #Select2
@@ -264,4 +264,4 @@ Jicheol: 그래 참고할게. 잘 자 설아야.
 @char Jicheol.2_2_2_137
 그래 괜찮을 거야….
 
-@finishStory
+@goto e7_1

@@ -76,12 +76,12 @@ Jicheol: !?
 Haji: 그도 그럴게 요새 계속 이러시는 것 같아서요.
 Haji: 안 그런가요?
 @hide Jicheol,Haji
+@stop
 
-1. 아닌 척 한다. (호감도 -5)
+@choice "아닌 척 한다."  goto:.Select1
+@choice "솔직하게 맞다고 얘기한다."  goto:.Select2
 
-2. 솔직하게 맞다고 얘기한다. (호감도 +5)
-
-- 1 선택 시
+#Select1
 @char Haji.1_2_4_057 pose:Left
 @char Jicheol.2_2_4_062 pose:Right
 Jicheol: 아… 아니에요. 누나라니 그런 파렴치한 말을…
@@ -95,8 +95,9 @@ Haji: 그럼 이 기회에 서로 말 편하게 해요.
 Haji: 특별히 누나라고 부르는 거 허락해 줄게.
 @char Jicheol.2_2_4_068
 Jicheol: 네, 네?
+@goto .KG
 
-2 선택
+#Select2
 @char Haji.1_2_4_057 pose:Left
 @char Jicheol.2_2_4_070 pose:Right
 Jicheol: 맞아요.
@@ -123,7 +124,9 @@ Haji: 지금까지 나는 막내였거든요.
 Haji: 항상 오빠 소리만 했었는데
 @char Haji.1_2_4_084
 Haji: 누나라고 들으니 신선하고 좋다.
+@goto .KG
 
+#KG
 @char Jicheol.2_2_4_085 pose:Right
 @char Haji.1_2_4_085 pose:Left
 Haji: 겸사겸사 우리 말도 놓자.
@@ -249,4 +252,7 @@ Jicheol: 어… 그래? 알았어.
 @char Jicheol.2_2_4_145
 Jicheol: 보고 싶네, 누나.
 
+현재 Subway way의 스토리는 여기까지 구현했습니다.
+이후 스토리는 추후 업데이트를 기대해주세요.
+플레이해주셔서 감사합니다.
 @finishStory
