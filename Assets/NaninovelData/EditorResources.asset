@@ -144,7 +144,7 @@ MonoBehaviour:
       guid: a32c73a3aff4b274c85b3ff16c854b07
     - name: SaveLoadUI
       pathPrefix: UI
-      guid: 8d53726b3d08433479398f02b4780e7f
+      guid: 352980476da30fd4db85ed54e68cedca
     - name: SceneTransitionUI
       pathPrefix: UI
       guid: e3b234b4273b7f64ab3f1d9fe425ed23
@@ -261,6 +261,9 @@ MonoBehaviour:
     - name: Test
       pathPrefix: Scripts
       guid: acec893dbe64852479710e80c31672bb
+    - name: e2_2
+      pathPrefix: Scripts
+      guid: 8481f06d5f8dfc648b9249998d0b899e
   - Id: Backgrounds/a3c01ec2-cdc4-4c79-a7a6-844a3cb0b3cf
     Resources:
     - name: Bar
