@@ -1,8 +1,11 @@
 using Naninovel;
+using System.Collections;
+using System.Collections.Generic;
 using Naninovel.Commands;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 public class NaniCustomCommands
 {
     [CommandAlias("finishStory")]
@@ -56,7 +59,24 @@ public class NaniCustomCommands
             return UniTask.CompletedTask;
         }
     }
+    [CommandAlias("nowStory")]
+    public class NowStoryName : Command
+    {
+        public StringParameter story;
+        public override UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            foreach (StoryName name in Enum.GetValues(typeof(StoryName)))
+            {
+                if (story == name.ToString())
+                {
+                    GameManager.userData.NowStoryName = name;
+                    break;
+                }
+            }
 
+            return UniTask.CompletedTask;
+        }
+    }
 
     [CommandAlias("minigame")]
     public class MiniGame : Command           // gameType 1=빠르게환승, 2=자리뺏기, 레벨 1,2,3,4
@@ -84,7 +104,6 @@ public class NaniCustomCommands
         public override UniTask ExecuteAsync(AsyncToken asyncToken)
         {
             GameManager.Nani.StopNani();
-            GameManager.userData.NowStoryName++;
             LoadingSceneManager.LoadScene("Nani");
 
             return UniTask.CompletedTask;
@@ -102,36 +121,36 @@ public class NaniCustomCommands
             return UniTask.CompletedTask;
         }
     }
-    [CommandAlias("goEnding")]
-    public class GoEnding : Command
-    {
-        // 엔딩 분기에 넣을것
-        [RequiredParameter]
-        public IntegerParameter endingNum;
-        public override UniTask ExecuteAsync(AsyncToken asyncToken)
-        {
-            int ending = endingNum;
-            switch (ending)
-            {
-                case 1:
-                    GameManager.userData.NowStoryName = StoryName.End1;
-                    break;
-                case 2:
-                    GameManager.userData.NowStoryName = StoryName.End2;
-                    break;
-                case 3:
-                    GameManager.userData.NowStoryName = StoryName.End3;
-                    break;
-                case 4:
-                    GameManager.userData.NowStoryName = StoryName.End4;
-                    break;
-                default:
-                    break;
-            }
+    //[CommandAlias("goEnding")]
+    //public class GoEnding : Command
+    //{
+    //    // 엔딩 분기에 넣을것
+    //    [RequiredParameter]
+    //    public IntegerParameter endingNum;
+    //    public override UniTask ExecuteAsync(AsyncToken asyncToken)
+    //    {
+    //        int ending = endingNum;
+    //        switch (ending)
+    //        {
+    //            case 1:
+    //                GameManager.userData.NowStoryName = StoryName.End1;
+    //                break;
+    //            case 2:
+    //                GameManager.userData.NowStoryName = StoryName.End2;
+    //                break;
+    //            case 3:
+    //                GameManager.userData.NowStoryName = StoryName.End3;
+    //                break;
+    //            case 4:
+    //                GameManager.userData.NowStoryName = StoryName.End4;
+    //                break;
+    //            default:
+    //                break;
+    //        }
 
-            return UniTask.CompletedTask;
-        }
-    }
+    //        return UniTask.CompletedTask;
+    //    }
+    //}
     [CommandAlias("finishEnding")]
     public class FinishEnding : Command
     {
