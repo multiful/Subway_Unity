@@ -31,6 +31,11 @@ public class EachSeat : MonoBehaviour //각 버튼별 독립 동작
         _currentInterval = changeInterval[MainControl.Inst.gameLevel];
     }
 
+    private void OnDisable()
+    {
+        MainControl.StopGame -= DeActivate;
+    }
+
     private IEnumerator Activate()
     {
         yield return new WaitForSeconds(Random.Range(3f, 7f)); //시작 시 3~7초 대기
