@@ -434,10 +434,10 @@ Jicheol: …!
 @char Haji.1_1_1_012 scale:1
 ???: 그러니 그 곳에는 부디…
 @hide Haji
-@stopSfx
+@stopSfx 
 @sfx data
 @back White.BandedSwirl time:1
-@stopSfx
+@stopSfx 
 @back Black
 @back Black scale:0.7
 아…!
@@ -465,7 +465,7 @@ Jicheol: …!
 @char Jicheol.2_1_1_022
 하… 내일은 반차 써야지….
 어떻게 보면 요즘 들어 피곤한 건 다 그 꿈 때문이다.
-@stopBgm
+@stopBgm 
 @hide Jicheol
 @back Black
 언제부터였을까?
@@ -478,12 +478,12 @@ Jicheol: …!
 @sfx gunshot
 뒤에서는 총알이 날아오고 우리의 몸은 점점 피로 물들어가지만
 우리는 그 어떤 것도 신경 쓰지 않고 그저 계속해서 달린다.
-@stopSfx
+@stopSfx 
 더 이상 도망칠 수 없을 때까지 그렇게 한참을 도망치다 보면,
 @sfx machine_working loop:true
 @back White.CloudReveal
 갑자기 정체 모를 빛이 내 몸을 휘감더니, 내 몸이 조금씩 사라지기 시작한다.
-@stopSfx
+@stopSfx 
 @char Haji.1_1_1_031 pos:50,-44
 ???: 사랑해 지철아.
 억누를 수 없어 터져 나오는 애틋함, 한 치 거짓도 없다는 듯한 목소리.
@@ -898,6 +898,7 @@ Jicheol: 으으으으아아아아아아!!!
 @back Mem4_22 time:0.009
 @back Mem4_23 time:0.009
 @back Mem4_24 time:0.009
+@nowStory
 @back Mem4_25 time:0.009
 @back Mem4_26 time:0.009
 @back Mem4_27 time:0.009
@@ -956,13 +957,13 @@ Jicheol: 으으으으아아아아아아!!!
 @back Mem4_78 time:0.009
 @back Mem4_79 time:0.009
 @back End3 time:0.009
-@stopSfx
+@stopSfx 
 @back White time:0.009
 @sfx beep loop:true
 @back White pose:Normal
 Jicheol: 어…?
 몸 안에서 무언가가 끊어 지는 것 같은 느낌이 들었다.
-@stopSfx
+@stopSfx 
 @back Subway1_N
 @char Jicheol.2_1_1_072 pos:50,-44
 @wait 1
@@ -977,4 +978,7 @@ Jicheol: ㅎ..ㅏ..ㅈ
 @char Haji.1_1_1_075
 ???: 저기요!!!
 @hideAll
-@finishStory
+
+@nowStory story:e2_1
+
+@goStory

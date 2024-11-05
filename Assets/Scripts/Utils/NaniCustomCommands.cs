@@ -99,7 +99,7 @@ public class NaniCustomCommands
         }
     }
 
-    [CommandAlias("clearMinigame")]
+    [CommandAlias("goStory")]
     public class ClearMinigame : Command
     {
         public override UniTask ExecuteAsync(AsyncToken asyncToken)
