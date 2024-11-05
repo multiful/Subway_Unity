@@ -28,6 +28,7 @@ public class GetOnSubwayManager : MonoBehaviour
     public BackgroundMoveUp bg2;
     public PlayerController1 p1;
 
+    public Camera mainCam;
     void Start()
     {
         //gameOverText.SetActive(false);
@@ -107,7 +108,7 @@ public class GetOnSubwayManager : MonoBehaviour
         //gameOverText.SetActive(true);
         player.GetComponent<PlayerController1>().enabled = false;
         obstacleManager.enabled = false;
-
+        mainCam.depth = 0;
         GameManager.Nani.PlayNani("빠르게환승", "실패" + (difficultyLevel + 1).ToString());
 
         foreach (GameObject obstacle in GameObject.FindGameObjectsWithTag("Obstacle"))
@@ -132,7 +133,7 @@ public class GetOnSubwayManager : MonoBehaviour
 
         // 클리어 처리
         CalculateReward();
-        
+        mainCam.depth = 0;
         GameManager.Nani.PlayNani("빠르게환승", "성공" + (difficultyLevel + 1).ToString());
     }
 
