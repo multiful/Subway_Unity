@@ -6,6 +6,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using Naninovel.UI;
 public class NaniCustomCommands
 {
     [CommandAlias("finishStory")]
@@ -22,19 +23,19 @@ public class NaniCustomCommands
     }
 
 
-    [CommandAlias("increaseLikeability")]
-    public class IncreaseLikeability : Command
-    {
-        public IntegerParameter likeability;
-        public override UniTask ExecuteAsync(AsyncToken asyncToken)
-        {
-            var varManager = Engine.GetService<ICustomVariableManager>();
-            varManager.TryGetVariableValue<int>("G_Likeability", out int curlikeability);
-            curlikeability += likeability;
-            varManager.SetVariableValue("G_Likeability", curlikeability.ToString());
-            return UniTask.CompletedTask;
-        }
-    }
+    //[CommandAlias("increaseLikeability")]
+    //public class IncreaseLikeability : Command
+    //{
+    //    public IntegerParameter likeability;
+    //    public override UniTask ExecuteAsync(AsyncToken asyncToken)
+    //    {
+    //        var varManager = Engine.GetService<ICustomVariableManager>();
+    //        varManager.TryGetVariableValue<int>("G_Likeability", out int curlikeability);
+    //        curlikeability += likeability;
+    //        varManager.SetVariableValue("G_Likeability", curlikeability.ToString());
+    //        return UniTask.CompletedTask;
+    //    }
+    //}
 
     [CommandAlias("increaseMoney")]
     public class IncreaseMoney : Command
@@ -117,6 +118,17 @@ public class NaniCustomCommands
         {
             GameManager.Nani.StopNani();
             LoadingSceneManager.LoadScene("Main");
+
+            return UniTask.CompletedTask;
+        }
+    }
+    [CommandAlias("logClear")]
+    public class LogClear : Command
+    {
+        public override UniTask ExecuteAsync(AsyncToken asyncToken = default)
+        {
+            var naniUI = Engine.GetService<IUIManager>();
+            naniUI.GetUI<IBacklogUI>().Clear();
 
             return UniTask.CompletedTask;
         }
