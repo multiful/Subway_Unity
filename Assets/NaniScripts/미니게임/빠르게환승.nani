@@ -5,23 +5,23 @@
 # 성공1
 @char Jicheol.transfer_lv1_clear pos:50,-36
 Jicheol: 그날은 정말 뭐였을까?
-@goto e2_2
+@clearMinigame
 
 # 성공2
 @char Jicheol.transfer_lv2_clear pos:50,-36
 Jicheol: 휴... 겨우 탔네.
-@goto e3_2
+@clearMinigame
 
 # 성공3
 @char Jicheoltransfer_lv3_clear pos:50,-36
 Jicheol: 오늘은 꼭 말 걸어봐야지.
-@goto e4_2
+@clearMinigame
 
 
 # 성공4
 @char Jicheoltransfer_lv4_clear pos:50,-36
 Jicheol: 늘 이 시간대에 마주쳤으니까, 어쩌면 오늘도...
-@goto e5_2
+@clearMinigame
 
 
 # 실패1
