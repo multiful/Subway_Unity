@@ -32,7 +32,7 @@
 @wait 2.5
 @back White
 @back White scale:0.72 pos:50,50
-@back First_plus1.Crossfade scale:0.72 pos:50,50 time:1
+@back First_plus.Crossfade scale:0.72 pos:50,50 time:1
 @wait 3
 그 사람이다.
 순간 시간이 멈춘 것만 같았다.
@@ -74,4 +74,5 @@
 그녀가 사라진 지금도 쿵쾅쿵쾅 심장이 쉴 새 없이 요동친다.
 뭐 하나 제대로 이해하기 힘든 상황이지만 그래도 이거 하나 만큼은 확신할 수 있다. 
 그래, 아마 나는 이 순간을 평생 못 잊을 것 같다.
-@finishStory
+@nowStory story:e3_1
+@goStory

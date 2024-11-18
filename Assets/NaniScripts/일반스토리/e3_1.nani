@@ -7,9 +7,9 @@
 집중도 잘 못하고 잔실수도 늘어 주위 사람들도 슬슬 걱정하는 분위기다. 
 하… 내가 어쩌다 이렇게 되었을까…?
 @char Jicheol.2_1_3_005 pos:50,-44
-내가 정말 처음 보는 사람을 좋아하게 되었다고?
+그 사람이 뭐라고 자꾸 이렇게 생각나는 거지?
 @char Jicheol.2_1_3_006 pos:50,-44
-말도 안돼. 정말 바보 같아…
+하... 계속 이러고 있을 수는 없는데...
 @sfx footsteps
 그리고 이것 말고 귀찮은 일이 하나 더 생겼다. 
 @hide Jicheol
@@ -75,7 +75,9 @@ Seola: 보통 좋아하는 사람이 생기면 이런 느낌이던데… 정말�
 @hideAll
 @back Black
 @sfx whoosh
-@char Haji
+@char Haji.1_2_4_012 pos:50,-44
+@wait 2
+@hideAll
 @back Office
 @char Jicheol.2_1_3_036 pos:64,-44
 @char Seola.3_1_3_035 pos:36,-44
@@ -123,7 +125,8 @@ Jicheol: 여태껏 나 버리고 술 마시러 간 사람이 누구더라?
 Seola: 에이 쪼잔하게…
 @char Seola.3_1_3_059
 Seola: 알았어 그러면 내일 봐.
-@hideAll
+@hideChars
+@back Black
 투덜거리는 설아를 뒤로하고 나는 지하철역으로 향했다.
-
+@hideAll
 @minigame gameType:1 gameLevel:2

@@ -1,127 +1,164 @@
 @back Black
-@back Office
 @char Jicheol.2_1_4_001 pos:50,-44
-Jicheol: 큰일이야… 큰일
-집중이 잘 안 된다.
-@char Jicheol.2_1_4_003 pos:50,-44
-뭘 하고 있어도 자꾸 그 사람이 생각난다.
-살면서 한 번도 이런 적이 없었는데….
-@char Jicheol.2_1_4_005 pos:50,-44
-이런 내 모습이 너무 낯설다.
-@char Jicheol.2_1_4_006 pos:50,-44
-이 나이에 짝사랑이라니 어쩐지 조금 쑥스럽다.
-@char Jicheol.2_1_4_006 pos:64,-44
-@char Seola.3_1_4_007 pos:36,-44
-Seola: 오빠 왜 그렇게 헤벌레하고 있어?
-@char Jicheol.2_1_4_008 pos:64,-44
-Jicheol: 응? 뭐라고? 
-@char Seola.3_1_4_009 pos:36,-44
-Seola: 이제는 정신 못 차릴 정도인가보네. 
-Seola: 뭐 좋은 일 생겼어?
-@char Jicheol.2_1_4_011 pos:64,-44
-Jicheol: …나 그렇게 티나?
-@char Seola.3_1_4_012_1 pos:36,-44
-@char Seola.3_1_4_012_2 pos:36,-44
-Seola: 저기 부장님도 오빠 왜 저러는지 좀 알아오라고 하셨어.
-@char Seola.3_1_4_013 pos:36,-44
-Seola: 잠깐 내려가자. 나 카드도 받았다?
-@char Jicheol.2_1_4_014 pos:64,-44
-Jicheol: 아니야. 그 정도는 아니야 이제부터 조심할게.
-@char Seola.3_1_4_015 pos:36,-44
-Seola: 오빠 내가 말했지 혼자서 끙끙 앓지 말라고.
-@char Seola.3_1_4_016 pos:36,-44
-Seola: 그냥 대충 정리하고 나와.
-@hide Jicheol,Seola
+며칠 동안 차분히 현재 상황에 대해 생각해 보았다.
+미래가 보이는 것에 대해서, 그것이 왜 보이는지에 대해서, 왜 갑자기 몸이 멋대로 움직였는지에 대해서,
+@char Jicheol.2_1_4_003
+그리고 그 사람에 대해서도...
+……
+@char Jicheol.2_1_4_005
+아니, 아무리 그래도 그렇지 그런 상황에서 다짜고짜 고백이라니...
+@char Jicheol.2_1_4_006
+하... 그 사람이 나를 싫어하면 어떻게 하지?
+@char Jicheol.2_1_4_007
+내가 진짜 뭐 하나 제대로 아는 것도 없이 그저 얼굴만 보고 반했다고?
+……
+@back Office
+@char Jicheol.2_1_4_009
+진짜 어떻게 하지...?
+@char Jicheol.2_1_4_009 pos:60,-44
+@char Seola.3_1_4_010 pos:40,-44
+Seola: 오빠!?
+@char Jicheol.2_1_4_011
+Jicheol: 아, 깜짝이야!?
+@char Seola.3_1_4_012
+Seola: 오, 이 정도로 놀랄 줄은 몰랐는데?
+@char Jicheol.2_1_4_013
+Jicheol: 이렇게 갑자기 말 걸면 어떤 사람이라도 놀라지 않을까?
+@char Seola.3_1_4_014
+Seola: 내가 지금 몇 번이나 오빠 불렀는지 알아?
+@char Jicheol.2_1_4_015
+Jicheol: 어...? 그랬어? 
+@char Seola.3_1_4_016
+Seola: 유지철 대리님 업무에도 집중해야 하지 않을까요? 
+@char Jicheol.2_1_4_017
+Jicheol: 설아야.
+@char Seola.3_1_4_018
+Seola: 왜?
+@char Jicheol.2_1_4_019
+Jicheol: 너는 어떤 사람을 좋아하게 되면 어떻게 행동해? 
+@char Seola.3_1_4_020
+Seola: 어…? 갑자기 이런 건 왜 물어보는 거야?
+@char Jicheol.2_1_4_021
+Jicheol: 그냥 확신이 잘 안 서서. 
+@char Seola.3_1_4_022
+Seola: ……뭐?
+@char Jicheol.2_1_4_023
+Jicheol: 내가 그 사람을 좋아하는 건지 아닌 건지 확신이 잘 안 서.
+@char Seola.3_1_4_024
+Seola: 아… 
+@char Seola.3_1_4_025
+Seola: 오빠가 모르겠다고… 
+@hide Jichoel
+@char Seola.3_1_4_026 pos:50,-44
+Seola: 글쎄, 좋아하게 되면 어떤 행동을 하냐고 물어보면…
+@char Seola.3_1_4_027
+Seola: 음… 자꾸 생각나고, 자꾸 만나려고 하고, 자꾸 그 사람 행동을 따라하고,
+@char Seola.3_1_4_028
+Seola: 괜히 장난치고 싶어지고, 벗어나고 싶어도 벗어날 수 없게 되어버리지….
+@char Seola.3_1_4_029
+Seola: 어때…? 좀 알 것 같아?
+@char Seola.3_1_4_029 pos:40,-44
+@char Jicheol.2_1_4_030 pos:60,-44
+Jicheol: 굉장히 디테일하네.
+@char Jicheol.2_1_4_031
+Jicheol: …그래도 잘 모르겠다.
+@char Seola.3_1_4_032
+Seola: 왜…? 무슨 일 있었어?
+@char Jicheol.2_1_4_033
+Jicheol: 여기서 얘기하지 말고 카페로 내려갈까?
+@hide Jichoel,Seola
 @back Black
 @back Cafe
-@char Seola.3_1_4_017 pos:36,-44
-@char Jicheol.2_1_4_018 pos:64,-44
-Seola: 그래서 무슨 일이야?
-Jicheol: 그게… 말하기 부끄러워.
-@char Seola.3_1_4_019 pos:36,-44
-Seola: 아니 진짜 애도 아니고 여기까지 와서 뭐가 부끄럽다고 그래.
-@char Jicheol.2_1_4_020 pos:64,-44
-Jicheol: 나 진짜 말한다?
-@char Seola.3_1_4_021 pos:36,-44
-Seola: 어~ 그래그래.
-@char Jicheol.2_1_4_022 pos:64,-44
-Jicheol: 조…좋아하는 사람이 생겼어.
-@char Seola.3_1_4_023 pos:36,-44
-Seola: !?
-@char Seola.3_1_4_024 pos:36,-44
-Seola: 아 오빠 이런 식으로 고백하면 곤란해.
-@char Jicheol.2_1_4_025 pos:64,-44
-Jicheol: 같이 출퇴근길에 종종 마주치는 사람이야.
-@char Seola.3_1_4_026 pos:36,-44
-Jicheol: 밥을 먹을 때도, 일을 할 때도, 자기 전에도 자꾸만 그 사람이 생각나. 
-@char Seola.3_1_4_027 pos:36,-44
-Jicheol: 맞아 이거 때문에 요즘 일도 잘 안 잡혀.
-한동안 길게 침묵이 이어졌다.
-@char Seola.3_1_4_029 pos:36,-44
-Seola: 정말 많이 좋아하는구나.
-분위기를 읽은 설아는 장난기를 줄이며 말했다.
-@char Jicheol.2_1_4_031 pos:64,-44
-Jicheol: 응. 이런 적이 처음이라. 어떻게 할 지 모르겠어.
-@char Seola.3_1_4_032 pos:36,-44
-Seola: 인사는 하는 사이야? 말은 걸어봤어?
-@char Jicheol.2_1_4_033 pos:64,-44
-Jicheol: 아니 생각을 안 해본 건 아닌데…
-@char Seola.3_1_4_034 pos:36,-44
-Seola: 뭐야 말도 못 걸어봤다는 거네?
-@char Jicheol.2_1_4_035 pos:64,-44
-Jicheol: 그도 그럴 게 아침에는 사람들이 너무 많아서 말 거는 거 자체가 이상한 일이고 또 그런 상황이면 그 사람에게 부담 주는 게…..
-@char Seola.3_1_4_036 pos:36,-44
-Seola: 그 정도로 좋아하는구나…
-설아는 어쩐지 언짢다는 듯한 표정으로 나를 바라보았다.
-@char Jicheol.2_1_4_038 pos:64,-44
-……
-Jicheol: 나도 내가 한심하다는 건 알아. 하지만 그 사람 이름조차 몰라.
-@char Jicheol.2_1_4_040 pos:64,-44
-Jicheol: 어떻게 해도 친해질 계기가 없는 걸 어떻게…
-공통점이라고 해 봐야 어쩌다 지하철을 같이 탄다는 거 하나 뿐이다.
-@char Seola.3_1_4_042 pos:36,-44
-설아는 갑자기 핸드폰을 두드리더니 화면을 내게 보여주며 말했다.
-@char Seola.3_1_4_043 pos:36,-44
-Seola: 자 이제부터 오빠 이름은 바보야.
-자세히 보니 바보라는 글자 아래 내 핸드폰 번호가 보였다.
-@char Jicheol.2_1_4_045 pos:64,-44
-Jicheol: 너무해. 그렇다고 이렇게 저장할 것까지는…
-@char Seola.3_1_4_046 pos:36,-44
-Seola: 맞잖아 바보. 아 모지리도 나쁘지 않네.
-@char Jicheol.2_1_4_047 pos:64,-44
-모지리라니… 마음이 아프다…
-@char Jicheol.2_1_4_048 pos:64,-44
-Jicheol: 그 사람을 만나면 어떻게 말 걸어야 할까?
-@char Seola.3_1_4_049 pos:36,-44
-Seola: 오빠가 그 정도로 티 냈으면 그 사람도 어지간하면 알 걸?
-@char Seola.3_1_4_050 pos:36,-44
-Seola: 아니 이럴 때는 그냥 남자답게 딱 가서 말 걸면 된다니까??
-@char Jicheol.2_1_4_051 pos:64,-44
-Jicheol: 정말 그거면 될까?
-@char Seola.3_1_4_052 pos:36,-44
-Seola: 아니면 이대로 계속 바보 하고 싶어?
-@char Jicheol.2_1_4_053 pos:64,-44
-Jicheol: 고마워 설아야. 나 한 번 열심히 해볼게.
-@char Seola.3_1_4_054 pos:36,-44
-Seola: 아…아무튼 고마운 줄 알면 나중에 어떻게 되었는지… 알려줘.
-@char Jicheol.2_1_4_055 pos:64,-44
-Jicheol: 응. 당연하지. 다 너 덕분인 걸.
-@char Seola.3_1_4_056 pos:36,-44
-Seola: …….
-@char Seola.3_1_4_057 pos:36,-44
-Seola: …바보.
-@char Jicheol.2_1_4_058 pos:64,-44
-Jicheol: 응? 나 불렀어?
-@char Seola.3_1_4_059 pos:36,-44
-Seola: 그래 바보야. 이제 슬슬 정리하고 올라가자.
-@char Seola.3_1_4_060 pos:36,-44
-Seola: 더 있으면 부장님한테 혼나겠어.
-@char Seola.3_1_4_060 pos:100,-44 time:1
-@char Jicheol.2_1_4_061 pos:50,-44
-설아는 아무 일 없다는 듯한 표정을 짓고 있었지만
-어째서인지 애써 불편한 감정을 감추려는 것만 같았다.
-@char Jicheol.2_1_4_063 pos:50,-44
-……
-기분 탓이겠지?
+@char Jicheol.2_1_4_034 pos:60,-44
+@char Seola.3_1_4_034 pos:40,-44
+Seola: 그래서 도대체 뭔 일이길래 이러고 있는 거야?
+@char Jicheol.2_1_4_035
+Jicheol: ……
+@char Seola.3_1_4_025
+Seola: 오빠? 말을 해야 나도 도와주지 않을까?
+@char Jicheol.2_1_4_037
+Jicheol: 나는 바보야.
+@char Seola.3_1_4_038
+Seola: 지금이라도 알게 되었다니 다행이야.
+@char Jicheol.2_1_4_039
+Jicheol: 으…… 입이 안 떨어져.
+@char Jicheol.2_1_4_040
+Jicheol: 이거 말하는 게 이렇게 어려운 일일 줄이야.
+@char Seola.3_1_4_041
+Seola: 설마 그 때 말했던 사람 떄문이야…?
+@char Jicheol.2_1_4_042
+Jicheol: 아니야. 그냥 신경 꺼. 내가 알아서 해볼게.
+@char Seola.3_1_4_043
+Seola: 왜 그 사람한테 고백하다가 까였어?
+@char Jicheol.2_1_4_044
+Jicheol: ……
+@char Seola.3_1_4_045
+Seola: 어…? 뭐야.
+@char Jicheol.2_1_4_046
+Jicheol: 뭐야 너 어떻게 알았어…?
+@char Seola.3_1_4_047
+Seola: 진짜야 오빠? 말도 안돼...?
+@char Jicheol.2_1_4_048
+Jicheol: ...아니 이게 어떻게 된 일이냐면
+설아한테 그 동안 있었던 일을 설명했다.
+@stopBgm
+@hideChars
+@bgm 
+@char Jicheol.2_1_4_049 pos:60,-44
+@char Seola.3_1_4_049 pos:40,-44
+Jicheol: 아무리 생각해도 나 그 사람 좋아하는 것 같아.
+@char Seola.3_1_4_050
+Seola: …………
+@char Jicheol.2_1_4_051
+Jicheol: 설아야?
+@char Jicheol.2_1_4_052
+Jicheol: 설아야!
+@char Seola.3_1_4_053
+Seola: …어?
+@char Jicheol.2_1_4_054
+Jicheol: 그게 그렇게나 충격적이었어? 
+@char Seola.3_1_4_055
+Seola: ……당연하지. 난 오빠가 평생 연애 같은 건 안 할 줄 알았어.
+@char Jicheol.2_1_4_056
+Jicheol: 그냥 그 사람한테는 뭔가 특별한 게 느껴지는 것 같아.
+@char Jicheol.2_1_4_057
+Jicheol: 설령 사귀지는 못 한다고 하더라도 그 사람이랑 친해지고 싶어.
+@char Seola.3_1_4_058
+설아는 말없이 어딘가 복잡한 표정으로 나를 바라본다.
+@char Seola.3_1_4_059
+지금까지 이런 설아의 표정은 본 적 없었다. 적잖이 충격을 받은 것 같다. 
+@char Jicheol.2_1_4_060
+아니 근데 내가 그런 이미지였나?
+@char Seola.3_1_4_061
+Seola: 그 사람이랑 정말 잘 되고 싶으면……
+@char Seola.3_1_4_062
+Seola: 그 사람이 받아줄 때까지 한 번 끈질기게 말 걸어보는 건 어때?
+@char Jicheol.2_1_4_063
+Jicheol: 뭐? 계속 말 걸라고...?
+@char Seola.3_1_4_064
+Seola: 어 그 사람이 싫어하는 것 같아 보여도 계속 말 거는 거야.
+@char Jicheol.2_1_4_065
+Jicheol: 음… 부담스러워하지 않을까? 
+Jicheol: 나같으면 오히려 그랬다가 싫어할 거 같은데.
+@char Seola.3_1_4_067
+Seola: 아니야, 스며든다는 말 몰라? 
+@char Seola.3_1_4_068
+Seola: 꾸준히. 오랜 시간 곁에 있어주다 보면…. 
+@char Seola.3_1_4_069
+Seola: 언젠가… 그 사람도 알아채 줄 거야.
+@char Jicheol.2_1_4_070
+Jicheol: 정말 그거면 충분할까?
+@char Seola.3_1_4_071
+Seola: 오래 스며들면 그만큼 빠져 나가기 힘든 법이거든.
+@char Seola.3_1_4_072
+@char Jicheol.2_1_4_072
+Seola: 언젠가 기회가 생길 거야.
+@wait 2
+@char Jicheol.2_1_4_073
+Jicheol: 한 번 잘해볼게 설아야. 고마워.
+@char Seola.3_1_4_074
+Seola: ……
+@char Seola.3_1_4_075
+Seola: 그래, 한 번 잘 해봐.
 
 @minigame gameType:1 gameLevel:3

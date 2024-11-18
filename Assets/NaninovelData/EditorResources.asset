@@ -2707,6 +2707,18 @@ MonoBehaviour:
     - name: 1_1_3_104
       pathPrefix: Characters/Haji
       guid: 6782120f05c7d52479e53d92c3323551
+    - name: 1_1_3_200
+      pathPrefix: Characters/Haji
+      guid: 5e2f6064f175aa4468d900bf5dbe7557
+    - name: 1_1_3_201
+      pathPrefix: Characters/Haji
+      guid: 3452374bdba639b44badcc8446e0d110
+    - name: 1_1_3_202
+      pathPrefix: Characters/Haji
+      guid: 92813a5dce411ea40b0596a532342ef3
+    - name: 1_1_3_203
+      pathPrefix: Characters/Haji
+      guid: c74c012eadfe3a24985d5a0b193dd078
     - name: 1_2_1_008
       pathPrefix: Characters/Haji
       guid: 65571bc7bb68b7d458672ee1c585935e
@@ -3078,6 +3090,15 @@ MonoBehaviour:
     - name: 2_1_3_135
       pathPrefix: Characters/Jicheol
       guid: f4a29b9cc11036547b6a1e9d7f833b70
+    - name: 2_1_3_200
+      pathPrefix: Characters/Jicheol
+      guid: 0659580ccad2a3b499097f2124c6bc2b
+    - name: 2_1_3_201
+      pathPrefix: Characters/Jicheol
+      guid: dd2852076c005f74aad86c9cca40406c
+    - name: 2_1_3_202
+      pathPrefix: Characters/Jicheol
+      guid: 7cefc90ad5b75cd4a9ab73348f1fa5c9
     - name: 2_2_1_001
       pathPrefix: Characters/Jicheol
       guid: 000eb7e9cd0dea542b4efd0ffbea402c
@@ -3391,6 +3412,15 @@ MonoBehaviour:
     - name: Highlight
       pathPrefix: Audio
       guid: 8da4b71021960a643bd33848bb2d6973
+    - name: Did you know
+      pathPrefix: Audio
+      guid: db9c704f3067e3744b2c1a24078ce5e3
+    - name: crack
+      pathPrefix: Audio
+      guid: 5e60398d2df803c4d852b9e88625cdf7
+    - name: Moon dance
+      pathPrefix: Audio
+      guid: de441e7288dc54b4d85b29fe9454f6a7
     - name: alarm
       pathPrefix: Audio
       guid: 2baefc81633a4d04292675c739ce9e2b
@@ -3406,6 +3436,12 @@ MonoBehaviour:
     - name: cup_breaking
       pathPrefix: Audio
       guid: a621d746ced54434ea9d3f7a141052c7
+    - name: disturb
+      pathPrefix: Audio
+      guid: c2ffed9be3277144e9f19f28e4b5361e
+    - name: dream
+      pathPrefix: Audio
+      guid: 71181815018aae44aa45f9890d177444
     - name: end_call
       pathPrefix: Audio
       guid: 153813da89840f3479a4b03d7ebeb698
@@ -3450,10 +3486,13 @@ MonoBehaviour:
       guid: e44f867909889934f9cfcb654c06f489
     - name: running_footsteps
       pathPrefix: Audio
-      guid: 5e76209968341804b87bdca021e575ec
-    - name: siren
+      guid: c6c1d873ffc3f5342a2e99c552a9af6f
+    - name: siren_start
       pathPrefix: Audio
-      guid: 73b39b872d5063248b11c49d29fb853f
+      guid: 997e8853075145445a38d6e7602a5959
+    - name: siren_buzz
+      pathPrefix: Audio
+      guid: e31489f6641280b44a3c2f0ed6dfaf88
     - name: subway_door_2
       pathPrefix: Audio
       guid: 147507eb0087c0e4c8a08d2893499b11
@@ -3475,6 +3514,24 @@ MonoBehaviour:
     - name: broken
       pathPrefix: Audio
       guid: fac16c0dcd22ccf4dad9e5a1e59a08a6
-    - name: disturb
+    - name: rapid_fire
       pathPrefix: Audio
-      guid: c2ffed9be3277144e9f19f28e4b5361e
+      guid: 67d3a0b7f1f607248bff6a729e9deda5
+    - name: rain
+      pathPrefix: Audio
+      guid: e7d098152e8a61046ae963c5a5b79786
+    - name: reminiscence
+      pathPrefix: Audio
+      guid: 2ef1b72a969e09b4c817c7b04e38a047
+    - name: click
+      pathPrefix: Audio
+      guid: 72ce3c4d84f92ac47a195ed1ea309b60
+    - name: data
+      pathPrefix: Audio
+      guid: 79e4b2f296bfa08409473affb7e8e59b
+    - name: danger
+      pathPrefix: Audio
+      guid: 9980941f9f8ff19478fe8dc2c4994dc0
+    - name: menuopen
+      pathPrefix: Audio
+      guid: d57f430b176edd444904c544dc8d48cc

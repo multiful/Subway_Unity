@@ -2,45 +2,53 @@
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 같이 앉아가니까 좋네요.....
+@clearMinigame
 @goto e6_2
 
 # 대성공2
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 고마워요. 덕분에 편하게 가네요.
+@clearMinigame
 @goto e7_2
 
 # 대성공3
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 피곤해서 그런데, 잠깐 기대도 될까요?.
+@clearMinigame
 @goto e8_2
 
 # 대성공4
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 같이 앉아가니까 좋다. 그렇지?.
+@clearMinigame
 @goto e9_2
 
 # 성공1
 @char Haji pos:50,-36
 Haji: 덕분에 편하게 가네요.
+@clearMinigame
 @goto e6_2
 
 # 성공2
 @char Haji pos:50,-36
 Haji: ...고마워요.
+@clearMinigame
 @goto e7_2
 
 # 성공3
 @char Haji pos:50,-36
 Haji: ...같이 앉았으면 더 좋았을텐데.
+@clearMinigame
 @goto e8_2
 
 
 # 성공4
 @char Haji pos:50,-36
 Haji: 아침마다 늘 고마워~
+@clearMinigame
 @goto e9_2
 
 # 실패1

@@ -1,4 +1,5 @@
 @back Black
+@sfx danger
 ???: 지철아
 @char Haji.1_1_1_001 pos:50,-44
 ???: 빨리…
@@ -11,7 +12,8 @@
 Jicheol: …!
 @char Haji.1_1_1_007
 ???: 걱정하지마. 나는 널 만난 걸 후회하지 않아.
-@sfx disturb
+@stopSfx
+@sfx dream
 @hide Haji time:0.0008
 @char Haji.1_1_1_008 pos:50,-44 scale:2.74 time:0.008
 @char Haji.1_1_1_008_0 time:0.008
@@ -462,7 +464,7 @@ Jicheol: …!
 그 많던 사람들은 다 어디 가고 지하철에는 어떤 여자와 나 단 둘만이 남았다.
 @back Black
 @back Subway3
-@char Jicheol.2_1_1_022
+@char Jicheol.2_1_1_022 pos:50,-44
 하… 내일은 반차 써야지….
 어떻게 보면 요즘 들어 피곤한 건 다 그 꿈 때문이다.
 @stopBgm 
@@ -475,7 +477,7 @@ Jicheol: …!
 @back End4_1
 @sfx running_footsteps loop:true
 그 꿈에서 나는 어떤 여자의 손에 이끌려 정신 없이 달린다.
-@sfx gunshot
+@sfx rapid_fire
 뒤에서는 총알이 날아오고 우리의 몸은 점점 피로 물들어가지만
 우리는 그 어떤 것도 신경 쓰지 않고 그저 계속해서 달린다.
 @stopSfx 
@@ -597,11 +599,14 @@ Jicheol: …!
 ......!?
 응? 잠깐만…?
 조금 전까지 있었던 갑자기 사람이 사라졌다.
+@wait 3
 Jicheol: !!!!!
 뭐야 저 사람… 갑자기 사라진 거야…? 
-주위를 두리번거렸지만 지하철에서는 나 말고 그 어떤 사람도 보이지 않았다.
+주위를 두리번거렸지만 지하철에서는 나 말고 그 어떤 사람도 보이지 않는다.
 뭐지?
 내가 아직도 꿈을 꾸고 있나…?
+@back Black
+@back Subway1_D.RadialBlur time:1
 @back Black
 @back Subway1_NH.RadialBlur time:1
 다시 불이 켜지자 그 사람은 언제 그랬냐는 듯 그 자리에 있었다.
@@ -898,7 +903,6 @@ Jicheol: 으으으으아아아아아아!!!
 @back Mem4_22 time:0.009
 @back Mem4_23 time:0.009
 @back Mem4_24 time:0.009
-@nowStory
 @back Mem4_25 time:0.009
 @back Mem4_26 time:0.009
 @back Mem4_27 time:0.009
@@ -980,5 +984,4 @@ Jicheol: ㅎ..ㅏ..ㅈ
 @hideAll
 
 @nowStory story:e2_1
-
 @goStory

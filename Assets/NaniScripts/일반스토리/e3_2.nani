@@ -5,9 +5,11 @@ Seola: 오빠는 그 사람이랑 사귀고 싶어?
 @back Station
 @char Jicheol.2_1_3_062 pos:50,-44
 설아가 툭 내뱉은 말이 자꾸 생각난다.
+내가 그 사람을 좋아한다고는 생각한 적 없었는데...
 @char Jicheol.2_1_3_063
 그래, 그 사람에게 마음이 가는 건 부정할 수 없을 것 같다.
 그렇게 강렬한 감정은 한 번도 느껴본 적 없었다.
+그런데 내가 그 사람을 좋아하고 있다고...?
 @char Jicheol.2_1_3_065
 하지만 내가 그렇다고 그 사람을 좋아한다고 말할 수 있을까?
 그 날의 오묘한 분위기 때문에 잠시 설렌 게 아닐까?
@@ -16,13 +18,14 @@ Seola: 오빠는 그 사람이랑 사귀고 싶어?
 …….
 @char Jicheol.2_1_3_069
 이 감정 때문에 내 일상이 조금씩 조금씩 망가져 가는 게 달갑지 않다.
-알고 지내던 사람도 아니고 생판 모르는 남을 이렇게 좋아하게 될 줄이야.
+알고 지내던 사람도 아니고 생판 모르는 남을 이렇게 좋아하게 되었다고...?
 @char Jicheol.2_1_3_071
 아니야 그럴 리 없어.
 분명 그 망할 꿈 때문일 거야.
 @hideAll
 @back Black
 @back Subway1_past
+@sfx reminiscence
 @char 1stMerchant.4_1_3_073 pos:64,-44
 1stMerchant: 에이 이러지마. 그거는 다 이유가 있어서 그랬던 거라니까? 
 @char Haji.1_1_3_074 pos:36,-44
@@ -71,8 +74,8 @@ Haji: 정말! 그때 얼마나 큰 일이 났는지 알아요?
 @char Haji.1_1_3_093
 Haji: 당신이 준 물건 때문에 상관 없는 사람이 쓰러졌다니까요!!
 @char Jicheol.2_1_3_094
-어!?
-저거 분명 내 얘기겠지?
+어라?
+저거... 분명 내 얘기겠지?
 @char 1stMerchant.4_1_3_096
 1stMerchant: 다 사정이 있어서 그러는 거라니까…?
 @char Haji.1_1_3_097
@@ -84,25 +87,49 @@ Jicheol: 저기…
 @char Haji.1_1_3_101
 Haji: 당신은…?!
 @char Jicheol.2_1_3_102
-Jicheol: 안녕하세요. 혹시 절 알아보시겠나요?
+Jicheol: 안녕하세요. 혹시… 절 알아보시겠나요?
 @char Haji.1_1_3_103
 Haji: …아니요. 모르겠습니다. 
 @char Haji.1_1_3_104
 Haji: 사람 잘못 보신 것 같네요. 
-@char Haji.1_1_3_104 pos:20,-44
-@hide Haji
 @char Jicheol.2_1_3_105 pos:36,-44
 Jicheol: 어, 잠시만…
+@back Subway1.RadialBlur time:1
+순간 내 몸이 내 몸이 아닌 것 같은 느낌이 들었다.
+어라? 이 느낌은...?
+@char Jicheol.2_1_3_200 pos:36,-44
+Jicheol: 좋아해요.
+Jicheol: 뭘 하고 있어도 자꾸 그쪽이 보고싶고 자꾸 떠올라요.
+@char Haji.1_1_3_200
+Haji: 네!?
+@char Jicheol.2_1_3_201 
+Jicheol: 실례가 되지 않는다면 연락처 좀 알려주시겠어요?
+@char Haji.1_1_3_201
+@char Haji.1_1_3_202
+Haji: ......
+@char Haji.1_1_3_203
+Haji: 미안해요.
+@char Haji.1_1_3_203 pos:20,-44
+@hide Haji
 그 말을 끝으로 그 사람은 서둘러 자리를 피했다.
-잘못 봤을 리가 없다. 분명 그 날 마주친 그 사람이 맞다.
+@hideChars
+@back Black
+@char Jicheol.2_1_3_202 
+아니 뭐야 이거 지금 내 입에서 나온 소리야???
+내가 겨우 얼굴만 아는 사람한테 고백부터 했다고?????
+끄아아아아아아아아아아아아아아아아아아아아
+애써 외면하던 깊은 속마음을 마주한 것만 같아서 부끄럽다.
 @char Jicheol.2_1_3_108
-뭐지? 저 사람도 나를 아는 것 같아 보이는데…
-왜 저렇게까지 피하는 거지…?
-@char 1stMerchant.4_1_3_110
+근데 방금 그 느낌은 미래가 보일 때랑 같은 느낌인데...?
+뭐야 이거 도대체 정체가 뭐지...
+@back Subway1
+@char 1stMerchant.4_1_3_110 pos:64,-44
 1stMerchant: 안녕 총각? 
 @char Jicheol.2_1_3_105
 Jicheol: 깜짝이야!?
-1stMerchant: 총각 저 아가씨랑 아는 사이야?
+1stMerchant: 음~ 아주 열렬한 사랑 고백이었어.
+1stMerchant: 아저씨도 간만에 가슴이 뛰었다니까?
+1stMerchant: 총각 저 아가씨랑 잘 아는 사이야?
 @char Jicheol.2_1_3_113
 Jicheol: ….
 Jicheol: 잘 모르겠어요.
@@ -138,11 +165,13 @@ Jicheol: 네?
 하지… 이름마저도 예쁘다.
 조심스럽게 입안에서 발음해보니, 어쩐지 익숙한 느낌이 든다.
 @char Jicheol.2_1_3_134
-그나저나 차원 관리국이라니…이런 정부 부처가 있었나?
+그나저나 차원 관리국이라니… 거긴 뭐하는 곳이지?
 @char Jicheol.2_1_3_135
-아니면 장난감 같은 건가…?
+아니면 그냥 장난감 같은 건가…?
 ……
 @hide Jicheol
 @back Black
 일단 천천히 생각해보자.
-@finishStory
+@hideAll
+@nowStory story:e4_1
+@goStory
