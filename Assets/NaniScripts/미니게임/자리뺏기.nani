@@ -2,71 +2,87 @@
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 같이 앉아가니까 좋네요.....
-@clearMinigame
-@goto e6_2
+@hideAll
+@nowStory story:e6_2
+@goStory
 
 # 대성공2
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 고마워요. 덕분에 편하게 가네요.
-@clearMinigame
-@goto e7_2
+@hideAll
+@nowStory story:e7_2
+@goStory
 
 # 대성공3
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 피곤해서 그런데, 잠깐 기대도 될까요?.
-@clearMinigame
-@goto e8_2
+@hideAll
+@nowStory story:e8_2
+@goStory
 
 # 대성공4
 @char Haji pos:40,-36
 @char Jicheol pos:60,-36
 Haji: 같이 앉아가니까 좋다. 그렇지?.
-@clearMinigame
-@goto e9_2
+@hideAll
+@nowStory story:e9_2
+@goStory
 
 # 성공1
 @char Haji pos:50,-36
 Haji: 덕분에 편하게 가네요.
-@clearMinigame
-@goto e6_2
+@hideAll
+@nowStory story:e6_2
+@goStory
 
 # 성공2
 @char Haji pos:50,-36
 Haji: ...고마워요.
-@clearMinigame
-@goto e7_2
+@hideAll
+@nowStory story:e7_2
+@goStory
 
 # 성공3
 @char Haji pos:50,-36
 Haji: ...같이 앉았으면 더 좋았을텐데.
-@clearMinigame
-@goto e8_2
+@hideAll
+@nowStory story:e8_2
+@goStory
 
 
 # 성공4
 @char Haji pos:50,-36
 Haji: 아침마다 늘 고마워~
-@clearMinigame
-@goto e9_2
+@hideAll
+@nowStory story:e9_2
+@goStory
 
 # 실패1
 @char Haji pos:50,-36
 Haji: 몸이 안 좋아서... 택시라도 타고 가야겠어요. 먼저 가볼게요.
-@goto e6_1.minigame
+@hideAll
+@clearMinigame
+@goMain
 
 # 실패2
 @char Haji pos:50,-36
 Haji: 너무 갑갑해서 도저히 못 있겠어요. 전 다음 열차 탈게요.
+@hideAll
+@clearMinigame
 @goMain
 
 # 실패3
 @char Haji pos:50,-36
 Haji: 역시 이 시간대는 사람이 너무 많아. 차라리 조금 일찍 출근할까봐.
+@hideAll
+@clearMinigame
 @goMain
 
 # 실패4
 @char Haji pos:50,-36
-Haji: 정말 출근길은 정말 지옥철이야.
+Haji: 정말 출근길은 정말 지옥이야.
+@hideAll
+@clearMinigame
 @goMain

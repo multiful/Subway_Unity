@@ -5,43 +5,55 @@
 # 성공1
 @char Jicheol.transfer_lv1_clear pos:50,-36
 Jicheol: 그날은 정말 뭐였을까?
+@hideAll
+@nowStory story:e2_2
 @goStory
 
 # 성공2
 @char Jicheol.transfer_lv2_clear pos:50,-36
 Jicheol: 휴... 겨우 탔네.
+@hideAll
+@nowStory story:e3_2
 @goStory
 
 # 성공3
 @char Jicheoltransfer_lv3_clear pos:50,-36
 Jicheol: 오늘은 꼭 말 걸어봐야지.
+@hideAll
+@nowStory story:e4_2
 @goStory
 
 
 # 성공4
 @char Jicheoltransfer_lv4_clear pos:50,-36
 Jicheol: 늘 이 시간대에 마주쳤으니까, 어쩌면 오늘도...
+@hideAll
+@nowStory story:e5_2
 @goStory
 
 
 # 실패1
 @char Jicheol.transfer_lv1_over pos:50,-36
 Jicheol: 요새 내가 많이 힘든가?
+@hideAll
 @goMain
 
 # 실패2
 @char Jicheol.transfer_lv2_over pos:50,-36
 Jicheol: 고작 지하철을 하나 놓친 것 뿐인데...
 Jicheol: 뭔가 중요한 걸 놓친 것 같은 이 찜찜한 기분은 뭐지…?
+@hideAll
 @goMain
 
 # 실패3
 @char Jicheol.transfer_lv3_over pos:50,-36
 Jicheol: 하지씨는 지하철 타셨을까? 
 Jicheol: ...아쉽네.
+@hideAll
 @goMain
 
 # 실패4
 @char Jicheol.transfer_lv4_over pos:50,-36
 Jicheol: 비도 오는데 그냥 택시 타고 출근해야 겠다.
+@hideAll
 @goMain

@@ -84,6 +84,7 @@ Jicheol: 잠시만요! 내릴게요!!
 닫히려는 지하철 문을 억지로 열고 하지씨가 있는 곳까지 달려갔다.
 @back Black
 @back Station
+@bgm Highlight
 @char Haji.1_2_3_074 pos:70,-44
 @char Jicheol.2_2_3_071 pos:20,-44
 @char Jicheol.2_2_3_071 pos:40,-44

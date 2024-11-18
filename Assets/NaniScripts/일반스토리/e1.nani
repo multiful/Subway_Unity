@@ -12,7 +12,7 @@
 Jicheol: …!
 @char Haji.1_1_1_007
 ???: 걱정하지마. 나는 널 만난 걸 후회하지 않아.
-@stopSfx
+@stopSfx 
 @sfx dream
 @hide Haji time:0.0008
 @char Haji.1_1_1_008 pos:50,-44 scale:2.74 time:0.008
@@ -598,31 +598,36 @@ Jicheol: …!
 @sfx rattle_rattle
 ......!?
 응? 잠깐만…?
-조금 전까지 있었던 갑자기 사람이 사라졌다.
+저 사람… 갑자기 사라졌어…? 
 @wait 3
-Jicheol: !!!!!
-뭐야 저 사람… 갑자기 사라진 거야…? 
-주위를 두리번거렸지만 지하철에서는 나 말고 그 어떤 사람도 보이지 않는다.
+뭐야 이게 어떻게 된 일이지…?
+내가 아직도 꿈을 꾸고 있나?
+정신을 차리기 위해 있는 힘껏 볼을 꼬집었다.
+으…윽 
+꿈은 아닌 것 같은데……
+주위를 두리번거렸지만 사람 흔적 하나 보이지 않는다.
+……
 뭐지?
-내가 아직도 꿈을 꾸고 있나…?
+갑자기 사람이 사라질 수 있다고…? 
 @back Black
 @back Subway1_D.RadialBlur time:1
 @back Black
 @back Subway1_NH.RadialBlur time:1
 다시 불이 켜지자 그 사람은 언제 그랬냐는 듯 그 자리에 있었다.
-뭐야? 저 사람....?
+뭐야? 저 사람……?
+분명히 아까 전에는 없었는데……?
 설마… 귀신…?
 실례라는 걸 알지만 그 사람에게 시선을 땔 수 없었다.
 어라? 잠깐만 그러고 보니 저 사람은…?
 허리까지 이어진 긴 적갈색 곱슬머리, 작은 고양이 같아 보이는 인상..
 틀림 없다. 꿈에서 나오는 그 여자다.
-Jicheol: 저기…
 순간 갑자기 코에서 피가 주르륵 흘러 내렸다.
 @back Black.RadialBlur time:1
 온 몸에 식은 땀이 흐르고, 심장은 마구 쿵쾅거린다.
 Jicheol: 으…윽
 Jicheol: 으으으으아아아아아아!!!
-무언가가 사정 없이 머리 속을 짓이기는 것만 같다.
+정신을 놓을 정도의 엄청난 두통이 밀려온다.
+마치 무언가가 사정 없이 머리 속을 짓이기는 것만 같다.
 @back Black scale:0.8
 @hideAll
 @sfx glitch loop:true
@@ -967,7 +972,7 @@ Jicheol: 으으으으아아아아아아!!!
 @back White pose:Normal
 Jicheol: 어…?
 몸 안에서 무언가가 끊어 지는 것 같은 느낌이 들었다.
-@stopSfx 
+@stopSfx
 @back Subway1_N
 @char Jicheol.2_1_1_072 pos:50,-44
 @wait 1

@@ -263,5 +263,6 @@ Jicheol: 그래 참고할게. 잘 자 설아야.
 그래 정말로 무슨 일이 있어서 그런 것이겠지…? 
 @char Jicheol.2_2_2_137
 그래 괜찮을 거야….
-
-@goto e7_1
+@hideAll
+@nowStory story:e4_1
+@goStory
