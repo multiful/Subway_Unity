@@ -166,6 +166,9 @@ MonoBehaviour:
     - name: ToastUI
       pathPrefix: UI
       guid: f892c791398b24f44927ccb9feb24f3c
+    - name: CreditUI
+      pathPrefix: UI
+      guid: f849ed69e7c2bcd49b6ad972ac0627c1
   - Id: Scripts
     Resources:
     - name: "\uCCAB\uBC88\uC9F8_\uB4F1\uAD50"

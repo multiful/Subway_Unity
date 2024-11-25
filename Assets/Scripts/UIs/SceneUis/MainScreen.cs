@@ -41,7 +41,10 @@ public class MainScreen : MonoBehaviour
         //TMP_ticket.text = GameManager.userData.Ticket == 0 ?
         //    GameManager.userData.TicketTime : GameManager.userData.Ticket.ToString();
     }
-
+    public void ShowSetting()
+    {
+        GameManager.UI.ShowSettingUI();
+    }
     public void Transfer()
     {
         //GameManager.userData.Ticket--; // 티켓이 부족하면?

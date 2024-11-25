@@ -2852,6 +2852,7 @@ GameObject:
   - component: {fileID: 222663048311563188}
   - component: {fileID: 114086343421447632}
   - component: {fileID: 114412166245842400}
+  - component: {fileID: 2868128003498141827}
   m_Layer: 5
   m_Name: BasicPanel
   m_TagString: Untagged
@@ -2944,6 +2945,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &2868128003498141827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676746803361254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0439c4a7dba0604fbf882823c9aa3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1682302089313010
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +5512,7 @@ GameObject:
   - component: {fileID: 339773332343392360}
   - component: {fileID: 3293259478766597541}
   - component: {fileID: 1542819092802486983}
+  - component: {fileID: 5191045381802253852}
   m_Layer: 5
   m_Name: CreditButton
   m_TagString: Untagged
@@ -5606,7 +5620,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3293259478766597541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5191045381802253852}
+        m_TargetAssemblyTypeName: CreditUI, Assembly-CSharp
+        m_MethodName: ShowCredit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5191045381802253852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3851781501977879952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0439c4a7dba0604fbf882823c9aa3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4013359877762583526
 GameObject:
   m_ObjectHideFlags: 0
