@@ -116,6 +116,7 @@ namespace Naninovel.UI
         {
             base.OnButtonClick();
             onClicked?.Invoke(SlotNumber);
+            
         }
 
         protected virtual void HandleDeleteButtonClicked ()

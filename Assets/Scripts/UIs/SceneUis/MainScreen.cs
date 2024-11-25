@@ -5,13 +5,14 @@ using TMPro;
 using Naninovel;
 using UnityEngine.SceneManagement;
 using Naninovel.UI;
-
+using UnityEngine.UI;
 public class MainScreen : MonoBehaviour
 {
     public GameObject _BackGroundObject;
     public TMP_Text TMP_NowStory;
     public TMP_Text TMP_money, TMP_ticket, TMP_eyedrop;
 
+    public Button settingBtn;
 
     private void Start()
     {
@@ -31,6 +32,8 @@ public class MainScreen : MonoBehaviour
 
         TMP_money.text = GameManager.userData.Money.ToString();
         TMP_eyedrop.text = GameManager.userData.Eyedrop.ToString();
+
+
     }
 
     private void Update()
