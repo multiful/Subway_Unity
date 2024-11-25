@@ -66,25 +66,31 @@ Haji: 제 돈 돌려줘요.
 @hide Jicheol
 @char Haji.1_1_3_074 pos:36,-44
 @char 1stMerchant.4_1_3_075 pos:64,-44
-@char Jicheol.2_1_3_088 pos:80,-44
 점점 격해지는 말싸움에 주변 승객들도 힐끔힐끔 두 사람을 쳐다본다.
 하지만 그녀는 아직 상황을 제대로 파악하지 못한 듯 점점 언성을 높인다.
 @char Haji.1_1_3_092
 Haji: 정말! 그때 얼마나 큰 일이 났는지 알아요?
 @char Haji.1_1_3_093
 Haji: 당신이 준 물건 때문에 상관 없는 사람이 쓰러졌다니까요!!
+@hideChars
+@char Jicheol.2_1_3_088 pos:50,-44
 @char Jicheol.2_1_3_094
 어라?
 저거... 분명 내 얘기겠지?
-@char 1stMerchant.4_1_3_096
+@hide Jicheol
+@char Haji.1_1_3_093 pos:36,-44
+@char 1stMerchant.4_1_3_096 pos:64,-44
 1stMerchant: 다 사정이 있어서 그러는 거라니까…?
 @char Haji.1_1_3_097
 Haji: 아니 지금 진짜…
-@char Jicheol.2_1_3_098 pos:70,-44
+@char Jicheol.2_1_3_098 pos:50,-44
+@char 1stMerchant.4_1_3_096 pos:74,-44
 Jicheol: 저기… 
 나서고 싶지는 않았다. 
 그렇다고 모르는 척 하자니 마음이 불편해서 나도 모르게 나서고 말았다. 
-@char Haji.1_1_3_101
+@hide 1stMerchant
+@char Jicheol.2_1_3_098 pos:60,-44
+@char Haji.1_1_3_101 pos:40,-44
 Haji: 당신은…?!
 @char Jicheol.2_1_3_102
 Jicheol: 안녕하세요. 혹시… 절 알아보시겠나요?
@@ -92,17 +98,19 @@ Jicheol: 안녕하세요. 혹시… 절 알아보시겠나요?
 Haji: …아니요. 모르겠습니다. 
 @char Haji.1_1_3_104
 Haji: 사람 잘못 보신 것 같네요. 
-@char Jicheol.2_1_3_105 pos:36,-44
+@char Haji.1_1_3_104 pos:36,-44
+@char Jicheol.2_1_3_105 pos:50,-44
 Jicheol: 어, 잠시만…
+@sfx reminiscence
 @back Subway1.RadialBlur time:1
 순간 내 몸이 내 몸이 아닌 것 같은 느낌이 들었다.
 어라? 이 느낌은...?
-@char Jicheol.2_1_3_200 pos:36,-44
+@char Jicheol.2_1_3_200
 Jicheol: 좋아해요.
 Jicheol: 뭘 하고 있어도 자꾸 그쪽이 보고싶고 자꾸 떠올라요.
 @char Haji.1_1_3_200
 Haji: 네!?
-@char Jicheol.2_1_3_201 
+@char Jicheol.2_1_3_201
 Jicheol: 실례가 되지 않는다면 연락처 좀 알려주시겠어요?
 @char Haji.1_1_3_201
 @char Haji.1_1_3_202
@@ -114,7 +122,7 @@ Haji: 미안해요.
 그 말을 끝으로 그 사람은 서둘러 자리를 피했다.
 @hideChars
 @back Black
-@char Jicheol.2_1_3_202 
+@char Jicheol.2_1_3_202
 아니 뭐야 이거 지금 내 입에서 나온 소리야???
 내가 겨우 얼굴만 아는 사람한테 고백부터 했다고?????
 끄아아아아아아아아아아아아아아아아아아아아
@@ -123,7 +131,8 @@ Haji: 미안해요.
 근데 방금 그 느낌은 미래가 보일 때랑 같은 느낌인데...?
 뭐야 이거 도대체 정체가 뭐지...
 @back Subway1
-@char 1stMerchant.4_1_3_110 pos:64,-44
+@char Jicheol.2_1_3_108 pos:35,-44
+@char 1stMerchant.4_1_3_110 pos:65,-44
 1stMerchant: 안녕 총각? 
 @char Jicheol.2_1_3_105
 Jicheol: 깜짝이야!?
@@ -151,6 +160,7 @@ Jicheol: 네?
 @char 1stMerchant.4_1_3_110
 1stMerchant: 장난이야 장난. 총각 재미없는 남자는 여자한테 인기 없어.
 1stMerchant: 그래, 총각이 저 아가씨를 아는 것 같아 보이는데, 나 대신 이것 좀 전해줘~
+@char 1stMerchant.4_1_3_110 pos:63,-44
 1stMerchant: 아니 그 아가씨가 아까 떨어뜨리고 가더라고.
 이상한 사람에게서 명찰 하나를 건네 받았다.
 @char 1stMerchant.4_1_3_118
@@ -169,9 +179,9 @@ Jicheol: 네?
 @char Jicheol.2_1_3_135
 아니면 그냥 장난감 같은 건가…?
 ……
+일단 천천히 생각해보자.
 @hide Jicheol
 @back Black
-일단 천천히 생각해보자.
 @hideAll
 @nowStory story:e4_1
 @goStory
