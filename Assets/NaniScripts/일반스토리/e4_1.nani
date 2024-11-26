@@ -48,7 +48,7 @@ Jicheol: 내가 그 사람을 좋아하는 건지 아닌 건지 확신이 잘 �
 Seola: 아… 
 @char Seola.3_1_4_025
 Seola: 오빠가 모르겠다고… 
-@hide Jichoel
+@hide Jicheol
 @char Seola.3_1_4_026 pos:50,-44
 Seola: 글쎄, 좋아하게 되면 어떤 행동을 하냐고 물어보면…
 @char Seola.3_1_4_027
@@ -66,7 +66,7 @@ Jicheol: …그래도 잘 모르겠다.
 Seola: 왜…? 무슨 일 있었어?
 @char Jicheol.2_1_4_033
 Jicheol: 여기서 얘기하지 말고 카페로 내려갈까?
-@hide Jichoel,Seola
+@hide Jicheol,Seola
 @back Black
 @back Cafe
 @char Jicheol.2_1_4_034 pos:60,-44
@@ -107,7 +107,6 @@ Jicheol: ...아니 이게 어떻게 된 일이냐면
 @char Jicheol.2_1_4_049 pos:60,-44
 @char Seola.3_1_4_049 pos:40,-44
 Jicheol: 아무리 생각해도 나 그 사람 좋아하는 것 같아.
-@char Seola.3_1_4_050
 Seola: …………
 @char Jicheol.2_1_4_051
 Jicheol: 설아야?
@@ -122,8 +121,8 @@ Seola: ……당연하지. 난 오빠가 평생 연애 같은 건 안 할 줄 �
 @char Jicheol.2_1_4_056
 Jicheol: 그냥 그 사람한테는 뭔가 특별한 게 느껴지는 것 같아.
 @char Jicheol.2_1_4_057
-Jicheol: 설령 사귀지는 못 한다고 하더라도 그 사람이랑 친해지고 싶어.
 @char Seola.3_1_4_058
+Jicheol: 설령 사귀지는 못 한다고 하더라도 그 사람이랑 친해지고 싶어.
 설아는 말없이 어딘가 복잡한 표정으로 나를 바라본다.
 @char Seola.3_1_4_059
 지금까지 이런 설아의 표정은 본 적 없었다. 적잖이 충격을 받은 것 같다. 
@@ -160,5 +159,5 @@ Jicheol: 한 번 잘해볼게 설아야. 고마워.
 Seola: ……
 @char Seola.3_1_4_075
 Seola: 그래, 한 번 잘 해봐.
-
+@hideAll
 @minigame gameType:1 gameLevel:3

@@ -1,6 +1,7 @@
 @back Black
 @back Subway1_past
-@char Jicheol.2_1_3_200 pos:36,-44
+@char Haji.1_1_3_104 pos:36,-44
+@char Jicheol.2_1_3_200 pos:64,-44
 Jicheol: 좋아해요.
 Jicheol: 뭘 하고 있어도 자꾸 그쪽이 보고싶고 자꾸 떠올라요.
 @char Haji.1_1_3_200
@@ -12,7 +13,7 @@ Jicheol: 실례가 되지 않는다면 연락처 좀 알려주시겠어요?
 Haji: ......
 @char Haji.1_1_3_203
 Haji: 미안해요.
-@char Haji.1_1_3_203 pos:20,-44
+@char Haji.1_1_3_203 pos:25,-44
 @hide Haji
 @back Black
 @back Station
@@ -29,11 +30,9 @@ Haji: 미안해요.
 
 이게 도대체 며칠 째인지 모르겠다.
 
-요즘 온 종일 말 거는 연습만 하는 것 같은데…
+요즘 시간 날 때마다 말 거는 연습만 하는 것 같다.
 
-혼자서 북치고 장구치고 주접을 떠는 것 같지만
-
-정작 그녀를 마주치면 어떤 말도 하지 못하고 얼어붙는다.
+하지만 정작 그녀를 마주치면 어떤 말도 하지 못하고 얼어붙는다.
 
 ……
 
@@ -166,5 +165,5 @@ Seola: 그 사람이 받아줄 때까지 한 번 끈질기게 말 걸어보는 �
 그래 일단 이게 어디야…?
 
 @hideAll
-@nowStory story:e4_1
+@nowStory story:e5_1
 @goStory

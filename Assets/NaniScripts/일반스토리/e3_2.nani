@@ -1,4 +1,5 @@
 @back Black
+@back Office_past
 @char Seola.3_1_3_061 pos:50,-44
 Seola: 오빠는 그 사람이랑 사귀고 싶어?
 @hideAll
@@ -27,11 +28,11 @@ Seola: 오빠는 그 사람이랑 사귀고 싶어?
 @back Subway1_past
 @sfx reminiscence
 @char 1stMerchant.4_1_3_073 pos:64,-44
-1stMerchant: 에이 이러지마. 그거는 다 이유가 있어서 그랬던 거라니까? 
 @char Haji.1_1_3_074 pos:36,-44
-지하지 : 제가 지금 그 말을 믿을 것 같아요?
+1stMerchant: 에이 이러지마. 그거는 다 이유가 있어서 그랬던 거라니까? 
+Haji: 제가 지금 그 말을 믿을 것 같아요?
 @char 1stMerchant.4_1_3_075
-1호선 상인 :  아가씨, 이러면 곤란해! 잠시만! 아 잠시만!
+1stMerchant: 아가씨, 이러면 곤란해! 잠시만! 아 잠시만!
 @hideAll
 @back Black
 @back Station
@@ -50,9 +51,9 @@ Haji: 제 돈 돌려줘요.
 @char 1stMerchant.4_1_3_073 pos:64,-44
 1stMerchant: 에이 이러지마. 그거는 다 이유가 있어서 그랬던 거라니까? 
 @char Haji.1_1_3_074
-지하지 : 아니, 제가 지금 그 말을 믿을 것 같아요?
+Haji: 아니, 제가 지금 그 말을 믿을 것 같아요?
 @char 1stMerchant.4_1_3_075
-1호선 상인 :  아가씨, 이러면 곤란해! 잠시만! 아 잠시만!
+1stMerchant: 아가씨, 이러면 곤란해! 잠시만! 아 잠시만!
 @hideChars
 @char Jicheol.2_1_3_084 pos:50,-44
 혼란스럽다. 뭘까? 이 상황?
@@ -113,11 +114,12 @@ Haji: 네!?
 @char Jicheol.2_1_3_201
 Jicheol: 실례가 되지 않는다면 연락처 좀 알려주시겠어요?
 @char Haji.1_1_3_201
+Haji: ......
 @char Haji.1_1_3_202
 Haji: ......
 @char Haji.1_1_3_203
 Haji: 미안해요.
-@char Haji.1_1_3_203 pos:20,-44
+@char Haji.1_1_3_203 pos:25,-44
 @hide Haji
 그 말을 끝으로 그 사람은 서둘러 자리를 피했다.
 @hideChars
@@ -134,7 +136,7 @@ Haji: 미안해요.
 @char Jicheol.2_1_3_108 pos:35,-44
 @char 1stMerchant.4_1_3_110 pos:65,-44
 1stMerchant: 안녕 총각? 
-@char Jicheol.2_1_3_105
+@char Jicheol.2_1_3_105r
 Jicheol: 깜짝이야!?
 1stMerchant: 음~ 아주 열렬한 사랑 고백이었어.
 1stMerchant: 아저씨도 간만에 가슴이 뛰었다니까?
@@ -155,7 +157,7 @@ Jicheol: 네?
 1stMerchant: 이러지 말고 두 개만 사줘!
 @char Jicheol.2_1_3_122
 슬슬 짜증나다 못해 화가 날 지경이다.
-@char Jicheol.2_1_3_123
+@char Jicheol.2_1_3_123r
 후… 잠깐이나마 기대한 내가 바보다. 참자 참아. 
 @char 1stMerchant.4_1_3_110
 1stMerchant: 장난이야 장난. 총각 재미없는 남자는 여자한테 인기 없어.

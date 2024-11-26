@@ -700,6 +700,8 @@
           &lt;string&gt;2_2_2_134&lt;/string&gt;
           &lt;string&gt;2_2_2_136&lt;/string&gt;
           &lt;string&gt;2_2_2_137&lt;/string&gt;
+          &lt;string&gt;2_1_3_123r&lt;/string&gt;
+          &lt;string&gt;2_1_3_105r&lt;/string&gt;
         &lt;/Appearances&gt;
         &lt;Description&gt;유지철&lt;/Description&gt;
       &lt;/Actor&gt;
@@ -1162,7 +1164,6 @@
           &lt;string&gt;DH_77&lt;/string&gt;
           &lt;string&gt;DH_78&lt;/string&gt;
           &lt;string&gt;DH_79&lt;/string&gt;
-          &lt;string&gt;Cafe_past&lt;/string&gt;
           &lt;string&gt;Gate_past&lt;/string&gt;
           &lt;string&gt;Hall_way_past&lt;/string&gt;
           &lt;string&gt;Office_past&lt;/string&gt;
@@ -3364,10 +3365,6 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;DH_79&lt;/Path&gt;
-        &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
-      &lt;/Resource&gt;
-      &lt;Resource&gt;
-        &lt;Path&gt;Cafe_past&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
@@ -6136,6 +6133,14 @@
       &lt;/Resource&gt;
       &lt;Resource&gt;
         &lt;Path&gt;2_2_2_137&lt;/Path&gt;
+        &lt;Type&gt;Characters/Jicheol&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;2_1_3_123r&lt;/Path&gt;
+        &lt;Type&gt;Characters/Jicheol&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
+        &lt;Path&gt;2_1_3_105r&lt;/Path&gt;
         &lt;Type&gt;Characters/Jicheol&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;

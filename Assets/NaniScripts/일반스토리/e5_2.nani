@@ -1,10 +1,11 @@
 @back Black
 @back Subway1
+@sfx rattle
 @char Jicheol.2_2_1_007 pos:50,-44
 비가 와서 그런지 오늘따라 지하철에 사람이 많다.
 옷을 적시는 우산, 사람들의 체온과 지하철을 가득 메우는 습기까지
-@char Jicheol.2_2_1_003 pos:50,-44
-비오는 날 출근 시간 지하철은 아무리 참아보려고 해도 불쾌하지 않을 수 없다.
+@char Jicheol.2_2_1_003
+비오는 날 퇴근 시간 지하철은 아무리 참아보려고 해도 불쾌하지 않을 수 없다.
 안내 방송: 출입문이 열립니다.
 어김 없이 밀려 들어오는 사람들 속에서 강렬한 붉은 머리가 눈에 띈다.
 @char Jicheol.2_2_1_009 pos:50,-44
@@ -16,36 +17,36 @@
 @char Jicheol.2_2_1_009 pos:60,-44
 @char Haji.1_2_1_008 pos:40,-44
 나는 문쪽으로 걸음을 옮겼다.
-@char Haji.1_2_1_011 pos:40,-44
+@char Haji.1_2_1_011
 Haji: 안녕…하세요. 
-@char Jicheol.2_2_1_012 pos:60,-44
+@char Jicheol.2_2_1_012
 Jicheol: 안녕하세요!
-@char Jicheol.2_2_1_013 pos:60,-44
+@char Jicheol.2_2_1_013
 Jicheol: 오랜만에 뵙네요. 그간 잘 지내셨나요?
-@char Haji.1_2_1_014 pos:40,-44
+@char Haji.1_2_1_014
 Haji: 아, 네 별 일 없었어요.
-@char Jicheol.2_2_1_015 pos:60,-44
+@char Jicheol.2_2_1_015
 어쩐지 하지씨는 안절부절 못 하는 것 같아 보인다.
-@char Haji.1_2_1_016 pos:40,-44
+@char Haji.1_2_1_016
 Haji: 저기... 죄송한데...
 Haji: 혹시 조금만 거리를 둬 주실 수 있을까요?
-@char Jicheol.2_2_1_018 pos:60,-44
+@char Jicheol.2_2_1_018
 Jicheol: 네? 어디 불편하신 곳이라도 있으세요?
-@char Haji.1_2_1_019 pos:40,-44
+@char Haji.1_2_1_019
 Haji: 아니요. 그… 그게
-@char Jicheol.2_2_1_020 pos:60,-44
-Jicheol: 혹시 제가 뭐 잘못한 거라도…
-@char Haji.1_2_1_021 pos:40,-44
+@char Jicheol.2_2_1_020
+Jicheol: 아니면 제가 뭐 잘못한 거라도…
+@char Haji.1_2_1_021
 Haji: 아니 그게… 
-@char Haji.1_2_1_022 pos:40,-44
+@char Haji.1_2_1_022
 Haji: 그런 게 아니라…
-@char Haji.1_2_1_023 pos:40,-44
+@char Haji.1_2_1_023
 Haji: 오늘 비도 오고… 아까 올 때 좀 뛰어서…
-@char Jicheol.2_2_1_024 pos:60,-44
+@char Jicheol.2_2_1_024
 Jicheol: 네?
-@char Haji.1_2_1_025 pos:40,-44
+@char Haji.1_2_1_025
 Haji: 조금 냄새가 날 까봐요… 하하
-@char Jicheol.2_2_1_026 pos:60,-44
+@char Jicheol.2_2_1_026
 수줍은 듯한 목소리, 부끄럽다는 듯한 몸짓
 의식하지 않던 걸 의식하게 되자 나도 덩달아 얼굴이 달아오른다.
 
@@ -54,7 +55,6 @@ Haji: 조금 냄새가 날 까봐요… 하하
 @stop
 
 #Select1
-호감도 -5
 @char Jicheol.2_2_1_031 pos:60,-44
 Jicheol: 킁킁..킁킁…
 @char Jicheol.2_2_1_032 pos:60,-44
@@ -65,7 +65,6 @@ Haji: ………………
 @goto .KG
 
 #Select2
-호감도 +5
 @char Jicheol.2_2_1_035 pos:60,-44
 Jicheol: 괜찮아요. 아무 냄새 안 나요.
 @char Jicheol.2_2_1_036 pos:60,-44
@@ -73,7 +72,7 @@ Jicheol: 신경 쓰이시면 향수 빌려드릴까요?
 Jicheol: 괜찮으시다면 이거 쓰실래요?
 가방에서 작은 향수 병을 꺼냈다.
 @char Jicheol.2_2_1_039 pos:60,-44
-Jicheol: 이제 여름이다보니 저도 신경 쓰여서 가지고 다니는 향수입니다.
+Jicheol: 이제 여름이다보니 저도 신경 쓰여서 가지고 다니게 되더라구요.
 @char Haji.1_2_1_040 pos:40,-44
 Haji: 감사합니다.
 @char Haji.1_2_1_041 pos:40,-44
@@ -81,15 +80,12 @@ Haji: 음~ 향이 엄청 좋네요.
 @hide Jicheol,Haji
 @goto .KG
 
-
 # KG
 사람들: 내릴게요!!!
 @char Haji.1_2_1_043 pos:40,-44 time:0.01
 @char Haji.1_2_1_043 pos:42,-44 time:0.01
 @char Haji.1_2_1_043 pos:38,-44 time:0.01
-@char Haji.1_2_1_043 pos:40,-44 time:0.01
-@char Haji.1_2_1_043 pos:42,-44 time:0.01
-@char Haji.1_2_1_043 pos:38,-44 time:0.01
+
 Haji: 꺄악!?
 갑작스러운 인파에 그녀의 몸이 휘청거린다.
 @hide Haji
@@ -198,5 +194,5 @@ Seola: 그러니까 하나하나 낱낱이 다 나에게 보고하도록!
 @char Jicheol.2_2_1_094 pos:50,-44
 그래,  뭐 좋은 게 좋은 거 아니겠어?
 @hideAll
-@back Black
-@goto e6_1
+@nowStory story:e6_1
+@goStory
