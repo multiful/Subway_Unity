@@ -1,6 +1,7 @@
 public enum StoryName
 {
     None,
+    Test,
     e1,
     e2_1,
     e2_2,

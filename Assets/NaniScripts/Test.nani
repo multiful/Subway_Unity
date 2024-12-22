@@ -2,4 +2,8 @@
 
 테스트 스크립트 1
 테스트 중입니
-@goto Test1
+
+@choice "1번 선택지" button:ChoicePrefab/CustomChoice
+@choice "2번 선택지" button:ChoicePrefab/CustomChoice
+
+@choice "말이 길어지면 어떻게 변할지를 알아보는 테스트를 해보겠습니다" button:ChoicePrefab/CustomChoice
