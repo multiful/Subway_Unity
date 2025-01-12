@@ -25,6 +25,6 @@ public class ControlPanelMover : MonoBehaviour
     }
     private void Start()
     {
-        
+        controlPanel.transform.localPosition = new Vector2(595, -540);
     }
 }

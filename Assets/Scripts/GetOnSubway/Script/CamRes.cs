@@ -8,7 +8,7 @@ public class CamRes : MonoBehaviour
     {
         Camera camera = GetComponent<Camera>();
         Rect rect = camera.rect;
-        float targetaspect = 16f / 9f;
+        float targetaspect = 18.5f / 9f;
         float windowaspect = (float)Screen.width / (float)Screen.height;
         float scaleheight = windowaspect / targetaspect;
 

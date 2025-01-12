@@ -19,21 +19,12 @@ public class EndingCollectionManager : MonoBehaviour
 
     private bool[] _openedEnding;
 
-    //public TextMeshProUGUI tmp_Money;
 
     //public EndingSO[] _endingSOList;
     //private Ending[] _endingList;
     private void Init()
     {
-        //일단 1번 엔딩만 열어둔 상태
-        GameManager.userData.IsEndingUnlock[0] = true;
-        GameManager.userData.IsEndingUnlock[3] = true;
         _openedEnding = GameManager.userData.IsEndingUnlock;
-        //_openedEnding = new bool[4];
-        //_openedEnding[0] = true;
-        //_openedEnding[3] = true;
-
-        //tmp_Money.text = GameManager.userData.Money.ToString();
 
     }
     private void EndingSetup()
@@ -71,11 +62,4 @@ public class EndingCollectionManager : MonoBehaviour
         Init();
         EndingSetup();
     }
-
-    //class Ending
-    //{
-    //    public int index;
-    //    public string endingName;
-    //    public string description;
-    //}
 }

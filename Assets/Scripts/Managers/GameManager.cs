@@ -59,6 +59,8 @@ public class GameManager : MonoBehaviour
             s_instance._nani.Init();
             s_instance._sound.Init();
             s_instance._data.Init();
+
+            //s_instance._ui_manager.SetResolution();
         }
     }
 
