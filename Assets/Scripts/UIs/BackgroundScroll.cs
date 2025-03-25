@@ -1,26 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    public Image background;
+    public float speed = 1000f;
+    public RectTransform[] backgrounds;
 
-    public float backgroundSpeed = 0.1f;
+    float leftPosX = 0f;
+    float rightPosX = 0f;
+    float xScreenHalfSize;
+    float yScreenHalfSize;
 
-    Vector2 backgroundScrollOffset = Vector2.zero;
-
-    private void Update()
+    void Start()
     {
-        ScrollBackgroundImage();
+        yScreenHalfSize = Camera.main.orthographicSize;
+        xScreenHalfSize = yScreenHalfSize * Camera.main.aspect;
+
+        leftPosX = -14230f; //-(xScreenHalfSize * 2);
+        rightPosX = 19060f; //xScreenHalfSize * 2 * backgrounds.Length;
     }
 
-    private void ScrollBackgroundImage()
+    void Update()
     {
-        backgroundScrollOffset.x += (backgroundSpeed * Time.deltaTime);
-        background.material.mainTextureOffset = backgroundScrollOffset;
-        gameObject.SetActive(false);
-        gameObject.SetActive(true);
+        for (int i = 0; i < backgrounds.Length; i++)
+        {
+            backgrounds[i].localPosition += new Vector3(-speed, 0, 0) * Time.deltaTime;
+
+            if (backgrounds[i].localPosition.x < leftPosX)
+            {
+                Vector3 nextPos = backgrounds[i].localPosition;
+                nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
+                backgrounds[i].localPosition = nextPos;
+            }
+        }
     }
 }
